@@ -1,0 +1,1 @@
+https://ki4070ma.github.io/weblog/
