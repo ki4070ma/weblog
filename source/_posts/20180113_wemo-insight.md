@@ -5,9 +5,16 @@ tags: WeMo
 ---
 
 # WeMo Insight
+
+<!--![alt](20180113_wemo-insight/wemo.png)-->
+<img src="wemo.png" width="25%" height="25%">
+
 * こういうもの↓で, アプリ経由でACオンオフできたり, 消費電力確認できる
   * [Wemo® Insight Smart Plug(Official)](http://www.belkin.com/us/p/P-F7C029/)
+     * もう売られていないよう (2021/03時点)
+     * 同様の製品群 https://www.belkin.com/us/smart-home/c/wemo/
   * [WeMo app (Android)](https://play.google.com/store/apps/details?id=com.belkin.wemoandroid&hl=ja), iOSアプリもあり
+
 
 # API
 * この機器をCLIやPython API経由で操作できたりする
@@ -20,7 +27,7 @@ tags: WeMo
 # WeMo Insightの現在の消費電力を知る手順
 * だいたい上記のPython APIに書いてあることです
 
-```
+```bash
 pi@raspberrypi:~ $ python
 Python 2.7.13 (default, Nov 24 2017, 17:33:09) 
 [GCC 6.3.0 20170516] on linux2
