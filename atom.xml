@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>ki4070maのメモ帳</title>
-  
+  <icon>https://ki4070ma.github.io/weblog/icon.png</icon>
   <subtitle>Python, SoftwareTest</subtitle>
   <link href="https://ki4070ma.github.io/weblog/atom.xml" rel="self"/>
   
@@ -23,14 +23,15 @@
     <published>2018-12-16T15:00:00.000Z</published>
     <updated>2021-03-03T05:37:49.742Z</updated>
     
-    <content type="html"><![CDATA[<p>(自分用メモ)</p><h1 id="Mac購入"><a href="#Mac購入" class="headerlink" title="Mac購入"></a>Mac購入</h1><ul><li>Paypay祭りの時にMacBook Air(13-inch, 2017)を購入</li></ul><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">1.8 GHz Intel Core i5</span><br><span class="line">8 GB 1600 MHz DDR3</span><br><span class="line">Intel HD Graphics 6000 1536 MB</span><br></pre></td></tr></table></figure><h1 id="Mac起動"><a href="#Mac起動" class="headerlink" title="Mac起動"></a>Mac起動</h1><ul><li>Apple idでログイン</li><li>[つぶやき] webブラウザでもどこでもEmacsのキーバインドが使えるのが素敵<ul><li>e.g. Ctrl+fで右方向に1つ進む</li><li>特にWebブラウザ上のEditorなどで, “新しくTabを開く”ショートカットとコンフリクトせずに, Ctrl+nで下方向にいく (MacではCommand+nで新しくTabを開く)</li></ul></li><li>[つぶやき] かな, 英数の切り替えが”かな”, ”英数”キーということを知る,,,</li></ul><h1 id="Macでの設定"><a href="#Macでの設定" class="headerlink" title="Macでの設定"></a>Macでの設定</h1><ul><li>Dockの場所を左にして, 自動的に隠す (システム環境設定 -&gt; Dock)</li></ul><h1 id="Homebrewインストール"><a href="#Homebrewインストール" class="headerlink" title="Homebrewインストール"></a>Homebrewインストール</h1><ul><li><a href="https://brew.sh/index_ja">https://brew.sh/index_ja</a></li></ul><h1 id="SKKの導入"><a href="#SKKの導入" class="headerlink" title="SKKの導入"></a>SKKの導入</h1><ul><li>SKKとは<ul><li><a href="https://ja.wikipedia.org/wiki/SKK">https://ja.wikipedia.org/wiki/SKK</a></li></ul></li><li>MacでSKKをセットアップ1<ul><li><a href="http://aquaskk.osdn.jp/">http://aquaskk.osdn.jp</a></li><li><a href="http://aquaskk.osdn.jp/install_and_settings.html">http://aquaskk.osdn.jp/install_and_settings.html</a></li><li>インストールしたけど, なぜか日本語入力できない… -&gt; これは設定ミスだった. 設定 -&gt; 入力ソースでAquaSKKだけではなく, “ひらがな”, “カタカナ”なども追加する必要がある.</li><li>しかし、漢字などに変換できない…</li><li>本家がaccessできない, これが関係あるのか <a href="http://openlab.jp/skk/index-j.html">http://openlab.jp/skk/index-j.html</a></li><li>辞書を別途DLして, 設定したらできた. ユーザ辞書に辞書Lと, 辞書一覧に辞書Lを追加した. (おそらく片方はユーザ辞書の登録は不要…)<ul><li><a href="https://github.com/skk-users-jp/dic-mirror">https://github.com/skk-users-jp/dic-mirror</a></li></ul></li></ul></li><li>[困り事1] SlackでShift+Enterで改行するたびに入力モードが”ひらがな”になる<ul><li>[メモ1] “書類ごとに異なる入力ソースを使用”の設定は関係なし. SKKにも入力ソースの設定にもそれっぽいものはない…</li><li>[解決せず1] <a href="https://discussionsjapan.apple.com/thread/10153489">https://discussionsjapan.apple.com/thread/10153489</a></li><li>[メモ2] AquaSKK側でIssueとして対応したっぽい(4.2.7) <a href="https://github.com/codefirst/aquaskk/pull/25">https://github.com/codefirst/aquaskk/pull/25</a> . 起きているのは4.7.0ですね…</li></ul></li><li>[困り事2] PyCharmで”ひらがな”モードだと”l”を押して英数にしても, 何かを入力した瞬間にひらがなを入力しようとする<ul><li>[メモ1] 同じ症状, 参考に試してみる <a href="https://github.com/codefirst/aquaskk/issues/81">https://github.com/codefirst/aquaskk/issues/81</a></li></ul></li></ul><h1 id="Githubの設定"><a href="#Githubの設定" class="headerlink" title="Githubの設定"></a>Githubの設定</h1><ul><li>ssh経由でgit cloneできるように<ul><li><a href="https://qiita.com/unsoluble_sugar/items/14bea376d8e6fce82eb3">https://qiita.com/unsoluble_sugar/items/14bea376d8e6fce82eb3</a></li></ul></li></ul><h1 id="インストールしたもの-一般"><a href="#インストールしたもの-一般" class="headerlink" title="インストールしたもの (一般)"></a>インストールしたもの (一般)</h1><ul><li>Google Chrome (Safariが検索してもたまに繋がらない)<ul><li>Chromeだったら問題なくつながる, 謎</li></ul></li><li>PyCharm<ul><li><a href="https://www.jetbrains.com/pycharm/">https://www.jetbrains.com/pycharm/</a></li></ul></li><li>Android studio<ul><li>参考: <a href="https://akira-watson.com/android/adt-mac.html">https://akira-watson.com/android/adt-mac.html</a></li></ul></li><li>Zsh / Oh my zsh<ul><li><a href="https://qiita.com/NaokiIshimura/items/249bb1a101b626a59387">https://qiita.com/NaokiIshimura/items/249bb1a101b626a59387</a></li></ul></li><li>Docker for mac<ul><li><a href="https://docs.docker.com/docker-for-mac/">https://docs.docker.com/docker-for-mac/</a></li></ul></li></ul><h1 id="インストールしたもの-WebからMac用"><a href="#インストールしたもの-WebからMac用" class="headerlink" title="インストールしたもの (WebからMac用)"></a>インストールしたもの (WebからMac用)</h1><ul><li>Cheat sheet<ul><li><a href="https://www.cheatsheetapp.com/CheatSheet/">https://www.cheatsheetapp.com/CheatSheet/</a></li></ul></li></ul><h1 id="インストールしたもの-AppStore"><a href="#インストールしたもの-AppStore" class="headerlink" title="インストールしたもの (AppStore)"></a>インストールしたもの (AppStore)</h1><ul><li>Xcode</li><li>Slack</li></ul><h1 id="インストールしたもの-brew"><a href="#インストールしたもの-brew" class="headerlink" title="インストールしたもの (brew)"></a>インストールしたもの (brew)</h1><ul><li>git / python3 / ffmpeg</li><li>emacs<ul><li>Terminal上で開くのではなく, 別windowで開くようにする &gt; <a href="https://qiita.com/kokorinosoba/items/ecceaabe07d91c6f2c66">https://qiita.com/kokorinosoba/items/ecceaabe07d91c6f2c66</a></li></ul></li><li>circleci<ul><li>circleciのビルドをローカルで確認できるように</li></ul></li></ul><h1 id="インストールしたもの-pip"><a href="#インストールしたもの-pip" class="headerlink" title="インストールしたもの (pip)"></a>インストールしたもの (pip)</h1><ul><li>pytest, pytest-cov</li></ul><h1 id="覚え書き"><a href="#覚え書き" class="headerlink" title="覚え書き"></a>覚え書き</h1><ul><li>Launchpadのショートカット<ul><li><a href="https://satoshisgarage.tech/?p=1741">https://satoshisgarage.tech/?p=1741</a></li></ul></li></ul><h1 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h1><ul><li><a href="https://qiita.com/taktod/items/308352c35e52fd015d35">僕のMacセットアップ記録</a></li><li><a href="https://qiita.com/ryuichi1208/items/5905240f3bfce793b33d">iMac/MacBook購入後に必ず設定したい設定項目</a><ul><li>こんな設定が出来るんだ, 確認する</li></ul></li></ul><p>ref: <a href="https://qiita.com/atsushi0521/items/020cc31dc990315afa36">https://qiita.com/atsushi0521/items/020cc31dc990315afa36</a></p>]]></content>
-    
     
       
       
+        
+        
     <summary type="html">&lt;p&gt;(自分用メモ)&lt;/p&gt;
 &lt;h1 id=&quot;Mac購入&quot;&gt;&lt;a href=&quot;#Mac購入&quot; class=&quot;headerlink&quot; title=&quot;Mac購入&quot;&gt;&lt;/a&gt;Mac購入&lt;/h1&gt;&lt;ul&gt;
-&lt;li&gt;Paypay祭りの時にMacBook Air(13-inch, 2017)</summary>
+&lt;li&gt;Paypay祭りの時にMacBook Air(13-inch,</summary>
+        
       
     
     
@@ -47,13 +48,14 @@
     <published>2018-12-15T15:00:00.000Z</published>
     <updated>2021-03-03T05:43:27.243Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="メイン-LeetCode"><a href="#メイン-LeetCode" class="headerlink" title="メイン: LeetCode"></a>メイン: LeetCode</h1><ul><li><a href="https://leetcode.com/problemset/all/">https://leetcode.com/problemset/all/</a></li><li>問題数 900以上 (Problem set. 他にもいろんな問題があるよう)</li><li>Google, Amazon, Appleなどの大手企業で出されたという問題があるらしい</li><li>さくっと解ける (ものもある)</li><li>解けない時は解答を見ることもできる問題もある</li><li>自分の好きな言語で解くことができる</li><li>Web上のEditorで完結する</li><li>やっている途中でもSubmitしとけばその続きから行える</li><li>全部英語</li></ul><h1 id="いろいろな学習用サイト"><a href="#いろいろな学習用サイト" class="headerlink" title="いろいろな学習用サイト"></a>いろいろな学習用サイト</h1><ul><li>言語の習得やアルゴリズムの学習に最適 オンラインジャッジサイト一覧<ul><li><a href="https://qiita.com/shibacho/items/20f6eee42083c620b556">https://qiita.com/shibacho/items/20f6eee42083c620b556</a></li><li>こちらを参考にして”atCoder, Checkio, HackerRank”あたりを使ってみたが, 定着しなかった. Twitterや勉強会で, LeetCodeを使っているという人たちを見たので使ってみたところ定着した</li></ul></li></ul><h1 id="所感"><a href="#所感" class="headerlink" title="所感"></a>所感</h1><ul><li>学習用サイトはたくさんある</li><li>自分のスタイルにあった, 学習を継続できるサイトを選ぶ必要がある</li></ul><p>ref: <a href="https://qiita.com/atsushi0521/items/15ad605207b060cf4e83">https://qiita.com/atsushi0521/items/15ad605207b060cf4e83</a></p>]]></content>
-    
     
       
       
+        
+        
     <summary type="html">&lt;h1 id=&quot;メイン-LeetCode&quot;&gt;&lt;a href=&quot;#メイン-LeetCode&quot; class=&quot;headerlink&quot; title=&quot;メイン: LeetCode&quot;&gt;&lt;/a&gt;メイン: LeetCode&lt;/h1&gt;&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;https://leetc</summary>
+&lt;li&gt;&lt;a</summary>
+        
       
     
     
@@ -70,14 +72,14 @@
     <published>2018-12-14T15:00:00.000Z</published>
     <updated>2021-03-03T01:29:29.596Z</updated>
     
-    <content type="html"><![CDATA[<p>自分が調べたことのメモ, ほぼどこかへのリンク.</p><h1 id="やろうとしたこと"><a href="#やろうとしたこと" class="headerlink" title="やろうとしたこと"></a>やろうとしたこと</h1><ul><li>家のローカルネットワーク内に繋がれている以下の機器間でsshでログインする<ul><li>Raspberry Pi</li><li>Ubuntu 16.04</li><li>Mac</li></ul></li></ul><h1 id="使用しているWi-Fiルーター"><a href="#使用しているWi-Fiルーター" class="headerlink" title="使用しているWi-Fiルーター"></a>使用しているWi-Fiルーター</h1><ul><li>Buffalo WSR-300HP/N<ul><li>はじめssh出来るようにするにはルータの設定が必要かと思ったがそうではなかった</li></ul></li></ul><h1 id="Raspberry-Piの設定"><a href="#Raspberry-Piの設定" class="headerlink" title="Raspberry Piの設定"></a>Raspberry Piの設定</h1><ul><li><a href="https://www.raspberrypi.org/documentation/remote-access/ssh/">SSH (Secure Shell)</a> (英語. Raspberry Pi 公式)<ul><li>qiitaで調べたものはうまくいかなったものが多かった</li></ul></li></ul><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">1. Enter sudo raspi-config in a terminal window</span><br><span class="line">2. Select Interfacing Options</span><br><span class="line">3. Navigate to and select SSH</span><br><span class="line">4. Choose Yes</span><br><span class="line">5. Select Ok</span><br><span class="line">6. Choose Finish</span><br></pre></td></tr></table></figure><ul><li>上記の設定で, Ubuntu/Mac -&gt; Raspberry Piへのsshのログインが可能になった</li></ul><h1 id="Macの設定"><a href="#Macの設定" class="headerlink" title="Macの設定"></a>Macの設定</h1><ul><li><a href="https://support.apple.com/ja-jp/guide/mac-help/mchlp1066/mac">リモートコンピュータに Mac へのアクセスを許可する</a></li><li>上記の設定でUbuntu/Raspberry Pi -&gt; Macへのsshのログインが可能になった.</li></ul><h1 id="Ubuntuの設定"><a href="#Ubuntuの設定" class="headerlink" title="Ubuntuの設定"></a>Ubuntuの設定</h1><ul><li><a href="http://d.hatena.ne.jp/Fiore/20080228/1204174833">Ubuntuでsshdの設定をしてリモートから接続できるようにする</a></li><li>今のところうまく行ってない, うーむ</li></ul><p>ref: <a href="https://qiita.com/atsushi0521/items/80e36b1d8d7306ee2357">https://qiita.com/atsushi0521/items/80e36b1d8d7306ee2357</a></p>]]></content>
-    
     
       
       
+        
+        
     <summary type="html">&lt;p&gt;自分が調べたことのメモ, ほぼどこかへのリンク.&lt;/p&gt;
-&lt;h1 id=&quot;やろうとしたこと&quot;&gt;&lt;a href=&quot;#やろうとしたこと&quot; class=&quot;headerlink&quot; title=&quot;やろうとしたこと&quot;&gt;&lt;/a&gt;やろうとしたこと&lt;/h1&gt;&lt;ul&gt;
-&lt;li&gt;家のローカルネッ</summary>
+&lt;h1 id=&quot;やろうとしたこと&quot;&gt;&lt;a href=&quot;#やろうとしたこと&quot; class=&quot;headerlink&quot;</summary>
+        
       
     
     
@@ -94,13 +96,14 @@
     <published>2018-01-12T15:00:00.000Z</published>
     <updated>2021-03-03T01:31:52.282Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="WeMo-Insight"><a href="#WeMo-Insight" class="headerlink" title="WeMo Insight"></a>WeMo Insight</h1><ul><li>こういうもの↓で, アプリ経由でACオンオフできたり, 消費電力確認できる<ul><li><a href="http://www.belkin.com/us/p/P-F7C029/">Wemo® Insight Smart Plug(Official)</a></li><li><a href="https://play.google.com/store/apps/details?id=com.belkin.wemoandroid&hl=ja">WeMo app (Android)</a>, iOSアプリもあり</li></ul></li></ul><h1 id="API"><a href="#API" class="headerlink" title="API"></a>API</h1><ul><li>この機器をCLIやPython API経由で操作できたりする<ul><li><a href="https://github.com/iancmcc/ouimeaux">https://github.com/iancmcc/ouimeaux</a><ul><li>ドキュメント: <a href="http://ouimeaux.readthedocs.io/en/latest/">http://ouimeaux.readthedocs.io/en/latest/</a><ul><li><a href="http://ouimeaux.readthedocs.io/en/latest/installation.html">インストール</a></li><li><a href="http://ouimeaux.readthedocs.io/en/latest/wemo.html">CLI</a></li><li><a href="http://ouimeaux.readthedocs.io/en/latest/api.html">Python API</a></li></ul></li></ul></li></ul></li></ul><h1 id="WeMo-Insightの現在の消費電力を知る手順"><a href="#WeMo-Insightの現在の消費電力を知る手順" class="headerlink" title="WeMo Insightの現在の消費電力を知る手順"></a>WeMo Insightの現在の消費電力を知る手順</h1><ul><li>だいたい上記のPython APIに書いてあることです</li></ul><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line">pi@raspberrypi:~ $ python</span><br><span class="line">Python 2.7.13 (default, Nov 24 2017, 17:33:09) </span><br><span class="line">[GCC 6.3.0 20170516] on linux2</span><br><span class="line">Type &quot;help&quot;, &quot;copyright&quot;, &quot;credits&quot; or &quot;license&quot; for more information.</span><br><span class="line">&gt;&gt;&gt; from ouimeaux.environment import Environment</span><br><span class="line">&gt;&gt;&gt; def on_switch(switch):</span><br><span class="line">...   print &quot;Switch found!&quot;, switch.name</span><br><span class="line">... </span><br><span class="line">&gt;&gt;&gt; def on_motion(motion):</span><br><span class="line">...   print &quot;Motion found!&quot;, motion.name</span><br><span class="line">... </span><br><span class="line">&gt;&gt;&gt; env &#x3D; Environment(on_switch, on_motion)</span><br><span class="line">&gt;&gt;&gt; env.start()</span><br><span class="line">&gt;&gt;&gt; env.discover(seconds&#x3D;3)</span><br><span class="line">Switch found! WeMo</span><br><span class="line">&gt;&gt;&gt; env.list_switches()</span><br><span class="line">[&#39;WeMo&#39;]</span><br><span class="line">&gt;&gt;&gt; switch &#x3D; env.get_switch(&#39;WeMo&#39;)</span><br><span class="line">&gt;&gt;&gt; switch</span><br><span class="line">&lt;WeMo Insight &quot;WeMo&quot;&gt;</span><br><span class="line">&gt;&gt;&gt; print switch.get_state()</span><br><span class="line">0</span><br><span class="line">&gt;&gt;&gt; switch.on()</span><br><span class="line">&gt;&gt;&gt; print switch.get_state()</span><br><span class="line">1</span><br><span class="line">&gt;&gt;&gt; print switch.insight_params</span><br><span class="line">&#123;&#39;onfor&#39;: 51, &#39;state&#39;: &#39;8&#39;, &#39;ontotal&#39;: 16144, &#39;totalmw&#39;: 40961936, &#39;ontoday&#39;: 16499, &#39;todaymw&#39;: 40961936, &#39;lastchange&#39;: datetime.datetime(2018, 1, 13, 13, 4, 24), &#39;currentpower&#39;: 0&#125;</span><br><span class="line">&gt;&gt;&gt; print switch.insight_params[&#39;currentpower&#39;]</span><br><span class="line">0 (WeMoに何も差してない状態)</span><br><span class="line">&gt;&gt;&gt; print switch.insight_params[&#39;currentpower&#39;]</span><br><span class="line">15915 (WeMoにノートPCのACアダプタを差している)</span><br></pre></td></tr></table></figure><p>ref: <a href="https://qiita.com/atsushi0521/items/28355e9d789a07c61f2f">https://qiita.com/atsushi0521/items/28355e9d789a07c61f2f</a></p>]]></content>
-    
     
       
       
+        
+        
     <summary type="html">&lt;h1 id=&quot;WeMo-Insight&quot;&gt;&lt;a href=&quot;#WeMo-Insight&quot; class=&quot;headerlink&quot; title=&quot;WeMo Insight&quot;&gt;&lt;/a&gt;WeMo Insight&lt;/h1&gt;&lt;ul&gt;
-&lt;li&gt;こういうもの↓で, アプリ経由でACオンオフでき</summary>
+&lt;li&gt;こういうもの↓で,</summary>
+        
       
     
     
@@ -117,12 +120,13 @@
     <published>2018-01-03T15:00:00.000Z</published>
     <updated>2021-03-03T01:29:19.946Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="探索的テストとは"><a href="#探索的テストとは" class="headerlink" title="探索的テストとは"></a>探索的テストとは</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">探索的テストは、テストの目的が含まれたテストチャータを基にしたもので、</span><br><span class="line">テスト設計、テスト実行、テスト記録や学習を並行して同じ時間枠内で実行する。</span><br><span class="line">このアプローチは、仕様がほとんどなかったり、不十分であったり、</span><br><span class="line">スケジュール的な余裕がない場合や、他の形式的なテスト技法を補完する場合に効果が大きい。</span><br><span class="line">探索的テストは、テストプロセスのチェックや、きわめて重大な欠陥を見つけ出すのに役に立つ。 </span><br></pre></td></tr></table></figure><ul><li><a href="http://jstqb.jp/dl/JSTQB-Syllabus.Foundation_Version2011.J01.pdf">http://jstqb.jp/dl/JSTQB-Syllabus.Foundation_Version2011.J01.pdf</a></li><li>探索的テストについては調べるといろいろ出てくる</li></ul><h1 id="探索的テストの使い方"><a href="#探索的テストの使い方" class="headerlink" title="探索的テストの使い方"></a>探索的テストの使い方</h1><ol><li>チーム内の他のメンバーが作った機能の理解<ul><li>自分が作っていない機能を探索的にテストすることでその機能への理解が深まる</li><li>みんなが集まってテストできれば, 不明点(仕様やロジックなど)を作成者にすぐ聞くことができ, それを他のメンバーも聞くことができるので暗黙知や知識の共有にもなる</li></ul></li><li>品質の確認<ul><li><a href="https://en.wikipedia.org/wiki/Session-based_testing">Session-based testing</a>などを使えば品質を確認, レポートすることができる</li><li>(参考) <a href="http://www.nttdata.com/jp/ja/insights/trend_keyword/2014072401.html">「探索的テスト」を活用して品質を高める</a></li></ul></li><li>バグ出し<ul><li>テストスクリプトなどの用意をせず, どのあたりをテストするのかをざっくり方針決めてテストするだけである程度の致命的なバグを見つけることができるため費用対効果(ROI)は高い<ul><li>バグを仕込んで直すまでの時間が短ければ短いほど修正コストは低いので, 機能がある程度出来たら行うと良い</li><li>開発チームで行うとよりよい</li></ul></li></ul></li><li>回帰テスト<ul><li><a href="https://techblog.king.com/moving-from-scripted-regression-testing-to-exploratory-testing/">https://techblog.king.com/moving-from-scripted-regression-testing-to-exploratory-testing/</a></li></ul></li><li>上記の使い方を同時に複数行うこともできる</li></ol><h1 id="探索的テストはソフトウェアテストの1つのスタイル"><a href="#探索的テストはソフトウェアテストの1つのスタイル" class="headerlink" title="探索的テストはソフトウェアテストの1つのスタイル"></a>探索的テストはソフトウェアテストの1つのスタイル</h1><ul><li>「探索的テストってなんですか？」(高橋寿一さん)より<ul><li><a href="http://jasst.jp/symposium/jasst14kyushu/pdf/S3.pdf">http://jasst.jp/symposium/jasst14kyushu/pdf/S3.pdf</a></li></ul></li><li>探索的テストは特徴を把握して自分たちに合うように使うとよい</li></ul><p>ref: <a href="https://qiita.com/atsushi0521/items/e1ba80010ed34aca26bf">https://qiita.com/atsushi0521/items/e1ba80010ed34aca26bf</a></p>]]></content>
-    
     
       
       
-    <summary type="html">&lt;h1 id=&quot;探索的テストとは&quot;&gt;&lt;a href=&quot;#探索的テストとは&quot; class=&quot;headerlink&quot; title=&quot;探索的テストとは&quot;&gt;&lt;/a&gt;探索的テストとは&lt;/h1&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td cl</summary>
+        
+        
+    <summary type="html">&lt;h1 id=&quot;探索的テストとは&quot;&gt;&lt;a href=&quot;#探索的テストとは&quot; class=&quot;headerlink&quot; title=&quot;探索的テストとは&quot;&gt;&lt;/a&gt;探索的テストとは&lt;/h1&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td</summary>
+        
       
     
     
