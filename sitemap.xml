@@ -3,12 +3,12 @@
 
 
     <sitemap>
-        <loc>https://ki4070ma.github.io/weblog/post-sitemap.xml</loc>
+        <loc>https://blog.ki4070ma.com/post-sitemap.xml</loc>
         <lastmod>2021-03-03T15:49:02.310Z</lastmod>
     </sitemap>
 
     <sitemap>
-        <loc>https://ki4070ma.github.io/weblog/tag-sitemap.xml</loc>
+        <loc>https://blog.ki4070ma.com/tag-sitemap.xml</loc>
         <lastmod>2021-03-03T15:49:02.310Z</lastmod>
     </sitemap>
 
