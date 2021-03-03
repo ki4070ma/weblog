@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  
+  <title>Appiumのセットアップ, 使い方 | ki4070maのメモ帳</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Appiumのセットアップ Node  https:&#x2F;&#x2F;nodejs.org&#x2F;en&#x2F; Appiumインストールのため   Appium  公式 http:&#x2F;&#x2F;appium.io&#x2F;docs&#x2F;en&#x2F;about-appium&#x2F;getting-started&#x2F;?lang&#x3D;en   [$npm install -g appium] Permission deniedでインストール失敗した [解決方法] ht">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Appiumのセットアップ, 使い方">
+<meta property="og:url" content="https://ki4070ma.github.io/weblog/2019/01/01/20190101_setup-appium/index.html">
+<meta property="og:site_name" content="ki4070maのメモ帳">
+<meta property="og:description" content="Appiumのセットアップ Node  https:&#x2F;&#x2F;nodejs.org&#x2F;en&#x2F; Appiumインストールのため   Appium  公式 http:&#x2F;&#x2F;appium.io&#x2F;docs&#x2F;en&#x2F;about-appium&#x2F;getting-started&#x2F;?lang&#x3D;en   [$npm install -g appium] Permission deniedでインストール失敗した [解決方法] ht">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2018-12-31T15:00:00.000Z">
+<meta property="article:modified_time" content="2021-03-03T11:00:37.597Z">
+<meta property="article:author" content="Atsushi Mori">
+<meta property="article:tag" content="Appium">
+<meta name="twitter:card" content="summary">
+  
+    <link rel="alternate" href="/weblog/atom.xml" title="ki4070maのメモ帳" type="application/atom+xml">
+  
+  
+    <link rel="shortcut icon" href="/weblog/favicon.png">
+  
+  
+    
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/typeface-source-code-pro@0.0.71/index.min.css">
+
+  
+  
+<link rel="stylesheet" href="/weblog/css/style.css">
+
+  
+    
+<link rel="stylesheet" href="/weblog/fancybox/jquery.fancybox.min.css">
+
+  
+<meta name="generator" content="Hexo 5.4.0"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/weblog/" id="logo">ki4070maのメモ帳</a>
+      </h1>
+      
+        <h2 id="subtitle-wrap">
+          <a href="/weblog/" id="subtitle">Python, SoftwareTest</a>
+        </h2>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/weblog/">Home</a>
+        
+          <a class="main-nav-link" href="/weblog/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/weblog/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://ki4070ma.github.io/weblog"></form>
+      </div>
+    </div>
+  </div>
+</header>
+
+      <div class="outer">
+        <section id="main"><article id="post-20190101_setup-appium" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/weblog/2019/01/01/20190101_setup-appium/" class="article-date">
+  <time class="dt-published" datetime="2018-12-31T15:00:00.000Z" itemprop="datePublished">2019-01-01</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="p-name article-title" itemprop="headline name">
+      Appiumのセットアップ, 使い方
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h1 id="Appiumのセットアップ"><a href="#Appiumのセットアップ" class="headerlink" title="Appiumのセットアップ"></a>Appiumのセットアップ</h1><ul>
+<li><p>Node</p>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://nodejs.org/en/">https://nodejs.org/en/</a></li>
+<li>Appiumインストールのため</li>
+</ul>
+</li>
+<li><p>Appium</p>
+<ul>
+<li>公式<ul>
+<li><a target="_blank" rel="noopener" href="http://appium.io/docs/en/about-appium/getting-started/?lang=en">http://appium.io/docs/en/about-appium/getting-started/?lang=en</a></li>
+</ul>
+</li>
+<li>[$npm install -g appium] Permission deniedでインストール失敗した<ul>
+<li>[解決方法] <a target="_blank" rel="noopener" href="https://stackoverflow.com/questions/48910876/error-eacces-permission-denied-access-usr-local-lib-node-modules-react?rq=1">https://stackoverflow.com/questions/48910876/error-eacces-permission-denied-access-usr-local-lib-node-modules-react?rq=1</a></li>
+</ul>
+</li>
+<li>[JDK インストール] <a target="_blank" rel="noopener" href="https://www.oracle.com/technetwork/java/javase/downloads/index.html">https://www.oracle.com/technetwork/java/javase/downloads/index.html</a></li>
+<li>[$npm install -g appium-doctor] Appium-doctor<ul>
+<li>appiumを使うために不足している設定を診断してくれる</li>
+</ul>
+</li>
+<li>必要だった設定<ul>
+<li>Please install Carthage. Visit <a target="_blank" rel="noopener" href="https://github.com/Carthage/Carthage#installing-carthage">https://github.com/Carthage/Carthage#installing-carthage</a> for more information.</li>
+<li>Manually configure ANDROID_HOME.</li>
+<li>Manually configure JAVA_HOME.<ul>
+<li>こんな風に指定できるらしい. <a target="_blank" rel="noopener" href="https://qiita.com/seri_k/items/e978c1339ce51f13e297">https://qiita.com/seri_k/items/e978c1339ce51f13e297</a></li>
+</ul>
+</li>
+<li>Manually configure ANDROID_HOME and run appium-doctor again.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">export ANDROID_HOME&#x3D;&quot;~&#x2F;Library&#x2F;Android&#x2F;sdk&quot;</span><br><span class="line">export JAVA_HOME&#x3D;&#96;&#x2F;usr&#x2F;libexec&#x2F;java_home -v 11&#96;</span><br><span class="line">export PATH&#x3D;$JAVA_HOME&#x2F;bin:$PATH</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>Appium desktop<ul>
+<li><a target="_blank" rel="noopener" href="https://github.com/appium/appium-desktop">https://github.com/appium/appium-desktop</a></li>
+</ul>
+</li>
+</ul>
+<h1 id="使い方"><a href="#使い方" class="headerlink" title="使い方"></a>使い方</h1><h2 id="Screenrecord"><a href="#Screenrecord" class="headerlink" title="Screenrecord"></a>Screenrecord</h2><ul>
+<li>使ってみようとしたところ上手くいかなかったが, 調べたりいろいろやってたら出来た</li>
+<li>[official] <ul>
+<li><a target="_blank" rel="noopener" href="http://appium.io/docs/en/commands/device/recording-screen/start-recording-screen/">start screen recording</a></li>
+<li><a target="_blank" rel="noopener" href="http://appium.io/docs/en/commands/device/recording-screen/stop-recording-screen/">stop screen recording</a></li>
+</ul>
+</li>
+</ul>
+<h2 id="Screenshot"><a href="#Screenshot" class="headerlink" title="Screenshot"></a>Screenshot</h2><h2 id="Adb-log"><a href="#Adb-log" class="headerlink" title="Adb log"></a>Adb log</h2><h1 id="Memo"><a href="#Memo" class="headerlink" title="Memo"></a>Memo</h1><ul>
+<li>試してみる: appium-docker-android<ul>
+<li><a target="_blank" rel="noopener" href="https://github.com/appium/appium-docker-android">https://github.com/appium/appium-docker-android</a></li>
+</ul>
+</li>
+</ul>
+<p>ref: <a target="_blank" rel="noopener" href="https://qiita.com/atsushi0521/items/660a3ac74cb4b7d734f5">https://qiita.com/atsushi0521/items/660a3ac74cb4b7d734f5</a></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://ki4070ma.github.io/weblog/2019/01/01/20190101_setup-appium/" data-id="ckltchgr0000d7od1c1ep1jum" data-title="Appiumのセットアップ, 使い方" class="article-share-link">Share</a>
+      
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/weblog/tags/Appium/" rel="tag">Appium</a></li></ul>
+
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/weblog/2019/04/18/20190418_mac-hdd-free/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          Macで空き容量を増やすためにやったこと
+        
+      </div>
+    </a>
+  
+  
+    <a href="/weblog/2018/12/26/20181226_ffmpeg/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">ffmpeg memo</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tags</h3>
+    <div class="widget">
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/weblog/tags/Appium/" rel="tag">Appium</a></li><li class="tag-list-item"><a class="tag-list-link" href="/weblog/tags/CircleCI/" rel="tag">CircleCI</a></li><li class="tag-list-item"><a class="tag-list-link" href="/weblog/tags/ELK/" rel="tag">ELK</a></li><li class="tag-list-item"><a class="tag-list-link" href="/weblog/tags/Mac/" rel="tag">Mac</a></li><li class="tag-list-item"><a class="tag-list-link" href="/weblog/tags/Presentation/" rel="tag">Presentation</a></li><li class="tag-list-item"><a class="tag-list-link" href="/weblog/tags/Programming/" rel="tag">Programming</a></li><li class="tag-list-item"><a class="tag-list-link" href="/weblog/tags/Python/" rel="tag">Python</a></li><li class="tag-list-item"><a class="tag-list-link" href="/weblog/tags/SoftwareTest/" rel="tag">SoftwareTest</a></li><li class="tag-list-item"><a class="tag-list-link" href="/weblog/tags/WeMo/" rel="tag">WeMo</a></li><li class="tag-list-item"><a class="tag-list-link" href="/weblog/tags/ffmpeg/" rel="tag">ffmpeg</a></li><li class="tag-list-item"><a class="tag-list-link" href="/weblog/tags/ssh/" rel="tag">ssh</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget tagcloud">
+      <a href="/weblog/tags/Appium/" style="font-size: 10px;">Appium</a> <a href="/weblog/tags/CircleCI/" style="font-size: 10px;">CircleCI</a> <a href="/weblog/tags/ELK/" style="font-size: 10px;">ELK</a> <a href="/weblog/tags/Mac/" style="font-size: 20px;">Mac</a> <a href="/weblog/tags/Presentation/" style="font-size: 10px;">Presentation</a> <a href="/weblog/tags/Programming/" style="font-size: 10px;">Programming</a> <a href="/weblog/tags/Python/" style="font-size: 10px;">Python</a> <a href="/weblog/tags/SoftwareTest/" style="font-size: 10px;">SoftwareTest</a> <a href="/weblog/tags/WeMo/" style="font-size: 10px;">WeMo</a> <a href="/weblog/tags/ffmpeg/" style="font-size: 10px;">ffmpeg</a> <a href="/weblog/tags/ssh/" style="font-size: 10px;">ssh</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/weblog/archives/2020/12/">December 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/weblog/archives/2019/11/">November 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/weblog/archives/2019/04/">April 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/weblog/archives/2019/01/">January 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/weblog/archives/2018/12/">December 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/weblog/archives/2018/01/">January 2018</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/weblog/2020/12/30/20201230_elk-sample/">Elasticsearch, Kibanaの勉強用メモ</a>
+          </li>
+        
+          <li>
+            <a href="/weblog/2019/11/01/20191101_slide-presentation/">スライドを作成するときに参考にするサイト</a>
+          </li>
+        
+          <li>
+            <a href="/weblog/2019/04/18/20190418_mac-hdd-free/">Macで空き容量を増やすためにやったこと</a>
+          </li>
+        
+          <li>
+            <a href="/weblog/2019/01/01/20190101_setup-appium/">Appiumのセットアップ, 使い方</a>
+          </li>
+        
+          <li>
+            <a href="/weblog/2018/12/26/20181226_ffmpeg/">ffmpeg memo</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      
+      &copy; 2021 Atsushi Mori<br>
+      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/weblog/" class="mobile-nav-link">Home</a>
+  
+    <a href="/weblog/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+
+<script src="/weblog/js/jquery-3.4.1.min.js"></script>
+
+
+
+  
+<script src="/weblog/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+
+<script src="/weblog/js/script.js"></script>
+
+
+
+
+
+  </div>
+</body>
+</html>

@@ -6,7 +6,7 @@
   <link href="https://ki4070ma.github.io/weblog/atom.xml" rel="self"/>
   
   <link href="https://ki4070ma.github.io/weblog/"/>
-  <updated>2021-03-03T05:37:49.742Z</updated>
+  <updated>2021-03-03T11:16:12.193Z</updated>
   <id>https://ki4070ma.github.io/weblog/</id>
   
   <author>
@@ -15,6 +15,179 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Elasticsearch, Kibanaの勉強用メモ</title>
+    <link href="https://ki4070ma.github.io/weblog/2020/12/30/20201230_elk-sample/"/>
+    <id>https://ki4070ma.github.io/weblog/2020/12/30/20201230_elk-sample/</id>
+    <published>2020-12-29T15:00:00.000Z</published>
+    <updated>2021-03-03T11:16:12.193Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;(自分用メモ, 随時更新)&lt;/p&gt;
+&lt;h2 id=&quot;残件&quot;&gt;&lt;a href=&quot;#残件&quot; class=&quot;headerlink&quot; title=&quot;残件&quot;&gt;&lt;/a&gt;残件&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;Logstatshはまたそのうち&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2</summary>
+        
+      
+    
+    
+    
+    
+    <category term="ELK" scheme="https://ki4070ma.github.io/weblog/tags/ELK/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>スライドを作成するときに参考にするサイト</title>
+    <link href="https://ki4070ma.github.io/weblog/2019/11/01/20191101_slide-presentation/"/>
+    <id>https://ki4070ma.github.io/weblog/2019/11/01/20191101_slide-presentation/</id>
+    <published>2019-10-31T15:00:00.000Z</published>
+    <updated>2021-03-03T11:14:29.172Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;背景&quot;&gt;&lt;a href=&quot;#背景&quot; class=&quot;headerlink&quot; title=&quot;背景&quot;&gt;&lt;/a&gt;背景&lt;/h1&gt;&lt;p&gt;毎回スライド作成するときに探している気がするのでその手間を減らすため&lt;/p&gt;
+&lt;h1 id=&quot;アイコン&quot;&gt;&lt;a href=&quot;#アイコン&quot;</summary>
+        
+      
+    
+    
+    
+    
+    <category term="Presentation" scheme="https://ki4070ma.github.io/weblog/tags/Presentation/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Macで空き容量を増やすためにやったこと</title>
+    <link href="https://ki4070ma.github.io/weblog/2019/04/18/20190418_mac-hdd-free/"/>
+    <id>https://ki4070ma.github.io/weblog/2019/04/18/20190418_mac-hdd-free/</id>
+    <published>2019-04-17T15:00:00.000Z</published>
+    <updated>2021-03-03T11:13:03.908Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;まずどこで容量を食っているの確認&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;OmniDiskSweeper&lt;/li&gt;
+&lt;li&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    
+    <category term="Mac" scheme="https://ki4070ma.github.io/weblog/tags/Mac/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Appiumのセットアップ, 使い方</title>
+    <link href="https://ki4070ma.github.io/weblog/2019/01/01/20190101_setup-appium/"/>
+    <id>https://ki4070ma.github.io/weblog/2019/01/01/20190101_setup-appium/</id>
+    <published>2018-12-31T15:00:00.000Z</published>
+    <updated>2021-03-03T11:00:37.597Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;Appiumのセットアップ&quot;&gt;&lt;a href=&quot;#Appiumのセットアップ&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    
+    <category term="Appium" scheme="https://ki4070ma.github.io/weblog/tags/Appium/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>ffmpeg memo</title>
+    <link href="https://ki4070ma.github.io/weblog/2018/12/26/20181226_ffmpeg/"/>
+    <id>https://ki4070ma.github.io/weblog/2018/12/26/20181226_ffmpeg/</id>
+    <published>2018-12-25T15:00:00.000Z</published>
+    <updated>2021-03-03T11:02:30.551Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;ffmpegをmacで使った時のメモ書き (Linuxのほうが使いやすい気がする)&lt;/p&gt;
+&lt;h1 id=&quot;インストール&quot;&gt;&lt;a href=&quot;#インストール&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    
+    <category term="ffmpeg" scheme="https://ki4070ma.github.io/weblog/tags/ffmpeg/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>PythonのLibraryで使用したことがあるもの</title>
+    <link href="https://ki4070ma.github.io/weblog/2018/12/26/20181226_python/"/>
+    <id>https://ki4070ma.github.io/weblog/2018/12/26/20181226_python/</id>
+    <published>2018-12-25T15:00:00.000Z</published>
+    <updated>2021-03-03T11:10:55.030Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;使用したことがあるlibraryに加えて一言&lt;/p&gt;
+&lt;h1 id=&quot;どんなライブラリたちがあるか&quot;&gt;&lt;a href=&quot;#どんなライブラリたちがあるか&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    
+    <category term="Python" scheme="https://ki4070ma.github.io/weblog/tags/Python/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>circleci memo</title>
+    <link href="https://ki4070ma.github.io/weblog/2018/12/17/20181217_circleci/"/>
+    <id>https://ki4070ma.github.io/weblog/2018/12/17/20181217_circleci/</id>
+    <published>2018-12-16T15:00:00.000Z</published>
+    <updated>2021-03-03T11:06:56.012Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;セットアップ&quot;&gt;&lt;a href=&quot;#セットアップ&quot; class=&quot;headerlink&quot; title=&quot;セットアップ&quot;&gt;&lt;/a&gt;セットアップ&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    
+    <category term="CircleCI" scheme="https://ki4070ma.github.io/weblog/tags/CircleCI/"/>
+    
+  </entry>
   
   <entry>
     <title>(自分用メモ) Macを買ってからセットアップするまで</title>

@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  
+  <title>circleci memo | ki4070maのメモ帳</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="セットアップ Githubでプロジェクトを作成する CircleCIで対象のプロジェクトに対してCIを有効化する  ローカルでcircleciのビルドを実行できるようにする [目的] ymlを作成してすぐ試すというサイクルを短くするため [手順] Dockerをインストール (公式 Docker for mac) Circleci-cliをインストール $brew install circleci">
+<meta property="og:type" content="article">
+<meta property="og:title" content="circleci memo">
+<meta property="og:url" content="https://ki4070ma.github.io/weblog/2018/12/17/20181217_circleci/index.html">
+<meta property="og:site_name" content="ki4070maのメモ帳">
+<meta property="og:description" content="セットアップ Githubでプロジェクトを作成する CircleCIで対象のプロジェクトに対してCIを有効化する  ローカルでcircleciのビルドを実行できるようにする [目的] ymlを作成してすぐ試すというサイクルを短くするため [手順] Dockerをインストール (公式 Docker for mac) Circleci-cliをインストール $brew install circleci">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2018-12-16T15:00:00.000Z">
+<meta property="article:modified_time" content="2021-03-03T11:06:56.012Z">
+<meta property="article:author" content="Atsushi Mori">
+<meta property="article:tag" content="CircleCI">
+<meta name="twitter:card" content="summary">
+  
+    <link rel="alternate" href="/weblog/atom.xml" title="ki4070maのメモ帳" type="application/atom+xml">
+  
+  
+    <link rel="shortcut icon" href="/weblog/favicon.png">
+  
+  
+    
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/typeface-source-code-pro@0.0.71/index.min.css">
+
+  
+  
+<link rel="stylesheet" href="/weblog/css/style.css">
+
+  
+    
+<link rel="stylesheet" href="/weblog/fancybox/jquery.fancybox.min.css">
+
+  
+<meta name="generator" content="Hexo 5.4.0"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/weblog/" id="logo">ki4070maのメモ帳</a>
+      </h1>
+      
+        <h2 id="subtitle-wrap">
+          <a href="/weblog/" id="subtitle">Python, SoftwareTest</a>
+        </h2>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/weblog/">Home</a>
+        
+          <a class="main-nav-link" href="/weblog/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/weblog/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://ki4070ma.github.io/weblog"></form>
+      </div>
+    </div>
+  </div>
+</header>
+
+      <div class="outer">
+        <section id="main"><article id="post-20181217_circleci" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/weblog/2018/12/17/20181217_circleci/" class="article-date">
+  <time class="dt-published" datetime="2018-12-16T15:00:00.000Z" itemprop="datePublished">2018-12-17</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="p-name article-title" itemprop="headline name">
+      circleci memo
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h1 id="セットアップ"><a href="#セットアップ" class="headerlink" title="セットアップ"></a>セットアップ</h1><ul>
+<li><a target="_blank" rel="noopener" href="https://github.com/">Github</a>でプロジェクトを作成する</li>
+<li><a target="_blank" rel="noopener" href="https://circleci.com/">CircleCI</a>で対象のプロジェクトに対してCIを有効化する</li>
+</ul>
+<h1 id="ローカルでcircleciのビルドを実行できるようにする"><a href="#ローカルでcircleciのビルドを実行できるようにする" class="headerlink" title="ローカルでcircleciのビルドを実行できるようにする"></a>ローカルでcircleciのビルドを実行できるようにする</h1><ul>
+<li>[目的] ymlを作成してすぐ試すというサイクルを短くするため</li>
+<li>[手順]<ol>
+<li>Dockerをインストール (<a target="_blank" rel="noopener" href="https://docs.docker.com/docker-for-mac/">公式 Docker for mac</a>)</li>
+<li>Circleci-cliをインストール<ul>
+<li>$brew install circleci</li>
+</ul>
+</li>
+</ol>
+</li>
+</ul>
+<h1 id="circleci-config-ymlを作成する"><a href="#circleci-config-ymlを作成する" class="headerlink" title="circleci/config.ymlを作成する"></a>circleci/config.ymlを作成する</h1><ul>
+<li>自分が使用する言語でHello worldするconfig.ymlを書くと吉</li>
+<li>例<ul>
+<li><a target="_blank" rel="noopener" href="https://github.com/ki4070ma/unittest/blob/master/.circleci/config.yml">https://github.com/ki4070ma/unittest/blob/master/.circleci/config.yml</a></li>
+</ul>
+</li>
+</ul>
+<h1 id="GithubにCircle-CI-statusバッジを貼り付ける"><a href="#GithubにCircle-CI-statusバッジを貼り付ける" class="headerlink" title="GithubにCircle CI statusバッジを貼り付ける"></a>GithubにCircle CI statusバッジを貼り付ける</h1><ul>
+<li><a target="_blank" rel="noopener" href="https://qiita.com/Hanocha/items/8ad74258eb43d0959590">githubでREADME.mdにCircleCIのバッジを表示する</a></li>
+</ul>
+<h1 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h1><ul>
+<li><a target="_blank" rel="noopener" href="https://qiita.com/selmertsx/items/45bd672c2c8ddab1981b">CircleCI 2.0 をlocalで動かす</a></li>
+</ul>
+<p>ref: <a target="_blank" rel="noopener" href="https://qiita.com/atsushi0521/items/b335f375550f84fcd1f0">https://qiita.com/atsushi0521/items/b335f375550f84fcd1f0</a></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://ki4070ma.github.io/weblog/2018/12/17/20181217_circleci/" data-id="ckltchgqz00057od1hqa65uni" data-title="circleci memo" class="article-share-link">Share</a>
+      
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/weblog/tags/CircleCI/" rel="tag">CircleCI</a></li></ul>
+
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/weblog/2018/12/26/20181226_python/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          PythonのLibraryで使用したことがあるもの
+        
+      </div>
+    </a>
+  
+  
+    <a href="/weblog/2018/12/17/20181217_setup-mac/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">(自分用メモ) Macを買ってからセットアップするまで</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tags</h3>
+    <div class="widget">
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/weblog/tags/Appium/" rel="tag">Appium</a></li><li class="tag-list-item"><a class="tag-list-link" href="/weblog/tags/CircleCI/" rel="tag">CircleCI</a></li><li class="tag-list-item"><a class="tag-list-link" href="/weblog/tags/ELK/" rel="tag">ELK</a></li><li class="tag-list-item"><a class="tag-list-link" href="/weblog/tags/Mac/" rel="tag">Mac</a></li><li class="tag-list-item"><a class="tag-list-link" href="/weblog/tags/Presentation/" rel="tag">Presentation</a></li><li class="tag-list-item"><a class="tag-list-link" href="/weblog/tags/Programming/" rel="tag">Programming</a></li><li class="tag-list-item"><a class="tag-list-link" href="/weblog/tags/Python/" rel="tag">Python</a></li><li class="tag-list-item"><a class="tag-list-link" href="/weblog/tags/SoftwareTest/" rel="tag">SoftwareTest</a></li><li class="tag-list-item"><a class="tag-list-link" href="/weblog/tags/WeMo/" rel="tag">WeMo</a></li><li class="tag-list-item"><a class="tag-list-link" href="/weblog/tags/ffmpeg/" rel="tag">ffmpeg</a></li><li class="tag-list-item"><a class="tag-list-link" href="/weblog/tags/ssh/" rel="tag">ssh</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget tagcloud">
+      <a href="/weblog/tags/Appium/" style="font-size: 10px;">Appium</a> <a href="/weblog/tags/CircleCI/" style="font-size: 10px;">CircleCI</a> <a href="/weblog/tags/ELK/" style="font-size: 10px;">ELK</a> <a href="/weblog/tags/Mac/" style="font-size: 20px;">Mac</a> <a href="/weblog/tags/Presentation/" style="font-size: 10px;">Presentation</a> <a href="/weblog/tags/Programming/" style="font-size: 10px;">Programming</a> <a href="/weblog/tags/Python/" style="font-size: 10px;">Python</a> <a href="/weblog/tags/SoftwareTest/" style="font-size: 10px;">SoftwareTest</a> <a href="/weblog/tags/WeMo/" style="font-size: 10px;">WeMo</a> <a href="/weblog/tags/ffmpeg/" style="font-size: 10px;">ffmpeg</a> <a href="/weblog/tags/ssh/" style="font-size: 10px;">ssh</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/weblog/archives/2020/12/">December 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/weblog/archives/2019/11/">November 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/weblog/archives/2019/04/">April 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/weblog/archives/2019/01/">January 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/weblog/archives/2018/12/">December 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/weblog/archives/2018/01/">January 2018</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/weblog/2020/12/30/20201230_elk-sample/">Elasticsearch, Kibanaの勉強用メモ</a>
+          </li>
+        
+          <li>
+            <a href="/weblog/2019/11/01/20191101_slide-presentation/">スライドを作成するときに参考にするサイト</a>
+          </li>
+        
+          <li>
+            <a href="/weblog/2019/04/18/20190418_mac-hdd-free/">Macで空き容量を増やすためにやったこと</a>
+          </li>
+        
+          <li>
+            <a href="/weblog/2019/01/01/20190101_setup-appium/">Appiumのセットアップ, 使い方</a>
+          </li>
+        
+          <li>
+            <a href="/weblog/2018/12/26/20181226_ffmpeg/">ffmpeg memo</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      
+      &copy; 2021 Atsushi Mori<br>
+      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/weblog/" class="mobile-nav-link">Home</a>
+  
+    <a href="/weblog/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+
+<script src="/weblog/js/jquery-3.4.1.min.js"></script>
+
+
+
+  
+<script src="/weblog/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+
+<script src="/weblog/js/script.js"></script>
+
+
+
+
+
+  </div>
+</body>
+</html>

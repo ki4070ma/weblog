@@ -3,15 +3,57 @@
 
 
     <url>
-        <loc>https://ki4070ma.github.io/weblog/tags/Programming/</loc>
-        <lastmod>2021-03-03T05:43:27.243Z</lastmod>
+        <loc>https://ki4070ma.github.io/weblog/tags/ELK/</loc>
+        <lastmod>2021-03-03T11:16:12.193Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://ki4070ma.github.io/weblog/tags/Presentation/</loc>
+        <lastmod>2021-03-03T11:14:29.172Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
         <loc>https://ki4070ma.github.io/weblog/tags/Mac/</loc>
-        <lastmod>2021-03-03T05:37:49.742Z</lastmod>
+        <lastmod>2021-03-03T11:13:03.908Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://ki4070ma.github.io/weblog/tags/Python/</loc>
+        <lastmod>2021-03-03T11:10:55.030Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://ki4070ma.github.io/weblog/tags/CircleCI/</loc>
+        <lastmod>2021-03-03T11:06:56.012Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://ki4070ma.github.io/weblog/tags/ffmpeg/</loc>
+        <lastmod>2021-03-03T11:02:30.551Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://ki4070ma.github.io/weblog/tags/Appium/</loc>
+        <lastmod>2021-03-03T11:00:37.597Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://ki4070ma.github.io/weblog/tags/Programming/</loc>
+        <lastmod>2021-03-03T05:43:27.243Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
