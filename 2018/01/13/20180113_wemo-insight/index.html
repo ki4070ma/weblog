@@ -4,14 +4,19 @@
   <meta charset="utf-8">
   
   
-  <title>ki4070maのメモ帳</title>
+  <title>WeMo Insightで現在の消費電力を取得する | ki4070maのメモ帳</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="ki4070maのメモ帳">
-<meta property="og:url" content="https://ki4070ma.github.io/weblog/index.html">
+  <meta name="description" content="WeMo Insight こういうもの↓で, アプリ経由でACオンオフできたり, 消費電力確認できる Wemo® Insight Smart Plug(Official) WeMo app (Android), iOSアプリもあり    API この機器をCLIやPython API経由で操作できたりする https:&#x2F;&#x2F;github.com&#x2F;iancmcc&#x2F;ouimeaux ドキュメント: ht">
+<meta property="og:type" content="article">
+<meta property="og:title" content="WeMo Insightで現在の消費電力を取得する">
+<meta property="og:url" content="https://ki4070ma.github.io/weblog/2018/01/13/20180113_wemo-insight/index.html">
 <meta property="og:site_name" content="ki4070maのメモ帳">
+<meta property="og:description" content="WeMo Insight こういうもの↓で, アプリ経由でACオンオフできたり, 消費電力確認できる Wemo® Insight Smart Plug(Official) WeMo app (Android), iOSアプリもあり    API この機器をCLIやPython API経由で操作できたりする https:&#x2F;&#x2F;github.com&#x2F;iancmcc&#x2F;ouimeaux ドキュメント: ht">
 <meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2018-01-12T15:00:00.000Z">
+<meta property="article:modified_time" content="2021-03-03T01:31:52.282Z">
 <meta property="article:author" content="Atsushi Mori">
+<meta property="article:tag" content="WeMo">
 <meta name="twitter:card" content="summary">
   
     <link rel="alternate" href="/weblog/atom.xml" title="ki4070maのメモ帳" type="application/atom+xml">
@@ -73,84 +78,7 @@
 </header>
 
       <div class="outer">
-        <section id="main">
-  
-    <article id="post-20181215_ssh-local-network" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/weblog/2018/12/15/20181215_ssh-local-network/" class="article-date">
-  <time class="dt-published" datetime="2018-12-14T15:00:00.000Z" itemprop="datePublished">2018-12-15</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/weblog/2018/12/15/20181215_ssh-local-network/">ローカルネットワーク内でsshするための設定</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <p>自分が調べたことのメモ, ほぼどこかへのリンク.</p>
-<h1 id="やろうとしたこと"><a href="#やろうとしたこと" class="headerlink" title="やろうとしたこと"></a>やろうとしたこと</h1><ul>
-<li>家のローカルネットワーク内に繋がれている以下の機器間でsshでログインする<ul>
-<li>Raspberry Pi</li>
-<li>Ubuntu 16.04</li>
-<li>Mac</li>
-</ul>
-</li>
-</ul>
-<h1 id="使用しているWi-Fiルーター"><a href="#使用しているWi-Fiルーター" class="headerlink" title="使用しているWi-Fiルーター"></a>使用しているWi-Fiルーター</h1><ul>
-<li>Buffalo WSR-300HP/N<ul>
-<li>はじめssh出来るようにするにはルータの設定が必要かと思ったがそうではなかった</li>
-</ul>
-</li>
-</ul>
-<h1 id="Raspberry-Piの設定"><a href="#Raspberry-Piの設定" class="headerlink" title="Raspberry Piの設定"></a>Raspberry Piの設定</h1><ul>
-<li><a target="_blank" rel="noopener" href="https://www.raspberrypi.org/documentation/remote-access/ssh/">SSH (Secure Shell)</a> (英語. Raspberry Pi 公式)<ul>
-<li>qiitaで調べたものはうまくいかなったものが多かった</li>
-</ul>
-</li>
-</ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">1. Enter sudo raspi-config in a terminal window</span><br><span class="line">2. Select Interfacing Options</span><br><span class="line">3. Navigate to and select SSH</span><br><span class="line">4. Choose Yes</span><br><span class="line">5. Select Ok</span><br><span class="line">6. Choose Finish</span><br></pre></td></tr></table></figure>
-
-<ul>
-<li>上記の設定で, Ubuntu/Mac -&gt; Raspberry Piへのsshのログインが可能になった</li>
-</ul>
-<h1 id="Macの設定"><a href="#Macの設定" class="headerlink" title="Macの設定"></a>Macの設定</h1><ul>
-<li><a target="_blank" rel="noopener" href="https://support.apple.com/ja-jp/guide/mac-help/mchlp1066/mac">リモートコンピュータに Mac へのアクセスを許可する</a></li>
-<li>上記の設定でUbuntu/Raspberry Pi -&gt; Macへのsshのログインが可能になった.</li>
-</ul>
-<h1 id="Ubuntuの設定"><a href="#Ubuntuの設定" class="headerlink" title="Ubuntuの設定"></a>Ubuntuの設定</h1><ul>
-<li><a target="_blank" rel="noopener" href="http://d.hatena.ne.jp/Fiore/20080228/1204174833">Ubuntuでsshdの設定をしてリモートから接続できるようにする</a></li>
-<li>今のところうまく行ってない, うーむ</li>
-</ul>
-<p>ref: <a target="_blank" rel="noopener" href="https://qiita.com/atsushi0521/items/80e36b1d8d7306ee2357">https://qiita.com/atsushi0521/items/80e36b1d8d7306ee2357</a></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="https://ki4070ma.github.io/weblog/2018/12/15/20181215_ssh-local-network/" data-id="cklsrmeg30003ihd18z4b0lgj" data-title="ローカルネットワーク内でsshするための設定" class="article-share-link">Share</a>
-      
-      
-      
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/weblog/tags/ssh/" rel="tag">ssh</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-    <article id="post-20180113_wemo-insight" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+        <section id="main"><article id="post-20180113_wemo-insight" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
     <a href="/weblog/2018/01/13/20180113_wemo-insight/" class="article-date">
   <time class="dt-published" datetime="2018-01-12T15:00:00.000Z" itemprop="datePublished">2018-01-13</time>
@@ -163,8 +91,8 @@
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/weblog/2018/01/13/20180113_wemo-insight/">WeMo Insightで現在の消費電力を取得する</a>
+    <h1 class="p-name article-title" itemprop="headline name">
+      WeMo Insightで現在の消費電力を取得する
     </h1>
   
 
@@ -212,90 +140,28 @@
     </footer>
   </div>
   
-</article>
-
-
-
+    
+<nav id="article-nav">
   
-    <article id="post-20180104_How-to-use-et" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/weblog/2018/01/04/20180104_How-to-use-et/" class="article-date">
-  <time class="dt-published" datetime="2018-01-03T15:00:00.000Z" itemprop="datePublished">2018-01-04</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
+    <a href="/weblog/2018/12/15/20181215_ssh-local-network/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
         
+          ローカルネットワーク内でsshするための設定
+        
+      </div>
+    </a>
   
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/weblog/2018/01/04/20180104_How-to-use-et/">探索的テストの使い方</a>
-    </h1>
   
+    <a href="/weblog/2018/01/04/20180104_How-to-use-et/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">探索的テストの使い方</div>
+    </a>
+  
+</nav>
 
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <h1 id="探索的テストとは"><a href="#探索的テストとは" class="headerlink" title="探索的テストとは"></a>探索的テストとは</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">探索的テストは、テストの目的が含まれたテストチャータを基にしたもので、</span><br><span class="line">テスト設計、テスト実行、テスト記録や学習を並行して同じ時間枠内で実行する。</span><br><span class="line">このアプローチは、仕様がほとんどなかったり、不十分であったり、</span><br><span class="line">スケジュール的な余裕がない場合や、他の形式的なテスト技法を補完する場合に効果が大きい。</span><br><span class="line">探索的テストは、テストプロセスのチェックや、きわめて重大な欠陥を見つけ出すのに役に立つ。 </span><br></pre></td></tr></table></figure>
-
-<ul>
-<li><a target="_blank" rel="noopener" href="http://jstqb.jp/dl/JSTQB-Syllabus.Foundation_Version2011.J01.pdf">http://jstqb.jp/dl/JSTQB-Syllabus.Foundation_Version2011.J01.pdf</a></li>
-<li>探索的テストについては調べるといろいろ出てくる</li>
-</ul>
-<h1 id="探索的テストの使い方"><a href="#探索的テストの使い方" class="headerlink" title="探索的テストの使い方"></a>探索的テストの使い方</h1><ol>
-<li>チーム内の他のメンバーが作った機能の理解<ul>
-<li>自分が作っていない機能を探索的にテストすることでその機能への理解が深まる</li>
-<li>みんなが集まってテストできれば, 不明点(仕様やロジックなど)を作成者にすぐ聞くことができ, それを他のメンバーも聞くことができるので暗黙知や知識の共有にもなる</li>
-</ul>
-</li>
-<li>品質の確認<ul>
-<li><a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Session-based_testing">Session-based testing</a>などを使えば品質を確認, レポートすることができる</li>
-<li>(参考) <a target="_blank" rel="noopener" href="http://www.nttdata.com/jp/ja/insights/trend_keyword/2014072401.html">「探索的テスト」を活用して品質を高める</a></li>
-</ul>
-</li>
-<li>バグ出し<ul>
-<li>テストスクリプトなどの用意をせず, どのあたりをテストするのかをざっくり方針決めてテストするだけである程度の致命的なバグを見つけることができるため費用対効果(ROI)は高い<ul>
-<li>バグを仕込んで直すまでの時間が短ければ短いほど修正コストは低いので, 機能がある程度出来たら行うと良い</li>
-<li>開発チームで行うとよりよい</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>回帰テスト<ul>
-<li><a target="_blank" rel="noopener" href="https://techblog.king.com/moving-from-scripted-regression-testing-to-exploratory-testing/">https://techblog.king.com/moving-from-scripted-regression-testing-to-exploratory-testing/</a></li>
-</ul>
-</li>
-<li>上記の使い方を同時に複数行うこともできる</li>
-</ol>
-<h1 id="探索的テストはソフトウェアテストの1つのスタイル"><a href="#探索的テストはソフトウェアテストの1つのスタイル" class="headerlink" title="探索的テストはソフトウェアテストの1つのスタイル"></a>探索的テストはソフトウェアテストの1つのスタイル</h1><ul>
-<li>「探索的テストってなんですか？」(高橋寿一さん)より<ul>
-<li><a target="_blank" rel="noopener" href="http://jasst.jp/symposium/jasst14kyushu/pdf/S3.pdf">http://jasst.jp/symposium/jasst14kyushu/pdf/S3.pdf</a></li>
-</ul>
-</li>
-<li>探索的テストは特徴を把握して自分たちに合うように使うとよい</li>
-</ul>
-<p>ref: <a target="_blank" rel="noopener" href="https://qiita.com/atsushi0521/items/e1ba80010ed34aca26bf">https://qiita.com/atsushi0521/items/e1ba80010ed34aca26bf</a></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="https://ki4070ma.github.io/weblog/2018/01/04/20180104_How-to-use-et/" data-id="cklsrmeg10001ihd17uvg8jun" data-title="探索的テストの使い方" class="article-share-link">Share</a>
-      
-      
-      
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/weblog/tags/SoftwareTest/" rel="tag">SoftwareTest</a></li></ul>
-
-    </footer>
-  </div>
   
 </article>
-
-
-
-  
 
 
 </section>
