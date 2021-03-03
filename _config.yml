@@ -97,6 +97,9 @@ ignore:
 
 # Extensions
 ## Plugins: https://hexo.io/plugins/
+plugins:
+- hexo-generator-robotstxt
+
 ## Themes: https://hexo.io/themes/
 theme: landscape
 
@@ -105,3 +108,15 @@ theme: landscape
 deploy:
   type: git
   repo: git@github.com:ki4070ma/weblog.git
+
+robotstxt:
+  useragent: "*"
+  disallow:
+    - /about-me/
+    - /privacy-policy/
+    - /archives/
+    - /css/
+    - /img/
+    - /js/
+  allow:
+  sitemap: /sitemap.xml
