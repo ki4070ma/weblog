@@ -3,6 +3,20 @@
 
 
     <url>
+        <loc>https://ki4070ma.github.io/weblog/tags/WeMo/</loc>
+        <lastmod>2021-03-03T14:49:34.020Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://ki4070ma.github.io/weblog/tags/Appium/</loc>
+        <lastmod>2021-03-03T14:27:22.760Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
         <loc>https://ki4070ma.github.io/weblog/tags/ELK/</loc>
         <lastmod>2021-03-03T11:16:12.193Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -45,22 +59,8 @@
     </url>
 
     <url>
-        <loc>https://ki4070ma.github.io/weblog/tags/Appium/</loc>
-        <lastmod>2021-03-03T11:00:37.597Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
         <loc>https://ki4070ma.github.io/weblog/tags/Programming/</loc>
         <lastmod>2021-03-03T05:43:27.243Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://ki4070ma.github.io/weblog/tags/WeMo/</loc>
-        <lastmod>2021-03-03T01:31:52.282Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>

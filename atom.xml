@@ -6,7 +6,7 @@
   <link href="https://ki4070ma.github.io/weblog/atom.xml" rel="self"/>
   
   <link href="https://ki4070ma.github.io/weblog/"/>
-  <updated>2021-03-03T11:16:12.193Z</updated>
+  <updated>2021-03-03T14:27:22.760Z</updated>
   <id>https://ki4070ma.github.io/weblog/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Screen record with Appium</title>
+    <link href="https://ki4070ma.github.io/weblog/2021/03/03/20210303_appium-screen-record/"/>
+    <id>https://ki4070ma.github.io/weblog/2021/03/03/20210303_appium-screen-record/</id>
+    <published>2021-03-02T15:00:00.000Z</published>
+    <updated>2021-03-03T14:27:22.760Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;Appium-で-screen-recordを使用する&quot;&gt;&lt;a href=&quot;#Appium-で-screen-recordを使用する&quot; class=&quot;headerlink&quot; title=&quot;Appium で screen</summary>
+        
+      
+    
+    
+    
+    
+    <category term="Appium" scheme="https://ki4070ma.github.io/weblog/tags/Appium/"/>
+    
+  </entry>
   
   <entry>
     <title>Elasticsearch, Kibanaの勉強用メモ</title>
@@ -267,15 +290,14 @@
     <link href="https://ki4070ma.github.io/weblog/2018/01/13/20180113_wemo-insight/"/>
     <id>https://ki4070ma.github.io/weblog/2018/01/13/20180113_wemo-insight/</id>
     <published>2018-01-12T15:00:00.000Z</published>
-    <updated>2021-03-03T01:31:52.282Z</updated>
+    <updated>2021-03-03T14:49:34.020Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;h1 id=&quot;WeMo-Insight&quot;&gt;&lt;a href=&quot;#WeMo-Insight&quot; class=&quot;headerlink&quot; title=&quot;WeMo Insight&quot;&gt;&lt;/a&gt;WeMo Insight&lt;/h1&gt;&lt;ul&gt;
-&lt;li&gt;こういうもの↓で,</summary>
+    <summary type="html">&lt;h1 id=&quot;WeMo-Insight&quot;&gt;&lt;a href=&quot;#WeMo-Insight&quot; class=&quot;headerlink&quot; title=&quot;WeMo Insight&quot;&gt;&lt;/a&gt;WeMo Insight&lt;/h1&gt;&lt;img</summary>
         
       
     

@@ -75,6 +75,81 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-20181215_ssh-local-network" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/weblog/2018/12/15/20181215_ssh-local-network/" class="article-date">
+  <time class="dt-published" datetime="2018-12-14T15:00:00.000Z" itemprop="datePublished">2018-12-15</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/weblog/2018/12/15/20181215_ssh-local-network/">ローカルネットワーク内でsshするための設定</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <p>自分が調べたことのメモ, ほぼどこかへのリンク.</p>
+<h1 id="やろうとしたこと"><a href="#やろうとしたこと" class="headerlink" title="やろうとしたこと"></a>やろうとしたこと</h1><ul>
+<li>家のローカルネットワーク内に繋がれている以下の機器間でsshでログインする<ul>
+<li>Raspberry Pi</li>
+<li>Ubuntu 16.04</li>
+<li>Mac</li>
+</ul>
+</li>
+</ul>
+<h1 id="使用しているWi-Fiルーター"><a href="#使用しているWi-Fiルーター" class="headerlink" title="使用しているWi-Fiルーター"></a>使用しているWi-Fiルーター</h1><ul>
+<li>Buffalo WSR-300HP/N<ul>
+<li>はじめssh出来るようにするにはルータの設定が必要かと思ったがそうではなかった</li>
+</ul>
+</li>
+</ul>
+<h1 id="Raspberry-Piの設定"><a href="#Raspberry-Piの設定" class="headerlink" title="Raspberry Piの設定"></a>Raspberry Piの設定</h1><ul>
+<li><a target="_blank" rel="noopener" href="https://www.raspberrypi.org/documentation/remote-access/ssh/">SSH (Secure Shell)</a> (英語. Raspberry Pi 公式)<ul>
+<li>qiitaで調べたものはうまくいかなったものが多かった</li>
+</ul>
+</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">1. Enter sudo raspi-config in a terminal window</span><br><span class="line">2. Select Interfacing Options</span><br><span class="line">3. Navigate to and select SSH</span><br><span class="line">4. Choose Yes</span><br><span class="line">5. Select Ok</span><br><span class="line">6. Choose Finish</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>上記の設定で, Ubuntu/Mac -&gt; Raspberry Piへのsshのログインが可能になった</li>
+</ul>
+<h1 id="Macの設定"><a href="#Macの設定" class="headerlink" title="Macの設定"></a>Macの設定</h1><ul>
+<li><a target="_blank" rel="noopener" href="https://support.apple.com/ja-jp/guide/mac-help/mchlp1066/mac">リモートコンピュータに Mac へのアクセスを許可する</a></li>
+<li>上記の設定でUbuntu/Raspberry Pi -&gt; Macへのsshのログインが可能になった.</li>
+</ul>
+<h1 id="Ubuntuの設定"><a href="#Ubuntuの設定" class="headerlink" title="Ubuntuの設定"></a>Ubuntuの設定</h1><ul>
+<li><a target="_blank" rel="noopener" href="http://d.hatena.ne.jp/Fiore/20080228/1204174833">Ubuntuでsshdの設定をしてリモートから接続できるようにする</a></li>
+<li>今のところうまく行ってない, うーむ</li>
+</ul>
+<p>ref: <a target="_blank" rel="noopener" href="https://qiita.com/atsushi0521/items/80e36b1d8d7306ee2357">https://qiita.com/atsushi0521/items/80e36b1d8d7306ee2357</a></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://ki4070ma.github.io/weblog/2018/12/15/20181215_ssh-local-network/" data-id="ckltk3qmd0003krd1dgdygjy5" data-title="ローカルネットワーク内でsshするための設定" class="article-share-link">Share</a>
+      
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/weblog/tags/ssh/" rel="tag">ssh</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
     <article id="post-20180113_wemo-insight" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
     <a href="/weblog/2018/01/13/20180113_wemo-insight/" class="article-date">
@@ -97,9 +172,15 @@
     
     <div class="e-content article-entry" itemprop="articleBody">
       
-        <h1 id="WeMo-Insight"><a href="#WeMo-Insight" class="headerlink" title="WeMo Insight"></a>WeMo Insight</h1><ul>
+        <h1 id="WeMo-Insight"><a href="#WeMo-Insight" class="headerlink" title="WeMo Insight"></a>WeMo Insight</h1><img src="./images/site/wemo.jpg" alt="drawing" width="25%"/>
+
+<ul>
 <li>こういうもの↓で, アプリ経由でACオンオフできたり, 消費電力確認できる<ul>
-<li><a target="_blank" rel="noopener" href="http://www.belkin.com/us/p/P-F7C029/">Wemo® Insight Smart Plug(Official)</a></li>
+<li><a target="_blank" rel="noopener" href="http://www.belkin.com/us/p/P-F7C029/">Wemo® Insight Smart Plug(Official)</a><ul>
+<li>もう売られていないよう (2021/03時点)</li>
+<li>同様の製品群 <a target="_blank" rel="noopener" href="https://www.belkin.com/us/smart-home/c/wemo/">https://www.belkin.com/us/smart-home/c/wemo/</a></li>
+</ul>
+</li>
 <li><a target="_blank" rel="noopener" href="https://play.google.com/store/apps/details?id=com.belkin.wemoandroid&hl=ja">WeMo app (Android)</a>, iOSアプリもあり</li>
 </ul>
 </li>
@@ -121,14 +202,14 @@
 <h1 id="WeMo-Insightの現在の消費電力を知る手順"><a href="#WeMo-Insightの現在の消費電力を知る手順" class="headerlink" title="WeMo Insightの現在の消費電力を知る手順"></a>WeMo Insightの現在の消費電力を知る手順</h1><ul>
 <li>だいたい上記のPython APIに書いてあることです</li>
 </ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line">pi@raspberrypi:~ $ python</span><br><span class="line">Python 2.7.13 (default, Nov 24 2017, 17:33:09) </span><br><span class="line">[GCC 6.3.0 20170516] on linux2</span><br><span class="line">Type &quot;help&quot;, &quot;copyright&quot;, &quot;credits&quot; or &quot;license&quot; for more information.</span><br><span class="line">&gt;&gt;&gt; from ouimeaux.environment import Environment</span><br><span class="line">&gt;&gt;&gt; def on_switch(switch):</span><br><span class="line">...   print &quot;Switch found!&quot;, switch.name</span><br><span class="line">... </span><br><span class="line">&gt;&gt;&gt; def on_motion(motion):</span><br><span class="line">...   print &quot;Motion found!&quot;, motion.name</span><br><span class="line">... </span><br><span class="line">&gt;&gt;&gt; env &#x3D; Environment(on_switch, on_motion)</span><br><span class="line">&gt;&gt;&gt; env.start()</span><br><span class="line">&gt;&gt;&gt; env.discover(seconds&#x3D;3)</span><br><span class="line">Switch found! WeMo</span><br><span class="line">&gt;&gt;&gt; env.list_switches()</span><br><span class="line">[&#39;WeMo&#39;]</span><br><span class="line">&gt;&gt;&gt; switch &#x3D; env.get_switch(&#39;WeMo&#39;)</span><br><span class="line">&gt;&gt;&gt; switch</span><br><span class="line">&lt;WeMo Insight &quot;WeMo&quot;&gt;</span><br><span class="line">&gt;&gt;&gt; print switch.get_state()</span><br><span class="line">0</span><br><span class="line">&gt;&gt;&gt; switch.on()</span><br><span class="line">&gt;&gt;&gt; print switch.get_state()</span><br><span class="line">1</span><br><span class="line">&gt;&gt;&gt; print switch.insight_params</span><br><span class="line">&#123;&#39;onfor&#39;: 51, &#39;state&#39;: &#39;8&#39;, &#39;ontotal&#39;: 16144, &#39;totalmw&#39;: 40961936, &#39;ontoday&#39;: 16499, &#39;todaymw&#39;: 40961936, &#39;lastchange&#39;: datetime.datetime(2018, 1, 13, 13, 4, 24), &#39;currentpower&#39;: 0&#125;</span><br><span class="line">&gt;&gt;&gt; print switch.insight_params[&#39;currentpower&#39;]</span><br><span class="line">0 (WeMoに何も差してない状態)</span><br><span class="line">&gt;&gt;&gt; print switch.insight_params[&#39;currentpower&#39;]</span><br><span class="line">15915 (WeMoにノートPCのACアダプタを差している)</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line">pi@raspberrypi:~ $ python</span><br><span class="line">Python 2.7.13 (default, Nov 24 2017, 17:33:09) </span><br><span class="line">[GCC 6.3.0 20170516] on linux2</span><br><span class="line">Type <span class="string">&quot;help&quot;</span>, <span class="string">&quot;copyright&quot;</span>, <span class="string">&quot;credits&quot;</span> or <span class="string">&quot;license&quot;</span> <span class="keyword">for</span> more information.</span><br><span class="line">&gt;&gt;&gt; from ouimeaux.environment import Environment</span><br><span class="line">&gt;&gt;&gt; def on_switch(switch):</span><br><span class="line">...   <span class="built_in">print</span> <span class="string">&quot;Switch found!&quot;</span>, switch.name</span><br><span class="line">... </span><br><span class="line">&gt;&gt;&gt; def on_motion(motion):</span><br><span class="line">...   <span class="built_in">print</span> <span class="string">&quot;Motion found!&quot;</span>, motion.name</span><br><span class="line">... </span><br><span class="line">&gt;&gt;&gt; env = Environment(on_switch, on_motion)</span><br><span class="line">&gt;&gt;&gt; env.start()</span><br><span class="line">&gt;&gt;&gt; env.discover(seconds=3)</span><br><span class="line">Switch found! WeMo</span><br><span class="line">&gt;&gt;&gt; env.list_switches()</span><br><span class="line">[<span class="string">&#x27;WeMo&#x27;</span>]</span><br><span class="line">&gt;&gt;&gt; switch = env.get_switch(<span class="string">&#x27;WeMo&#x27;</span>)</span><br><span class="line">&gt;&gt;&gt; switch</span><br><span class="line">&lt;WeMo Insight <span class="string">&quot;WeMo&quot;</span>&gt;</span><br><span class="line">&gt;&gt;&gt; <span class="built_in">print</span> switch.get_state()</span><br><span class="line">0</span><br><span class="line">&gt;&gt;&gt; switch.on()</span><br><span class="line">&gt;&gt;&gt; <span class="built_in">print</span> switch.get_state()</span><br><span class="line">1</span><br><span class="line">&gt;&gt;&gt; <span class="built_in">print</span> switch.insight_params</span><br><span class="line">&#123;<span class="string">&#x27;onfor&#x27;</span>: 51, <span class="string">&#x27;state&#x27;</span>: <span class="string">&#x27;8&#x27;</span>, <span class="string">&#x27;ontotal&#x27;</span>: 16144, <span class="string">&#x27;totalmw&#x27;</span>: 40961936, <span class="string">&#x27;ontoday&#x27;</span>: 16499, <span class="string">&#x27;todaymw&#x27;</span>: 40961936, <span class="string">&#x27;lastchange&#x27;</span>: datetime.datetime(2018, 1, 13, 13, 4, 24), <span class="string">&#x27;currentpower&#x27;</span>: 0&#125;</span><br><span class="line">&gt;&gt;&gt; <span class="built_in">print</span> switch.insight_params[<span class="string">&#x27;currentpower&#x27;</span>]</span><br><span class="line">0 (WeMoに何も差してない状態)</span><br><span class="line">&gt;&gt;&gt; <span class="built_in">print</span> switch.insight_params[<span class="string">&#x27;currentpower&#x27;</span>]</span><br><span class="line">15915 (WeMoにノートPCのACアダプタを差している)</span><br></pre></td></tr></table></figure>
 
 <p>ref: <a target="_blank" rel="noopener" href="https://qiita.com/atsushi0521/items/28355e9d789a07c61f2f">https://qiita.com/atsushi0521/items/28355e9d789a07c61f2f</a></p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://ki4070ma.github.io/weblog/2018/01/13/20180113_wemo-insight/" data-id="ckltchgqw00017od1a6ib7opj" data-title="WeMo Insightで現在の消費電力を取得する" class="article-share-link">Share</a>
+      <a data-url="https://ki4070ma.github.io/weblog/2018/01/13/20180113_wemo-insight/" data-id="ckltk3qmc0001krd182cyag7i" data-title="WeMo Insightで現在の消費電力を取得する" class="article-share-link">Share</a>
       
       
       
@@ -207,7 +288,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://ki4070ma.github.io/weblog/2018/01/04/20180104_How-to-use-et/" data-id="ckltchgqu00007od16wwy96pe" data-title="探索的テストの使い方" class="article-share-link">Share</a>
+      <a data-url="https://ki4070ma.github.io/weblog/2018/01/04/20180104_How-to-use-et/" data-id="ckltk3qma0000krd1dvcrbcs7" data-title="探索的テストの使い方" class="article-share-link">Share</a>
       
       
       
@@ -249,7 +330,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Tag Cloud</h3>
     <div class="widget tagcloud">
-      <a href="/weblog/tags/Appium/" style="font-size: 10px;">Appium</a> <a href="/weblog/tags/CircleCI/" style="font-size: 10px;">CircleCI</a> <a href="/weblog/tags/ELK/" style="font-size: 10px;">ELK</a> <a href="/weblog/tags/Mac/" style="font-size: 20px;">Mac</a> <a href="/weblog/tags/Presentation/" style="font-size: 10px;">Presentation</a> <a href="/weblog/tags/Programming/" style="font-size: 10px;">Programming</a> <a href="/weblog/tags/Python/" style="font-size: 10px;">Python</a> <a href="/weblog/tags/SoftwareTest/" style="font-size: 10px;">SoftwareTest</a> <a href="/weblog/tags/WeMo/" style="font-size: 10px;">WeMo</a> <a href="/weblog/tags/ffmpeg/" style="font-size: 10px;">ffmpeg</a> <a href="/weblog/tags/ssh/" style="font-size: 10px;">ssh</a>
+      <a href="/weblog/tags/Appium/" style="font-size: 20px;">Appium</a> <a href="/weblog/tags/CircleCI/" style="font-size: 10px;">CircleCI</a> <a href="/weblog/tags/ELK/" style="font-size: 10px;">ELK</a> <a href="/weblog/tags/Mac/" style="font-size: 20px;">Mac</a> <a href="/weblog/tags/Presentation/" style="font-size: 10px;">Presentation</a> <a href="/weblog/tags/Programming/" style="font-size: 10px;">Programming</a> <a href="/weblog/tags/Python/" style="font-size: 10px;">Python</a> <a href="/weblog/tags/SoftwareTest/" style="font-size: 10px;">SoftwareTest</a> <a href="/weblog/tags/WeMo/" style="font-size: 10px;">WeMo</a> <a href="/weblog/tags/ffmpeg/" style="font-size: 10px;">ffmpeg</a> <a href="/weblog/tags/ssh/" style="font-size: 10px;">ssh</a>
     </div>
   </div>
 
@@ -258,7 +339,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Archives</h3>
     <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/weblog/archives/2020/12/">December 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/weblog/archives/2019/11/">November 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/weblog/archives/2019/04/">April 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/weblog/archives/2019/01/">January 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/weblog/archives/2018/12/">December 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/weblog/archives/2018/01/">January 2018</a></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/weblog/archives/2021/03/">March 2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/weblog/archives/2020/12/">December 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/weblog/archives/2019/11/">November 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/weblog/archives/2019/04/">April 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/weblog/archives/2019/01/">January 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/weblog/archives/2018/12/">December 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/weblog/archives/2018/01/">January 2018</a></li></ul>
     </div>
   </div>
 
@@ -269,6 +350,10 @@
     <h3 class="widget-title">Recent Posts</h3>
     <div class="widget">
       <ul>
+        
+          <li>
+            <a href="/weblog/2021/03/03/20210303_appium-screen-record/">Screen record with Appium</a>
+          </li>
         
           <li>
             <a href="/weblog/2020/12/30/20201230_elk-sample/">Elasticsearch, Kibanaの勉強用メモ</a>
@@ -284,10 +369,6 @@
         
           <li>
             <a href="/weblog/2019/01/01/20190101_setup-appium/">Appiumのセットアップ, 使い方</a>
-          </li>
-        
-          <li>
-            <a href="/weblog/2018/12/26/20181226_ffmpeg/">ffmpeg memo</a>
           </li>
         
       </ul>

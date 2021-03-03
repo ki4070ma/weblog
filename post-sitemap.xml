@@ -9,6 +9,22 @@
 
 
     <url>
+        <loc>https://ki4070ma.github.io/weblog/2018/01/13/20180113_wemo-insight/</loc>
+        <lastmod>2021-03-03T14:49:34.020Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://ki4070ma.github.io/weblog/2021/03/03/20210303_appium-screen-record/</loc>
+        <lastmod>2021-03-03T14:27:22.760Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://ki4070ma.github.io/weblog/2020/12/30/20201230_elk-sample/</loc>
         <lastmod>2021-03-03T11:16:12.193Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -75,14 +91,6 @@
     <url>
         <loc>https://ki4070ma.github.io/weblog/2018/12/17/20181217_setup-mac/</loc>
         <lastmod>2021-03-03T05:37:49.742Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://ki4070ma.github.io/weblog/2018/01/13/20180113_wemo-insight/</loc>
-        <lastmod>2021-03-03T01:31:52.282Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
