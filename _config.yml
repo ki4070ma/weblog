@@ -14,7 +14,8 @@ timezone: ''
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
 url: https://ki4070ma.github.io/weblog
-root: /weblog/
+# url: https://blog.ki4070ma.com
+root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 pretty_urls:
