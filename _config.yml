@@ -135,3 +135,5 @@ feed:
 
 google_analytics: G-JWTW1CHBL8
 
+linkPreview:
+  descriptionLength: 1
