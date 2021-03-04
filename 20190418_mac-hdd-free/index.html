@@ -4,14 +4,19 @@
   <meta charset="utf-8">
   
   
-  <title>Archives: 2019/11 | ki4070maのメモ帳</title>
+  <title>Macで空き容量を増やすためにやったこと | ki4070maのメモ帳</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="ki4070maのメモ帳">
-<meta property="og:url" content="https://ki4070ma.github.io/weblog/archives/2019/11/index.html">
+  <meta name="description" content="まずどこで容量を食っているの確認  OmniDiskSweeper https:&#x2F;&#x2F;www.omnigroup.com&#x2F;more&#x2F;   Dockerあたりで容量を食っていた  $docker system prune -f Docker.rawが大きくなっていたので削除 https:&#x2F;&#x2F;forums.docker.com&#x2F;t&#x2F;where-does-docker-keep-images-conta">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Macで空き容量を増やすためにやったこと">
+<meta property="og:url" content="https://ki4070ma.github.io/weblog/20190418_mac-hdd-free/index.html">
 <meta property="og:site_name" content="ki4070maのメモ帳">
+<meta property="og:description" content="まずどこで容量を食っているの確認  OmniDiskSweeper https:&#x2F;&#x2F;www.omnigroup.com&#x2F;more&#x2F;   Dockerあたりで容量を食っていた  $docker system prune -f Docker.rawが大きくなっていたので削除 https:&#x2F;&#x2F;forums.docker.com&#x2F;t&#x2F;where-does-docker-keep-images-conta">
 <meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2019-04-17T15:00:00.000Z">
+<meta property="article:modified_time" content="2021-03-04T15:09:56.391Z">
 <meta property="article:author" content="Atsushi Mori">
+<meta property="article:tag" content="Mac">
 <meta name="twitter:card" content="summary">
   
     <link rel="alternate" href="/atom.xml" title="ki4070maのメモ帳" type="application/atom+xml">
@@ -73,39 +78,101 @@
 </header>
 
       <div class="outer">
-        <section id="main">
-  
-  
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2019" class="archive-year">2019</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/20191101_slide-presentation/" class="archive-article-date">
-  <time class="dt-published" datetime="2019-10-31T15:00:00.000Z" itemprop="datePublished">Nov 1</time>
+        <section id="main"><article id="post-20190418_mac-hdd-free" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/20190418_mac-hdd-free/" class="article-date">
+  <time class="dt-published" datetime="2019-04-17T15:00:00.000Z" itemprop="datePublished">2019-04-18</time>
 </a>
-      
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/20191101_slide-presentation/">スライドを作成するときに参考にするサイト</a>
+    <h1 class="p-name article-title" itemprop="headline name">
+      Macで空き容量を増やすためにやったこと
     </h1>
   
 
-    </header>
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <ol>
+<li><p>まずどこで容量を食っているの確認</p>
+<ul>
+<li>OmniDiskSweeper</li>
+<li><a target="_blank" rel="noopener" href="https://www.omnigroup.com/more/">https://www.omnigroup.com/more/</a></li>
+</ul>
+</li>
+<li><p>Dockerあたりで容量を食っていた</p>
+<ul>
+<li>$docker system prune -f</li>
+<li>Docker.rawが大きくなっていたので削除<ul>
+<li><a target="_blank" rel="noopener" href="https://forums.docker.com/t/where-does-docker-keep-images-containers-so-i-can-better-track-my-disk-usage/8370/11">https://forums.docker.com/t/where-does-docker-keep-images-containers-so-i-can-better-track-my-disk-usage/8370/11</a></li>
+<li>$rm ~/Library/Containers/com.docker.docker/Data/com.docker.driver.amd64-linux</li>
+<li>rm ~/Library/Containers/com.docker.docker/Data/vms/0/Docker.raw (2019/04/18, Pathは変わることがある?)</li>
+</ul>
+</li>
+<li>[効果] 人による. docker使ってる人で同じように困っている人はたくさんいたので調べるといろいろ出てくる</li>
+</ul>
+</li>
+<li><p>Mac関連</p>
+<ul>
+<li>$brew cleanup -s </li>
+</ul>
+</li>
+<li><p>Mac ストレージの空き領域を増やす方法 (Apple公式)</p>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://support.apple.com/ja-jp/HT206996">https://support.apple.com/ja-jp/HT206996</a></li>
+</ul>
+</li>
+<li><p>その他</p>
+<ul>
+<li>Xcodeが大きい…</li>
+<li>そもそも大きな容量を積んだMacbookを買いましょう (反省)</li>
+<li>(2021/03) M1 Mac(1TB)買いました, とても満足です 😀</li>
+</ul>
+</li>
+</ol>
+<p>ref: <a target="_blank" rel="noopener" href="https://qiita.com/atsushi0521/items/85aca0153c33a22e74a3">https://qiita.com/atsushi0521/items/85aca0153c33a22e74a3</a></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://ki4070ma.github.io/weblog/20190418_mac-hdd-free/" data-id="cklv2kt0c000f65d1chis3fyj" data-title="Macで空き容量を増やすためにやったこと" class="article-share-link">Share</a>
+      
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Mac/" rel="tag">Mac</a></li></ul>
+
+    </footer>
   </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/20191101_slide-presentation/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          スライドを作成するときに参考にするサイト
+        
+      </div>
+    </a>
+  
+  
+    <a href="/20190101_setup-appium/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">Appiumのセットアップ, 使い方</div>
+    </a>
+  
+</nav>
+
+  
 </article>
-  
-  
-    </div></section>
-  
 
 
 </section>

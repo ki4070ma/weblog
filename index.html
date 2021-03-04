@@ -75,9 +75,67 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-20210304_tuwejia" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/20210304_tuwejia/" class="article-date">
+  <time class="dt-published" datetime="2021-03-03T15:00:00.000Z" itemprop="datePublished">2021-03-04</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/20210304_tuwejia/">Mac用USB Type C Hub (4in1)</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <p>Macを購入したので以下のUSB Hubを購入</p>
+<a href="https://www.amazon.co.jp/gp/product/B08L4X9Q54/" class="link-preview" target="_blank" rel="nofollow"><div class="link-area"><div class="descriptions"><div class="og-title">Amazon | USB Type c アダプタ マルチポート Tuwejia タイプc ハブ ４K 解像度 hdmiポート+USB 3.0ポート*2 高速データ転送+USBタイプC高速PD充電ポート 4-in-1 変換 アダプター MacBook Pro/MacBook Air 13インチ 2020/iPad Pro 2020, Samsung Galaxy S20 など USB C デバイス対応（スペースグレイ） | Tuwejia | USBハブ 通販</div><div class="og-description">U…</div></div></div></a>
+
+<p>websiteはこちら</p>
+<p><a target="_blank" rel="noopener" href="https://tuwejia.com/">https://tuwejia.com/</a></p>
+<p>USB HubがないとUSB Aの挿し口がMacbook Airにないため購入</p>
+<p>調べると類似の商品はたくさんあるのですが, あまり違いが分かりませんでした</p>
+<p>要件としては以下の通りでした</p>
+<ul>
+<li>安い (2000円弱)</li>
+<li>小さい</li>
+<li>Display port(HDMIなど)があること</li>
+<li>USB A の port があること</li>
+</ul>
+<p>結果として概ね満足です<br>残念なこととしては, 2台目のDisplayが使用できなかったことです<br>(解像度が低い, 縦画面のDisplayに設定するとDisplaylink managerがクラッシュする)</p>
+<a href="https://www.amazon.co.jp/dp/B013G4CJM8/" class="link-preview" target="_blank" rel="nofollow"><div class="link-area"><div class="descriptions"><div class="og-title">Amazon | usb hdmi変換アダプタ, CableCreation USB 3.0 HDMI アダプタ DisplayLinkチップセット 条件付き2560x1440対応 Windows/Mac対応 ブラック | CableCreation | パソコン・周辺機器 通販</div><div class="og-description">u…</div></div></div></a>
+
+<p>近々少々高いUSB Hubを購入する予定なのでこちらは繋ぎです</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://ki4070ma.github.io/weblog/20210304_tuwejia/" data-id="cklv2kt0h001365d138kpejyg" data-title="Mac用USB Type C Hub (4in1)" class="article-share-link">Share</a>
+      
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Amazon/" rel="tag">Amazon</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
     <article id="post-20210303_appium-screen-record" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
-    <a href="/2021/03/03/20210303_appium-screen-record/" class="article-date">
+    <a href="/20210303_appium-screen-record/" class="article-date">
   <time class="dt-published" datetime="2021-03-02T15:00:00.000Z" itemprop="datePublished">2021-03-03</time>
 </a>
     
@@ -89,7 +147,7 @@
         
   
     <h1 itemprop="name">
-      <a class="p-name article-title" href="/2021/03/03/20210303_appium-screen-record/">Screen record with Appium</a>
+      <a class="p-name article-title" href="/20210303_appium-screen-record/">Appium で screen recordを使用する</a>
     </h1>
   
 
@@ -97,8 +155,8 @@
     
     <div class="e-content article-entry" itemprop="articleBody">
       
-        <h1 id="Appium-で-screen-recordを使用する"><a href="#Appium-で-screen-recordを使用する" class="headerlink" title="Appium で screen recordを使用する"></a>Appium で screen recordを使用する</h1><p>Official な document では少々不足していたので, 使い方をまとめます.</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">self.driver.start_recording_screen()</span><br><span class="line"></span><br><span class="line">payload = self.driver.stop_recording_screen()</span><br><span class="line"></span><br><span class="line"><span class="keyword">with</span> <span class="built_in">open</span>(<span class="string">&#x27;video.mp4&#x27;</span>, <span class="string">&quot;wb&quot;</span>) <span class="keyword">as</span> fd:</span><br><span class="line">    fd.write(base64.b64decode(payload))</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+        <p>Official な document では少々不足していたので, 使い方をまとめます.</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">self.driver.start_recording_screen()</span><br><span class="line"></span><br><span class="line">payload = self.driver.stop_recording_screen()</span><br><span class="line"></span><br><span class="line"><span class="comment"># ★この2行</span></span><br><span class="line"><span class="keyword">with</span> <span class="built_in">open</span>(<span class="string">&#x27;video.mp4&#x27;</span>, <span class="string">&quot;wb&quot;</span>) <span class="keyword">as</span> fd:</span><br><span class="line">    fd.write(base64.b64decode(payload))</span><br><span class="line"></span><br></pre></td></tr></table></figure>
 
 <h1 id="使用用途"><a href="#使用用途" class="headerlink" title="使用用途"></a>使用用途</h1><h2 id="Azure-pipeline-にて"><a href="#Azure-pipeline-にて" class="headerlink" title="Azure pipeline にて"></a>Azure pipeline にて</h2><p>Azure pipelineではテストが失敗したときになぜ失敗したのか追いにくいため, screen recordで動画を取得しておくとよいです</p>
 <p>参考: <a target="_blank" rel="noopener" href="https://github.com/appium/python-client/blob/master/test/functional/android/helper/test_helper.py">https://github.com/appium/python-client/blob/master/test/functional/android/helper/test_helper.py</a></p>
@@ -110,7 +168,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://ki4070ma.github.io/weblog/2021/03/03/20210303_appium-screen-record/" data-id="ckluzyi5v0010a9d13e8w2lvl" data-title="Screen record with Appium" class="article-share-link">Share</a>
+      <a data-url="https://ki4070ma.github.io/weblog/20210303_appium-screen-record/" data-id="cklv2kt0e000l65d1dc3mgh9j" data-title="Appium で screen recordを使用する" class="article-share-link">Share</a>
       
       
       
@@ -126,7 +184,7 @@
   
     <article id="post-20201230_elk-sample" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
-    <a href="/2020/12/30/20201230_elk-sample/" class="article-date">
+    <a href="/20201230_elk-sample/" class="article-date">
   <time class="dt-published" datetime="2020-12-29T15:00:00.000Z" itemprop="datePublished">2020-12-30</time>
 </a>
     
@@ -138,7 +196,7 @@
         
   
     <h1 itemprop="name">
-      <a class="p-name article-title" href="/2020/12/30/20201230_elk-sample/">Elasticsearch, Kibanaの勉強用メモ</a>
+      <a class="p-name article-title" href="/20201230_elk-sample/">Elasticsearch, Kibanaの勉強用メモ</a>
     </h1>
   
 
@@ -146,11 +204,7 @@
     
     <div class="e-content article-entry" itemprop="articleBody">
       
-        <p>(自分用メモ, 随時更新)</p>
-<h2 id="残件"><a href="#残件" class="headerlink" title="残件"></a>残件</h2><ul>
-<li>Logstatshはまたそのうち</li>
-</ul>
-<h2 id="1-サンプルを動かす"><a href="#1-サンプルを動かす" class="headerlink" title="1. サンプルを動かす"></a>1. サンプルを動かす</h2><ul>
+        <h2 id="1-サンプルを動かす"><a href="#1-サンプルを動かす" class="headerlink" title="1. サンプルを動かす"></a>1. サンプルを動かす</h2><ul>
 <li>こちらを参考に以下をやった<ul>
 <li><a target="_blank" rel="noopener" href="https://qiita.com/kiyokiyo_kzsby/items/344fb2e9aead158a5545">https://qiita.com/kiyokiyo_kzsby/items/344fb2e9aead158a5545</a></li>
 </ul>
@@ -216,7 +270,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://ki4070ma.github.io/weblog/2020/12/30/20201230_elk-sample/" data-id="ckluzyi5s000ja9d125hoaokm" data-title="Elasticsearch, Kibanaの勉強用メモ" class="article-share-link">Share</a>
+      <a data-url="https://ki4070ma.github.io/weblog/20201230_elk-sample/" data-id="cklv2kt0d000j65d11xja300m" data-title="Elasticsearch, Kibanaの勉強用メモ" class="article-share-link">Share</a>
       
       
       
@@ -232,7 +286,7 @@
   
     <article id="post-20191101_slide-presentation" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
-    <a href="/2019/11/01/20191101_slide-presentation/" class="article-date">
+    <a href="/20191101_slide-presentation/" class="article-date">
   <time class="dt-published" datetime="2019-10-31T15:00:00.000Z" itemprop="datePublished">2019-11-01</time>
 </a>
     
@@ -244,7 +298,7 @@
         
   
     <h1 itemprop="name">
-      <a class="p-name article-title" href="/2019/11/01/20191101_slide-presentation/">スライドを作成するときに参考にするサイト</a>
+      <a class="p-name article-title" href="/20191101_slide-presentation/">スライドを作成するときに参考にするサイト</a>
     </h1>
   
 
@@ -273,7 +327,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://ki4070ma.github.io/weblog/2019/11/01/20191101_slide-presentation/" data-id="ckluzyi5r000ha9d12xu521sx" data-title="スライドを作成するときに参考にするサイト" class="article-share-link">Share</a>
+      <a data-url="https://ki4070ma.github.io/weblog/20191101_slide-presentation/" data-id="cklv2kt0d000h65d1bcu3fijj" data-title="スライドを作成するときに参考にするサイト" class="article-share-link">Share</a>
       
       
       
@@ -289,7 +343,7 @@
   
     <article id="post-20190418_mac-hdd-free" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
-    <a href="/2019/04/18/20190418_mac-hdd-free/" class="article-date">
+    <a href="/20190418_mac-hdd-free/" class="article-date">
   <time class="dt-published" datetime="2019-04-17T15:00:00.000Z" itemprop="datePublished">2019-04-18</time>
 </a>
     
@@ -301,7 +355,7 @@
         
   
     <h1 itemprop="name">
-      <a class="p-name article-title" href="/2019/04/18/20190418_mac-hdd-free/">Macで空き容量を増やすためにやったこと</a>
+      <a class="p-name article-title" href="/20190418_mac-hdd-free/">Macで空き容量を増やすためにやったこと</a>
     </h1>
   
 
@@ -342,6 +396,7 @@
 <ul>
 <li>Xcodeが大きい…</li>
 <li>そもそも大きな容量を積んだMacbookを買いましょう (反省)</li>
+<li>(2021/03) M1 Mac(1TB)買いました, とても満足です 😀</li>
 </ul>
 </li>
 </ol>
@@ -350,7 +405,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://ki4070ma.github.io/weblog/2019/04/18/20190418_mac-hdd-free/" data-id="ckluzyi5r000fa9d1ayzzha6e" data-title="Macで空き容量を増やすためにやったこと" class="article-share-link">Share</a>
+      <a data-url="https://ki4070ma.github.io/weblog/20190418_mac-hdd-free/" data-id="cklv2kt0c000f65d1chis3fyj" data-title="Macで空き容量を増やすためにやったこと" class="article-share-link">Share</a>
       
       
       
@@ -366,7 +421,7 @@
   
     <article id="post-20190101_setup-appium" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
-    <a href="/2019/01/01/20190101_setup-appium/" class="article-date">
+    <a href="/20190101_setup-appium/" class="article-date">
   <time class="dt-published" datetime="2018-12-31T15:00:00.000Z" itemprop="datePublished">2019-01-01</time>
 </a>
     
@@ -378,7 +433,7 @@
         
   
     <h1 itemprop="name">
-      <a class="p-name article-title" href="/2019/01/01/20190101_setup-appium/">Appiumのセットアップ, 使い方</a>
+      <a class="p-name article-title" href="/20190101_setup-appium/">Appiumのセットアップ, 使い方</a>
     </h1>
   
 
@@ -429,17 +484,11 @@
 </ul>
 </li>
 </ul>
-<h1 id="使い方"><a href="#使い方" class="headerlink" title="使い方"></a>使い方</h1><h2 id="Screenrecord"><a href="#Screenrecord" class="headerlink" title="Screenrecord"></a>Screenrecord</h2><ul>
-<li>使ってみようとしたところ上手くいかなかったが, 調べたりいろいろやってたら出来た</li>
-<li>[official] <ul>
-<li><a target="_blank" rel="noopener" href="http://appium.io/docs/en/commands/device/recording-screen/start-recording-screen/">start screen recording</a></li>
-<li><a target="_blank" rel="noopener" href="http://appium.io/docs/en/commands/device/recording-screen/stop-recording-screen/">stop screen recording</a></li>
-</ul>
-</li>
-</ul>
-<h2 id="Screenshot"><a href="#Screenshot" class="headerlink" title="Screenshot"></a>Screenshot</h2><h2 id="Adb-log"><a href="#Adb-log" class="headerlink" title="Adb log"></a>Adb log</h2><h1 id="Memo"><a href="#Memo" class="headerlink" title="Memo"></a>Memo</h1><ul>
+<h1 id="使い方"><a href="#使い方" class="headerlink" title="使い方"></a>使い方</h1><h2 id="Screenrecord"><a href="#Screenrecord" class="headerlink" title="Screenrecord"></a>Screenrecord</h2><p><a href="/20210303_appium-screen-record/">Appium で screen recordを使用する</a></p>
+<h1 id="Memo"><a href="#Memo" class="headerlink" title="Memo"></a>Memo</h1><ul>
 <li>試してみる: appium-docker-android<ul>
 <li><a target="_blank" rel="noopener" href="https://github.com/appium/appium-docker-android">https://github.com/appium/appium-docker-android</a></li>
+<li>なぜか上手く動かなかった</li>
 </ul>
 </li>
 </ul>
@@ -448,7 +497,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://ki4070ma.github.io/weblog/2019/01/01/20190101_setup-appium/" data-id="ckluzyi5q000da9d19wjw07cp" data-title="Appiumのセットアップ, 使い方" class="article-share-link">Share</a>
+      <a data-url="https://ki4070ma.github.io/weblog/20190101_setup-appium/" data-id="cklv2kt0b000d65d1ajm98g8f" data-title="Appiumのセットアップ, 使い方" class="article-share-link">Share</a>
       
       
       
@@ -464,7 +513,7 @@
   
     <article id="post-20181226_ffmpeg" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
-    <a href="/2018/12/26/20181226_ffmpeg/" class="article-date">
+    <a href="/20181226_ffmpeg/" class="article-date">
   <time class="dt-published" datetime="2018-12-25T15:00:00.000Z" itemprop="datePublished">2018-12-26</time>
 </a>
     
@@ -476,7 +525,7 @@
         
   
     <h1 itemprop="name">
-      <a class="p-name article-title" href="/2018/12/26/20181226_ffmpeg/">ffmpeg memo</a>
+      <a class="p-name article-title" href="/20181226_ffmpeg/">ffmpeg memo</a>
     </h1>
   
 
@@ -524,7 +573,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://ki4070ma.github.io/weblog/2018/12/26/20181226_ffmpeg/" data-id="ckluzyi5p0009a9d1ar9mapw0" data-title="ffmpeg memo" class="article-share-link">Share</a>
+      <a data-url="https://ki4070ma.github.io/weblog/20181226_ffmpeg/" data-id="cklv2kt0a000965d19ug9aj3w" data-title="ffmpeg memo" class="article-share-link">Share</a>
       
       
       
@@ -540,7 +589,7 @@
   
     <article id="post-20181226_python" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
-    <a href="/2018/12/26/20181226_python/" class="article-date">
+    <a href="/20181226_python/" class="article-date">
   <time class="dt-published" datetime="2018-12-25T15:00:00.000Z" itemprop="datePublished">2018-12-26</time>
 </a>
     
@@ -552,7 +601,7 @@
         
   
     <h1 itemprop="name">
-      <a class="p-name article-title" href="/2018/12/26/20181226_python/">PythonのLibraryで使用したことがあるもの</a>
+      <a class="p-name article-title" href="/20181226_python/">PythonのLibraryで使用したことがあるもの</a>
     </h1>
   
 
@@ -689,7 +738,7 @@
 </li>
 <li>pylint<ul>
 <li><a target="_blank" rel="noopener" href="https://github.com/PyCQA/pylint">https://github.com/PyCQA/pylint</a></li>
-<li>[メモ] </li>
+<li>[メモ] 言わずと知れたlinter</li>
 </ul>
 </li>
 </ul>
@@ -718,7 +767,7 @@
 </li>
 <li>glob<ul>
 <li><a target="_blank" rel="noopener" href="https://docs.python.jp/3/library/glob.html">https://docs.python.jp/3/library/glob.html</a></li>
-<li>[メモ] subprocessでlsではなく, これ</li>
+<li>[メモ] subprocessでls, ではなくこれを使いましょう</li>
 </ul>
 </li>
 <li>pickle<ul>
@@ -732,7 +781,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://ki4070ma.github.io/weblog/2018/12/26/20181226_python/" data-id="ckluzyi5q000ba9d17aoe0ljp" data-title="PythonのLibraryで使用したことがあるもの" class="article-share-link">Share</a>
+      <a data-url="https://ki4070ma.github.io/weblog/20181226_python/" data-id="cklv2kt0b000b65d16rve8y8k" data-title="PythonのLibraryで使用したことがあるもの" class="article-share-link">Share</a>
       
       
       
@@ -746,78 +795,9 @@
 
 
   
-    <article id="post-20181217_circleci" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2018/12/17/20181217_circleci/" class="article-date">
-  <time class="dt-published" datetime="2018-12-16T15:00:00.000Z" itemprop="datePublished">2018-12-17</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2018/12/17/20181217_circleci/">circleci memo</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <h1 id="セットアップ"><a href="#セットアップ" class="headerlink" title="セットアップ"></a>セットアップ</h1><ul>
-<li><a target="_blank" rel="noopener" href="https://github.com/">Github</a>でプロジェクトを作成する</li>
-<li><a target="_blank" rel="noopener" href="https://circleci.com/">CircleCI</a>で対象のプロジェクトに対してCIを有効化する</li>
-</ul>
-<h1 id="ローカルでcircleciのビルドを実行できるようにする"><a href="#ローカルでcircleciのビルドを実行できるようにする" class="headerlink" title="ローカルでcircleciのビルドを実行できるようにする"></a>ローカルでcircleciのビルドを実行できるようにする</h1><ul>
-<li>[目的] ymlを作成してすぐ試すというサイクルを短くするため</li>
-<li>[手順]<ol>
-<li>Dockerをインストール (<a target="_blank" rel="noopener" href="https://docs.docker.com/docker-for-mac/">公式 Docker for mac</a>)</li>
-<li>Circleci-cliをインストール<ul>
-<li>$brew install circleci</li>
-</ul>
-</li>
-</ol>
-</li>
-</ul>
-<h1 id="circleci-config-ymlを作成する"><a href="#circleci-config-ymlを作成する" class="headerlink" title="circleci/config.ymlを作成する"></a>circleci/config.ymlを作成する</h1><ul>
-<li>自分が使用する言語でHello worldするconfig.ymlを書くと吉</li>
-<li>例<ul>
-<li><a target="_blank" rel="noopener" href="https://github.com/ki4070ma/unittest/blob/master/.circleci/config.yml">https://github.com/ki4070ma/unittest/blob/master/.circleci/config.yml</a></li>
-</ul>
-</li>
-</ul>
-<h1 id="GithubにCircle-CI-statusバッジを貼り付ける"><a href="#GithubにCircle-CI-statusバッジを貼り付ける" class="headerlink" title="GithubにCircle CI statusバッジを貼り付ける"></a>GithubにCircle CI statusバッジを貼り付ける</h1><ul>
-<li><a target="_blank" rel="noopener" href="https://qiita.com/Hanocha/items/8ad74258eb43d0959590">githubでREADME.mdにCircleCIのバッジを表示する</a></li>
-</ul>
-<h1 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h1><ul>
-<li><a target="_blank" rel="noopener" href="https://qiita.com/selmertsx/items/45bd672c2c8ddab1981b">CircleCI 2.0 をlocalで動かす</a></li>
-</ul>
-<p>ref: <a target="_blank" rel="noopener" href="https://qiita.com/atsushi0521/items/b335f375550f84fcd1f0">https://qiita.com/atsushi0521/items/b335f375550f84fcd1f0</a></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="https://ki4070ma.github.io/weblog/2018/12/17/20181217_circleci/" data-id="ckluzyi5o0005a9d1gfr100y4" data-title="circleci memo" class="article-share-link">Share</a>
-      
-      
-      
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/CircleCI/" rel="tag">CircleCI</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
     <article id="post-20181217_setup-mac" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
-    <a href="/2018/12/17/20181217_setup-mac/" class="article-date">
+    <a href="/20181217_setup-mac/" class="article-date">
   <time class="dt-published" datetime="2018-12-16T15:00:00.000Z" itemprop="datePublished">2018-12-17</time>
 </a>
     
@@ -829,7 +809,7 @@
         
   
     <h1 itemprop="name">
-      <a class="p-name article-title" href="/2018/12/17/20181217_setup-mac/">(自分用メモ) Macを買ってからセットアップするまで</a>
+      <a class="p-name article-title" href="/20181217_setup-mac/">(自分用メモ) Macを買ってからセットアップするまで</a>
     </h1>
   
 
@@ -837,8 +817,7 @@
     
     <div class="e-content article-entry" itemprop="articleBody">
       
-        <p>(自分用メモ)</p>
-<h1 id="Mac購入"><a href="#Mac購入" class="headerlink" title="Mac購入"></a>Mac購入</h1><ul>
+        <h1 id="Mac購入"><a href="#Mac購入" class="headerlink" title="Mac購入"></a>Mac購入</h1><ul>
 <li>Paypay祭りの時にMacBook Air(13-inch, 2017)を購入</li>
 </ul>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">1.8 GHz Intel Core i5</span><br><span class="line">8 GB 1600 MHz DDR3</span><br><span class="line">Intel HD Graphics 6000 1536 MB</span><br></pre></td></tr></table></figure>
@@ -956,7 +935,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://ki4070ma.github.io/weblog/2018/12/17/20181217_setup-mac/" data-id="ckluzyi5p0008a9d19bai5pjz" data-title="(自分用メモ) Macを買ってからセットアップするまで" class="article-share-link">Share</a>
+      <a data-url="https://ki4070ma.github.io/weblog/20181217_setup-mac/" data-id="cklv2kt09000565d1f0ym9d0e" data-title="(自分用メモ) Macを買ってからセットアップするまで" class="article-share-link">Share</a>
       
       
       
@@ -970,10 +949,10 @@
 
 
   
-    <article id="post-20181216_how-to-learn-coding" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+    <article id="post-20181217_circleci" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
-    <a href="/2018/12/16/20181216_how-to-learn-coding/" class="article-date">
-  <time class="dt-published" datetime="2018-12-15T15:00:00.000Z" itemprop="datePublished">2018-12-16</time>
+    <a href="/20181217_circleci/" class="article-date">
+  <time class="dt-published" datetime="2018-12-16T15:00:00.000Z" itemprop="datePublished">2018-12-17</time>
 </a>
     
   </div>
@@ -984,7 +963,7 @@
         
   
     <h1 itemprop="name">
-      <a class="p-name article-title" href="/2018/12/16/20181216_how-to-learn-coding/">プログラミングの勉強法</a>
+      <a class="p-name article-title" href="/20181217_circleci/">circleci memo</a>
     </h1>
   
 
@@ -992,38 +971,44 @@
     
     <div class="e-content article-entry" itemprop="articleBody">
       
-        <h1 id="メイン-LeetCode"><a href="#メイン-LeetCode" class="headerlink" title="メイン: LeetCode"></a>メイン: LeetCode</h1><ul>
-<li><a target="_blank" rel="noopener" href="https://leetcode.com/problemset/all/">https://leetcode.com/problemset/all/</a></li>
-<li>問題数 900以上 (Problem set. 他にもいろんな問題があるよう)</li>
-<li>Google, Amazon, Appleなどの大手企業で出されたという問題があるらしい</li>
-<li>さくっと解ける (ものもある)</li>
-<li>解けない時は解答を見ることもできる問題もある</li>
-<li>自分の好きな言語で解くことができる</li>
-<li>Web上のEditorで完結する</li>
-<li>やっている途中でもSubmitしとけばその続きから行える</li>
-<li>全部英語</li>
+        <h1 id="セットアップ"><a href="#セットアップ" class="headerlink" title="セットアップ"></a>セットアップ</h1><ul>
+<li><a target="_blank" rel="noopener" href="https://github.com/">Github</a>でプロジェクトを作成する</li>
+<li><a target="_blank" rel="noopener" href="https://circleci.com/">CircleCI</a>で対象のプロジェクトに対してCIを有効化する</li>
 </ul>
-<h1 id="いろいろな学習用サイト"><a href="#いろいろな学習用サイト" class="headerlink" title="いろいろな学習用サイト"></a>いろいろな学習用サイト</h1><ul>
-<li>言語の習得やアルゴリズムの学習に最適 オンラインジャッジサイト一覧<ul>
-<li><a target="_blank" rel="noopener" href="https://qiita.com/shibacho/items/20f6eee42083c620b556">https://qiita.com/shibacho/items/20f6eee42083c620b556</a></li>
-<li>こちらを参考にして”atCoder, Checkio, HackerRank”あたりを使ってみたが, 定着しなかった. Twitterや勉強会で, LeetCodeを使っているという人たちを見たので使ってみたところ定着した</li>
+<h1 id="ローカルでcircleciのビルドを実行できるようにする"><a href="#ローカルでcircleciのビルドを実行できるようにする" class="headerlink" title="ローカルでcircleciのビルドを実行できるようにする"></a>ローカルでcircleciのビルドを実行できるようにする</h1><ul>
+<li>[目的] ymlを作成してすぐ試すというサイクルを短くするため</li>
+<li>[手順]<ol>
+<li>Dockerをインストール (<a target="_blank" rel="noopener" href="https://docs.docker.com/docker-for-mac/">公式 Docker for mac</a>)</li>
+<li>Circleci-cliをインストール<ul>
+<li>$brew install circleci</li>
+</ul>
+</li>
+</ol>
+</li>
+</ul>
+<h1 id="circleci-config-ymlを作成する"><a href="#circleci-config-ymlを作成する" class="headerlink" title="circleci/config.ymlを作成する"></a>circleci/config.ymlを作成する</h1><ul>
+<li>自分が使用する言語でHello worldするconfig.ymlを書くと吉</li>
+<li>例<ul>
+<li><a target="_blank" rel="noopener" href="https://github.com/ki4070ma/unittest/blob/master/.circleci/config.yml">https://github.com/ki4070ma/unittest/blob/master/.circleci/config.yml</a></li>
 </ul>
 </li>
 </ul>
-<h1 id="所感"><a href="#所感" class="headerlink" title="所感"></a>所感</h1><ul>
-<li>学習用サイトはたくさんある</li>
-<li>自分のスタイルにあった, 学習を継続できるサイトを選ぶ必要がある</li>
+<h1 id="GithubにCircle-CI-statusバッジを貼り付ける"><a href="#GithubにCircle-CI-statusバッジを貼り付ける" class="headerlink" title="GithubにCircle CI statusバッジを貼り付ける"></a>GithubにCircle CI statusバッジを貼り付ける</h1><ul>
+<li><a target="_blank" rel="noopener" href="https://qiita.com/Hanocha/items/8ad74258eb43d0959590">githubでREADME.mdにCircleCIのバッジを表示する</a></li>
 </ul>
-<p>ref: <a target="_blank" rel="noopener" href="https://qiita.com/atsushi0521/items/15ad605207b060cf4e83">https://qiita.com/atsushi0521/items/15ad605207b060cf4e83</a></p>
+<h1 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h1><ul>
+<li><a target="_blank" rel="noopener" href="https://qiita.com/selmertsx/items/45bd672c2c8ddab1981b">CircleCI 2.0 をlocalで動かす</a></li>
+</ul>
+<p>ref: <a target="_blank" rel="noopener" href="https://qiita.com/atsushi0521/items/b335f375550f84fcd1f0">https://qiita.com/atsushi0521/items/b335f375550f84fcd1f0</a></p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://ki4070ma.github.io/weblog/2018/12/16/20181216_how-to-learn-coding/" data-id="ckluzyi5o0004a9d1ee64gioz" data-title="プログラミングの勉強法" class="article-share-link">Share</a>
+      <a data-url="https://ki4070ma.github.io/weblog/20181217_circleci/" data-id="cklv2kt0a000865d193xw0szd" data-title="circleci memo" class="article-share-link">Share</a>
       
       
       
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Programming/" rel="tag">Programming</a></li></ul>
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/CircleCI/" rel="tag">CircleCI</a></li></ul>
 
     </footer>
   </div>
@@ -1051,7 +1036,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Tags</h3>
     <div class="widget">
-      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Appium/" rel="tag">Appium</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/CircleCI/" rel="tag">CircleCI</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ELK/" rel="tag">ELK</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Mac/" rel="tag">Mac</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Presentation/" rel="tag">Presentation</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Programming/" rel="tag">Programming</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Python/" rel="tag">Python</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/SoftwareTest/" rel="tag">SoftwareTest</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/WeMo/" rel="tag">WeMo</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ffmpeg/" rel="tag">ffmpeg</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ssh/" rel="tag">ssh</a></li></ul>
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Amazon/" rel="tag">Amazon</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Appium/" rel="tag">Appium</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/CircleCI/" rel="tag">CircleCI</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ELK/" rel="tag">ELK</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Mac/" rel="tag">Mac</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Presentation/" rel="tag">Presentation</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Programming/" rel="tag">Programming</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Python/" rel="tag">Python</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/SoftwareTest/" rel="tag">SoftwareTest</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/WeMo/" rel="tag">WeMo</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ffmpeg/" rel="tag">ffmpeg</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ssh/" rel="tag">ssh</a></li></ul>
     </div>
   </div>
 
@@ -1061,7 +1046,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Tag Cloud</h3>
     <div class="widget tagcloud">
-      <a href="/tags/Appium/" style="font-size: 20px;">Appium</a> <a href="/tags/CircleCI/" style="font-size: 10px;">CircleCI</a> <a href="/tags/ELK/" style="font-size: 10px;">ELK</a> <a href="/tags/Mac/" style="font-size: 20px;">Mac</a> <a href="/tags/Presentation/" style="font-size: 10px;">Presentation</a> <a href="/tags/Programming/" style="font-size: 10px;">Programming</a> <a href="/tags/Python/" style="font-size: 10px;">Python</a> <a href="/tags/SoftwareTest/" style="font-size: 10px;">SoftwareTest</a> <a href="/tags/WeMo/" style="font-size: 10px;">WeMo</a> <a href="/tags/ffmpeg/" style="font-size: 10px;">ffmpeg</a> <a href="/tags/ssh/" style="font-size: 10px;">ssh</a>
+      <a href="/tags/Amazon/" style="font-size: 10px;">Amazon</a> <a href="/tags/Appium/" style="font-size: 20px;">Appium</a> <a href="/tags/CircleCI/" style="font-size: 10px;">CircleCI</a> <a href="/tags/ELK/" style="font-size: 10px;">ELK</a> <a href="/tags/Mac/" style="font-size: 20px;">Mac</a> <a href="/tags/Presentation/" style="font-size: 10px;">Presentation</a> <a href="/tags/Programming/" style="font-size: 10px;">Programming</a> <a href="/tags/Python/" style="font-size: 10px;">Python</a> <a href="/tags/SoftwareTest/" style="font-size: 10px;">SoftwareTest</a> <a href="/tags/WeMo/" style="font-size: 10px;">WeMo</a> <a href="/tags/ffmpeg/" style="font-size: 10px;">ffmpeg</a> <a href="/tags/ssh/" style="font-size: 10px;">ssh</a>
     </div>
   </div>
 
@@ -1083,23 +1068,23 @@
       <ul>
         
           <li>
-            <a href="/2021/03/03/20210303_appium-screen-record/">Screen record with Appium</a>
+            <a href="/20210304_tuwejia/">Mac用USB Type C Hub (4in1)</a>
           </li>
         
           <li>
-            <a href="/2020/12/30/20201230_elk-sample/">Elasticsearch, Kibanaの勉強用メモ</a>
+            <a href="/20210303_appium-screen-record/">Appium で screen recordを使用する</a>
           </li>
         
           <li>
-            <a href="/2019/11/01/20191101_slide-presentation/">スライドを作成するときに参考にするサイト</a>
+            <a href="/20201230_elk-sample/">Elasticsearch, Kibanaの勉強用メモ</a>
           </li>
         
           <li>
-            <a href="/2019/04/18/20190418_mac-hdd-free/">Macで空き容量を増やすためにやったこと</a>
+            <a href="/20191101_slide-presentation/">スライドを作成するときに参考にするサイト</a>
           </li>
         
           <li>
-            <a href="/2019/01/01/20190101_setup-appium/">Appiumのセットアップ, 使い方</a>
+            <a href="/20190418_mac-hdd-free/">Macで空き容量を増やすためにやったこと</a>
           </li>
         
       </ul>

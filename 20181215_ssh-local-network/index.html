@@ -4,14 +4,19 @@
   <meta charset="utf-8">
   
   
-  <title>Archives: 2019/11 | ki4070maのメモ帳</title>
+  <title>ローカルネットワーク内でsshするための設定 | ki4070maのメモ帳</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="ki4070maのメモ帳">
-<meta property="og:url" content="https://ki4070ma.github.io/weblog/archives/2019/11/index.html">
+  <meta name="description" content="自分が調べたことのメモ, ほぼどこかへのリンク. やろうとしたこと 家のローカルネットワーク内に繋がれている以下の機器間でsshでログインする Raspberry Pi Ubuntu 16.04 Mac    使用しているWi-Fiルーター Buffalo WSR-300HP&#x2F;N はじめssh出来るようにするにはルータの設定が必要かと思ったがそうではなかった    Raspberry Piの設定">
+<meta property="og:type" content="article">
+<meta property="og:title" content="ローカルネットワーク内でsshするための設定">
+<meta property="og:url" content="https://ki4070ma.github.io/weblog/20181215_ssh-local-network/index.html">
 <meta property="og:site_name" content="ki4070maのメモ帳">
+<meta property="og:description" content="自分が調べたことのメモ, ほぼどこかへのリンク. やろうとしたこと 家のローカルネットワーク内に繋がれている以下の機器間でsshでログインする Raspberry Pi Ubuntu 16.04 Mac    使用しているWi-Fiルーター Buffalo WSR-300HP&#x2F;N はじめssh出来るようにするにはルータの設定が必要かと思ったがそうではなかった    Raspberry Piの設定">
 <meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2018-12-14T15:00:00.000Z">
+<meta property="article:modified_time" content="2021-03-03T01:29:29.596Z">
 <meta property="article:author" content="Atsushi Mori">
+<meta property="article:tag" content="ssh">
 <meta name="twitter:card" content="summary">
   
     <link rel="alternate" href="/atom.xml" title="ki4070maのメモ帳" type="application/atom+xml">
@@ -73,39 +78,98 @@
 </header>
 
       <div class="outer">
-        <section id="main">
-  
-  
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2019" class="archive-year">2019</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/20191101_slide-presentation/" class="archive-article-date">
-  <time class="dt-published" datetime="2019-10-31T15:00:00.000Z" itemprop="datePublished">Nov 1</time>
+        <section id="main"><article id="post-20181215_ssh-local-network" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/20181215_ssh-local-network/" class="article-date">
+  <time class="dt-published" datetime="2018-12-14T15:00:00.000Z" itemprop="datePublished">2018-12-15</time>
 </a>
-      
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/20191101_slide-presentation/">スライドを作成するときに参考にするサイト</a>
+    <h1 class="p-name article-title" itemprop="headline name">
+      ローカルネットワーク内でsshするための設定
     </h1>
   
 
-    </header>
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <p>自分が調べたことのメモ, ほぼどこかへのリンク.</p>
+<h1 id="やろうとしたこと"><a href="#やろうとしたこと" class="headerlink" title="やろうとしたこと"></a>やろうとしたこと</h1><ul>
+<li>家のローカルネットワーク内に繋がれている以下の機器間でsshでログインする<ul>
+<li>Raspberry Pi</li>
+<li>Ubuntu 16.04</li>
+<li>Mac</li>
+</ul>
+</li>
+</ul>
+<h1 id="使用しているWi-Fiルーター"><a href="#使用しているWi-Fiルーター" class="headerlink" title="使用しているWi-Fiルーター"></a>使用しているWi-Fiルーター</h1><ul>
+<li>Buffalo WSR-300HP/N<ul>
+<li>はじめssh出来るようにするにはルータの設定が必要かと思ったがそうではなかった</li>
+</ul>
+</li>
+</ul>
+<h1 id="Raspberry-Piの設定"><a href="#Raspberry-Piの設定" class="headerlink" title="Raspberry Piの設定"></a>Raspberry Piの設定</h1><ul>
+<li><a target="_blank" rel="noopener" href="https://www.raspberrypi.org/documentation/remote-access/ssh/">SSH (Secure Shell)</a> (英語. Raspberry Pi 公式)<ul>
+<li>qiitaで調べたものはうまくいかなったものが多かった</li>
+</ul>
+</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">1. Enter sudo raspi-config in a terminal window</span><br><span class="line">2. Select Interfacing Options</span><br><span class="line">3. Navigate to and select SSH</span><br><span class="line">4. Choose Yes</span><br><span class="line">5. Select Ok</span><br><span class="line">6. Choose Finish</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>上記の設定で, Ubuntu/Mac -&gt; Raspberry Piへのsshのログインが可能になった</li>
+</ul>
+<h1 id="Macの設定"><a href="#Macの設定" class="headerlink" title="Macの設定"></a>Macの設定</h1><ul>
+<li><a target="_blank" rel="noopener" href="https://support.apple.com/ja-jp/guide/mac-help/mchlp1066/mac">リモートコンピュータに Mac へのアクセスを許可する</a></li>
+<li>上記の設定でUbuntu/Raspberry Pi -&gt; Macへのsshのログインが可能になった.</li>
+</ul>
+<h1 id="Ubuntuの設定"><a href="#Ubuntuの設定" class="headerlink" title="Ubuntuの設定"></a>Ubuntuの設定</h1><ul>
+<li><a target="_blank" rel="noopener" href="http://d.hatena.ne.jp/Fiore/20080228/1204174833">Ubuntuでsshdの設定をしてリモートから接続できるようにする</a></li>
+<li>今のところうまく行ってない, うーむ</li>
+</ul>
+<p>ref: <a target="_blank" rel="noopener" href="https://qiita.com/atsushi0521/items/80e36b1d8d7306ee2357">https://qiita.com/atsushi0521/items/80e36b1d8d7306ee2357</a></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://ki4070ma.github.io/weblog/20181215_ssh-local-network/" data-id="cklv2kt08000365d1faoza8e7" data-title="ローカルネットワーク内でsshするための設定" class="article-share-link">Share</a>
+      
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/ssh/" rel="tag">ssh</a></li></ul>
+
+    </footer>
   </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/20181216_how-to-learn-coding/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          プログラミングの勉強法
+        
+      </div>
+    </a>
+  
+  
+    <a href="/20180113_wemo-insight/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">WeMo Insightで現在の消費電力を取得する</div>
+    </a>
+  
+</nav>
+
+  
 </article>
-  
-  
-    </div></section>
-  
 
 
 </section>

@@ -4,14 +4,19 @@
   <meta charset="utf-8">
   
   
-  <title>Archives: 2018 | ki4070maのメモ帳</title>
+  <title>Elasticsearch, Kibanaの勉強用メモ | ki4070maのメモ帳</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="ki4070maのメモ帳">
-<meta property="og:url" content="https://ki4070ma.github.io/weblog/archives/2018/index.html">
+  <meta name="description" content="1. サンプルを動かす こちらを参考に以下をやった https:&#x2F;&#x2F;qiita.com&#x2F;kiyokiyo_kzsby&#x2F;items&#x2F;344fb2e9aead158a5545   Dockerfileなど https:&#x2F;&#x2F;github.com&#x2F;ki4070ma&#x2F;elasticsearch-kibana-sample     DockerでElasticsearch, Kibanaを構築 curl を使">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Elasticsearch, Kibanaの勉強用メモ">
+<meta property="og:url" content="https://ki4070ma.github.io/weblog/20201230_elk-sample/index.html">
 <meta property="og:site_name" content="ki4070maのメモ帳">
+<meta property="og:description" content="1. サンプルを動かす こちらを参考に以下をやった https:&#x2F;&#x2F;qiita.com&#x2F;kiyokiyo_kzsby&#x2F;items&#x2F;344fb2e9aead158a5545   Dockerfileなど https:&#x2F;&#x2F;github.com&#x2F;ki4070ma&#x2F;elasticsearch-kibana-sample     DockerでElasticsearch, Kibanaを構築 curl を使">
 <meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2020-12-29T15:00:00.000Z">
+<meta property="article:modified_time" content="2021-03-04T15:07:43.468Z">
 <meta property="article:author" content="Atsushi Mori">
+<meta property="article:tag" content="ELK">
 <meta name="twitter:card" content="summary">
   
     <link rel="alternate" href="/atom.xml" title="ki4070maのメモ帳" type="application/atom+xml">
@@ -73,172 +78,125 @@
 </header>
 
       <div class="outer">
-        <section id="main">
-  
-  
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2018" class="archive-year">2018</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/20181226_ffmpeg/" class="archive-article-date">
-  <time class="dt-published" datetime="2018-12-25T15:00:00.000Z" itemprop="datePublished">Dec 26</time>
+        <section id="main"><article id="post-20201230_elk-sample" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/20201230_elk-sample/" class="article-date">
+  <time class="dt-published" datetime="2020-12-29T15:00:00.000Z" itemprop="datePublished">2020-12-30</time>
 </a>
-      
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/20181226_ffmpeg/">ffmpeg memo</a>
+    <h1 class="p-name article-title" itemprop="headline name">
+      Elasticsearch, Kibanaの勉強用メモ
     </h1>
   
 
-    </header>
-  </div>
-</article>
-  
+      </header>
     
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/20181226_python/" class="archive-article-date">
-  <time class="dt-published" datetime="2018-12-25T15:00:00.000Z" itemprop="datePublished">Dec 26</time>
-</a>
+    <div class="e-content article-entry" itemprop="articleBody">
       
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/20181226_python/">PythonのLibraryで使用したことがあるもの</a>
-    </h1>
-  
+        <h2 id="1-サンプルを動かす"><a href="#1-サンプルを動かす" class="headerlink" title="1. サンプルを動かす"></a>1. サンプルを動かす</h2><ul>
+<li>こちらを参考に以下をやった<ul>
+<li><a target="_blank" rel="noopener" href="https://qiita.com/kiyokiyo_kzsby/items/344fb2e9aead158a5545">https://qiita.com/kiyokiyo_kzsby/items/344fb2e9aead158a5545</a></li>
+</ul>
+</li>
+<li>Dockerfileなど<ul>
+<li><a target="_blank" rel="noopener" href="https://github.com/ki4070ma/elasticsearch-kibana-sample">https://github.com/ki4070ma/elasticsearch-kibana-sample</a></li>
+</ul>
+</li>
+</ul>
+<ol>
+<li>DockerでElasticsearch, Kibanaを構築</li>
+<li><code>curl</code> を使用してElasticsearchに対していろいろリクエストを送る<ul>
+<li>ローカルにあるサンプルデータ(.json)をElasticsearchへ登録</li>
+</ul>
+</li>
+<li>Kibanaで↑で登録したサンプルデータを使ってbalanceに関してPie chartを作成</li>
+</ol>
+<h2 id="2-Elasticsearchメモ"><a href="#2-Elasticsearchメモ" class="headerlink" title="2. Elasticsearchメモ"></a>2. Elasticsearchメモ</h2><ol>
+<li>(Tips) 手元でcurlでelasticsearchに対してrequestを送って, jsonを見やすくするためには <code>jq</code> を使うと良いかも<ul>
+<li>(参考) <a target="_blank" rel="noopener" href="https://qiita.com/takeshinoda@github/items/2dec7a72930ec1f658af">https://qiita.com/takeshinoda@github/items/2dec7a72930ec1f658af</a></li>
+</ul>
+</li>
+<li>(Note) ローカルにあるサンプルデータ(.json)をアップロードするとき</li>
+</ol>
+<ul>
+<li>account.json内にあるようにindexが必要そう</li>
+<li><a target="_blank" rel="noopener" href="https://qiita.com/kiyokiyo_kzsby/items/344fb2e9aead158a5545#%E3%82%B5%E3%83%B3%E3%83%97%E3%83%AB%E3%83%87%E3%83%BC%E3%82%BF%E3%81%AE%E6%8A%95%E5%85%A5">link</a></li>
+</ul>
+<ol start="3">
+<li>サンプルデータ</li>
+</ol>
+<h2 id="3-Kibanaメモ"><a href="#3-Kibanaメモ" class="headerlink" title="3. Kibanaメモ"></a>3. Kibanaメモ</h2><ol>
+<li>Pie chartの作成<ul>
+<li>こちらでできた<ul>
+<li><a target="_blank" rel="noopener" href="https://dev.classmethod.jp/articles/amazon-elasticsearch-service-kibana6-tutorial-02/">https://dev.classmethod.jp/articles/amazon-elasticsearch-service-kibana6-tutorial-02/</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Kibanaからデータの登録<ul>
+<li>Machine learning -&gt; DnD<ul>
+<li>きれいなデータになっていればよさそう. filed名もこのときに決められる</li>
+</ul>
+</li>
+<li><a target="_blank" rel="noopener" href="https://www.elastic.co/jp/blog/importing-csv-and-log-data-into-elasticsearch-with-file-data-visualizer">https://www.elastic.co/jp/blog/importing-csv-and-log-data-into-elasticsearch-with-file-data-visualizer</a></li>
+</ul>
+</li>
+<li>確認するリンク<ul>
+<li><a target="_blank" rel="noopener" href="https://thinkit.co.jp/article/14128">https://thinkit.co.jp/article/14128</a></li>
+</ul>
+</li>
+</ol>
+<h3 id="作りたいチャート"><a href="#作りたいチャート" class="headerlink" title="作りたいチャート"></a>作りたいチャート</h3><ol>
+<li>日付毎の特定の値のカウント(A, B, C)</li>
+<li>日付毎のログから特定の値のカウント</li>
+</ol>
+<h2 id="4-Elasticsearchに入れるデータ"><a href="#4-Elasticsearchに入れるデータ" class="headerlink" title="4. Elasticsearchに入れるデータ"></a>4. Elasticsearchに入れるデータ</h2><ol>
+<li>TBU</li>
+</ol>
+<h2 id="5-Elasticsearchにデータ入れたり"><a href="#5-Elasticsearchにデータ入れたり" class="headerlink" title="5. Elasticsearchにデータ入れたり"></a>5. Elasticsearchにデータ入れたり</h2><p><a target="_blank" rel="noopener" href="https://github.com/elastic/elasticsearch-py">https://github.com/elastic/elasticsearch-py</a> を使用すると吉</p>
+<p>ref: <a target="_blank" rel="noopener" href="https://qiita.com/atsushi0521/items/1d6342ef553babded8c5">https://qiita.com/atsushi0521/items/1d6342ef553babded8c5</a></p>
 
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/20181217_setup-mac/" class="archive-article-date">
-  <time class="dt-published" datetime="2018-12-16T15:00:00.000Z" itemprop="datePublished">Dec 17</time>
-</a>
       
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/20181217_setup-mac/">(自分用メモ) Macを買ってからセットアップするまで</a>
-    </h1>
-  
-
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/20181217_circleci/" class="archive-article-date">
-  <time class="dt-published" datetime="2018-12-16T15:00:00.000Z" itemprop="datePublished">Dec 17</time>
-</a>
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://ki4070ma.github.io/weblog/20201230_elk-sample/" data-id="cklv2kt0d000j65d11xja300m" data-title="Elasticsearch, Kibanaの勉強用メモ" class="article-share-link">Share</a>
       
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/20181217_circleci/">circleci memo</a>
-    </h1>
-  
-
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/20181216_how-to-learn-coding/" class="archive-article-date">
-  <time class="dt-published" datetime="2018-12-15T15:00:00.000Z" itemprop="datePublished">Dec 16</time>
-</a>
       
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/20181216_how-to-learn-coding/">プログラミングの勉強法</a>
-    </h1>
-  
-
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/20181215_ssh-local-network/" class="archive-article-date">
-  <time class="dt-published" datetime="2018-12-14T15:00:00.000Z" itemprop="datePublished">Dec 15</time>
-</a>
       
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/20181215_ssh-local-network/">ローカルネットワーク内でsshするための設定</a>
-    </h1>
-  
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/ELK/" rel="tag">ELK</a></li></ul>
 
-    </header>
+    </footer>
   </div>
-</article>
   
     
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/20180113_wemo-insight/" class="archive-article-date">
-  <time class="dt-published" datetime="2018-01-12T15:00:00.000Z" itemprop="datePublished">Jan 13</time>
-</a>
-      
+<nav id="article-nav">
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/20180113_wemo-insight/">WeMo Insightで現在の消費電力を取得する</a>
-    </h1>
+    <a href="/20210303_appium-screen-record/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          Appium で screen recordを使用する
+        
+      </div>
+    </a>
   
+  
+    <a href="/20191101_slide-presentation/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">スライドを作成するときに参考にするサイト</div>
+    </a>
+  
+</nav>
 
-    </header>
-  </div>
+  
 </article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/20180104_How-to-use-et/" class="archive-article-date">
-  <time class="dt-published" datetime="2018-01-03T15:00:00.000Z" itemprop="datePublished">Jan 4</time>
-</a>
-      
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/20180104_How-to-use-et/">探索的テストの使い方</a>
-    </h1>
-  
-
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
-  
 
 
 </section>
