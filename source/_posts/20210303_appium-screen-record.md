@@ -1,10 +1,9 @@
 ---
-title: Screen record with Appium
+title: Appium で screen recordを使用する
 date: 2021-03-03
 tags: Appium
+ArticleID: 20210303
 ---
-
-# Appium で screen recordを使用する
 
 Official な document では少々不足していたので, 使い方をまとめます.
 
@@ -13,6 +12,7 @@ self.driver.start_recording_screen()
 
 payload = self.driver.stop_recording_screen()
 
+# ★この2行
 with open('video.mp4', "wb") as fd:
     fd.write(base64.b64decode(payload))
 
