@@ -25,5 +25,6 @@ tags: Mac
 5. その他
     * Xcodeが大きい...
     * そもそも大きな容量を積んだMacbookを買いましょう (反省)
+    * (2021/03) M1 Mac(1TB)買いました, とても満足です 😀
 
 ref: https://qiita.com/atsushi0521/items/85aca0153c33a22e74a3

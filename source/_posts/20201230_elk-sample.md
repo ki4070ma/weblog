@@ -4,12 +4,6 @@ date: 2020-12-30
 tags: ELK
 ---
 
-(自分用メモ, 随時更新)
-
-## 残件
-
-* Logstatshはまたそのうち
-
 ## 1. サンプルを動かす
 * こちらを参考に以下をやった
    * https://qiita.com/kiyokiyo_kzsby/items/344fb2e9aead158a5545

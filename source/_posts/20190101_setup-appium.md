@@ -36,17 +36,12 @@ export PATH=$JAVA_HOME/bin:$PATH
 # 使い方
 
 ## Screenrecord
-* 使ってみようとしたところ上手くいかなかったが, 調べたりいろいろやってたら出来た
-* [official] 
-    * [start screen recording](http://appium.io/docs/en/commands/device/recording-screen/start-recording-screen/)
-    * [stop screen recording](http://appium.io/docs/en/commands/device/recording-screen/stop-recording-screen/)
+[Appium で screen recordを使用する](/20210303_appium-screen-record/)
 
-## Screenshot
-
-## Adb log
 
 # Memo
 * 試してみる: appium-docker-android
     * https://github.com/appium/appium-docker-android
+    * なぜか上手く動かなかった
 
 ref: https://qiita.com/atsushi0521/items/660a3ac74cb4b7d734f5
