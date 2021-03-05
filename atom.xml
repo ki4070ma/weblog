@@ -6,7 +6,7 @@
   <link href="https://ki4070ma.github.io/weblog/atom.xml" rel="self"/>
   
   <link href="https://ki4070ma.github.io/weblog/"/>
-  <updated>2021-03-05T15:49:17.982Z</updated>
+  <updated>2021-03-05T16:47:19.710Z</updated>
   <id>https://ki4070ma.github.io/weblog/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Appiumで特定のelementが表示されるまで待つ</title>
+    <link href="https://ki4070ma.github.io/weblog/20210305-appium-wait-for-el/"/>
+    <id>https://ki4070ma.github.io/weblog/20210305-appium-wait-for-el/</id>
+    <published>2021-03-04T15:00:00.000Z</published>
+    <updated>2021-03-05T16:47:19.710Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;必要な背景&quot;&gt;&lt;a href=&quot;#必要な背景&quot; class=&quot;headerlink&quot; title=&quot;必要な背景&quot;&gt;&lt;/a&gt;必要な背景&lt;/h1&gt;&lt;p&gt;以下のようなケースで役に立ちます&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;(特にAndroid)</summary>
+        
+      
+    
+    
+    
+    
+    <category term="Appium" scheme="https://ki4070ma.github.io/weblog/tags/Appium/"/>
+    
+  </entry>
   
   <entry>
     <title>Mac用USB Type C Hub (4in1)</title>
@@ -164,30 +189,6 @@
   </entry>
   
   <entry>
-    <title>PythonのLibraryで使用したことがあるもの</title>
-    <link href="https://ki4070ma.github.io/weblog/20181226_python/"/>
-    <id>https://ki4070ma.github.io/weblog/20181226_python/</id>
-    <published>2018-12-25T15:00:00.000Z</published>
-    <updated>2021-03-05T13:27:39.142Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;使用したことがあるlibraryに加えて一言&lt;/p&gt;
-&lt;h1 id=&quot;どんなライブラリたちがあるか&quot;&gt;&lt;a href=&quot;#どんなライブラリたちがあるか&quot; class=&quot;headerlink&quot;</summary>
-        
-      
-    
-    
-    
-    
-    <category term="Python" scheme="https://ki4070ma.github.io/weblog/tags/Python/"/>
-    
-  </entry>
-  
-  <entry>
     <title>ffmpeg memo</title>
     <link href="https://ki4070ma.github.io/weblog/20181226_ffmpeg/"/>
     <id>https://ki4070ma.github.io/weblog/20181226_ffmpeg/</id>
@@ -208,6 +209,30 @@
     
     
     <category term="ffmpeg" scheme="https://ki4070ma.github.io/weblog/tags/ffmpeg/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>PythonのLibraryで使用したことがあるもの</title>
+    <link href="https://ki4070ma.github.io/weblog/20181226_python/"/>
+    <id>https://ki4070ma.github.io/weblog/20181226_python/</id>
+    <published>2018-12-25T15:00:00.000Z</published>
+    <updated>2021-03-05T13:27:39.142Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;使用したことがあるlibraryに加えて一言&lt;/p&gt;
+&lt;h1 id=&quot;どんなライブラリたちがあるか&quot;&gt;&lt;a href=&quot;#どんなライブラリたちがあるか&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    
+    <category term="Python" scheme="https://ki4070ma.github.io/weblog/tags/Python/"/>
     
   </entry>
   

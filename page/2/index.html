@@ -78,6 +78,171 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-20181217_setup-mac" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/20181217_setup-mac/" class="article-date">
+  <time class="dt-published" datetime="2018-12-16T15:00:00.000Z" itemprop="datePublished">2018-12-17</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/20181217_setup-mac/">(自分用メモ) Macを買ってからセットアップするまで</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h1 id="Mac購入"><a href="#Mac購入" class="headerlink" title="Mac購入"></a>Mac購入</h1><ul>
+<li>Paypay祭りの時にMacBook Air(13-inch, 2017)を購入</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">1.8 GHz Intel Core i5</span><br><span class="line">8 GB 1600 MHz DDR3</span><br><span class="line">Intel HD Graphics 6000 1536 MB</span><br></pre></td></tr></table></figure>
+
+<h1 id="Mac起動"><a href="#Mac起動" class="headerlink" title="Mac起動"></a>Mac起動</h1><ul>
+<li>Apple idでログイン</li>
+<li>[つぶやき] webブラウザでもどこでもEmacsのキーバインドが使えるのが素敵<ul>
+<li>e.g. Ctrl+fで右方向に1つ進む</li>
+<li>特にWebブラウザ上のEditorなどで, “新しくTabを開く”ショートカットとコンフリクトせずに, Ctrl+nで下方向にいく (MacではCommand+nで新しくTabを開く)</li>
+</ul>
+</li>
+<li>[つぶやき] かな, 英数の切り替えが”かな”, ”英数”キーということを知る,,,</li>
+</ul>
+<h1 id="Macでの設定"><a href="#Macでの設定" class="headerlink" title="Macでの設定"></a>Macでの設定</h1><ul>
+<li>Dockの場所を左にして, 自動的に隠す (システム環境設定 -&gt; Dock)</li>
+</ul>
+<h1 id="Homebrewインストール"><a href="#Homebrewインストール" class="headerlink" title="Homebrewインストール"></a>Homebrewインストール</h1><ul>
+<li><a target="_blank" rel="noopener" href="https://brew.sh/index_ja">https://brew.sh/index_ja</a></li>
+</ul>
+<h1 id="SKKの導入"><a href="#SKKの導入" class="headerlink" title="SKKの導入"></a>SKKの導入</h1><ul>
+<li>SKKとは<ul>
+<li><a target="_blank" rel="noopener" href="https://ja.wikipedia.org/wiki/SKK">https://ja.wikipedia.org/wiki/SKK</a></li>
+</ul>
+</li>
+<li>MacでSKKをセットアップ1<ul>
+<li><a target="_blank" rel="noopener" href="http://aquaskk.osdn.jp/">http://aquaskk.osdn.jp</a></li>
+<li><a target="_blank" rel="noopener" href="http://aquaskk.osdn.jp/install_and_settings.html">http://aquaskk.osdn.jp/install_and_settings.html</a></li>
+<li>インストールしたけど, なぜか日本語入力できない… -&gt; これは設定ミスだった. 設定 -&gt; 入力ソースでAquaSKKだけではなく, “ひらがな”, “カタカナ”なども追加する必要がある.</li>
+<li>しかし、漢字などに変換できない…</li>
+<li>本家がaccessできない, これが関係あるのか <a target="_blank" rel="noopener" href="http://openlab.jp/skk/index-j.html">http://openlab.jp/skk/index-j.html</a></li>
+<li>辞書を別途DLして, 設定したらできた. ユーザ辞書に辞書Lと, 辞書一覧に辞書Lを追加した. (おそらく片方はユーザ辞書の登録は不要…)<ul>
+<li><a target="_blank" rel="noopener" href="https://github.com/skk-users-jp/dic-mirror">https://github.com/skk-users-jp/dic-mirror</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>[困り事1] SlackでShift+Enterで改行するたびに入力モードが”ひらがな”になる<ul>
+<li>[メモ1] “書類ごとに異なる入力ソースを使用”の設定は関係なし. SKKにも入力ソースの設定にもそれっぽいものはない…</li>
+<li>[解決せず1] <a target="_blank" rel="noopener" href="https://discussionsjapan.apple.com/thread/10153489">https://discussionsjapan.apple.com/thread/10153489</a></li>
+<li>[メモ2] AquaSKK側でIssueとして対応したっぽい(4.2.7) <a target="_blank" rel="noopener" href="https://github.com/codefirst/aquaskk/pull/25">https://github.com/codefirst/aquaskk/pull/25</a> . 起きているのは4.7.0ですね…</li>
+</ul>
+</li>
+<li>[困り事2] PyCharmで”ひらがな”モードだと”l”を押して英数にしても, 何かを入力した瞬間にひらがなを入力しようとする<ul>
+<li>[メモ1] 同じ症状, 参考に試してみる <a target="_blank" rel="noopener" href="https://github.com/codefirst/aquaskk/issues/81">https://github.com/codefirst/aquaskk/issues/81</a></li>
+</ul>
+</li>
+</ul>
+<h1 id="Githubの設定"><a href="#Githubの設定" class="headerlink" title="Githubの設定"></a>Githubの設定</h1><ul>
+<li>ssh経由でgit cloneできるように<ul>
+<li><a target="_blank" rel="noopener" href="https://qiita.com/unsoluble_sugar/items/14bea376d8e6fce82eb3">https://qiita.com/unsoluble_sugar/items/14bea376d8e6fce82eb3</a></li>
+</ul>
+</li>
+</ul>
+<h1 id="インストールしたもの-一般"><a href="#インストールしたもの-一般" class="headerlink" title="インストールしたもの (一般)"></a>インストールしたもの (一般)</h1><ul>
+<li>Google Chrome (Safariが検索してもたまに繋がらない)<ul>
+<li>Chromeだったら問題なくつながる, 謎</li>
+</ul>
+</li>
+<li>PyCharm<ul>
+<li><a target="_blank" rel="noopener" href="https://www.jetbrains.com/pycharm/">https://www.jetbrains.com/pycharm/</a></li>
+</ul>
+</li>
+<li>Android studio<ul>
+<li>参考: <a target="_blank" rel="noopener" href="https://akira-watson.com/android/adt-mac.html">https://akira-watson.com/android/adt-mac.html</a></li>
+</ul>
+</li>
+<li>Zsh / Oh my zsh<ul>
+<li><a target="_blank" rel="noopener" href="https://qiita.com/NaokiIshimura/items/249bb1a101b626a59387">https://qiita.com/NaokiIshimura/items/249bb1a101b626a59387</a></li>
+</ul>
+</li>
+<li>Docker for mac<ul>
+<li><a target="_blank" rel="noopener" href="https://docs.docker.com/docker-for-mac/">https://docs.docker.com/docker-for-mac/</a></li>
+</ul>
+</li>
+</ul>
+<h1 id="インストールしたもの-WebからMac用"><a href="#インストールしたもの-WebからMac用" class="headerlink" title="インストールしたもの (WebからMac用)"></a>インストールしたもの (WebからMac用)</h1><ul>
+<li>Cheat sheet<ul>
+<li><a target="_blank" rel="noopener" href="https://www.cheatsheetapp.com/CheatSheet/">https://www.cheatsheetapp.com/CheatSheet/</a></li>
+</ul>
+</li>
+</ul>
+<h1 id="インストールしたもの-AppStore"><a href="#インストールしたもの-AppStore" class="headerlink" title="インストールしたもの (AppStore)"></a>インストールしたもの (AppStore)</h1><ul>
+<li>Xcode</li>
+<li>Slack</li>
+</ul>
+<h1 id="インストールしたもの-brew"><a href="#インストールしたもの-brew" class="headerlink" title="インストールしたもの (brew)"></a>インストールしたもの (brew)</h1><ul>
+<li>git / python3 / ffmpeg</li>
+<li>emacs<ul>
+<li>Terminal上で開くのではなく, 別windowで開くようにする &gt; <a target="_blank" rel="noopener" href="https://qiita.com/kokorinosoba/items/ecceaabe07d91c6f2c66">https://qiita.com/kokorinosoba/items/ecceaabe07d91c6f2c66</a></li>
+</ul>
+</li>
+<li>circleci<ul>
+<li>circleciのビルドをローカルで確認できるように</li>
+</ul>
+</li>
+</ul>
+<h1 id="インストールしたもの-pip"><a href="#インストールしたもの-pip" class="headerlink" title="インストールしたもの (pip)"></a>インストールしたもの (pip)</h1><ul>
+<li>pytest, pytest-cov</li>
+</ul>
+<h1 id="覚え書き"><a href="#覚え書き" class="headerlink" title="覚え書き"></a>覚え書き</h1><ul>
+<li>Launchpadのショートカット<ul>
+<li><a target="_blank" rel="noopener" href="https://satoshisgarage.tech/?p=1741">https://satoshisgarage.tech/?p=1741</a></li>
+</ul>
+</li>
+</ul>
+<h1 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h1><ul>
+<li><a target="_blank" rel="noopener" href="https://qiita.com/taktod/items/308352c35e52fd015d35">僕のMacセットアップ記録</a></li>
+<li><a target="_blank" rel="noopener" href="https://qiita.com/ryuichi1208/items/5905240f3bfce793b33d">iMac/MacBook購入後に必ず設定したい設定項目</a><ul>
+<li>こんな設定が出来るんだ, 確認する</li>
+</ul>
+</li>
+</ul>
+<p>ref: <a target="_blank" rel="noopener" href="https://qiita.com/atsushi0521/items/020cc31dc990315afa36">https://qiita.com/atsushi0521/items/020cc31dc990315afa36</a></p>
+
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-9552058847412056"
+     data-ad-slot="7810355979"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://ki4070ma.github.io/weblog/20181217_setup-mac/" data-id="cklwj932b00092od17tgyfma4" data-title="(自分用メモ) Macを買ってからセットアップするまで" class="article-share-link">Share</a>
+      
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Mac/" rel="tag">Mac</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
     <article id="post-20181216_how-to-learn-coding" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
     <a href="/20181216_how-to-learn-coding/" class="article-date">
@@ -138,7 +303,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://ki4070ma.github.io/weblog/20181216_how-to-learn-coding/" data-id="cklwi6ug40005r4d19al28469" data-title="プログラミングの勉強法" class="article-share-link">Share</a>
+      <a data-url="https://ki4070ma.github.io/weblog/20181216_how-to-learn-coding/" data-id="cklwj932a00042od138bveoo2" data-title="プログラミングの勉強法" class="article-share-link">Share</a>
       
       
       
@@ -224,7 +389,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://ki4070ma.github.io/weblog/20181215_ssh-local-network/" data-id="cklwi6ug40004r4d1ct9ad0rp" data-title="ローカルネットワーク内でsshするための設定" class="article-share-link">Share</a>
+      <a data-url="https://ki4070ma.github.io/weblog/20181215_ssh-local-network/" data-id="cklwj932c000d2od13wuc7ncp" data-title="ローカルネットワーク内でsshするための設定" class="article-share-link">Share</a>
       
       
       
@@ -309,7 +474,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://ki4070ma.github.io/weblog/20180113_wemo-insight/" data-id="cklwi6ug20001r4d150s4dhsr" data-title="WeMo Insightで現在の消費電力を取得する" class="article-share-link">Share</a>
+      <a data-url="https://ki4070ma.github.io/weblog/20180113_wemo-insight/" data-id="cklwj932900032od1ek7e7bfm" data-title="WeMo Insightで現在の消費電力を取得する" class="article-share-link">Share</a>
       
       
       
@@ -399,7 +564,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://ki4070ma.github.io/weblog/20180104_How-to-use-et/" data-id="cklwi6ufz0000r4d10nj9gb2g" data-title="探索的テストの使い方" class="article-share-link">Share</a>
+      <a data-url="https://ki4070ma.github.io/weblog/20180104_How-to-use-et/" data-id="cklwj932600002od1e0biazka" data-title="探索的テストの使い方" class="article-share-link">Share</a>
       
       
       
@@ -452,7 +617,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://ki4070ma.github.io/weblog/20170101_sandbox/" data-id="cklwi6ug30003r4d15mkk6ytx" data-title="sandbox" class="article-share-link">Share</a>
+      <a data-url="https://ki4070ma.github.io/weblog/20170101_sandbox/" data-id="cklwj932800012od14s135zuu" data-title="sandbox" class="article-share-link">Share</a>
       
       
       
@@ -492,7 +657,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Tag Cloud</h3>
     <div class="widget tagcloud">
-      <a href="/tags/Amazon/" style="font-size: 10px;">Amazon</a> <a href="/tags/Appium/" style="font-size: 20px;">Appium</a> <a href="/tags/CircleCI/" style="font-size: 10px;">CircleCI</a> <a href="/tags/ELK/" style="font-size: 10px;">ELK</a> <a href="/tags/Mac/" style="font-size: 20px;">Mac</a> <a href="/tags/Presentation/" style="font-size: 10px;">Presentation</a> <a href="/tags/Programming/" style="font-size: 10px;">Programming</a> <a href="/tags/Python/" style="font-size: 10px;">Python</a> <a href="/tags/SoftwareTest/" style="font-size: 10px;">SoftwareTest</a> <a href="/tags/WeMo/" style="font-size: 10px;">WeMo</a> <a href="/tags/ffmpeg/" style="font-size: 10px;">ffmpeg</a> <a href="/tags/ssh/" style="font-size: 10px;">ssh</a>
+      <a href="/tags/Amazon/" style="font-size: 10px;">Amazon</a> <a href="/tags/Appium/" style="font-size: 20px;">Appium</a> <a href="/tags/CircleCI/" style="font-size: 10px;">CircleCI</a> <a href="/tags/ELK/" style="font-size: 10px;">ELK</a> <a href="/tags/Mac/" style="font-size: 15px;">Mac</a> <a href="/tags/Presentation/" style="font-size: 10px;">Presentation</a> <a href="/tags/Programming/" style="font-size: 10px;">Programming</a> <a href="/tags/Python/" style="font-size: 10px;">Python</a> <a href="/tags/SoftwareTest/" style="font-size: 10px;">SoftwareTest</a> <a href="/tags/WeMo/" style="font-size: 10px;">WeMo</a> <a href="/tags/ffmpeg/" style="font-size: 10px;">ffmpeg</a> <a href="/tags/ssh/" style="font-size: 10px;">ssh</a>
     </div>
   </div>
 
@@ -514,6 +679,10 @@
       <ul>
         
           <li>
+            <a href="/20210305-appium-wait-for-el/">Appiumで特定のelementが表示されるまで待つ</a>
+          </li>
+        
+          <li>
             <a href="/20210304_tuwejia/">Mac用USB Type C Hub (4in1)</a>
           </li>
         
@@ -527,10 +696,6 @@
         
           <li>
             <a href="/20191101_slide-presentation/">スライドを作成するときに参考にするサイト</a>
-          </li>
-        
-          <li>
-            <a href="/20190418_mac-hdd-free/">Macで空き容量を増やすためにやったこと</a>
           </li>
         
       </ul>
