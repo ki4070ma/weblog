@@ -137,3 +137,17 @@ google_analytics: G-JWTW1CHBL8
 
 linkPreview:
   descriptionLength: 1
+
+googlePhotosAlbum:
+  descriptionLength: 140
+  target: _blank
+  rel: noopener
+  className: google-photos-album-area
+  enableDefaultStyle: true
+  defaultStyle: google_photos_album.css
+  largeSizeThreshold: 768
+  largeSize:  =s1920-no
+  mediumSize: =s720-no
+  smallSize:  =w225-no
+  maxPics: 999
+  generateAlways: false
