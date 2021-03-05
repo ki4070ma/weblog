@@ -9,32 +9,16 @@
 
 
     <url>
+        <loc>https://ki4070ma.github.io/weblog/20170101_sandbox/</loc>
+        <lastmod>2021-03-05T15:49:17.982Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://ki4070ma.github.io/weblog/20210304_tuwejia/</loc>
-        <lastmod>2021-03-04T16:10:57.037Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://ki4070ma.github.io/weblog/20181217_setup-mac/</loc>
-        <lastmod>2021-03-04T15:39:08.602Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://ki4070ma.github.io/weblog/20210303_appium-screen-record/</loc>
-        <lastmod>2021-03-04T15:38:38.471Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://ki4070ma.github.io/weblog/20181226_python/</loc>
-        <lastmod>2021-03-04T15:37:34.450Z</lastmod>
+        <lastmod>2021-03-05T15:49:17.982Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -42,7 +26,7 @@
 
     <url>
         <loc>https://ki4070ma.github.io/weblog/20190101_setup-appium/</loc>
-        <lastmod>2021-03-04T15:36:18.139Z</lastmod>
+        <lastmod>2021-03-05T13:27:39.143Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -50,7 +34,7 @@
 
     <url>
         <loc>https://ki4070ma.github.io/weblog/20190418_mac-hdd-free/</loc>
-        <lastmod>2021-03-04T15:09:56.391Z</lastmod>
+        <lastmod>2021-03-05T13:27:39.143Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -58,7 +42,31 @@
 
     <url>
         <loc>https://ki4070ma.github.io/weblog/20201230_elk-sample/</loc>
-        <lastmod>2021-03-04T15:07:43.468Z</lastmod>
+        <lastmod>2021-03-05T13:27:39.143Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://ki4070ma.github.io/weblog/20210303_appium-screen-record/</loc>
+        <lastmod>2021-03-05T13:27:39.143Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://ki4070ma.github.io/weblog/20181226_python/</loc>
+        <lastmod>2021-03-05T13:27:39.142Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://ki4070ma.github.io/weblog/20181217_setup-mac/</loc>
+        <lastmod>2021-03-05T13:27:39.142Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
