@@ -37,4 +37,8 @@ tags: [SoftwareTest, ExploratoryTest]
     * http://jasst.jp/symposium/jasst14kyushu/pdf/S3.pdf
 * 探索的テストは特徴を把握して自分たちに合うように使うとよい
 
+{% iframe https://rcm-fe.amazon-adsystem.com/e/cm?lt1=_blank&bc1=000000&IS2=1&bg1=FFFFFF&fc1=000000&lc1=0000FF&t=ki4070ma-22&language=ja_JP&o=9&p=8&l=as4&m=amazon&f=ifr&ref=as_ss_li_til&asins=4798130605&linkId=6829f54f78a9c756c81ff11a4a3f0a99 120 240 %}
+
+{% iframe https://rcm-fe.amazon-adsystem.com/e/cm?lt1=_blank&bc1=000000&IS2=1&bg1=FFFFFF&fc1=000000&lc1=0000FF&t=ki4070ma-22&language=ja_JP&o=9&p=8&l=as4&m=amazon&f=ifr&ref=as_ss_li_til&asins=4798165034&linkId=bd12d315c013fc821f7b3503ce1ed22c 120 240 %}
+
 ref: https://qiita.com/atsushi0521/items/e1ba80010ed34aca26bf
