@@ -96,7 +96,7 @@ googlePhotosAlbum:
   rel: noopener
   className: google-photos-album-area
   enableDefaultStyle: true
-  defaultStyle: google_photos_album.css
+  defaultStyle: .
   largeSizeThreshold: 768
   largeSize: '=s1920-no'
   mediumSize: '=s720-no'
