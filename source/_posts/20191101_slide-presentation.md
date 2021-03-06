@@ -1,7 +1,7 @@
 ---
 title: スライドを作成するときに参考にするサイト
 date: 2019-11-01
-tags: Presentation
+tags: [Presentation]
 ---
 
 # 背景

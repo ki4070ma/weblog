@@ -1,7 +1,7 @@
 ---
 title: Appiumで特定のelementが表示されるまで待つ
 date: 2021-03-05
-tags: Appium
+tags: [Appium, Technology]
 ---
 
 # 必要な背景

@@ -1,8 +1,7 @@
 ---
 title: Appium で screen recordを使用する
 date: 2021-03-03
-tags: Appium
-ArticleID: 20210303
+tags: [Appium, Technology]
 ---
 
 Official な document では少々不足していたので, 使い方をまとめます.

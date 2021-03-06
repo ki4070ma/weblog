@@ -1,11 +1,11 @@
 title: ki4070maのメモ帳
 subtitle: Python, SoftwareTest
 description: ''
-keywords: null
+keywords: Python, SoftwareTest
 author: Atsushi Mori
-language: en
-timezone: ''
-url: https://ki4070ma.github.io/weblog
+language: ja
+timezone: Asia/Tokyo
+url: https://ki4070ma.com
 root: /
 permalink: ':title/'
 permalink_defaults: null
@@ -96,7 +96,7 @@ googlePhotosAlbum:
   rel: noopener
   className: google-photos-album-area
   enableDefaultStyle: true
-  defaultStyle: google_photos_album.css
+  defaultStyle: .
   largeSizeThreshold: 768
   largeSize: '=s1920-no'
   mediumSize: '=s720-no'

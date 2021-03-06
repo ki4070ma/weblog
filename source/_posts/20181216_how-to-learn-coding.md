@@ -1,7 +1,7 @@
 ---
 title: プログラミングの勉強法
 date: 2018-12-16
-tags: Programming
+tags: [Programming, Study]
 ---
 
 # メイン: LeetCode

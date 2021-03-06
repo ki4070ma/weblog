@@ -1,7 +1,7 @@
 ---
 title: Appiumのセットアップ, 使い方
 date: 2019-01-01
-tags: Appium
+tags: [Appium, Technology]
 ---
 
 # Appiumのセットアップ
