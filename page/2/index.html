@@ -8,10 +8,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta property="og:type" content="website">
 <meta property="og:title" content="ki4070maのメモ帳">
-<meta property="og:url" content="https://ki4070ma.github.io/weblog/page/2/index.html">
+<meta property="og:url" content="https://ki4070ma.com/page/2/index.html">
 <meta property="og:site_name" content="ki4070maのメモ帳">
-<meta property="og:locale" content="en_US">
+<meta property="og:locale" content="ja_JP">
 <meta property="article:author" content="Atsushi Mori">
+<meta property="article:tag" content="Python, SoftwareTest">
 <meta name="twitter:card" content="summary">
   
     <link rel="alternate" href="/atom.xml" title="ki4070maのメモ帳" type="application/atom+xml">
@@ -32,7 +33,7 @@
 <link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
 
   
-<!-- hexo injector head_end start -->google_photos_album.css<!-- hexo injector head_end end --><meta name="generator" content="Hexo 5.4.0"></head>
+<!-- hexo injector head_end start -->.<!-- hexo injector head_end end --><meta name="generator" content="Hexo 5.4.0"></head>
 
 <body>
   <div id="container">
@@ -61,12 +62,12 @@
       </nav>
       <nav id="sub-nav">
         
-          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSSフィード"></a>
         
-        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+        <a id="nav-search-btn" class="nav-icon" title="検索"></a>
       </nav>
       <div id="search-form-wrap">
-        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://ki4070ma.github.io/weblog"></form>
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="検索"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://ki4070ma.com"></form>
       </div>
     </div>
   </div>
@@ -77,6 +78,86 @@
       <!-- ad end -->
       <div class="outer">
         <section id="main">
+  
+    <article id="post-20181217_circleci" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/20181217_circleci/" class="article-date">
+  <time class="dt-published" datetime="2018-12-16T15:00:00.000Z" itemprop="datePublished">2018-12-17</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/20181217_circleci/">circleci memo</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h1 id="セットアップ"><a href="#セットアップ" class="headerlink" title="セットアップ"></a>セットアップ</h1><ul>
+<li><a target="_blank" rel="noopener" href="https://github.com/">Github</a>でプロジェクトを作成する</li>
+<li><a target="_blank" rel="noopener" href="https://circleci.com/">CircleCI</a>で対象のプロジェクトに対してCIを有効化する</li>
+</ul>
+<h1 id="ローカルでcircleciのビルドを実行できるようにする"><a href="#ローカルでcircleciのビルドを実行できるようにする" class="headerlink" title="ローカルでcircleciのビルドを実行できるようにする"></a>ローカルでcircleciのビルドを実行できるようにする</h1><ul>
+<li>[目的] ymlを作成してすぐ試すというサイクルを短くするため</li>
+<li>[手順]<ol>
+<li>Dockerをインストール (<a target="_blank" rel="noopener" href="https://docs.docker.com/docker-for-mac/">公式 Docker for mac</a>)</li>
+<li>Circleci-cliをインストール<ul>
+<li>$brew install circleci</li>
+</ul>
+</li>
+</ol>
+</li>
+</ul>
+<h1 id="circleci-config-ymlを作成する"><a href="#circleci-config-ymlを作成する" class="headerlink" title="circleci/config.ymlを作成する"></a>circleci/config.ymlを作成する</h1><ul>
+<li>自分が使用する言語でHello worldするconfig.ymlを書くと吉</li>
+<li>例<ul>
+<li><a target="_blank" rel="noopener" href="https://github.com/ki4070ma/unittest/blob/master/.circleci/config.yml">https://github.com/ki4070ma/unittest/blob/master/.circleci/config.yml</a></li>
+</ul>
+</li>
+</ul>
+<h1 id="GithubにCircle-CI-statusバッジを貼り付ける"><a href="#GithubにCircle-CI-statusバッジを貼り付ける" class="headerlink" title="GithubにCircle CI statusバッジを貼り付ける"></a>GithubにCircle CI statusバッジを貼り付ける</h1><ul>
+<li><a target="_blank" rel="noopener" href="https://qiita.com/Hanocha/items/8ad74258eb43d0959590">githubでREADME.mdにCircleCIのバッジを表示する</a></li>
+</ul>
+<h1 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h1><ul>
+<li><a target="_blank" rel="noopener" href="https://qiita.com/selmertsx/items/45bd672c2c8ddab1981b">CircleCI 2.0 をlocalで動かす</a></li>
+</ul>
+<p>ref: <a target="_blank" rel="noopener" href="https://qiita.com/atsushi0521/items/b335f375550f84fcd1f0">https://qiita.com/atsushi0521/items/b335f375550f84fcd1f0</a></p>
+
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-9552058847412056"
+     data-ad-slot="7810355979"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://ki4070ma.com/20181217_circleci/" data-id="cklxcyc4p0005rud19g403t62" data-title="circleci memo" class="article-share-link">共有</a>
+      
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/CircleCI/" rel="tag">CircleCI</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Technology/" rel="tag">Technology</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+
   
     <article id="post-20181217_setup-mac" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
@@ -229,7 +310,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://ki4070ma.github.io/weblog/20181217_setup-mac/" data-id="cklwj932b00092od17tgyfma4" data-title="(自分用メモ) Macを買ってからセットアップするまで" class="article-share-link">Share</a>
+      <a data-url="https://ki4070ma.com/20181217_setup-mac/" data-id="cklxcyc4p0006rud1bkb50fzn" data-title="(自分用メモ) Macを買ってからセットアップするまで" class="article-share-link">共有</a>
       
       
       
@@ -303,11 +384,11 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://ki4070ma.github.io/weblog/20181216_how-to-learn-coding/" data-id="cklwj932a00042od138bveoo2" data-title="プログラミングの勉強法" class="article-share-link">Share</a>
+      <a data-url="https://ki4070ma.com/20181216_how-to-learn-coding/" data-id="cklxcyc4o0004rud12j6kgaiq" data-title="プログラミングの勉強法" class="article-share-link">共有</a>
       
       
       
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Programming/" rel="tag">Programming</a></li></ul>
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Programming/" rel="tag">Programming</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Study/" rel="tag">Study</a></li></ul>
 
     </footer>
   </div>
@@ -389,11 +470,11 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://ki4070ma.github.io/weblog/20181215_ssh-local-network/" data-id="cklwj932c000d2od13wuc7ncp" data-title="ローカルネットワーク内でsshするための設定" class="article-share-link">Share</a>
+      <a data-url="https://ki4070ma.com/20181215_ssh-local-network/" data-id="cklxcyc4q0008rud124zi6r2c" data-title="ローカルネットワーク内でsshするための設定" class="article-share-link">共有</a>
       
       
       
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/ssh/" rel="tag">ssh</a></li></ul>
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Technology/" rel="tag">Technology</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/ssh/" rel="tag">ssh</a></li></ul>
 
     </footer>
   </div>
@@ -425,7 +506,7 @@
     
     <div class="e-content article-entry" itemprop="articleBody">
       
-        <h1 id="WeMo-Insight"><a href="#WeMo-Insight" class="headerlink" title="WeMo Insight"></a>WeMo Insight</h1><!--![alt](/weblog/20180113_wemo-insight/wemo.png)-->
+        <h1 id="WeMo-Insight"><a href="#WeMo-Insight" class="headerlink" title="WeMo Insight"></a>WeMo Insight</h1><!--![alt](/20180113_wemo-insight/wemo.png)-->
 <img src="wemo.png" width="25%" height="25%">
 
 <ul>
@@ -474,11 +555,11 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://ki4070ma.github.io/weblog/20180113_wemo-insight/" data-id="cklwj932900032od1ek7e7bfm" data-title="WeMo Insightで現在の消費電力を取得する" class="article-share-link">Share</a>
+      <a data-url="https://ki4070ma.com/20180113_wemo-insight/" data-id="cklxcyc4l0002rud1e4j2fis5" data-title="WeMo Insightで現在の消費電力を取得する" class="article-share-link">共有</a>
       
       
       
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/WeMo/" rel="tag">WeMo</a></li></ul>
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Technology/" rel="tag">Technology</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/WeMo/" rel="tag">WeMo</a></li></ul>
 
     </footer>
   </div>
@@ -548,6 +629,10 @@
 </li>
 <li>探索的テストは特徴を把握して自分たちに合うように使うとよい</li>
 </ul>
+<iframe src="https://rcm-fe.amazon-adsystem.com/e/cm?lt1=_blank&bc1=000000&IS2=1&bg1=FFFFFF&fc1=000000&lc1=0000FF&t=ki4070ma-22&language=ja_JP&o=9&p=8&l=as4&m=amazon&f=ifr&ref=as_ss_li_til&asins=4798130605&linkId=6829f54f78a9c756c81ff11a4a3f0a99" width="120" height="240" frameborder="0" loading="lazy" allowfullscreen></iframe>
+
+<iframe src="https://rcm-fe.amazon-adsystem.com/e/cm?lt1=_blank&bc1=000000&IS2=1&bg1=FFFFFF&fc1=000000&lc1=0000FF&t=ki4070ma-22&language=ja_JP&o=9&p=8&l=as4&m=amazon&f=ifr&ref=as_ss_li_til&asins=4798165034&linkId=bd12d315c013fc821f7b3503ce1ed22c" width="120" height="240" frameborder="0" loading="lazy" allowfullscreen></iframe>
+
 <p>ref: <a target="_blank" rel="noopener" href="https://qiita.com/atsushi0521/items/e1ba80010ed34aca26bf">https://qiita.com/atsushi0521/items/e1ba80010ed34aca26bf</a></p>
 
         <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
@@ -564,11 +649,11 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://ki4070ma.github.io/weblog/20180104_How-to-use-et/" data-id="cklwj932600002od1e0biazka" data-title="探索的テストの使い方" class="article-share-link">Share</a>
+      <a data-url="https://ki4070ma.com/20180104_How-to-use-et/" data-id="cklxcyc4j0001rud1hahuajwo" data-title="探索的テストの使い方" class="article-share-link">共有</a>
       
       
       
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/SoftwareTest/" rel="tag">SoftwareTest</a></li></ul>
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/ExploratoryTest/" rel="tag">ExploratoryTest</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/SoftwareTest/" rel="tag">SoftwareTest</a></li></ul>
 
     </footer>
   </div>
@@ -617,7 +702,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://ki4070ma.github.io/weblog/20170101_sandbox/" data-id="cklwj932800012od14s135zuu" data-title="sandbox" class="article-share-link">Share</a>
+      <a data-url="https://ki4070ma.com/20170101_sandbox/" data-id="cklxcyc4h0000rud19cx508px" data-title="sandbox" class="article-share-link">共有</a>
       
       
       
@@ -633,7 +718,7 @@
 
   <nav id="page-nav">
     
-    <a class="extend prev" rel="prev" href="/">&laquo; Prev</a><a class="page-number" href="/">1</a><span class="page-number current">2</span>
+    <a class="extend prev" rel="prev" href="/">&laquo; 戻る</a><a class="page-number" href="/">1</a><span class="page-number current">2</span>
   </nav>
 
 </section>
@@ -645,9 +730,9 @@
   
     
   <div class="widget-wrap">
-    <h3 class="widget-title">Tags</h3>
+    <h3 class="widget-title">タグ</h3>
     <div class="widget">
-      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Amazon/" rel="tag">Amazon</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Appium/" rel="tag">Appium</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/CircleCI/" rel="tag">CircleCI</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ELK/" rel="tag">ELK</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Mac/" rel="tag">Mac</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Presentation/" rel="tag">Presentation</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Programming/" rel="tag">Programming</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Python/" rel="tag">Python</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/SoftwareTest/" rel="tag">SoftwareTest</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/WeMo/" rel="tag">WeMo</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ffmpeg/" rel="tag">ffmpeg</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ssh/" rel="tag">ssh</a></li></ul>
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Amazon/" rel="tag">Amazon</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Appium/" rel="tag">Appium</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/CircleCI/" rel="tag">CircleCI</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ELK/" rel="tag">ELK</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ExploratoryTest/" rel="tag">ExploratoryTest</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Mac/" rel="tag">Mac</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Presentation/" rel="tag">Presentation</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Programming/" rel="tag">Programming</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Python/" rel="tag">Python</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/SoftwareTest/" rel="tag">SoftwareTest</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Study/" rel="tag">Study</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Technology/" rel="tag">Technology</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/WFH/" rel="tag">WFH</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/WeMo/" rel="tag">WeMo</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ffmpeg/" rel="tag">ffmpeg</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ssh/" rel="tag">ssh</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E3%83%AA%E3%83%A2%E3%83%BC%E3%83%88%E3%83%AF%E3%83%BC%E3%82%AF/" rel="tag">リモートワーク</a></li></ul>
     </div>
   </div>
 
@@ -655,18 +740,18 @@
   
     
   <div class="widget-wrap">
-    <h3 class="widget-title">Tag Cloud</h3>
+    <h3 class="widget-title">タグクラウド</h3>
     <div class="widget tagcloud">
-      <a href="/tags/Amazon/" style="font-size: 10px;">Amazon</a> <a href="/tags/Appium/" style="font-size: 20px;">Appium</a> <a href="/tags/CircleCI/" style="font-size: 10px;">CircleCI</a> <a href="/tags/ELK/" style="font-size: 10px;">ELK</a> <a href="/tags/Mac/" style="font-size: 15px;">Mac</a> <a href="/tags/Presentation/" style="font-size: 10px;">Presentation</a> <a href="/tags/Programming/" style="font-size: 10px;">Programming</a> <a href="/tags/Python/" style="font-size: 10px;">Python</a> <a href="/tags/SoftwareTest/" style="font-size: 10px;">SoftwareTest</a> <a href="/tags/WeMo/" style="font-size: 10px;">WeMo</a> <a href="/tags/ffmpeg/" style="font-size: 10px;">ffmpeg</a> <a href="/tags/ssh/" style="font-size: 10px;">ssh</a>
+      <a href="/tags/Amazon/" style="font-size: 13.33px;">Amazon</a> <a href="/tags/Appium/" style="font-size: 16.67px;">Appium</a> <a href="/tags/CircleCI/" style="font-size: 10px;">CircleCI</a> <a href="/tags/ELK/" style="font-size: 10px;">ELK</a> <a href="/tags/ExploratoryTest/" style="font-size: 10px;">ExploratoryTest</a> <a href="/tags/Mac/" style="font-size: 13.33px;">Mac</a> <a href="/tags/Presentation/" style="font-size: 10px;">Presentation</a> <a href="/tags/Programming/" style="font-size: 10px;">Programming</a> <a href="/tags/Python/" style="font-size: 10px;">Python</a> <a href="/tags/SoftwareTest/" style="font-size: 10px;">SoftwareTest</a> <a href="/tags/Study/" style="font-size: 10px;">Study</a> <a href="/tags/Technology/" style="font-size: 20px;">Technology</a> <a href="/tags/WFH/" style="font-size: 10px;">WFH</a> <a href="/tags/WeMo/" style="font-size: 10px;">WeMo</a> <a href="/tags/ffmpeg/" style="font-size: 10px;">ffmpeg</a> <a href="/tags/ssh/" style="font-size: 10px;">ssh</a> <a href="/tags/%E3%83%AA%E3%83%A2%E3%83%BC%E3%83%88%E3%83%AF%E3%83%BC%E3%82%AF/" style="font-size: 10px;">リモートワーク</a>
     </div>
   </div>
 
   
     
   <div class="widget-wrap">
-    <h3 class="widget-title">Archives</h3>
+    <h3 class="widget-title">アーカイブ</h3>
     <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/03/">March 2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/12/">December 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/11/">November 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/04/">April 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/01/">January 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/12/">December 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/01/">January 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/01/">January 2017</a></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/03/">3月 2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/12/">12月 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/11/">11月 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/04/">4月 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/01/">1月 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/12/">12月 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/01/">1月 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/01/">1月 2017</a></li></ul>
     </div>
   </div>
 
@@ -674,9 +759,13 @@
   
     
   <div class="widget-wrap">
-    <h3 class="widget-title">Recent Posts</h3>
+    <h3 class="widget-title">最近の投稿</h3>
     <div class="widget">
       <ul>
+        
+          <li>
+            <a href="/20210306-WFH/">リモートワークのために購入したもの</a>
+          </li>
         
           <li>
             <a href="/20210305-appium-wait-for-el/">Appiumで特定のelementが表示されるまで待つ</a>
@@ -692,10 +781,6 @@
         
           <li>
             <a href="/20201230_elk-sample/">Elasticsearch, Kibanaの勉強用メモ</a>
-          </li>
-        
-          <li>
-            <a href="/20191101_slide-presentation/">スライドを作成するときに参考にするサイト</a>
           </li>
         
       </ul>

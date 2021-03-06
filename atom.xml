@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>ki4070maのメモ帳</title>
-  <icon>https://ki4070ma.github.io/weblog/icon.png</icon>
+  <icon>https://ki4070ma.com/icon.png</icon>
   <subtitle>Python, SoftwareTest</subtitle>
-  <link href="https://ki4070ma.github.io/weblog/atom.xml" rel="self"/>
+  <link href="https://ki4070ma.com/atom.xml" rel="self"/>
   
-  <link href="https://ki4070ma.github.io/weblog/"/>
-  <updated>2021-03-05T16:47:19.710Z</updated>
-  <id>https://ki4070ma.github.io/weblog/</id>
+  <link href="https://ki4070ma.com/"/>
+  <updated>2021-03-06T06:36:03.391Z</updated>
+  <id>https://ki4070ma.com/</id>
   
   <author>
     <name>Atsushi Mori</name>
@@ -17,11 +17,39 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>リモートワークのために購入したもの</title>
+    <link href="https://ki4070ma.com/20210306-WFH/"/>
+    <id>https://ki4070ma.com/20210306-WFH/</id>
+    <published>2021-03-05T15:00:00.000Z</published>
+    <updated>2021-03-06T06:36:03.391Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;リモートワークのために購入してよかったものリストです&lt;br&gt;何かのご参考になれば&lt;/p&gt;
+&lt;h2 id=&quot;ゲーミングチェア&quot;&gt;&lt;a href=&quot;#ゲーミングチェア&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    
+    <category term="Amazon" scheme="https://ki4070ma.com/tags/Amazon/"/>
+    
+    <category term="WFH" scheme="https://ki4070ma.com/tags/WFH/"/>
+    
+    <category term="リモートワーク" scheme="https://ki4070ma.com/tags/%E3%83%AA%E3%83%A2%E3%83%BC%E3%83%88%E3%83%AF%E3%83%BC%E3%82%AF/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Appiumで特定のelementが表示されるまで待つ</title>
-    <link href="https://ki4070ma.github.io/weblog/20210305-appium-wait-for-el/"/>
-    <id>https://ki4070ma.github.io/weblog/20210305-appium-wait-for-el/</id>
+    <link href="https://ki4070ma.com/20210305-appium-wait-for-el/"/>
+    <id>https://ki4070ma.com/20210305-appium-wait-for-el/</id>
     <published>2021-03-04T15:00:00.000Z</published>
-    <updated>2021-03-05T16:47:19.710Z</updated>
+    <updated>2021-03-06T04:50:24.290Z</updated>
     
     
       
@@ -37,16 +65,18 @@
     
     
     
-    <category term="Appium" scheme="https://ki4070ma.github.io/weblog/tags/Appium/"/>
+    <category term="Technology" scheme="https://ki4070ma.com/tags/Technology/"/>
+    
+    <category term="Appium" scheme="https://ki4070ma.com/tags/Appium/"/>
     
   </entry>
   
   <entry>
     <title>Mac用USB Type C Hub (4in1)</title>
-    <link href="https://ki4070ma.github.io/weblog/20210304_tuwejia/"/>
-    <id>https://ki4070ma.github.io/weblog/20210304_tuwejia/</id>
+    <link href="https://ki4070ma.com/20210304_tuwejia/"/>
+    <id>https://ki4070ma.com/20210304_tuwejia/</id>
     <published>2021-03-03T15:00:00.000Z</published>
-    <updated>2021-03-05T15:49:17.982Z</updated>
+    <updated>2021-03-06T06:28:02.085Z</updated>
     
     
       
@@ -61,16 +91,16 @@
     
     
     
-    <category term="Amazon" scheme="https://ki4070ma.github.io/weblog/tags/Amazon/"/>
+    <category term="Amazon" scheme="https://ki4070ma.com/tags/Amazon/"/>
     
   </entry>
   
   <entry>
     <title>Appium で screen recordを使用する</title>
-    <link href="https://ki4070ma.github.io/weblog/20210303_appium-screen-record/"/>
-    <id>https://ki4070ma.github.io/weblog/20210303_appium-screen-record/</id>
+    <link href="https://ki4070ma.com/20210303_appium-screen-record/"/>
+    <id>https://ki4070ma.com/20210303_appium-screen-record/</id>
     <published>2021-03-02T15:00:00.000Z</published>
-    <updated>2021-03-05T13:27:39.143Z</updated>
+    <updated>2021-03-06T04:50:12.079Z</updated>
     
     
       
@@ -85,16 +115,18 @@
     
     
     
-    <category term="Appium" scheme="https://ki4070ma.github.io/weblog/tags/Appium/"/>
+    <category term="Technology" scheme="https://ki4070ma.com/tags/Technology/"/>
+    
+    <category term="Appium" scheme="https://ki4070ma.com/tags/Appium/"/>
     
   </entry>
   
   <entry>
     <title>Elasticsearch, Kibanaの勉強用メモ</title>
-    <link href="https://ki4070ma.github.io/weblog/20201230_elk-sample/"/>
-    <id>https://ki4070ma.github.io/weblog/20201230_elk-sample/</id>
+    <link href="https://ki4070ma.com/20201230_elk-sample/"/>
+    <id>https://ki4070ma.com/20201230_elk-sample/</id>
     <published>2020-12-29T15:00:00.000Z</published>
-    <updated>2021-03-05T13:27:39.143Z</updated>
+    <updated>2021-03-06T04:50:01.512Z</updated>
     
     
       
@@ -110,16 +142,18 @@
     
     
     
-    <category term="ELK" scheme="https://ki4070ma.github.io/weblog/tags/ELK/"/>
+    <category term="Technology" scheme="https://ki4070ma.com/tags/Technology/"/>
+    
+    <category term="ELK" scheme="https://ki4070ma.com/tags/ELK/"/>
     
   </entry>
   
   <entry>
     <title>スライドを作成するときに参考にするサイト</title>
-    <link href="https://ki4070ma.github.io/weblog/20191101_slide-presentation/"/>
-    <id>https://ki4070ma.github.io/weblog/20191101_slide-presentation/</id>
+    <link href="https://ki4070ma.com/20191101_slide-presentation/"/>
+    <id>https://ki4070ma.com/20191101_slide-presentation/</id>
     <published>2019-10-31T15:00:00.000Z</published>
-    <updated>2021-03-03T11:14:29.172Z</updated>
+    <updated>2021-03-06T04:49:54.329Z</updated>
     
     
       
@@ -134,16 +168,16 @@
     
     
     
-    <category term="Presentation" scheme="https://ki4070ma.github.io/weblog/tags/Presentation/"/>
+    <category term="Presentation" scheme="https://ki4070ma.com/tags/Presentation/"/>
     
   </entry>
   
   <entry>
     <title>Macで空き容量を増やすためにやったこと</title>
-    <link href="https://ki4070ma.github.io/weblog/20190418_mac-hdd-free/"/>
-    <id>https://ki4070ma.github.io/weblog/20190418_mac-hdd-free/</id>
+    <link href="https://ki4070ma.com/20190418_mac-hdd-free/"/>
+    <id>https://ki4070ma.com/20190418_mac-hdd-free/</id>
     <published>2019-04-17T15:00:00.000Z</published>
-    <updated>2021-03-05T13:27:39.143Z</updated>
+    <updated>2021-03-06T04:49:48.760Z</updated>
     
     
       
@@ -161,16 +195,16 @@
     
     
     
-    <category term="Mac" scheme="https://ki4070ma.github.io/weblog/tags/Mac/"/>
+    <category term="Mac" scheme="https://ki4070ma.com/tags/Mac/"/>
     
   </entry>
   
   <entry>
     <title>Appiumのセットアップ, 使い方</title>
-    <link href="https://ki4070ma.github.io/weblog/20190101_setup-appium/"/>
-    <id>https://ki4070ma.github.io/weblog/20190101_setup-appium/</id>
+    <link href="https://ki4070ma.com/20190101_setup-appium/"/>
+    <id>https://ki4070ma.com/20190101_setup-appium/</id>
     <published>2018-12-31T15:00:00.000Z</published>
-    <updated>2021-03-05T13:27:39.143Z</updated>
+    <updated>2021-03-06T04:49:43.945Z</updated>
     
     
       
@@ -184,16 +218,18 @@
     
     
     
-    <category term="Appium" scheme="https://ki4070ma.github.io/weblog/tags/Appium/"/>
+    <category term="Technology" scheme="https://ki4070ma.com/tags/Technology/"/>
+    
+    <category term="Appium" scheme="https://ki4070ma.com/tags/Appium/"/>
     
   </entry>
   
   <entry>
     <title>ffmpeg memo</title>
-    <link href="https://ki4070ma.github.io/weblog/20181226_ffmpeg/"/>
-    <id>https://ki4070ma.github.io/weblog/20181226_ffmpeg/</id>
+    <link href="https://ki4070ma.com/20181226_ffmpeg/"/>
+    <id>https://ki4070ma.com/20181226_ffmpeg/</id>
     <published>2018-12-25T15:00:00.000Z</published>
-    <updated>2021-03-03T11:02:30.551Z</updated>
+    <updated>2021-03-06T04:49:23.203Z</updated>
     
     
       
@@ -208,16 +244,18 @@
     
     
     
-    <category term="ffmpeg" scheme="https://ki4070ma.github.io/weblog/tags/ffmpeg/"/>
+    <category term="Technology" scheme="https://ki4070ma.com/tags/Technology/"/>
+    
+    <category term="ffmpeg" scheme="https://ki4070ma.com/tags/ffmpeg/"/>
     
   </entry>
   
   <entry>
     <title>PythonのLibraryで使用したことがあるもの</title>
-    <link href="https://ki4070ma.github.io/weblog/20181226_python/"/>
-    <id>https://ki4070ma.github.io/weblog/20181226_python/</id>
+    <link href="https://ki4070ma.com/20181226_python/"/>
+    <id>https://ki4070ma.com/20181226_python/</id>
     <published>2018-12-25T15:00:00.000Z</published>
-    <updated>2021-03-05T13:27:39.142Z</updated>
+    <updated>2021-03-06T04:49:34.113Z</updated>
     
     
       
@@ -232,16 +270,18 @@
     
     
     
-    <category term="Python" scheme="https://ki4070ma.github.io/weblog/tags/Python/"/>
+    <category term="Technology" scheme="https://ki4070ma.com/tags/Technology/"/>
+    
+    <category term="Python" scheme="https://ki4070ma.com/tags/Python/"/>
     
   </entry>
   
   <entry>
     <title>circleci memo</title>
-    <link href="https://ki4070ma.github.io/weblog/20181217_circleci/"/>
-    <id>https://ki4070ma.github.io/weblog/20181217_circleci/</id>
+    <link href="https://ki4070ma.com/20181217_circleci/"/>
+    <id>https://ki4070ma.com/20181217_circleci/</id>
     <published>2018-12-16T15:00:00.000Z</published>
-    <updated>2021-03-03T11:06:56.012Z</updated>
+    <updated>2021-03-06T04:47:57.427Z</updated>
     
     
       
@@ -256,16 +296,18 @@
     
     
     
-    <category term="CircleCI" scheme="https://ki4070ma.github.io/weblog/tags/CircleCI/"/>
+    <category term="Technology" scheme="https://ki4070ma.com/tags/Technology/"/>
+    
+    <category term="CircleCI" scheme="https://ki4070ma.com/tags/CircleCI/"/>
     
   </entry>
   
   <entry>
     <title>(自分用メモ) Macを買ってからセットアップするまで</title>
-    <link href="https://ki4070ma.github.io/weblog/20181217_setup-mac/"/>
-    <id>https://ki4070ma.github.io/weblog/20181217_setup-mac/</id>
+    <link href="https://ki4070ma.com/20181217_setup-mac/"/>
+    <id>https://ki4070ma.com/20181217_setup-mac/</id>
     <published>2018-12-16T15:00:00.000Z</published>
-    <updated>2021-03-05T13:27:39.142Z</updated>
+    <updated>2021-03-06T04:49:03.541Z</updated>
     
     
       
@@ -280,16 +322,16 @@
     
     
     
-    <category term="Mac" scheme="https://ki4070ma.github.io/weblog/tags/Mac/"/>
+    <category term="Mac" scheme="https://ki4070ma.com/tags/Mac/"/>
     
   </entry>
   
   <entry>
     <title>プログラミングの勉強法</title>
-    <link href="https://ki4070ma.github.io/weblog/20181216_how-to-learn-coding/"/>
-    <id>https://ki4070ma.github.io/weblog/20181216_how-to-learn-coding/</id>
+    <link href="https://ki4070ma.com/20181216_how-to-learn-coding/"/>
+    <id>https://ki4070ma.com/20181216_how-to-learn-coding/</id>
     <published>2018-12-15T15:00:00.000Z</published>
-    <updated>2021-03-03T05:43:27.243Z</updated>
+    <updated>2021-03-06T04:49:12.738Z</updated>
     
     
       
@@ -304,16 +346,18 @@
     
     
     
-    <category term="Programming" scheme="https://ki4070ma.github.io/weblog/tags/Programming/"/>
+    <category term="Programming" scheme="https://ki4070ma.com/tags/Programming/"/>
+    
+    <category term="Study" scheme="https://ki4070ma.com/tags/Study/"/>
     
   </entry>
   
   <entry>
     <title>ローカルネットワーク内でsshするための設定</title>
-    <link href="https://ki4070ma.github.io/weblog/20181215_ssh-local-network/"/>
-    <id>https://ki4070ma.github.io/weblog/20181215_ssh-local-network/</id>
+    <link href="https://ki4070ma.com/20181215_ssh-local-network/"/>
+    <id>https://ki4070ma.com/20181215_ssh-local-network/</id>
     <published>2018-12-14T15:00:00.000Z</published>
-    <updated>2021-03-03T01:29:29.596Z</updated>
+    <updated>2021-03-06T04:47:29.836Z</updated>
     
     
       
@@ -328,16 +372,18 @@
     
     
     
-    <category term="ssh" scheme="https://ki4070ma.github.io/weblog/tags/ssh/"/>
+    <category term="Technology" scheme="https://ki4070ma.com/tags/Technology/"/>
+    
+    <category term="ssh" scheme="https://ki4070ma.com/tags/ssh/"/>
     
   </entry>
   
   <entry>
     <title>WeMo Insightで現在の消費電力を取得する</title>
-    <link href="https://ki4070ma.github.io/weblog/20180113_wemo-insight/"/>
-    <id>https://ki4070ma.github.io/weblog/20180113_wemo-insight/</id>
+    <link href="https://ki4070ma.com/20180113_wemo-insight/"/>
+    <id>https://ki4070ma.com/20180113_wemo-insight/</id>
     <published>2018-01-12T15:00:00.000Z</published>
-    <updated>2021-03-03T15:49:02.310Z</updated>
+    <updated>2021-03-06T04:47:21.057Z</updated>
     
     
       
@@ -351,16 +397,18 @@
     
     
     
-    <category term="WeMo" scheme="https://ki4070ma.github.io/weblog/tags/WeMo/"/>
+    <category term="WeMo" scheme="https://ki4070ma.com/tags/WeMo/"/>
+    
+    <category term="Technology" scheme="https://ki4070ma.com/tags/Technology/"/>
     
   </entry>
   
   <entry>
     <title>探索的テストの使い方</title>
-    <link href="https://ki4070ma.github.io/weblog/20180104_How-to-use-et/"/>
-    <id>https://ki4070ma.github.io/weblog/20180104_How-to-use-et/</id>
+    <link href="https://ki4070ma.com/20180104_How-to-use-et/"/>
+    <id>https://ki4070ma.com/20180104_How-to-use-et/</id>
     <published>2018-01-03T15:00:00.000Z</published>
-    <updated>2021-03-03T01:29:19.946Z</updated>
+    <updated>2021-03-06T06:38:41.957Z</updated>
     
     
       
@@ -374,14 +422,16 @@
     
     
     
-    <category term="SoftwareTest" scheme="https://ki4070ma.github.io/weblog/tags/SoftwareTest/"/>
+    <category term="SoftwareTest" scheme="https://ki4070ma.com/tags/SoftwareTest/"/>
+    
+    <category term="ExploratoryTest" scheme="https://ki4070ma.com/tags/ExploratoryTest/"/>
     
   </entry>
   
   <entry>
     <title>sandbox</title>
-    <link href="https://ki4070ma.github.io/weblog/20170101_sandbox/"/>
-    <id>https://ki4070ma.github.io/weblog/20170101_sandbox/</id>
+    <link href="https://ki4070ma.com/20170101_sandbox/"/>
+    <id>https://ki4070ma.com/20170101_sandbox/</id>
     <published>2016-12-31T15:00:00.000Z</published>
     <updated>2021-03-05T15:49:17.982Z</updated>
     
