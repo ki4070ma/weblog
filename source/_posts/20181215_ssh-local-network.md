@@ -1,7 +1,7 @@
 ---
 title: ローカルネットワーク内でsshするための設定
 date: 2018-12-15
-tags: ssh
+tags: [ssh, Technology]
 ---
 
 自分が調べたことのメモ, ほぼどこかへのリンク.

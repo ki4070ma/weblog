@@ -1,7 +1,7 @@
 ---
 title: Elasticsearch, Kibanaの勉強用メモ
 date: 2020-12-30
-tags: ELK
+tags: [ELK, Technology]
 ---
 
 ## 1. サンプルを動かす

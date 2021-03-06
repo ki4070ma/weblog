@@ -1,11 +1,11 @@
 title: ki4070maのメモ帳
 subtitle: Python, SoftwareTest
 description: ''
-keywords: null
+keywords: Python, SoftwareTest
 author: Atsushi Mori
-language: en
-timezone: ''
-url: https://ki4070ma.github.io/weblog
+language: ja
+timezone: Asia/Tokyo
+url: https://ki4070ma.com
 root: /
 permalink: ':title/'
 permalink_defaults: null

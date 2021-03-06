@@ -1,7 +1,7 @@
 ---
 title: 探索的テストの使い方
 date: 2018-01-04
-tags: SoftwareTest
+tags: [SoftwareTest, ExploratoryTest]
 ---
 
  # 探索的テストとは
