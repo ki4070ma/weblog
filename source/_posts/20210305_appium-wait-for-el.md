@@ -4,6 +4,8 @@ date: 2021-03-05
 tags: [Appium, Technology]
 ---
 
+<!-- toc -->
+
 # 必要な背景
 
 以下のようなケースで役に立ちます
