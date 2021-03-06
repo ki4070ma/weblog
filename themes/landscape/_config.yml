@@ -46,10 +46,10 @@ show_count: false
 recent_posts_limits: 5
 
 # Miscellaneous
-google_analytics:
+google_analytics: G-JWTW1CHBL8
 gauges_analytics:
 favicon: /favicon.png
-twitter:
+twitter: https://twitter.com/atsushi0521
 fb_admins:
 fb_app_id:
 
@@ -62,6 +62,15 @@ valine:
   verify: false # valine verify code (true/false)
   pageSize: 10 # comment list page size
   avatar: mm # gravatar style https://valine.js.org/#/avatar
-  lang: zh-cn # i18n: zh-cn/en
+  lang: en # i18n: zh-cn/en
   placeholder: Just go go # valine comment input placeholder(like: Please leave your footprints )
   guest_info: nick,mail,link #valine comment header info
+
+toc:
+  maxdepth: 3
+  class: toc
+  slugify: transliteration
+  anchor:
+    position: after
+    symbol: '#'
+    style: header-anchor

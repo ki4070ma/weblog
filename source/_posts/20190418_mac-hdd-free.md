@@ -4,6 +4,8 @@ date: 2019-04-18
 tags: [Mac]
 ---
 
+<!-- toc -->
+
 1. まずどこで容量を食っているの確認
     * OmniDiskSweeper
     * https://www.omnigroup.com/more/

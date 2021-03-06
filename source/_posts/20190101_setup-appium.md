@@ -4,6 +4,8 @@ date: 2019-01-01
 tags: [Appium, Technology]
 ---
 
+<!-- toc -->
+
 # Appiumのセットアップ
 * Node
     * https://nodejs.org/en/

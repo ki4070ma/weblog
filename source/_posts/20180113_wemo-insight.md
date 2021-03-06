@@ -4,6 +4,8 @@ date: 2018-01-13
 tags: [WeMo, Technology]
 ---
 
+<!-- toc -->
+
 # WeMo Insight
 
 <!--![alt](20180113_wemo-insight/wemo.png)-->
