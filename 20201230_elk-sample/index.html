@@ -1,110 +1,87 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="utf-8">
-  
-  
-  <title>Elasticsearch, Kibanaの勉強用メモ | ki4070maのメモ帳</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="1. サンプルを動かす こちらを参考に以下をやった https:&#x2F;&#x2F;qiita.com&#x2F;kiyokiyo_kzsby&#x2F;items&#x2F;344fb2e9aead158a5545   Dockerfileなど https:&#x2F;&#x2F;github.com&#x2F;ki4070ma&#x2F;elasticsearch-kibana-sample     DockerでElasticsearch, Kibanaを構築 curl を使">
+<meta charset="utf-8">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-JWTW1CHBL8"></script>
+<script>function gtag(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],gtag("js",new Date),gtag("config","G-JWTW1CHBL8")</script>
+<title>Elasticsearch, Kibanaの勉強用メモ | ki4070maのメモ帳</title>
+<meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
+<meta name="description" content="1. サンプルを動かす 2. Elasticsearchメモ 3. Kibanaメモ 作りたいチャート   4. Elasticsearchに入れるデータ 5. Elasticsearchにデータ入れたり    1. サンプルを動かす こちらを参考に以下をやった https:&#x2F;&#x2F;qiita.com&#x2F;kiyokiyo_kzsby&#x2F;items&#x2F;344fb2e9aead158a5545   Doc">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Elasticsearch, Kibanaの勉強用メモ">
 <meta property="og:url" content="https://ki4070ma.com/20201230_elk-sample/index.html">
 <meta property="og:site_name" content="ki4070maのメモ帳">
-<meta property="og:description" content="1. サンプルを動かす こちらを参考に以下をやった https:&#x2F;&#x2F;qiita.com&#x2F;kiyokiyo_kzsby&#x2F;items&#x2F;344fb2e9aead158a5545   Dockerfileなど https:&#x2F;&#x2F;github.com&#x2F;ki4070ma&#x2F;elasticsearch-kibana-sample     DockerでElasticsearch, Kibanaを構築 curl を使">
+<meta property="og:description" content="1. サンプルを動かす 2. Elasticsearchメモ 3. Kibanaメモ 作りたいチャート   4. Elasticsearchに入れるデータ 5. Elasticsearchにデータ入れたり    1. サンプルを動かす こちらを参考に以下をやった https:&#x2F;&#x2F;qiita.com&#x2F;kiyokiyo_kzsby&#x2F;items&#x2F;344fb2e9aead158a5545   Doc">
 <meta property="og:locale" content="ja_JP">
 <meta property="article:published_time" content="2020-12-29T15:00:00.000Z">
-<meta property="article:modified_time" content="2021-03-06T04:50:01.512Z">
+<meta property="article:modified_time" content="2021-03-06T14:59:52.711Z">
 <meta property="article:author" content="Atsushi Mori">
 <meta property="article:tag" content="Technology">
 <meta property="article:tag" content="ELK">
 <meta name="twitter:card" content="summary">
-  
-    <link rel="alternate" href="/atom.xml" title="ki4070maのメモ帳" type="application/atom+xml">
-  
-  
-    <link rel="shortcut icon" href="/favicon.png">
-  
-  
-    
+<meta name="twitter:creator" content="@https:&#x2F;&#x2F;twitter.com&#x2F;atsushi0521">
+<link rel="alternate" href="/atom.xml" title="ki4070maのメモ帳" type="application/atom+xml">
+<link rel="shortcut icon" href="/favicon.png">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/typeface-source-code-pro@0.0.71/index.min.css">
-
-  
-  
 <link rel="stylesheet" href="/css/style.css">
-
-  
-    
 <link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
-
-  
-<!-- hexo injector head_end start -->.<!-- hexo injector head_end end --><meta name="generator" content="Hexo 5.4.0"></head>
-
+.<meta name="generator" content="Hexo 5.4.0"></head>
 <body>
-  <div id="container">
-    <div id="wrap">
-      <header id="header">
-  <div id="banner"></div>
-  <div id="header-outer" class="outer">
-    <div id="header-title" class="inner">
-      <h1 id="logo-wrap">
-        <a href="/" id="logo">ki4070maのメモ帳</a>
-      </h1>
-      
-        <h2 id="subtitle-wrap">
-          <a href="/" id="subtitle">Python, SoftwareTest</a>
-        </h2>
-      
-    </div>
-    <div id="header-inner" class="inner">
-      <nav id="main-nav">
-        <a id="main-nav-toggle" class="nav-icon"></a>
-        
-          <a class="main-nav-link" href="/">Home</a>
-        
-          <a class="main-nav-link" href="/archives">Archives</a>
-        
-      </nav>
-      <nav id="sub-nav">
-        
-          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSSフィード"></a>
-        
-        <a id="nav-search-btn" class="nav-icon" title="検索"></a>
-      </nav>
-      <div id="search-form-wrap">
-        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="検索"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://ki4070ma.com"></form>
-      </div>
-    </div>
-  </div>
+<div id="container">
+<div id="wrap">
+<header id="header">
+<div id="banner"></div>
+<div id="header-outer" class="outer">
+<div id="header-title" class="inner">
+<h1 id="logo-wrap">
+<a href="/" id="logo">ki4070maのメモ帳</a>
+</h1>
+<h2 id="subtitle-wrap">
+<a href="/" id="subtitle">Python, SoftwareTest</a>
+</h2>
+</div>
+<div id="header-inner" class="inner">
+<nav id="main-nav">
+<a id="main-nav-toggle" class="nav-icon"></a>
+<a class="main-nav-link" href="/">Home</a>
+<a class="main-nav-link" href="/archives">Archives</a>
+</nav>
+<nav id="sub-nav">
+<a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSSフィード"></a>
+<a id="nav-search-btn" class="nav-icon" title="検索"></a>
+</nav>
+<div id="search-form-wrap">
+<form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="検索"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://ki4070ma.com"></form>
+</div>
+</div>
+</div>
 </header>
-
-      <!-- ad start -->
-      <script data-ad-client="ca-pub-9552058847412056" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-      <!-- ad end -->
-      <div class="outer">
-        <section id="main"><article id="post-20201230_elk-sample" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/20201230_elk-sample/" class="article-date">
-  <time class="dt-published" datetime="2020-12-29T15:00:00.000Z" itemprop="datePublished">2020-12-30</time>
+<script data-ad-client="ca-pub-9552058847412056" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<div class="outer">
+<section id="main"><article id="post-20201230_elk-sample" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+<div class="article-meta">
+<a href="/20201230_elk-sample/" class="article-date">
+<time class="dt-published" datetime="2020-12-29T15:00:00.000Z" itemprop="datePublished">2020-12-30</time>
 </a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 class="p-name article-title" itemprop="headline name">
-      Elasticsearch, Kibanaの勉強用メモ
-    </h1>
-  
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <h2 id="1-サンプルを動かす"><a href="#1-サンプルを動かす" class="headerlink" title="1. サンプルを動かす"></a>1. サンプルを動かす</h2><ul>
+</div>
+<div class="article-inner">
+<header class="article-header">
+<h1 class="p-name article-title" itemprop="headline name">
+Elasticsearch, Kibanaの勉強用メモ
+</h1>
+</header>
+<div class="e-content article-entry" itemprop="articleBody">
+<ul>
+<li><a href="#1-%E3%82%B5%E3%83%B3%E3%83%97%E3%83%AB%E3%82%92%E5%8B%95%E3%81%8B%E3%81%99">1. サンプルを動かす</a></li>
+<li><a href="#2-elasticsearch%E3%83%A1%E3%83%A2">2. Elasticsearchメモ</a></li>
+<li><a href="#3-kibana%E3%83%A1%E3%83%A2">3. Kibanaメモ</a><ul>
+<li><a href="#%E4%BD%9C%E3%82%8A%E3%81%9F%E3%81%84%E3%83%81%E3%83%A3%E3%83%BC%E3%83%88">作りたいチャート</a></li>
+</ul>
+</li>
+<li><a href="#4-elasticsearch%E3%81%AB%E5%85%A5%E3%82%8C%E3%82%8B%E3%83%87%E3%83%BC%E3%82%BF">4. Elasticsearchに入れるデータ</a></li>
+<li><a href="#5-elasticsearch%E3%81%AB%E3%83%87%E3%83%BC%E3%82%BF%E5%85%A5%E3%82%8C%E3%81%9F%E3%82%8A">5. Elasticsearchにデータ入れたり</a></li>
+</ul>
+<h2><span id="1-サンプルを動かす">1. サンプルを動かす</span></h2><ul>
 <li>こちらを参考に以下をやった<ul>
 <li><a target="_blank" rel="noopener" href="https://qiita.com/kiyokiyo_kzsby/items/344fb2e9aead158a5545">https://qiita.com/kiyokiyo_kzsby/items/344fb2e9aead158a5545</a></li>
 </ul>
@@ -122,7 +99,7 @@
 </li>
 <li>Kibanaで↑で登録したサンプルデータを使ってbalanceに関してPie chartを作成</li>
 </ol>
-<h2 id="2-Elasticsearchメモ"><a href="#2-Elasticsearchメモ" class="headerlink" title="2. Elasticsearchメモ"></a>2. Elasticsearchメモ</h2><ol>
+<h2><span id="2-elasticsearchメモ">2. Elasticsearchメモ</span></h2><ol>
 <li>(Tips) 手元でcurlでelasticsearchに対してrequestを送って, jsonを見やすくするためには <code>jq</code> を使うと良いかも<ul>
 <li>(参考) <a target="_blank" rel="noopener" href="https://qiita.com/takeshinoda@github/items/2dec7a72930ec1f658af">https://qiita.com/takeshinoda@github/items/2dec7a72930ec1f658af</a></li>
 </ul>
@@ -136,7 +113,7 @@
 <ol start="3">
 <li>サンプルデータ</li>
 </ol>
-<h2 id="3-Kibanaメモ"><a href="#3-Kibanaメモ" class="headerlink" title="3. Kibanaメモ"></a>3. Kibanaメモ</h2><ol>
+<h2><span id="3-kibanaメモ">3. Kibanaメモ</span></h2><ol>
 <li>Pie chartの作成<ul>
 <li>こちらでできた<ul>
 <li><a target="_blank" rel="noopener" href="https://dev.classmethod.jp/articles/amazon-elasticsearch-service-kibana6-tutorial-02/">https://dev.classmethod.jp/articles/amazon-elasticsearch-service-kibana6-tutorial-02/</a></li>
@@ -157,211 +134,101 @@
 </ul>
 </li>
 </ol>
-<h3 id="作りたいチャート"><a href="#作りたいチャート" class="headerlink" title="作りたいチャート"></a>作りたいチャート</h3><ol>
+<h3><span id="作りたいチャート">作りたいチャート</span></h3><ol>
 <li>日付毎の特定の値のカウント(A, B, C)</li>
 <li>日付毎のログから特定の値のカウント</li>
 </ol>
-<h2 id="4-Elasticsearchに入れるデータ"><a href="#4-Elasticsearchに入れるデータ" class="headerlink" title="4. Elasticsearchに入れるデータ"></a>4. Elasticsearchに入れるデータ</h2><ol>
+<h2><span id="4-elasticsearchに入れるデータ">4. Elasticsearchに入れるデータ</span></h2><ol>
 <li>TBU</li>
 </ol>
-<h2 id="5-Elasticsearchにデータ入れたり"><a href="#5-Elasticsearchにデータ入れたり" class="headerlink" title="5. Elasticsearchにデータ入れたり"></a>5. Elasticsearchにデータ入れたり</h2><p><a target="_blank" rel="noopener" href="https://github.com/elastic/elasticsearch-py">https://github.com/elastic/elasticsearch-py</a> を使用すると吉</p>
+<h2><span id="5-elasticsearchにデータ入れたり">5. Elasticsearchにデータ入れたり</span></h2><p><a target="_blank" rel="noopener" href="https://github.com/elastic/elasticsearch-py">https://github.com/elastic/elasticsearch-py</a> を使用すると吉</p>
 <p>ref: <a target="_blank" rel="noopener" href="https://qiita.com/atsushi0521/items/1d6342ef553babded8c5">https://qiita.com/atsushi0521/items/1d6342ef553babded8c5</a></p>
-
-        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<ins class="adsbygoogle"
-     style="display:block; text-align:center;"
-     data-ad-layout="in-article"
-     data-ad-format="fluid"
-     data-ad-client="ca-pub-9552058847412056"
-     data-ad-slot="7810355979"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="https://ki4070ma.com/20201230_elk-sample/" data-id="cklxcyc4t000jrud1eiixdbff" data-title="Elasticsearch, Kibanaの勉強用メモ" class="article-share-link">共有</a>
-      
-      
-      
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/ELK/" rel="tag">ELK</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Technology/" rel="tag">Technology</a></li></ul>
-
-    </footer>
-  </div>
-  
-    
-<nav id="article-nav">
-  
-    <a href="/20210303_appium-screen-record/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">次の記事</strong>
-      <div class="article-nav-title">
-        
-          Appium で screen recordを使用する
-        
-      </div>
-    </a>
-  
-  
-    <a href="/20191101_slide-presentation/" id="article-nav-older" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">前の記事</strong>
-      <div class="article-nav-title">スライドを作成するときに参考にするサイト</div>
-    </a>
-  
-</nav>
-
-  
-</article>
-
-
-</section>
-        
-          <aside id="sidebar">
-  
-    
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">タグ</h3>
-    <div class="widget">
-      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Amazon/" rel="tag">Amazon</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Appium/" rel="tag">Appium</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/CircleCI/" rel="tag">CircleCI</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ELK/" rel="tag">ELK</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ExploratoryTest/" rel="tag">ExploratoryTest</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Mac/" rel="tag">Mac</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Presentation/" rel="tag">Presentation</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Programming/" rel="tag">Programming</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Python/" rel="tag">Python</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/SoftwareTest/" rel="tag">SoftwareTest</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Study/" rel="tag">Study</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Technology/" rel="tag">Technology</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/WFH/" rel="tag">WFH</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/WeMo/" rel="tag">WeMo</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ffmpeg/" rel="tag">ffmpeg</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ssh/" rel="tag">ssh</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E3%83%AA%E3%83%A2%E3%83%BC%E3%83%88%E3%83%AF%E3%83%BC%E3%82%AF/" rel="tag">リモートワーク</a></li></ul>
-    </div>
-  </div>
-
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">タグクラウド</h3>
-    <div class="widget tagcloud">
-      <a href="/tags/Amazon/" style="font-size: 13.33px;">Amazon</a> <a href="/tags/Appium/" style="font-size: 16.67px;">Appium</a> <a href="/tags/CircleCI/" style="font-size: 10px;">CircleCI</a> <a href="/tags/ELK/" style="font-size: 10px;">ELK</a> <a href="/tags/ExploratoryTest/" style="font-size: 10px;">ExploratoryTest</a> <a href="/tags/Mac/" style="font-size: 13.33px;">Mac</a> <a href="/tags/Presentation/" style="font-size: 10px;">Presentation</a> <a href="/tags/Programming/" style="font-size: 10px;">Programming</a> <a href="/tags/Python/" style="font-size: 10px;">Python</a> <a href="/tags/SoftwareTest/" style="font-size: 10px;">SoftwareTest</a> <a href="/tags/Study/" style="font-size: 10px;">Study</a> <a href="/tags/Technology/" style="font-size: 20px;">Technology</a> <a href="/tags/WFH/" style="font-size: 10px;">WFH</a> <a href="/tags/WeMo/" style="font-size: 10px;">WeMo</a> <a href="/tags/ffmpeg/" style="font-size: 10px;">ffmpeg</a> <a href="/tags/ssh/" style="font-size: 10px;">ssh</a> <a href="/tags/%E3%83%AA%E3%83%A2%E3%83%BC%E3%83%88%E3%83%AF%E3%83%BC%E3%82%AF/" style="font-size: 10px;">リモートワーク</a>
-    </div>
-  </div>
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">アーカイブ</h3>
-    <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/03/">3月 2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/12/">12月 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/11/">11月 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/04/">4月 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/01/">1月 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/12/">12月 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/01/">1月 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/01/">1月 2017</a></li></ul>
-    </div>
-  </div>
-
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">最近の投稿</h3>
-    <div class="widget">
-      <ul>
-        
-          <li>
-            <a href="/20210306-WFH/">リモートワークのために購入したもの</a>
-          </li>
-        
-          <li>
-            <a href="/20210305-appium-wait-for-el/">Appiumで特定のelementが表示されるまで待つ</a>
-          </li>
-        
-          <li>
-            <a href="/20210304_tuwejia/">Mac用USB Type C Hub (4in1)</a>
-          </li>
-        
-          <li>
-            <a href="/20210303_appium-screen-record/">Appium で screen recordを使用する</a>
-          </li>
-        
-          <li>
-            <a href="/20201230_elk-sample/">Elasticsearch, Kibanaの勉強用メモ</a>
-          </li>
-        
-      </ul>
-    </div>
-  </div>
-
-  
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<ins class="adsbygoogle"
-     style="display:block; text-align:center;"
-     data-ad-layout="in-article"
-     data-ad-format="fluid"
-     data-ad-client="ca-pub-9552058847412056"
-     data-ad-slot="7810355979"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-
-
-  
-</aside>
-        
-      </div>
-      <footer id="footer">
-  
-  <div class="outer">
-    <div id="footer-info" class="inner">
-      
-      &copy; 2021 Atsushi Mori<br>
-      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
-    </div>
-  </div>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle" style="display:block;text-align:center" data-ad-layout="in-article" data-ad-format="fluid" data-ad-client="ca-pub-9552058847412056" data-ad-slot="7810355979"></ins>
+<script>(adsbygoogle=window.adsbygoogle||[]).push({})</script>
+</div>
+<footer class="article-footer">
+<a data-url="https://ki4070ma.com/20201230_elk-sample/" data-id="cklxvr96b000jk5d11f179z9l" data-title="Elasticsearch, Kibanaの勉強用メモ" class="article-share-link">共有</a>
+<ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/ELK/" rel="tag">ELK</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Technology/" rel="tag">Technology</a></li></ul>
 </footer>
-
-    </div>
-    <nav id="mobile-nav">
-  
-    <a href="/" class="mobile-nav-link">Home</a>
-  
-    <a href="/archives" class="mobile-nav-link">Archives</a>
-  
+</div>
+<nav id="article-nav">
+<a href="/20210303_appium-screen-record/" id="article-nav-newer" class="article-nav-link-wrap">
+<strong class="article-nav-caption">次の記事</strong>
+<div class="article-nav-title">
+Appium で screen recordを使用する
+</div>
+</a>
+<a href="/20191101_slide-presentation/" id="article-nav-older" class="article-nav-link-wrap">
+<strong class="article-nav-caption">前の記事</strong>
+<div class="article-nav-title">スライドを作成するときに参考にするサイト</div>
+</a>
 </nav>
-    
-
-
+</article>
+</section>
+<aside id="sidebar">
+<div class="widget-wrap">
+<h3 class="widget-title">タグ</h3>
+<div class="widget">
+<ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Amazon/" rel="tag">Amazon</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Appium/" rel="tag">Appium</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/CircleCI/" rel="tag">CircleCI</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ELK/" rel="tag">ELK</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ExploratoryTest/" rel="tag">ExploratoryTest</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Github/" rel="tag">Github</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Hexo/" rel="tag">Hexo</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Mac/" rel="tag">Mac</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Presentation/" rel="tag">Presentation</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Programming/" rel="tag">Programming</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Python/" rel="tag">Python</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/SoftwareTest/" rel="tag">SoftwareTest</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Study/" rel="tag">Study</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Technology/" rel="tag">Technology</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/WFH/" rel="tag">WFH</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/WeMo/" rel="tag">WeMo</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ffmpeg/" rel="tag">ffmpeg</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ssh/" rel="tag">ssh</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E3%83%AA%E3%83%A2%E3%83%BC%E3%83%88%E3%83%AF%E3%83%BC%E3%82%AF/" rel="tag">リモートワーク</a></li></ul>
+</div>
+</div>
+<div class="widget-wrap">
+<h3 class="widget-title">タグクラウド</h3>
+<div class="widget tagcloud">
+<a href="/tags/Amazon/" style="font-size:13.33px">Amazon</a> <a href="/tags/Appium/" style="font-size:16.67px">Appium</a> <a href="/tags/CircleCI/" style="font-size:10px">CircleCI</a> <a href="/tags/ELK/" style="font-size:10px">ELK</a> <a href="/tags/ExploratoryTest/" style="font-size:10px">ExploratoryTest</a> <a href="/tags/Github/" style="font-size:10px">Github</a> <a href="/tags/Hexo/" style="font-size:10px">Hexo</a> <a href="/tags/Mac/" style="font-size:13.33px">Mac</a> <a href="/tags/Presentation/" style="font-size:10px">Presentation</a> <a href="/tags/Programming/" style="font-size:10px">Programming</a> <a href="/tags/Python/" style="font-size:10px">Python</a> <a href="/tags/SoftwareTest/" style="font-size:10px">SoftwareTest</a> <a href="/tags/Study/" style="font-size:10px">Study</a> <a href="/tags/Technology/" style="font-size:20px">Technology</a> <a href="/tags/WFH/" style="font-size:10px">WFH</a> <a href="/tags/WeMo/" style="font-size:10px">WeMo</a> <a href="/tags/ffmpeg/" style="font-size:10px">ffmpeg</a> <a href="/tags/ssh/" style="font-size:10px">ssh</a> <a href="/tags/%E3%83%AA%E3%83%A2%E3%83%BC%E3%83%88%E3%83%AF%E3%83%BC%E3%82%AF/" style="font-size:10px">リモートワーク</a>
+</div>
+</div>
+<div class="widget-wrap">
+<h3 class="widget-title">アーカイブ</h3>
+<div class="widget">
+<ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/03/">3月 2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/12/">12月 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/11/">11月 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/04/">4月 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/01/">1月 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/12/">12月 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/01/">1月 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/01/">1月 2017</a></li></ul>
+</div>
+</div>
+<div class="widget-wrap">
+<h3 class="widget-title">最近の投稿</h3>
+<div class="widget">
+<ul>
+<li>
+<a href="/20210307_Hexo/">Hexoについていろいろ</a>
+</li>
+<li>
+<a href="/20210306_WFH1/">リモートワークのために購入したもの1</a>
+</li>
+<li>
+<a href="/20210305_appium-wait-for-el/">Appiumで特定のelementが表示されるまで待つ</a>
+</li>
+<li>
+<a href="/20210304_tuwejia/">Mac用USB Type C Hub (4in1)</a>
+</li>
+<li>
+<a href="/20210303_appium-screen-record/">Appium で screen recordを使用する</a>
+</li>
+</ul>
+</div>
+</div>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle" style="display:block;text-align:center" data-ad-layout="in-article" data-ad-format="fluid" data-ad-client="ca-pub-9552058847412056" data-ad-slot="7810355979"></ins>
+<script>(adsbygoogle=window.adsbygoogle||[]).push({})</script>
+</aside>
+</div>
+<footer id="footer">
+<div class="outer">
+<div id="footer-info" class="inner">
+&copy; 2021 Atsushi Mori<br>
+Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
+</div>
+</div>
+</footer>
+</div>
+<nav id="mobile-nav">
+<a href="/" class="mobile-nav-link">Home</a>
+<a href="/archives" class="mobile-nav-link">Archives</a>
+</nav>
 <script src="/js/jquery-3.4.1.min.js"></script>
-
-
-
-  
 <script src="/fancybox/jquery.fancybox.min.js"></script>
-
-
-
-
 <script src="/js/script.js"></script>
-
-
-
-
-
-  </div>
-<!-- hexo injector body_end start --><script>
-function addLoadEvent(func) {
-  const oldonload = window.onload;
-  if (typeof window.onload !== 'function') {
-    window.onload = func;
-  } else {
-    window.onload = () => {
-      oldonload();
-      func();
-    };
-  }
-}
-  addLoadEvent(() => {
-    try {
-      if (window.innerWidth < Number('768')) {
-        return;
-      }
-      const imgs = Array.from(document.body.querySelectorAll('.google-photos-album-images a'));
-      imgs.push(...Array.from(document.body.querySelectorAll('a.google-photos-album-image')));
-      for (const anchor of imgs) {
-        anchor.href = anchor.href.replace(/=s720\-no/i, '=s1920-no');
-      }
-    } catch (e) {
-      console.log(e);
-    }
-  });
-</script>
-<!-- hexo injector body_end end --></body>
+</div>
+<script>function addLoadEvent(o){const n=window.onload;"function"!=typeof window.onload?window.onload=o:window.onload=()=>{n(),o()}}addLoadEvent(()=>{try{if(window.innerWidth<Number("768"))return;const o=Array.from(document.body.querySelectorAll(".google-photos-album-images a"));o.push(...Array.from(document.body.querySelectorAll("a.google-photos-album-image")));for(const n of o)n.href=n.href.replace(/=s720\-no/i,"=s1920-no")}catch(o){console.log(o)}})</script>
+</body>
 </html>

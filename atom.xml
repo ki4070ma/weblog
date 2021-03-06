@@ -6,7 +6,7 @@
   <link href="https://ki4070ma.com/atom.xml" rel="self"/>
   
   <link href="https://ki4070ma.com/"/>
-  <updated>2021-03-06T06:36:03.391Z</updated>
+  <updated>2021-03-06T14:59:08.140Z</updated>
   <id>https://ki4070ma.com/</id>
   
   <author>
@@ -17,19 +17,52 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>リモートワークのために購入したもの</title>
-    <link href="https://ki4070ma.com/20210306-WFH/"/>
-    <id>https://ki4070ma.com/20210306-WFH/</id>
+    <title>Hexoについていろいろ</title>
+    <link href="https://ki4070ma.com/20210307_Hexo/"/>
+    <id>https://ki4070ma.com/20210307_Hexo/</id>
+    <published>2021-03-06T15:00:00.000Z</published>
+    <updated>2021-03-06T14:59:08.140Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;!-- toc --&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    
+    <category term="Technology" scheme="https://ki4070ma.com/tags/Technology/"/>
+    
+    <category term="Hexo" scheme="https://ki4070ma.com/tags/Hexo/"/>
+    
+    <category term="Github" scheme="https://ki4070ma.com/tags/Github/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>リモートワークのために購入したもの1</title>
+    <link href="https://ki4070ma.com/20210306_WFH1/"/>
+    <id>https://ki4070ma.com/20210306_WFH1/</id>
     <published>2021-03-05T15:00:00.000Z</published>
-    <updated>2021-03-06T06:36:03.391Z</updated>
+    <updated>2021-03-06T15:04:36.872Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;p&gt;リモートワークのために購入してよかったものリストです&lt;br&gt;何かのご参考になれば&lt;/p&gt;
-&lt;h2 id=&quot;ゲーミングチェア&quot;&gt;&lt;a href=&quot;#ゲーミングチェア&quot; class=&quot;headerlink&quot;</summary>
+    <summary type="html">&lt;!-- toc --&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;#%E3%82%B2%E3%83%BC%E3%83%9F%E3%83%B3%E3%82%B0%E3%83%81%E3%82%A7%E3%82%A2&quot;&gt;ゲーミングチェア&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a</summary>
         
       
     
@@ -46,19 +79,21 @@
   
   <entry>
     <title>Appiumで特定のelementが表示されるまで待つ</title>
-    <link href="https://ki4070ma.com/20210305-appium-wait-for-el/"/>
-    <id>https://ki4070ma.com/20210305-appium-wait-for-el/</id>
+    <link href="https://ki4070ma.com/20210305_appium-wait-for-el/"/>
+    <id>https://ki4070ma.com/20210305_appium-wait-for-el/</id>
     <published>2021-03-04T15:00:00.000Z</published>
-    <updated>2021-03-06T04:50:24.290Z</updated>
+    <updated>2021-03-06T14:59:40.532Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;h1 id=&quot;必要な背景&quot;&gt;&lt;a href=&quot;#必要な背景&quot; class=&quot;headerlink&quot; title=&quot;必要な背景&quot;&gt;&lt;/a&gt;必要な背景&lt;/h1&gt;&lt;p&gt;以下のようなケースで役に立ちます&lt;/p&gt;
+    <summary type="html">&lt;!-- toc --&gt;
+
 &lt;ul&gt;
-&lt;li&gt;(特にAndroid)</summary>
+&lt;li&gt;&lt;a href=&quot;#%E5%BF%85%E8%A6%81%E3%81%AA%E8%83%8C%E6%99%AF&quot;&gt;必要な背景&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#sample-code&quot;&gt;Sample</summary>
         
       
     
@@ -76,15 +111,21 @@
     <link href="https://ki4070ma.com/20210304_tuwejia/"/>
     <id>https://ki4070ma.com/20210304_tuwejia/</id>
     <published>2021-03-03T15:00:00.000Z</published>
-    <updated>2021-03-06T06:28:02.085Z</updated>
+    <updated>2021-03-06T14:59:45.434Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;p&gt;Macを購入したので以下のUSB Hubを購入&lt;/p&gt;
-&lt;div class=&quot;google-photos-album-area&quot; id=&quot;google-photos-album-area1&quot;&gt;&lt;div class=&quot;metadatas&quot;&gt;&lt;a</summary>
+    <summary type="html">&lt;!-- toc --&gt;
+
+
+
+&lt;!-- tocstop --&gt;
+
+&lt;p&gt;Macを購入したので以下のUSB Hubを購入&lt;/p&gt;
+&lt;div class=&quot;google-photos-album-area&quot; id=&quot;google-photos-album-area1&quot;&gt;&lt;div</summary>
         
       
     
@@ -100,15 +141,18 @@
     <link href="https://ki4070ma.com/20210303_appium-screen-record/"/>
     <id>https://ki4070ma.com/20210303_appium-screen-record/</id>
     <published>2021-03-02T15:00:00.000Z</published>
-    <updated>2021-03-06T04:50:12.079Z</updated>
+    <updated>2021-03-06T14:59:49.080Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;p&gt;Official な document では少々不足していたので, 使い方をまとめます.&lt;/p&gt;
-&lt;figure class=&quot;highlight python&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span</summary>
+    <summary type="html">&lt;!-- toc --&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;#%E4%BD%BF%E7%94%A8%E7%94%A8%E9%80%94&quot;&gt;使用用途&lt;/a&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;#azure-pipeline-%E3%81%AB%E3%81%A6&quot;&gt;Azure</summary>
         
       
     
@@ -126,15 +170,17 @@
     <link href="https://ki4070ma.com/20201230_elk-sample/"/>
     <id>https://ki4070ma.com/20201230_elk-sample/</id>
     <published>2020-12-29T15:00:00.000Z</published>
-    <updated>2021-03-06T04:50:01.512Z</updated>
+    <updated>2021-03-06T14:59:52.711Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;h2 id=&quot;1-サンプルを動かす&quot;&gt;&lt;a href=&quot;#1-サンプルを動かす&quot; class=&quot;headerlink&quot; title=&quot;1. サンプルを動かす&quot;&gt;&lt;/a&gt;1. サンプルを動かす&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;こちらを参考に以下をやった&lt;ul&gt;
+    <summary type="html">&lt;!-- toc --&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;#1-%E3%82%B5%E3%83%B3%E3%83%97%E3%83%AB%E3%82%92%E5%8B%95%E3%81%8B%E3%81%99&quot;&gt;1. サンプルを動かす&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a</summary>
         
       
@@ -153,15 +199,19 @@
     <link href="https://ki4070ma.com/20191101_slide-presentation/"/>
     <id>https://ki4070ma.com/20191101_slide-presentation/</id>
     <published>2019-10-31T15:00:00.000Z</published>
-    <updated>2021-03-06T04:49:54.329Z</updated>
+    <updated>2021-03-06T14:59:55.931Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;h1 id=&quot;背景&quot;&gt;&lt;a href=&quot;#背景&quot; class=&quot;headerlink&quot; title=&quot;背景&quot;&gt;&lt;/a&gt;背景&lt;/h1&gt;&lt;p&gt;毎回スライド作成するときに探している気がするのでその手間を減らすため&lt;/p&gt;
-&lt;h1 id=&quot;アイコン&quot;&gt;&lt;a href=&quot;#アイコン&quot;</summary>
+    <summary type="html">&lt;!-- toc --&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;#%E8%83%8C%E6%99%AF&quot;&gt;背景&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#%E3%82%A2%E3%82%A4%E3%82%B3%E3%83%B3&quot;&gt;アイコン&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a</summary>
         
       
     
@@ -177,14 +227,20 @@
     <link href="https://ki4070ma.com/20190418_mac-hdd-free/"/>
     <id>https://ki4070ma.com/20190418_mac-hdd-free/</id>
     <published>2019-04-17T15:00:00.000Z</published>
-    <updated>2021-03-06T04:49:48.760Z</updated>
+    <updated>2021-03-06T14:59:59.359Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;ol&gt;
+    <summary type="html">&lt;!-- toc --&gt;
+
+
+
+&lt;!-- tocstop --&gt;
+
+&lt;ol&gt;
 &lt;li&gt;&lt;p&gt;まずどこで容量を食っているの確認&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;OmniDiskSweeper&lt;/li&gt;
@@ -204,14 +260,18 @@
     <link href="https://ki4070ma.com/20190101_setup-appium/"/>
     <id>https://ki4070ma.com/20190101_setup-appium/</id>
     <published>2018-12-31T15:00:00.000Z</published>
-    <updated>2021-03-06T04:49:43.945Z</updated>
+    <updated>2021-03-06T15:00:02.775Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;h1 id=&quot;Appiumのセットアップ&quot;&gt;&lt;a href=&quot;#Appiumのセットアップ&quot; class=&quot;headerlink&quot;</summary>
+    <summary type="html">&lt;!-- toc --&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;#appium%E3%81%AE%E3%82%BB%E3%83%83%E3%83%88%E3%82%A2%E3%83%83%E3%83%97&quot;&gt;Appiumのセットアップ&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a</summary>
         
       
     
@@ -229,15 +289,18 @@
     <link href="https://ki4070ma.com/20181226_ffmpeg/"/>
     <id>https://ki4070ma.com/20181226_ffmpeg/</id>
     <published>2018-12-25T15:00:00.000Z</published>
-    <updated>2021-03-06T04:49:23.203Z</updated>
+    <updated>2021-03-06T15:00:08.510Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;p&gt;ffmpegをmacで使った時のメモ書き (Linuxのほうが使いやすい気がする)&lt;/p&gt;
-&lt;h1 id=&quot;インストール&quot;&gt;&lt;a href=&quot;#インストール&quot; class=&quot;headerlink&quot;</summary>
+    <summary type="html">&lt;!-- toc --&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;#%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB&quot;&gt;インストール&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a</summary>
         
       
     
@@ -255,15 +318,17 @@
     <link href="https://ki4070ma.com/20181226_python/"/>
     <id>https://ki4070ma.com/20181226_python/</id>
     <published>2018-12-25T15:00:00.000Z</published>
-    <updated>2021-03-06T04:49:34.113Z</updated>
+    <updated>2021-03-06T15:00:05.675Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;p&gt;使用したことがあるlibraryに加えて一言&lt;/p&gt;
-&lt;h1 id=&quot;どんなライブラリたちがあるか&quot;&gt;&lt;a href=&quot;#どんなライブラリたちがあるか&quot; class=&quot;headerlink&quot;</summary>
+    <summary type="html">&lt;!-- toc --&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a</summary>
         
       
     
@@ -281,14 +346,17 @@
     <link href="https://ki4070ma.com/20181217_circleci/"/>
     <id>https://ki4070ma.com/20181217_circleci/</id>
     <published>2018-12-16T15:00:00.000Z</published>
-    <updated>2021-03-06T04:47:57.427Z</updated>
+    <updated>2021-03-06T15:00:14.671Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;h1 id=&quot;セットアップ&quot;&gt;&lt;a href=&quot;#セットアップ&quot; class=&quot;headerlink&quot; title=&quot;セットアップ&quot;&gt;&lt;/a&gt;セットアップ&lt;/h1&gt;&lt;ul&gt;
+    <summary type="html">&lt;!-- toc --&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;#%E3%82%BB%E3%83%83%E3%83%88%E3%82%A2%E3%83%83%E3%83%97&quot;&gt;セットアップ&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a</summary>
         
       
@@ -307,15 +375,19 @@
     <link href="https://ki4070ma.com/20181217_setup-mac/"/>
     <id>https://ki4070ma.com/20181217_setup-mac/</id>
     <published>2018-12-16T15:00:00.000Z</published>
-    <updated>2021-03-06T04:49:03.541Z</updated>
+    <updated>2021-03-06T15:00:12.078Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;h1 id=&quot;Mac購入&quot;&gt;&lt;a href=&quot;#Mac購入&quot; class=&quot;headerlink&quot; title=&quot;Mac購入&quot;&gt;&lt;/a&gt;Mac購入&lt;/h1&gt;&lt;ul&gt;
-&lt;li&gt;Paypay祭りの時にMacBook Air(13-inch,</summary>
+    <summary type="html">&lt;!-- toc --&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;#mac%E8%B3%BC%E5%85%A5&quot;&gt;Mac購入&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#mac%E8%B5%B7%E5%8B%95&quot;&gt;Mac起動&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a</summary>
         
       
     
@@ -331,14 +403,17 @@
     <link href="https://ki4070ma.com/20181216_how-to-learn-coding/"/>
     <id>https://ki4070ma.com/20181216_how-to-learn-coding/</id>
     <published>2018-12-15T15:00:00.000Z</published>
-    <updated>2021-03-06T04:49:12.738Z</updated>
+    <updated>2021-03-06T15:00:17.797Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;h1 id=&quot;メイン-LeetCode&quot;&gt;&lt;a href=&quot;#メイン-LeetCode&quot; class=&quot;headerlink&quot; title=&quot;メイン: LeetCode&quot;&gt;&lt;/a&gt;メイン: LeetCode&lt;/h1&gt;&lt;ul&gt;
+    <summary type="html">&lt;!-- toc --&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;#%E3%83%A1%E3%82%A4%E3%83%B3-leetcode&quot;&gt;メイン: LeetCode&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a</summary>
         
       
@@ -357,15 +432,18 @@
     <link href="https://ki4070ma.com/20181215_ssh-local-network/"/>
     <id>https://ki4070ma.com/20181215_ssh-local-network/</id>
     <published>2018-12-14T15:00:00.000Z</published>
-    <updated>2021-03-06T04:47:29.836Z</updated>
+    <updated>2021-03-06T15:00:22.059Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;p&gt;自分が調べたことのメモ, ほぼどこかへのリンク.&lt;/p&gt;
-&lt;h1 id=&quot;やろうとしたこと&quot;&gt;&lt;a href=&quot;#やろうとしたこと&quot; class=&quot;headerlink&quot;</summary>
+    <summary type="html">&lt;!-- toc --&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;#%E3%82%84%E3%82%8D%E3%81%86%E3%81%A8%E3%81%97%E3%81%9F%E3%81%93%E3%81%A8&quot;&gt;やろうとしたこと&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a</summary>
         
       
     
@@ -383,14 +461,19 @@
     <link href="https://ki4070ma.com/20180113_wemo-insight/"/>
     <id>https://ki4070ma.com/20180113_wemo-insight/</id>
     <published>2018-01-12T15:00:00.000Z</published>
-    <updated>2021-03-06T04:47:21.057Z</updated>
+    <updated>2021-03-06T15:00:26.156Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;h1 id=&quot;WeMo-Insight&quot;&gt;&lt;a href=&quot;#WeMo-Insight&quot; class=&quot;headerlink&quot; title=&quot;WeMo Insight&quot;&gt;&lt;/a&gt;WeMo</summary>
+    <summary type="html">&lt;!-- toc --&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;#wemo-insight&quot;&gt;WeMo Insight&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#api&quot;&gt;API&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a</summary>
         
       
     
@@ -408,14 +491,18 @@
     <link href="https://ki4070ma.com/20180104_How-to-use-et/"/>
     <id>https://ki4070ma.com/20180104_How-to-use-et/</id>
     <published>2018-01-03T15:00:00.000Z</published>
-    <updated>2021-03-06T06:38:41.957Z</updated>
+    <updated>2021-03-06T15:00:29.415Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;h1 id=&quot;探索的テストとは&quot;&gt;&lt;a href=&quot;#探索的テストとは&quot; class=&quot;headerlink&quot; title=&quot;探索的テストとは&quot;&gt;&lt;/a&gt;探索的テストとは&lt;/h1&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td</summary>
+    <summary type="html">&lt;!-- toc --&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;#%E6%8E%A2%E7%B4%A2%E7%9A%84%E3%83%86%E3%82%B9%E3%83%88%E3%81%A8%E3%81%AF&quot;&gt;探索的テストとは&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a</summary>
         
       
     
@@ -433,7 +520,7 @@
     <link href="https://ki4070ma.com/20170101_sandbox/"/>
     <id>https://ki4070ma.com/20170101_sandbox/</id>
     <published>2016-12-31T15:00:00.000Z</published>
-    <updated>2021-03-05T15:49:17.982Z</updated>
+    <updated>2021-03-06T13:48:52.555Z</updated>
     
     
       

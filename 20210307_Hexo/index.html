@@ -4,15 +4,21 @@
 <meta charset="utf-8">
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-JWTW1CHBL8"></script>
 <script>function gtag(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],gtag("js",new Date),gtag("config","G-JWTW1CHBL8")</script>
-<title>アーカイブ: 2020 | ki4070maのメモ帳</title>
+<title>Hexoについていろいろ | ki4070maのメモ帳</title>
 <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
-<meta property="og:type" content="website">
-<meta property="og:title" content="ki4070maのメモ帳">
-<meta property="og:url" content="https://ki4070ma.com/archives/2020/index.html">
+<meta name="description" content="blogフレームワークとホスティング ホスティングは Github Pages フレームワークは Hexo   Hexo 基本 記事の作成 テーマ      先日思い立ってblogを立ち上げようと思い, やったことを残していきます. blogフレームワークとホスティングホスティングは Github Pages無料で始めたかったので Github Pages を使用することにしました以前 AP">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Hexoについていろいろ">
+<meta property="og:url" content="https://ki4070ma.com/20210307_Hexo/index.html">
 <meta property="og:site_name" content="ki4070maのメモ帳">
+<meta property="og:description" content="blogフレームワークとホスティング ホスティングは Github Pages フレームワークは Hexo   Hexo 基本 記事の作成 テーマ      先日思い立ってblogを立ち上げようと思い, やったことを残していきます. blogフレームワークとホスティングホスティングは Github Pages無料で始めたかったので Github Pages を使用することにしました以前 AP">
 <meta property="og:locale" content="ja_JP">
+<meta property="article:published_time" content="2021-03-06T15:00:00.000Z">
+<meta property="article:modified_time" content="2021-03-06T14:59:08.140Z">
 <meta property="article:author" content="Atsushi Mori">
-<meta property="article:tag" content="Python, SoftwareTest">
+<meta property="article:tag" content="Technology">
+<meta property="article:tag" content="Hexo">
+<meta property="article:tag" content="Github">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:creator" content="@https:&#x2F;&#x2F;twitter.com&#x2F;atsushi0521">
 <link rel="alternate" href="/atom.xml" title="ki4070maのメモ帳" type="application/atom+xml">
@@ -53,25 +59,63 @@
 </header>
 <script data-ad-client="ca-pub-9552058847412056" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 <div class="outer">
-<section id="main">
-<section class="archives-wrap">
-<div class="archive-year-wrap">
-<a href="/archives/2020" class="archive-year">2020</a>
-</div>
-<div class="archives">
-<article class="archive-article archive-type-post">
-<div class="archive-article-inner">
-<header class="archive-article-header">
-<a href="/20201230_elk-sample/" class="archive-article-date">
-<time class="dt-published" datetime="2020-12-29T15:00:00.000Z" itemprop="datePublished">12月 30</time>
+<section id="main"><article id="post-20210307_Hexo" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+<div class="article-meta">
+<a href="/20210307_Hexo/" class="article-date">
+<time class="dt-published" datetime="2021-03-06T15:00:00.000Z" itemprop="datePublished">2021-03-07</time>
 </a>
-<h1 itemprop="name">
-<a class="archive-article-title" href="/20201230_elk-sample/">Elasticsearch, Kibanaの勉強用メモ</a>
+</div>
+<div class="article-inner">
+<header class="article-header">
+<h1 class="p-name article-title" itemprop="headline name">
+Hexoについていろいろ
 </h1>
 </header>
+<div class="e-content article-entry" itemprop="articleBody">
+<ul>
+<li><a href="#blog%E3%83%95%E3%83%AC%E3%83%BC%E3%83%A0%E3%83%AF%E3%83%BC%E3%82%AF%E3%81%A8%E3%83%9B%E3%82%B9%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0">blogフレームワークとホスティング</a><ul>
+<li><a href="#%E3%83%9B%E3%82%B9%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0%E3%81%AF-github-pages">ホスティングは Github Pages</a></li>
+<li><a href="#%E3%83%95%E3%83%AC%E3%83%BC%E3%83%A0%E3%83%AF%E3%83%BC%E3%82%AF%E3%81%AF-hexo">フレームワークは Hexo</a></li>
+</ul>
+</li>
+<li><a href="#hexo">Hexo</a><ul>
+<li><a href="#%E5%9F%BA%E6%9C%AC">基本</a></li>
+<li><a href="#%E8%A8%98%E4%BA%8B%E3%81%AE%E4%BD%9C%E6%88%90">記事の作成</a></li>
+<li><a href="#%E3%83%86%E3%83%BC%E3%83%9E">テーマ</a></li>
+</ul>
+</li>
+</ul>
+<p>先日思い立ってblogを立ち上げようと思い, やったことを残していきます.</p>
+<h2><span id="blogフレームワークとホスティング">blogフレームワークとホスティング</span></h2><h3><span id="ホスティングは-github-pages">ホスティングは Github Pages</span></h3><p>無料で始めたかったので Github Pages を使用することにしました<br>以前 API doc の公開で Github Pages を使用していたのも理由になります</p>
+<h3><span id="フレームワークは-hexo">フレームワークは Hexo</span></h3><p>Github Pages を使用する際, 「静的サイトジェネレーター」を使用する必要があります<br>( wordpress はDatabaseに情報を格納しているタイプで Github Pages での使用は不可 )</p>
+<p>「静的サイトジェネレーター」の一覧はこちらで確認できました<br>星が多いと使用者が多く, 情報もたくさんころがっていることが期待できます</p>
+<p><a target="_blank" rel="noopener" href="https://jamstack.org/generators/">https://jamstack.org/generators/</a></p>
+<p>JavaScript がいいな, くらいでその後にまず試した Hexo で問題なかったのでそのまま使用しています<br>また Next.js, Gatsby を見てみてよさそうだったら移るかもです</p>
+<h2><span id="hexo">Hexo</span></h2><p><a target="_blank" rel="noopener" href="https://hexo.io/">https://hexo.io/</a></p>
+<p>日本語はありませんでしたが, こちらが公式サイト<br>Qiitaで調べてもいろいろ記事は出てきます</p>
+<h3><span id="基本">基本</span></h3><p>以下を実行後に <code>http://localhost:4000</code> へアクセスするとサイトが表示されます</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-cli -g</span><br><span class="line">hexo init blog</span><br><span class="line"><span class="built_in">cd</span> blog</span><br><span class="line">npm install</span><br><span class="line">hexo server</span><br></pre></td></tr></table></figure>
+<h3><span id="記事の作成">記事の作成</span></h3><p>以下のコマンドを実行すると, <code>source/_posts/title.md</code> が作成されるので, そちらに記事を書いていく</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new <span class="string">&#x27;title&#x27;</span></span><br></pre></td></tr></table></figure>
+<h3><span id="テーマ">テーマ</span></h3><p>多くのテーマがあるようです</p>
+<p><a target="_blank" rel="noopener" href="https://hexo.io/themes/">https://hexo.io/themes/</a></p>
+<p>が, 現在はデフォルトの <code>landscape</code> を使用しています</p>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle" style="display:block;text-align:center" data-ad-layout="in-article" data-ad-format="fluid" data-ad-client="ca-pub-9552058847412056" data-ad-slot="7810355979"></ins>
+<script>(adsbygoogle=window.adsbygoogle||[]).push({})</script>
 </div>
+<footer class="article-footer">
+<a data-url="https://ki4070ma.com/20210307_Hexo/" data-id="cklxvr96e000tk5d13eg4hydm" data-title="Hexoについていろいろ" class="article-share-link">共有</a>
+<ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Github/" rel="tag">Github</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Hexo/" rel="tag">Hexo</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Technology/" rel="tag">Technology</a></li></ul>
+</footer>
+</div>
+<nav id="article-nav">
+<a href="/20210306_WFH1/" id="article-nav-older" class="article-nav-link-wrap">
+<strong class="article-nav-caption">前の記事</strong>
+<div class="article-nav-title">リモートワークのために購入したもの1</div>
+</a>
+</nav>
 </article>
-</div></section>
 </section>
 <aside id="sidebar">
 <div class="widget-wrap">
