@@ -1,6 +1,6 @@
 ---
 title: Appium による macOS の操作
-date: 2021-02-26
+date: 2021-02-25
 tags: [Appium, macOS, Python]
 ---
 
