@@ -28,6 +28,7 @@
     "hexo-renderer-marked": "^4.0.0",
     "hexo-renderer-stylus": "^2.0.0",
     "hexo-server": "^2.0.0",
+    "hexo-tag-github-code": "^0.1.0",
     "hexo-tag-google-photos-album": "^1.3.0",
     "hexo-tag-link-preview": "^1.2.4",
     "hexo-tag-twitter": "^1.0.2",

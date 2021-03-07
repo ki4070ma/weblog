@@ -1,7 +1,7 @@
 ---
 title: WeMo Insightで現在の消費電力を取得する
 date: 2018-01-13
-tags: [WeMo, Technology]
+tags: [WeMo, Python, Technology]
 ---
 
 <!-- toc -->

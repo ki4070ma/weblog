@@ -1,7 +1,7 @@
 ---
 title: Appium で screen recordを使用する
 date: 2021-03-03
-tags: [Appium, Technology]
+tags: [Appium, Python, Technology]
 ---
 
 <!-- toc -->
@@ -21,8 +21,13 @@ with open('video.mp4', "wb") as fd:
 
 # 使用用途
 
+## ローカル実行にて
+ローカル実行であれば実際に目で見ての確認で十分かもしれません
+しかし, 不具合起票時に他の人に見せるときなどに screen record があれば, そちらを元にやりとりできればコミュニケーションコストを下げることができます.
+
 ## Azure pipeline にて
-Azure pipelineではテストが失敗したときになぜ失敗したのか追いにくいため, screen recordで動画を取得しておくとよいです
+Azure pipelineではテストが失敗したときになぜ失敗したのか追いにくいため, screen record で動画を取得しておくとよいです
+その後は azure pipeline の artifact から動画を取得して実際にテストを走らせているときの端末の画面を録画した動画を確認することができます
 
 参考: https://github.com/appium/python-client/blob/master/test/functional/android/helper/test_helper.py
 
