@@ -6,7 +6,7 @@
   <link href="https://ki4070ma.com/atom.xml" rel="self"/>
   
   <link href="https://ki4070ma.com/"/>
-  <updated>2021-03-07T05:11:33.872Z</updated>
+  <updated>2021-03-07T13:23:03.387Z</updated>
   <id>https://ki4070ma.com/</id>
   
   <author>
@@ -18,10 +18,10 @@
   
   <entry>
     <title>リモートワークのために購入したもの2</title>
-    <link href="https://ki4070ma.com/20210308-WFH2/"/>
-    <id>https://ki4070ma.com/20210308-WFH2/</id>
+    <link href="https://ki4070ma.com/20210308_WFH2/"/>
+    <id>https://ki4070ma.com/20210308_WFH2/</id>
     <published>2021-03-07T15:00:00.000Z</published>
-    <updated>2021-03-07T05:11:33.872Z</updated>
+    <updated>2021-03-07T13:23:03.387Z</updated>
     
     
       
@@ -52,7 +52,7 @@
     <link href="https://ki4070ma.com/20210307_Hexo1/"/>
     <id>https://ki4070ma.com/20210307_Hexo1/</id>
     <published>2021-03-06T15:00:00.000Z</published>
-    <updated>2021-03-07T04:12:59.906Z</updated>
+    <updated>2021-03-07T13:23:03.387Z</updated>
     
     
       
@@ -113,7 +113,7 @@
     <link href="https://ki4070ma.com/20210305_appium-wait-for-el/"/>
     <id>https://ki4070ma.com/20210305_appium-wait-for-el/</id>
     <published>2021-03-04T15:00:00.000Z</published>
-    <updated>2021-03-07T07:37:03.592Z</updated>
+    <updated>2021-03-07T13:23:03.386Z</updated>
     
     
       
@@ -174,7 +174,7 @@
     <link href="https://ki4070ma.com/20210303_appium-screen-record/"/>
     <id>https://ki4070ma.com/20210303_appium-screen-record/</id>
     <published>2021-03-02T15:00:00.000Z</published>
-    <updated>2021-03-07T04:08:04.592Z</updated>
+    <updated>2021-03-07T13:23:03.386Z</updated>
     
     
       
@@ -201,11 +201,11 @@
   </entry>
   
   <entry>
-    <title>Hexo で Amazon associate</title>
-    <link href="https://ki4070ma.com/20210302-Hexo2/"/>
-    <id>https://ki4070ma.com/20210302-Hexo2/</id>
+    <title>Hexo で Amazon associate (Hexo2)</title>
+    <link href="https://ki4070ma.com/20210302_Hexo2/"/>
+    <id>https://ki4070ma.com/20210302_Hexo2/</id>
     <published>2021-03-01T15:00:00.000Z</published>
-    <updated>2021-03-07T04:25:42.412Z</updated>
+    <updated>2021-03-07T13:23:03.386Z</updated>
     
     
       
@@ -228,10 +228,10 @@
   
   <entry>
     <title>Selenium で BDD</title>
-    <link href="https://ki4070ma.com/20210228-selenium-bdd/"/>
-    <id>https://ki4070ma.com/20210228-selenium-bdd/</id>
+    <link href="https://ki4070ma.com/20210228_selenium-bdd/"/>
+    <id>https://ki4070ma.com/20210228_selenium-bdd/</id>
     <published>2021-02-27T15:00:00.000Z</published>
-    <updated>2021-03-07T07:33:33.816Z</updated>
+    <updated>2021-03-07T13:23:03.386Z</updated>
     
     
       
@@ -257,6 +257,66 @@
     <category term="BDD" scheme="https://ki4070ma.com/tags/BDD/"/>
     
     <category term="python" scheme="https://ki4070ma.com/tags/python/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Hexo の Plugin で出来ること (Hexo3)</title>
+    <link href="https://ki4070ma.com/20210227_Hexo3/"/>
+    <id>https://ki4070ma.com/20210227_Hexo3/</id>
+    <published>2021-02-26T15:00:00.000Z</published>
+    <updated>2021-03-07T13:23:03.385Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;!-- toc --&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;#instagram-%E3%81%AE%E5%9F%8B%E3%82%81%E8%BE%BC%E3%81%BF&quot;&gt;Instagram の埋め込み&lt;/a&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    
+    <category term="Technology" scheme="https://ki4070ma.com/tags/Technology/"/>
+    
+    <category term="Hexo" scheme="https://ki4070ma.com/tags/Hexo/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Appium による macOS の操作</title>
+    <link href="https://ki4070ma.com/20210226_appium-macos/"/>
+    <id>https://ki4070ma.com/20210226_appium-macos/</id>
+    <published>2021-02-25T15:00:00.000Z</published>
+    <updated>2021-03-07T13:23:03.385Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2&gt;&lt;span id=&quot;準備&quot;&gt;準備&lt;/span&gt;&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;macOS 10.15 以上&lt;/li&gt;
+&lt;li&gt;Xcode 12 以上&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;がインストールされている状態で, &lt;code&gt;Xcode Helper app&lt;/code&gt;</summary>
+        
+      
+    
+    
+    
+    
+    <category term="Python" scheme="https://ki4070ma.com/tags/Python/"/>
+    
+    <category term="Appium" scheme="https://ki4070ma.com/tags/Appium/"/>
+    
+    <category term="macOS" scheme="https://ki4070ma.com/tags/macOS/"/>
     
   </entry>
   
@@ -355,7 +415,7 @@
     <link href="https://ki4070ma.com/20190101_appium-setup/"/>
     <id>https://ki4070ma.com/20190101_appium-setup/</id>
     <published>2018-12-31T15:00:00.000Z</published>
-    <updated>2021-03-07T04:00:44.441Z</updated>
+    <updated>2021-03-07T13:23:03.385Z</updated>
     
     
       
@@ -412,10 +472,10 @@
   
   <entry>
     <title>PythonのLibraryで使用したことがあるもの</title>
-    <link href="https://ki4070ma.com/20181226_python/"/>
-    <id>https://ki4070ma.com/20181226_python/</id>
+    <link href="https://ki4070ma.com/20181226_python-lib/"/>
+    <id>https://ki4070ma.com/20181226_python-lib/</id>
     <published>2018-12-25T15:00:00.000Z</published>
-    <updated>2021-03-06T15:29:49.769Z</updated>
+    <updated>2021-03-07T13:23:03.385Z</updated>
     
     
       
@@ -550,67 +610,6 @@
     <category term="Technology" scheme="https://ki4070ma.com/tags/Technology/"/>
     
     <category term="ssh" scheme="https://ki4070ma.com/tags/ssh/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>WeMo Insightで現在の消費電力を取得する</title>
-    <link href="https://ki4070ma.com/20180113_wemo-insight/"/>
-    <id>https://ki4070ma.com/20180113_wemo-insight/</id>
-    <published>2018-01-12T15:00:00.000Z</published>
-    <updated>2021-03-07T05:42:06.684Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;!-- toc --&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;#wemo-insight&quot;&gt;WeMo Insight&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;#api&quot;&gt;API&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a</summary>
-        
-      
-    
-    
-    
-    
-    <category term="WeMo" scheme="https://ki4070ma.com/tags/WeMo/"/>
-    
-    <category term="Python" scheme="https://ki4070ma.com/tags/Python/"/>
-    
-    <category term="Technology" scheme="https://ki4070ma.com/tags/Technology/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>探索的テストの使い方</title>
-    <link href="https://ki4070ma.com/20180104_How-to-use-et/"/>
-    <id>https://ki4070ma.com/20180104_How-to-use-et/</id>
-    <published>2018-01-03T15:00:00.000Z</published>
-    <updated>2021-03-06T15:29:49.768Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;!-- toc --&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;#%E6%8E%A2%E7%B4%A2%E7%9A%84%E3%83%86%E3%82%B9%E3%83%88%E3%81%A8%E3%81%AF&quot;&gt;探索的テストとは&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a</summary>
-        
-      
-    
-    
-    
-    
-    <category term="SoftwareTest" scheme="https://ki4070ma.com/tags/SoftwareTest/"/>
-    
-    <category term="ExploratoryTest" scheme="https://ki4070ma.com/tags/ExploratoryTest/"/>
     
   </entry>
   
