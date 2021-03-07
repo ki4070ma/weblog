@@ -6,7 +6,7 @@
   <link href="https://ki4070ma.com/atom.xml" rel="self"/>
   
   <link href="https://ki4070ma.com/"/>
-  <updated>2021-03-07T13:23:03.387Z</updated>
+  <updated>2021-03-07T14:08:35.957Z</updated>
   <id>https://ki4070ma.com/</id>
   
   <author>
@@ -21,14 +21,14 @@
     <link href="https://ki4070ma.com/20210308_WFH2/"/>
     <id>https://ki4070ma.com/20210308_WFH2/</id>
     <published>2021-03-07T15:00:00.000Z</published>
-    <updated>2021-03-07T13:23:03.387Z</updated>
+    <updated>2021-03-07T14:08:35.957Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;div class=&quot;google-photos-album-area&quot; id=&quot;google-photos-album-area2&quot;&gt;&lt;div class=&quot;metadatas&quot;&gt;&lt;a</summary>
+    <summary type="html">&lt;div class=&quot;google-photos-album-area&quot; id=&quot;google-photos-album-area3&quot;&gt;&lt;div class=&quot;metadatas&quot;&gt;&lt;a</summary>
         
       
     
@@ -37,11 +37,11 @@
     
     <category term="Mac" scheme="https://ki4070ma.com/tags/Mac/"/>
     
-    <category term="Amazon" scheme="https://ki4070ma.com/tags/Amazon/"/>
-    
     <category term="WFH" scheme="https://ki4070ma.com/tags/WFH/"/>
     
     <category term="リモートワーク" scheme="https://ki4070ma.com/tags/%E3%83%AA%E3%83%A2%E3%83%BC%E3%83%88%E3%83%AF%E3%83%BC%E3%82%AF/"/>
+    
+    <category term="Amazon" scheme="https://ki4070ma.com/tags/Amazon/"/>
     
     <category term="Windows" scheme="https://ki4070ma.com/tags/Windows/"/>
     
@@ -52,7 +52,7 @@
     <link href="https://ki4070ma.com/20210307_Hexo1/"/>
     <id>https://ki4070ma.com/20210307_Hexo1/</id>
     <published>2021-03-06T15:00:00.000Z</published>
-    <updated>2021-03-07T13:23:03.387Z</updated>
+    <updated>2021-03-07T14:08:35.957Z</updated>
     
     
       
@@ -100,11 +100,11 @@
     
     
     
-    <category term="Amazon" scheme="https://ki4070ma.com/tags/Amazon/"/>
-    
     <category term="WFH" scheme="https://ki4070ma.com/tags/WFH/"/>
     
     <category term="リモートワーク" scheme="https://ki4070ma.com/tags/%E3%83%AA%E3%83%A2%E3%83%BC%E3%83%88%E3%83%AF%E3%83%BC%E3%82%AF/"/>
+    
+    <category term="Amazon" scheme="https://ki4070ma.com/tags/Amazon/"/>
     
   </entry>
   
@@ -113,7 +113,7 @@
     <link href="https://ki4070ma.com/20210305_appium-wait-for-el/"/>
     <id>https://ki4070ma.com/20210305_appium-wait-for-el/</id>
     <published>2021-03-04T15:00:00.000Z</published>
-    <updated>2021-03-07T13:23:03.386Z</updated>
+    <updated>2021-03-07T14:08:35.957Z</updated>
     
     
       
@@ -158,7 +158,7 @@
 &lt;!-- tocstop --&gt;
 
 &lt;p&gt;Macを購入したので以下のUSB Hubを購入&lt;/p&gt;
-&lt;div class=&quot;google-photos-album-area&quot; id=&quot;google-photos-album-area1&quot;&gt;&lt;div</summary>
+&lt;div class=&quot;google-photos-album-area&quot; id=&quot;google-photos-album-area2&quot;&gt;&lt;div</summary>
         
       
     
@@ -174,7 +174,7 @@
     <link href="https://ki4070ma.com/20210303_appium-screen-record/"/>
     <id>https://ki4070ma.com/20210303_appium-screen-record/</id>
     <published>2021-03-02T15:00:00.000Z</published>
-    <updated>2021-03-07T13:23:03.386Z</updated>
+    <updated>2021-03-07T14:08:35.957Z</updated>
     
     
       
@@ -205,7 +205,7 @@
     <link href="https://ki4070ma.com/20210302_Hexo2/"/>
     <id>https://ki4070ma.com/20210302_Hexo2/</id>
     <published>2021-03-01T15:00:00.000Z</published>
-    <updated>2021-03-07T13:23:03.386Z</updated>
+    <updated>2021-03-07T14:08:35.956Z</updated>
     
     
       
@@ -231,7 +231,7 @@
     <link href="https://ki4070ma.com/20210228_selenium-bdd/"/>
     <id>https://ki4070ma.com/20210228_selenium-bdd/</id>
     <published>2021-02-27T15:00:00.000Z</published>
-    <updated>2021-03-07T13:23:03.386Z</updated>
+    <updated>2021-03-07T14:08:35.956Z</updated>
     
     
       
@@ -265,7 +265,7 @@
     <link href="https://ki4070ma.com/20210227_Hexo3/"/>
     <id>https://ki4070ma.com/20210227_Hexo3/</id>
     <published>2021-02-26T15:00:00.000Z</published>
-    <updated>2021-03-07T13:23:03.385Z</updated>
+    <updated>2021-03-07T14:08:35.956Z</updated>
     
     
       
@@ -294,7 +294,7 @@
     <link href="https://ki4070ma.com/20210226_appium-macos/"/>
     <id>https://ki4070ma.com/20210226_appium-macos/</id>
     <published>2021-02-25T15:00:00.000Z</published>
-    <updated>2021-03-07T13:23:03.385Z</updated>
+    <updated>2021-03-07T14:08:35.956Z</updated>
     
     
       
@@ -317,6 +317,33 @@
     <category term="Appium" scheme="https://ki4070ma.com/tags/Appium/"/>
     
     <category term="macOS" scheme="https://ki4070ma.com/tags/macOS/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>リモートワークのために購入したもの3</title>
+    <link href="https://ki4070ma.com/20210225_WFH3/"/>
+    <id>https://ki4070ma.com/20210225_WFH3/</id>
+    <published>2021-02-24T15:00:00.000Z</published>
+    <updated>2021-03-07T14:08:35.956Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;iframe</summary>
+        
+      
+    
+    
+    
+    
+    <category term="WFH" scheme="https://ki4070ma.com/tags/WFH/"/>
+    
+    <category term="リモートワーク" scheme="https://ki4070ma.com/tags/%E3%83%AA%E3%83%A2%E3%83%BC%E3%83%88%E3%83%AF%E3%83%BC%E3%82%AF/"/>
+    
+    <category term="Amazon" scheme="https://ki4070ma.com/tags/Amazon/"/>
     
   </entry>
   
@@ -415,7 +442,7 @@
     <link href="https://ki4070ma.com/20190101_appium-setup/"/>
     <id>https://ki4070ma.com/20190101_appium-setup/</id>
     <published>2018-12-31T15:00:00.000Z</published>
-    <updated>2021-03-07T13:23:03.385Z</updated>
+    <updated>2021-03-07T14:08:35.955Z</updated>
     
     
       
@@ -475,7 +502,7 @@
     <link href="https://ki4070ma.com/20181226_python-lib/"/>
     <id>https://ki4070ma.com/20181226_python-lib/</id>
     <published>2018-12-25T15:00:00.000Z</published>
-    <updated>2021-03-07T13:23:03.385Z</updated>
+    <updated>2021-03-07T14:08:35.955Z</updated>
     
     
       
@@ -581,35 +608,6 @@
     <category term="Programming" scheme="https://ki4070ma.com/tags/Programming/"/>
     
     <category term="Study" scheme="https://ki4070ma.com/tags/Study/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>ローカルネットワーク内でsshするための設定</title>
-    <link href="https://ki4070ma.com/20181215_ssh-local-network/"/>
-    <id>https://ki4070ma.com/20181215_ssh-local-network/</id>
-    <published>2018-12-14T15:00:00.000Z</published>
-    <updated>2021-03-06T15:29:49.768Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;!-- toc --&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;#%E3%82%84%E3%82%8D%E3%81%86%E3%81%A8%E3%81%97%E3%81%9F%E3%81%93%E3%81%A8&quot;&gt;やろうとしたこと&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a</summary>
-        
-      
-    
-    
-    
-    
-    <category term="Technology" scheme="https://ki4070ma.com/tags/Technology/"/>
-    
-    <category term="ssh" scheme="https://ki4070ma.com/tags/ssh/"/>
     
   </entry>
   
