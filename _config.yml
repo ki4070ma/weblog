@@ -101,7 +101,7 @@ googlePhotosAlbum:
   largeSize: '=s1920-no'
   mediumSize: '=s720-no'
   smallSize: '=w225-no'
-  maxPics: 999
+  maxPics: 10
   generateAlways: false
 html_minifier:
   exclude:
