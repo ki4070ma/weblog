@@ -3,6 +3,62 @@
 
 
     <url>
+        <loc>https://ki4070ma.com/tags/Amazon/</loc>
+        <lastmod>2021-03-07T16:39:25.899Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://ki4070ma.com/tags/%E3%83%AA%E3%83%A2%E3%83%BC%E3%83%88%E3%83%AF%E3%83%BC%E3%82%AF/</loc>
+        <lastmod>2021-03-07T16:39:25.899Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://ki4070ma.com/tags/WFH/</loc>
+        <lastmod>2021-03-07T16:39:25.899Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://ki4070ma.com/tags/Amazon-associate/</loc>
+        <lastmod>2021-03-07T14:19:37.463Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://ki4070ma.com/tags/Hexo/</loc>
+        <lastmod>2021-03-07T14:19:37.463Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://ki4070ma.com/tags/macOS/</loc>
+        <lastmod>2021-03-07T14:16:37.956Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://ki4070ma.com/tags/Appium/</loc>
+        <lastmod>2021-03-07T14:16:37.956Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://ki4070ma.com/tags/Python/</loc>
+        <lastmod>2021-03-07T14:16:37.956Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
         <loc>https://ki4070ma.com/tags/Github/</loc>
         <lastmod>2021-03-07T14:08:35.957Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -17,41 +73,6 @@
     </url>
 
     <url>
-        <loc>https://ki4070ma.com/tags/Hexo/</loc>
-        <lastmod>2021-03-07T14:08:35.957Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://ki4070ma.com/tags/Amazon/</loc>
-        <lastmod>2021-03-07T14:08:35.957Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://ki4070ma.com/tags/%E3%83%AA%E3%83%A2%E3%83%BC%E3%83%88%E3%83%AF%E3%83%BC%E3%82%AF/</loc>
-        <lastmod>2021-03-07T14:08:35.957Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://ki4070ma.com/tags/WFH/</loc>
-        <lastmod>2021-03-07T14:08:35.957Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://ki4070ma.com/tags/Appium/</loc>
-        <lastmod>2021-03-07T14:08:35.957Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
         <loc>https://ki4070ma.com/tags/Mac/</loc>
         <lastmod>2021-03-07T14:08:35.957Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -60,13 +81,6 @@
 
     <url>
         <loc>https://ki4070ma.com/tags/Technology/</loc>
-        <lastmod>2021-03-07T14:08:35.957Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://ki4070ma.com/tags/Python/</loc>
         <lastmod>2021-03-07T14:08:35.957Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
@@ -88,20 +102,6 @@
 
     <url>
         <loc>https://ki4070ma.com/tags/selenium/</loc>
-        <lastmod>2021-03-07T14:08:35.956Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://ki4070ma.com/tags/Amazon-associate/</loc>
-        <lastmod>2021-03-07T14:08:35.956Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://ki4070ma.com/tags/macOS/</loc>
         <lastmod>2021-03-07T14:08:35.956Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
@@ -136,6 +136,13 @@
     </url>
 
     <url>
+        <loc>https://ki4070ma.com/tags/CircleCI/</loc>
+        <lastmod>2021-03-06T15:29:49.768Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
         <loc>https://ki4070ma.com/tags/Study/</loc>
         <lastmod>2021-03-06T15:29:49.768Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -144,13 +151,6 @@
 
     <url>
         <loc>https://ki4070ma.com/tags/Programming/</loc>
-        <lastmod>2021-03-06T15:29:49.768Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://ki4070ma.com/tags/CircleCI/</loc>
         <lastmod>2021-03-06T15:29:49.768Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>

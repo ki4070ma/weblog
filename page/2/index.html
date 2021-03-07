@@ -54,34 +54,62 @@
 <script data-ad-client="ca-pub-9552058847412056" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 <div class="outer">
 <section id="main">
-<article id="post-20210225_WFH3" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+<article id="post-20210225_appium-macos" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
 <div class="article-meta">
-<a href="/20210225_WFH3/" class="article-date">
+<a href="/20210225_appium-macos/" class="article-date">
 <time class="dt-published" datetime="2021-02-24T15:00:00.000Z" itemprop="datePublished">2021-02-25</time>
 </a>
 </div>
 <div class="article-inner">
 <header class="article-header">
 <h1 itemprop="name">
-<a class="p-name article-title" href="/20210225_WFH3/">リモートワークのために購入したもの3</a>
+<a class="p-name article-title" href="/20210225_appium-macos/">Appium による macOS の操作</a>
 </h1>
 </header>
 <div class="e-content article-entry" itemprop="articleBody">
-<iframe src="https://rcm-fe.amazon-adsystem.com/e/cm?ref=qf_sp_asin_til&t=ki4070ma-22&m=amazon&o=9&p=8&l=as1&IS1=1&detail=1&asins=B07QMKND9M&linkId=618c77bb9a3acf07b21c8cd88886e893&bc1=ffffff&amp;lt1=_top&fc1=333333&lc1=0066c0&bg1=ffffff&f=ifr" width="120" height="240" frameborder="0" loading="lazy" allowfullscreen></iframe>
-<p>Logicool のウェブカメラ<br>ノートPCにもカメラは付いていますが, 外部ディスプレイに接続しているのでノートPC自体は閉じており使用できていないです<br>また外部ディスプレイを使用しているとノートPCの画面を見ないので, ビデオ会議のときに皆に対して正面を見れないのですが, ウェブカメラを使用しているとディスプレイの上に装着でき, 皆に対して正面を向くことができます</p>
-<div class="google-photos-album-area" id="google-photos-album-area1"><div class="metadatas"><a href="https://lh3.googleusercontent.com/UrxqJCWhzd60F89swycc7H0FGkhHUa0IdQkhNDvP8AVF5bVZ-HWhM4rPuh2qkVxcJ9CS_eKB8rFL-etKsPaBLeNbEFHduK__9cRsCa1cT9W3hj0pl_92U6URsiyXALo9IOAnsdGf-Rc=s720-no?authuser=0" class="google-photos-album-image gallery-item" target="_blank" rel="noopener"><img src="https://lh3.googleusercontent.com/UrxqJCWhzd60F89swycc7H0FGkhHUa0IdQkhNDvP8AVF5bVZ-HWhM4rPuh2qkVxcJ9CS_eKB8rFL-etKsPaBLeNbEFHduK__9cRsCa1cT9W3hj0pl_92U6URsiyXALo9IOAnsdGf-Rc=w600-h315-p-k" class="og-image"></a><a href="https://photos.google.com/share/AF1QipOHCznD5HYTO-GqR9rAVm22SgFSyxEeJpiqwAGdWpu8NhU5q2lZbX4G1ooUQYTfjQ?key=Q0hDX0hDMHFTTEdDNXN3c1NSdThaa3pMbldLSTZR" class="og-url" target="_blank" rel="noopener"><span class="og-title">New photo by A Mori</span></a></div>
-<div class="google-photos-album-images clearfix"></div>
-</div>
-<p>(カメラ違いますがこのような感じ)</p>
-<h2><span id="tips">Tips</span></h2><p>amazon で購入しようとしたときに, マーケットプレイスでの購入になりそうなときは, keepa で過去の価格を把握して, その価格が適正かどうかを確認するとよいです</p>
-<p><a target="_blank" rel="noopener" href="https://keepa.com/#">https://keepa.com/#</a>!</p>
-<p>chrome extension<br><a target="_blank" rel="noopener" href="https://chrome.google.com/webstore/detail/keepa-amazon-price-tracke/neebplgakaahbhdphmkckjjcegoiijjo?hl=ja">https://chrome.google.com/webstore/detail/keepa-amazon-price-tracke/neebplgakaahbhdphmkckjjcegoiijjo?hl=ja</a></p>
+<h2><span id="準備">準備</span></h2><ul>
+<li>macOS 10.15 以上</li>
+<li>Xcode 12 以上</li>
+</ul>
+<p>がインストールされている状態で, <code>Xcode Helper app</code> のアクセシビリティアクセスが有効化されている必要があります<br>App自体は以下に存在しており, </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;Applications&#x2F;Xcode.app&#x2F;Contents&#x2F;Developer&#x2F;Platforms&#x2F;MacOSX.platform&#x2F;Developer&#x2F;Library&#x2F;Xcode&#x2F;Agents&#x2F;Xcode Helper.app</span><br></pre></td></tr></table></figure>
+<p>まず <code>/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Xcode/Agents/</code> を Finder で開いて,<br><code>Xcode Helper app</code> を ドラッグ&amp;ドロップで <code>システム環境設定</code> の <code>Security &amp; Privacy -&gt; Privacy -&gt; Accessibility</code> のリストへもっていきます<br>こちらは一度のみでよいです</p>
+<p>これで準備完了です</p>
+<h2><span id="実行">実行</span></h2><p>あとは appium が実行されていて, appium-python-client がインストールされている状態であれば, 以下のコードで macOS 上の TextEditor を動かすことができます<br>以下のコードを <code>script.py</code> として保存して, 実行は <code>pytest script.py</code> です</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> pytest</span><br><span class="line"></span><br><span class="line"><span class="keyword">from</span> appium <span class="keyword">import</span> webdriver</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="meta">@pytest.fixture()</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">driver</span>():</span></span><br><span class="line">    drv = webdriver.Remote(<span class="string">&#x27;http://localhost:4723/wd/hub&#x27;</span>, &#123;</span><br><span class="line">        <span class="comment"># automationName capability presence is mandatory for this Mac2 Driver to be selected</span></span><br><span class="line">        <span class="string">&#x27;automationName&#x27;</span>: <span class="string">&#x27;Mac2&#x27;</span>,</span><br><span class="line">        <span class="string">&#x27;platformName&#x27;</span>: <span class="string">&#x27;mac&#x27;</span>,</span><br><span class="line">        <span class="string">&#x27;bundleId&#x27;</span>: <span class="string">&#x27;com.apple.TextEdit&#x27;</span>,</span><br><span class="line">    &#125;)</span><br><span class="line">    <span class="keyword">yield</span> drv</span><br><span class="line">    drv.quit()</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">test_edit_text</span>(<span class="params">driver</span>):</span></span><br><span class="line">    edit_field = driver.find_element_by_class_name(<span class="string">&#x27;XCUIElementTypeTextView&#x27;</span>)</span><br><span class="line">    edit_field.send_keys(<span class="string">&#x27;hello world&#x27;</span>)</span><br><span class="line">    <span class="keyword">assert</span> edit_field.text == <span class="string">&#x27;hello world&#x27;</span></span><br><span class="line">    edit_field.clear()</span><br><span class="line">    <span class="keyword">assert</span> edit_field.text == <span class="string">&#x27;&#x27;</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">test_sending_custom_keys</span>(<span class="params">driver</span>):</span></span><br><span class="line">    edit_field = driver.find_element_by_class_name(<span class="string">&#x27;XCUIElementTypeTextView&#x27;</span>)</span><br><span class="line">    flagsShift = <span class="number">1</span> &lt;&lt; <span class="number">1</span></span><br><span class="line">    driver.execute_script(<span class="string">&#x27;macos: keys&#x27;</span>, &#123;</span><br><span class="line">        <span class="string">&#x27;keys&#x27;</span>: [&#123;</span><br><span class="line">            <span class="string">&#x27;key&#x27;</span>: <span class="string">&#x27;h&#x27;</span>,</span><br><span class="line">            <span class="string">&#x27;modifierFlags&#x27;</span>: flagsShift,</span><br><span class="line">        &#125;, &#123;</span><br><span class="line">            <span class="string">&#x27;key&#x27;</span>: <span class="string">&#x27;i&#x27;</span>,</span><br><span class="line">            <span class="string">&#x27;modifierFlags&#x27;</span>: flagsShift,</span><br><span class="line">        &#125;]</span><br><span class="line">    &#125;)</span><br><span class="line">    <span class="keyword">assert</span> edit_field.text == <span class="string">&#x27;HI&#x27;</span></span><br></pre></td></tr></table></figure>
+<h2><span id="このあと">このあと</span></h2><p>Appium desktop を使用して, TextEditor 上の element を確認したりして, コードを追加していけば自動による操作を追加できます</p>
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 <ins class="adsbygoogle" style="display:block;text-align:center" data-ad-layout="in-article" data-ad-format="fluid" data-ad-client="ca-pub-9552058847412056" data-ad-slot="7810355979"></ins>
 <script>(adsbygoogle=window.adsbygoogle||[]).push({})</script>
 </div>
 <footer class="article-footer">
-<a data-url="https://ki4070ma.com/20210225_WFH3/" data-id="cklz8e3ao000gk4d165t36o0m" data-title="リモートワークのために購入したもの3" class="article-share-link">共有</a>
+<a data-url="https://ki4070ma.com/20210225_appium-macos/" data-id="cklzf7m7q000kvcd1bpoo6wm9" data-title="Appium による macOS の操作" class="article-share-link">共有</a>
+<ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Appium/" rel="tag">Appium</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Python/" rel="tag">Python</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/macOS/" rel="tag">macOS</a></li></ul>
+</footer>
+</div>
+</article>
+<article id="post-20210224-WFH4" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+<div class="article-meta">
+<a href="/20210224-WFH4/" class="article-date">
+<time class="dt-published" datetime="2021-02-23T15:00:00.000Z" itemprop="datePublished">2021-02-24</time>
+</a>
+</div>
+<div class="article-inner">
+<header class="article-header">
+<h1 itemprop="name">
+<a class="p-name article-title" href="/20210224-WFH4/">リモートワークのために購入したもの4</a>
+</h1>
+</header>
+<div class="e-content article-entry" itemprop="articleBody">
+<iframe src="https://rcm-fe.amazon-adsystem.com/e/cm?ref=qf_sp_asin_til&t=ki4070ma-22&m=amazon&o=9&p=8&l=as1&IS1=1&detail=1&asins=B07RHYBPCJ&linkId=98a77a128392414ffe80bcb46daf13b9&bc1=ffffff&amp;lt1=_top&fc1=333333&lc1=0066c0&bg1=ffffff&f=ifr" width="120" height="240" frameborder="0" loading="lazy" allowfullscreen></iframe>
+<p>足元でころころしています<br>運動不足かは認識していませんでしたがとても効いています(ほぐれています)</p>
+<p>リモートワーク以外でも普通に使っていて, 個人的におすすめの使い方はふくらはぎです(とてもいたい)</p>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle" style="display:block;text-align:center" data-ad-layout="in-article" data-ad-format="fluid" data-ad-client="ca-pub-9552058847412056" data-ad-slot="7810355979"></ins>
+<script>(adsbygoogle=window.adsbygoogle||[]).push({})</script>
+</div>
+<footer class="article-footer">
+<a data-url="https://ki4070ma.com/20210224-WFH4/" data-id="cklzf7m7t000uvcd10945d7el" data-title="リモートワークのために購入したもの4" class="article-share-link">共有</a>
 <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Amazon/" rel="tag">Amazon</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/WFH/" rel="tag">WFH</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E3%83%AA%E3%83%A2%E3%83%BC%E3%83%88%E3%83%AF%E3%83%BC%E3%82%AF/" rel="tag">リモートワーク</a></li></ul>
 </footer>
 </div>
@@ -176,7 +204,7 @@
 <script>(adsbygoogle=window.adsbygoogle||[]).push({})</script>
 </div>
 <footer class="article-footer">
-<a data-url="https://ki4070ma.com/20201230_elk-sample/" data-id="cklz8e3ap000jk4d18ootfs6h" data-title="Elasticsearch, Kibanaの勉強用メモ" class="article-share-link">共有</a>
+<a data-url="https://ki4070ma.com/20201230_elk-sample/" data-id="cklzf7m7q000ivcd1074q01eg" data-title="Elasticsearch, Kibanaの勉強用メモ" class="article-share-link">共有</a>
 <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/ELK/" rel="tag">ELK</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Technology/" rel="tag">Technology</a></li></ul>
 </footer>
 </div>
@@ -221,7 +249,7 @@
 <script>(adsbygoogle=window.adsbygoogle||[]).push({})</script>
 </div>
 <footer class="article-footer">
-<a data-url="https://ki4070ma.com/20191101_slide-presentation/" data-id="cklz8e3ao000fk4d1d0f48orj" data-title="スライドを作成するときに参考にするサイト" class="article-share-link">共有</a>
+<a data-url="https://ki4070ma.com/20191101_slide-presentation/" data-id="cklzf7m7p000fvcd18ehk17mp" data-title="スライドを作成するときに参考にするサイト" class="article-share-link">共有</a>
 <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Presentation/" rel="tag">Presentation</a></li></ul>
 </footer>
 </div>
@@ -282,7 +310,7 @@
 <script>(adsbygoogle=window.adsbygoogle||[]).push({})</script>
 </div>
 <footer class="article-footer">
-<a data-url="https://ki4070ma.com/20190418_mac-hdd-free/" data-id="cklz8e3al0007k4d1dhm38rhb" data-title="Macで空き容量を増やすためにやったこと" class="article-share-link">共有</a>
+<a data-url="https://ki4070ma.com/20190418_mac-hdd-free/" data-id="cklzf7m7p000gvcd122yy5zyg" data-title="Macで空き容量を増やすためにやったこと" class="article-share-link">共有</a>
 <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Mac/" rel="tag">Mac</a></li></ul>
 </footer>
 </div>
@@ -364,71 +392,8 @@
 <script>(adsbygoogle=window.adsbygoogle||[]).push({})</script>
 </div>
 <footer class="article-footer">
-<a data-url="https://ki4070ma.com/20190101_appium-setup/" data-id="cklz8e3am000ak4d1ge3jashs" data-title="Appiumのセットアップ, 使い方" class="article-share-link">共有</a>
+<a data-url="https://ki4070ma.com/20190101_appium-setup/" data-id="cklzf7m7o000avcd10ehh6kvy" data-title="Appiumのセットアップ, 使い方" class="article-share-link">共有</a>
 <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Appium/" rel="tag">Appium</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Python/" rel="tag">Python</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Technology/" rel="tag">Technology</a></li></ul>
-</footer>
-</div>
-</article>
-<article id="post-20181226_ffmpeg" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-<div class="article-meta">
-<a href="/20181226_ffmpeg/" class="article-date">
-<time class="dt-published" datetime="2018-12-25T15:00:00.000Z" itemprop="datePublished">2018-12-26</time>
-</a>
-</div>
-<div class="article-inner">
-<header class="article-header">
-<h1 itemprop="name">
-<a class="p-name article-title" href="/20181226_ffmpeg/">ffmpeg memo</a>
-</h1>
-</header>
-<div class="e-content article-entry" itemprop="articleBody">
-<ul>
-<li><a href="#%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB">インストール</a></li>
-<li><a href="#%E4%BD%BF%E3%81%84%E6%96%B9">使い方</a></li>
-<li><a href="#%E5%8F%82%E8%80%83">参考</a></li>
-</ul>
-<p>ffmpegをmacで使った時のメモ書き (Linuxのほうが使いやすい気がする)</p>
-<h1><span id="インストール">インストール</span></h1><ul>
-<li>brewにて<ul>
-<li>$brew install ffmpeg</li>
-</ul>
-</li>
-</ul>
-<h1><span id="使い方">使い方</span></h1><ul>
-<li>使用可能なvideo resource一覧の表示<ul>
-<li>e.g. Macのフロントカメラは “[0] FaceTime HD Camera”</li>
-<li>[メモ] Macの場合はavfoundationが必要らしい. Ubuntuでは不要だったなぁ<ul>
-<li><a target="_blank" rel="noopener" href="https://www.ffmpeg.org/ffmpeg-devices.html#avfoundation">https://www.ffmpeg.org/ffmpeg-devices.html#avfoundation</a></li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">➜  ✗ ffmpeg -f avfoundation -list_devices true -i &quot;&quot;</span><br><span class="line"></span><br><span class="line">ffmpeg version 4.1 Copyright (c) 2000-2018 the FFmpeg developers</span><br><span class="line">  built with Apple LLVM version 10.0.0 (clang-1000.11.45.5)</span><br><span class="line">  configuration: --prefix&#x3D;&#x2F;usr&#x2F;local&#x2F;Cellar&#x2F;ffmpeg&#x2F;4.1 --enable-shared --enable-pthreads --enable-version3 --enable-hardcoded-tables --enable-avresample --cc&#x3D;clang --host-cflags&#x3D; --host-ldflags&#x3D; --enable-ffplay --enable-gpl --enable-libmp3lame --enable-libopus --enable-libsnappy --enable-libtheora --enable-libvorbis --enable-libvpx --enable-libx264 --enable-libx265 --enable-libxvid --enable-lzma --enable-opencl --enable-videotoolbox</span><br><span class="line">  libavutil      56. 22.100 &#x2F; 56. 22.100</span><br><span class="line">  libavcodec     58. 35.100 &#x2F; 58. 35.100</span><br><span class="line">  libavformat    58. 20.100 &#x2F; 58. 20.100</span><br><span class="line">  libavdevice    58.  5.100 &#x2F; 58.  5.100</span><br><span class="line">  libavfilter     7. 40.101 &#x2F;  7. 40.101</span><br><span class="line">  libavresample   4.  0.  0 &#x2F;  4.  0.  0</span><br><span class="line">  libswscale      5.  3.100 &#x2F;  5.  3.100</span><br><span class="line">  libswresample   3.  3.100 &#x2F;  3.  3.100</span><br><span class="line">  libpostproc    55.  3.100 &#x2F; 55.  3.100</span><br><span class="line">[AVFoundation input device @ 0x7ffa3f402b40] AVFoundation video devices:</span><br><span class="line">[AVFoundation input device @ 0x7ffa3f402b40] [0] FaceTime HD Camera</span><br><span class="line">[AVFoundation input device @ 0x7ffa3f402b40] [1] Capture screen 0</span><br><span class="line">[AVFoundation input device @ 0x7ffa3f402b40] [2] Capture screen 1</span><br><span class="line">[AVFoundation input device @ 0x7ffa3f402b40] AVFoundation audio devices:</span><br><span class="line">[AVFoundation input device @ 0x7ffa3f402b40] [0] Built-in Microphone</span><br></pre></td></tr></table></figure>
-<ul>
-<li>Camera viewの表示<ul>
-<li>$ffplay -f avfoundation -framerate 30 -i “0”</li>
-<li>[注意] framerateが必要<ul>
-<li>(参考) <a target="_blank" rel="noopener" href="https://stackoverflow.com/questions/37960828/webcam-streaming-from-mac-using-ffmpeg">https://stackoverflow.com/questions/37960828/webcam-streaming-from-mac-using-ffmpeg</a></li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-<h1><span id="参考">参考</span></h1><ul>
-<li>ffmpeg (API)を用いてWebカメラからキャプチャ<ul>
-<li><a target="_blank" rel="noopener" href="https://qiita.com/gwappa/items/d4adc9354fab3fa2c1c9">https://qiita.com/gwappa/items/d4adc9354fab3fa2c1c9</a></li>
-</ul>
-</li>
-</ul>
-<p>ref: <a target="_blank" rel="noopener" href="https://qiita.com/atsushi0521/items/350cdbbb9d8f712f0097">https://qiita.com/atsushi0521/items/350cdbbb9d8f712f0097</a></p>
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<ins class="adsbygoogle" style="display:block;text-align:center" data-ad-layout="in-article" data-ad-format="fluid" data-ad-client="ca-pub-9552058847412056" data-ad-slot="7810355979"></ins>
-<script>(adsbygoogle=window.adsbygoogle||[]).push({})</script>
-</div>
-<footer class="article-footer">
-<a data-url="https://ki4070ma.com/20181226_ffmpeg/" data-id="cklz8e3al0005k4d145a57xtu" data-title="ffmpeg memo" class="article-share-link">共有</a>
-<ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Technology/" rel="tag">Technology</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/ffmpeg/" rel="tag">ffmpeg</a></li></ul>
 </footer>
 </div>
 </article>
@@ -628,67 +593,71 @@
 <script>(adsbygoogle=window.adsbygoogle||[]).push({})</script>
 </div>
 <footer class="article-footer">
-<a data-url="https://ki4070ma.com/20181226_python-lib/" data-id="cklz8e3ao000ik4d13ec11qd5" data-title="PythonのLibraryで使用したことがあるもの" class="article-share-link">共有</a>
+<a data-url="https://ki4070ma.com/20181226_python-lib/" data-id="cklzf7m7n0008vcd188vk9afd" data-title="PythonのLibraryで使用したことがあるもの" class="article-share-link">共有</a>
 <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Python/" rel="tag">Python</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Technology/" rel="tag">Technology</a></li></ul>
 </footer>
 </div>
 </article>
-<article id="post-20181217_circleci" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+<article id="post-20181226_ffmpeg" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
 <div class="article-meta">
-<a href="/20181217_circleci/" class="article-date">
-<time class="dt-published" datetime="2018-12-16T15:00:00.000Z" itemprop="datePublished">2018-12-17</time>
+<a href="/20181226_ffmpeg/" class="article-date">
+<time class="dt-published" datetime="2018-12-25T15:00:00.000Z" itemprop="datePublished">2018-12-26</time>
 </a>
 </div>
 <div class="article-inner">
 <header class="article-header">
 <h1 itemprop="name">
-<a class="p-name article-title" href="/20181217_circleci/">circleci memo</a>
+<a class="p-name article-title" href="/20181226_ffmpeg/">ffmpeg memo</a>
 </h1>
 </header>
 <div class="e-content article-entry" itemprop="articleBody">
 <ul>
-<li><a href="#%E3%82%BB%E3%83%83%E3%83%88%E3%82%A2%E3%83%83%E3%83%97">セットアップ</a></li>
-<li><a href="#%E3%83%AD%E3%83%BC%E3%82%AB%E3%83%AB%E3%81%A7circleci%E3%81%AE%E3%83%93%E3%83%AB%E3%83%89%E3%82%92%E5%AE%9F%E8%A1%8C%E3%81%A7%E3%81%8D%E3%82%8B%E3%82%88%E3%81%86%E3%81%AB%E3%81%99%E3%82%8B">ローカルでcircleciのビルドを実行できるようにする</a></li>
-<li><a href="#circleciconfigyml%E3%82%92%E4%BD%9C%E6%88%90%E3%81%99%E3%82%8B">circleci/config.ymlを作成する</a></li>
-<li><a href="#github%E3%81%ABcircle-ci-status%E3%83%90%E3%83%83%E3%82%B8%E3%82%92%E8%B2%BC%E3%82%8A%E4%BB%98%E3%81%91%E3%82%8B">GithubにCircle CI statusバッジを貼り付ける</a></li>
+<li><a href="#%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB">インストール</a></li>
+<li><a href="#%E4%BD%BF%E3%81%84%E6%96%B9">使い方</a></li>
 <li><a href="#%E5%8F%82%E8%80%83">参考</a></li>
 </ul>
-<h1><span id="セットアップ">セットアップ</span></h1><ul>
-<li><a target="_blank" rel="noopener" href="https://github.com/">Github</a>でプロジェクトを作成する</li>
-<li><a target="_blank" rel="noopener" href="https://circleci.com/">CircleCI</a>で対象のプロジェクトに対してCIを有効化する</li>
-</ul>
-<h1><span id="ローカルでcircleciのビルドを実行できるようにする">ローカルでcircleciのビルドを実行できるようにする</span></h1><ul>
-<li>[目的] ymlを作成してすぐ試すというサイクルを短くするため</li>
-<li>[手順]<ol>
-<li>Dockerをインストール (<a target="_blank" rel="noopener" href="https://docs.docker.com/docker-for-mac/">公式 Docker for mac</a>)</li>
-<li>Circleci-cliをインストール<ul>
-<li>$brew install circleci</li>
-</ul>
-</li>
-</ol>
-</li>
-</ul>
-<h1><span id="circleciconfigymlを作成する">circleci/config.ymlを作成する</span></h1><ul>
-<li>自分が使用する言語でHello worldするconfig.ymlを書くと吉</li>
-<li>例<ul>
-<li><a target="_blank" rel="noopener" href="https://github.com/ki4070ma/unittest/blob/master/.circleci/config.yml">https://github.com/ki4070ma/unittest/blob/master/.circleci/config.yml</a></li>
+<p>ffmpegをmacで使った時のメモ書き (Linuxのほうが使いやすい気がする)</p>
+<h1><span id="インストール">インストール</span></h1><ul>
+<li>brewにて<ul>
+<li>$brew install ffmpeg</li>
 </ul>
 </li>
 </ul>
-<h1><span id="githubにcircle-ci-statusバッジを貼り付ける">GithubにCircle CI statusバッジを貼り付ける</span></h1><ul>
-<li><a target="_blank" rel="noopener" href="https://qiita.com/Hanocha/items/8ad74258eb43d0959590">githubでREADME.mdにCircleCIのバッジを表示する</a></li>
+<h1><span id="使い方">使い方</span></h1><ul>
+<li>使用可能なvideo resource一覧の表示<ul>
+<li>e.g. Macのフロントカメラは “[0] FaceTime HD Camera”</li>
+<li>[メモ] Macの場合はavfoundationが必要らしい. Ubuntuでは不要だったなぁ<ul>
+<li><a target="_blank" rel="noopener" href="https://www.ffmpeg.org/ffmpeg-devices.html#avfoundation">https://www.ffmpeg.org/ffmpeg-devices.html#avfoundation</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">➜  ✗ ffmpeg -f avfoundation -list_devices true -i &quot;&quot;</span><br><span class="line"></span><br><span class="line">ffmpeg version 4.1 Copyright (c) 2000-2018 the FFmpeg developers</span><br><span class="line">  built with Apple LLVM version 10.0.0 (clang-1000.11.45.5)</span><br><span class="line">  configuration: --prefix&#x3D;&#x2F;usr&#x2F;local&#x2F;Cellar&#x2F;ffmpeg&#x2F;4.1 --enable-shared --enable-pthreads --enable-version3 --enable-hardcoded-tables --enable-avresample --cc&#x3D;clang --host-cflags&#x3D; --host-ldflags&#x3D; --enable-ffplay --enable-gpl --enable-libmp3lame --enable-libopus --enable-libsnappy --enable-libtheora --enable-libvorbis --enable-libvpx --enable-libx264 --enable-libx265 --enable-libxvid --enable-lzma --enable-opencl --enable-videotoolbox</span><br><span class="line">  libavutil      56. 22.100 &#x2F; 56. 22.100</span><br><span class="line">  libavcodec     58. 35.100 &#x2F; 58. 35.100</span><br><span class="line">  libavformat    58. 20.100 &#x2F; 58. 20.100</span><br><span class="line">  libavdevice    58.  5.100 &#x2F; 58.  5.100</span><br><span class="line">  libavfilter     7. 40.101 &#x2F;  7. 40.101</span><br><span class="line">  libavresample   4.  0.  0 &#x2F;  4.  0.  0</span><br><span class="line">  libswscale      5.  3.100 &#x2F;  5.  3.100</span><br><span class="line">  libswresample   3.  3.100 &#x2F;  3.  3.100</span><br><span class="line">  libpostproc    55.  3.100 &#x2F; 55.  3.100</span><br><span class="line">[AVFoundation input device @ 0x7ffa3f402b40] AVFoundation video devices:</span><br><span class="line">[AVFoundation input device @ 0x7ffa3f402b40] [0] FaceTime HD Camera</span><br><span class="line">[AVFoundation input device @ 0x7ffa3f402b40] [1] Capture screen 0</span><br><span class="line">[AVFoundation input device @ 0x7ffa3f402b40] [2] Capture screen 1</span><br><span class="line">[AVFoundation input device @ 0x7ffa3f402b40] AVFoundation audio devices:</span><br><span class="line">[AVFoundation input device @ 0x7ffa3f402b40] [0] Built-in Microphone</span><br></pre></td></tr></table></figure>
+<ul>
+<li>Camera viewの表示<ul>
+<li>$ffplay -f avfoundation -framerate 30 -i “0”</li>
+<li>[注意] framerateが必要<ul>
+<li>(参考) <a target="_blank" rel="noopener" href="https://stackoverflow.com/questions/37960828/webcam-streaming-from-mac-using-ffmpeg">https://stackoverflow.com/questions/37960828/webcam-streaming-from-mac-using-ffmpeg</a></li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 <h1><span id="参考">参考</span></h1><ul>
-<li><a target="_blank" rel="noopener" href="https://qiita.com/selmertsx/items/45bd672c2c8ddab1981b">CircleCI 2.0 をlocalで動かす</a></li>
+<li>ffmpeg (API)を用いてWebカメラからキャプチャ<ul>
+<li><a target="_blank" rel="noopener" href="https://qiita.com/gwappa/items/d4adc9354fab3fa2c1c9">https://qiita.com/gwappa/items/d4adc9354fab3fa2c1c9</a></li>
 </ul>
-<p>ref: <a target="_blank" rel="noopener" href="https://qiita.com/atsushi0521/items/b335f375550f84fcd1f0">https://qiita.com/atsushi0521/items/b335f375550f84fcd1f0</a></p>
+</li>
+</ul>
+<p>ref: <a target="_blank" rel="noopener" href="https://qiita.com/atsushi0521/items/350cdbbb9d8f712f0097">https://qiita.com/atsushi0521/items/350cdbbb9d8f712f0097</a></p>
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 <ins class="adsbygoogle" style="display:block;text-align:center" data-ad-layout="in-article" data-ad-format="fluid" data-ad-client="ca-pub-9552058847412056" data-ad-slot="7810355979"></ins>
 <script>(adsbygoogle=window.adsbygoogle||[]).push({})</script>
 </div>
 <footer class="article-footer">
-<a data-url="https://ki4070ma.com/20181217_circleci/" data-id="cklz8e3al0004k4d15eqm2h0p" data-title="circleci memo" class="article-share-link">共有</a>
-<ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/CircleCI/" rel="tag">CircleCI</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Technology/" rel="tag">Technology</a></li></ul>
+<a data-url="https://ki4070ma.com/20181226_ffmpeg/" data-id="cklzf7m7o000cvcd1027b639s" data-title="ffmpeg memo" class="article-share-link">共有</a>
+<ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Technology/" rel="tag">Technology</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/ffmpeg/" rel="tag">ffmpeg</a></li></ul>
 </footer>
 </div>
 </article>
@@ -838,59 +807,67 @@
 <script>(adsbygoogle=window.adsbygoogle||[]).push({})</script>
 </div>
 <footer class="article-footer">
-<a data-url="https://ki4070ma.com/20181217_setup-mac/" data-id="cklz8e3an000ck4d1c6zndh5v" data-title="(自分用メモ) Macを買ってからセットアップするまで" class="article-share-link">共有</a>
+<a data-url="https://ki4070ma.com/20181217_setup-mac/" data-id="cklzf7m7m0005vcd1bj0204sc" data-title="(自分用メモ) Macを買ってからセットアップするまで" class="article-share-link">共有</a>
 <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Mac/" rel="tag">Mac</a></li></ul>
 </footer>
 </div>
 </article>
-<article id="post-20181216_how-to-learn-coding" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+<article id="post-20181217_circleci" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
 <div class="article-meta">
-<a href="/20181216_how-to-learn-coding/" class="article-date">
-<time class="dt-published" datetime="2018-12-15T15:00:00.000Z" itemprop="datePublished">2018-12-16</time>
+<a href="/20181217_circleci/" class="article-date">
+<time class="dt-published" datetime="2018-12-16T15:00:00.000Z" itemprop="datePublished">2018-12-17</time>
 </a>
 </div>
 <div class="article-inner">
 <header class="article-header">
 <h1 itemprop="name">
-<a class="p-name article-title" href="/20181216_how-to-learn-coding/">プログラミングの勉強法</a>
+<a class="p-name article-title" href="/20181217_circleci/">circleci memo</a>
 </h1>
 </header>
 <div class="e-content article-entry" itemprop="articleBody">
 <ul>
-<li><a href="#%E3%83%A1%E3%82%A4%E3%83%B3-leetcode">メイン: LeetCode</a></li>
-<li><a href="#%E3%81%84%E3%82%8D%E3%81%84%E3%82%8D%E3%81%AA%E5%AD%A6%E7%BF%92%E7%94%A8%E3%82%B5%E3%82%A4%E3%83%88">いろいろな学習用サイト</a></li>
-<li><a href="#%E6%89%80%E6%84%9F">所感</a></li>
+<li><a href="#%E3%82%BB%E3%83%83%E3%83%88%E3%82%A2%E3%83%83%E3%83%97">セットアップ</a></li>
+<li><a href="#%E3%83%AD%E3%83%BC%E3%82%AB%E3%83%AB%E3%81%A7circleci%E3%81%AE%E3%83%93%E3%83%AB%E3%83%89%E3%82%92%E5%AE%9F%E8%A1%8C%E3%81%A7%E3%81%8D%E3%82%8B%E3%82%88%E3%81%86%E3%81%AB%E3%81%99%E3%82%8B">ローカルでcircleciのビルドを実行できるようにする</a></li>
+<li><a href="#circleciconfigyml%E3%82%92%E4%BD%9C%E6%88%90%E3%81%99%E3%82%8B">circleci/config.ymlを作成する</a></li>
+<li><a href="#github%E3%81%ABcircle-ci-status%E3%83%90%E3%83%83%E3%82%B8%E3%82%92%E8%B2%BC%E3%82%8A%E4%BB%98%E3%81%91%E3%82%8B">GithubにCircle CI statusバッジを貼り付ける</a></li>
+<li><a href="#%E5%8F%82%E8%80%83">参考</a></li>
 </ul>
-<h1><span id="メイン-leetcode">メイン: LeetCode</span></h1><ul>
-<li><a target="_blank" rel="noopener" href="https://leetcode.com/problemset/all/">https://leetcode.com/problemset/all/</a></li>
-<li>問題数 900以上 (Problem set. 他にもいろんな問題があるよう)</li>
-<li>Google, Amazon, Appleなどの大手企業で出されたという問題があるらしい</li>
-<li>さくっと解ける (ものもある)</li>
-<li>解けない時は解答を見ることもできる問題もある</li>
-<li>自分の好きな言語で解くことができる</li>
-<li>Web上のEditorで完結する</li>
-<li>やっている途中でもSubmitしとけばその続きから行える</li>
-<li>全部英語</li>
+<h1><span id="セットアップ">セットアップ</span></h1><ul>
+<li><a target="_blank" rel="noopener" href="https://github.com/">Github</a>でプロジェクトを作成する</li>
+<li><a target="_blank" rel="noopener" href="https://circleci.com/">CircleCI</a>で対象のプロジェクトに対してCIを有効化する</li>
 </ul>
-<h1><span id="いろいろな学習用サイト">いろいろな学習用サイト</span></h1><ul>
-<li>言語の習得やアルゴリズムの学習に最適 オンラインジャッジサイト一覧<ul>
-<li><a target="_blank" rel="noopener" href="https://qiita.com/shibacho/items/20f6eee42083c620b556">https://qiita.com/shibacho/items/20f6eee42083c620b556</a></li>
-<li>こちらを参考にして”atCoder, Checkio, HackerRank”あたりを使ってみたが, 定着しなかった. Twitterや勉強会で, LeetCodeを使っているという人たちを見たので使ってみたところ定着した</li>
+<h1><span id="ローカルでcircleciのビルドを実行できるようにする">ローカルでcircleciのビルドを実行できるようにする</span></h1><ul>
+<li>[目的] ymlを作成してすぐ試すというサイクルを短くするため</li>
+<li>[手順]<ol>
+<li>Dockerをインストール (<a target="_blank" rel="noopener" href="https://docs.docker.com/docker-for-mac/">公式 Docker for mac</a>)</li>
+<li>Circleci-cliをインストール<ul>
+<li>$brew install circleci</li>
+</ul>
+</li>
+</ol>
+</li>
+</ul>
+<h1><span id="circleciconfigymlを作成する">circleci/config.ymlを作成する</span></h1><ul>
+<li>自分が使用する言語でHello worldするconfig.ymlを書くと吉</li>
+<li>例<ul>
+<li><a target="_blank" rel="noopener" href="https://github.com/ki4070ma/unittest/blob/master/.circleci/config.yml">https://github.com/ki4070ma/unittest/blob/master/.circleci/config.yml</a></li>
 </ul>
 </li>
 </ul>
-<h1><span id="所感">所感</span></h1><ul>
-<li>学習用サイトはたくさんある</li>
-<li>自分のスタイルにあった, 学習を継続できるサイトを選ぶ必要がある</li>
+<h1><span id="githubにcircle-ci-statusバッジを貼り付ける">GithubにCircle CI statusバッジを貼り付ける</span></h1><ul>
+<li><a target="_blank" rel="noopener" href="https://qiita.com/Hanocha/items/8ad74258eb43d0959590">githubでREADME.mdにCircleCIのバッジを表示する</a></li>
 </ul>
-<p>ref: <a target="_blank" rel="noopener" href="https://qiita.com/atsushi0521/items/15ad605207b060cf4e83">https://qiita.com/atsushi0521/items/15ad605207b060cf4e83</a></p>
+<h1><span id="参考">参考</span></h1><ul>
+<li><a target="_blank" rel="noopener" href="https://qiita.com/selmertsx/items/45bd672c2c8ddab1981b">CircleCI 2.0 をlocalで動かす</a></li>
+</ul>
+<p>ref: <a target="_blank" rel="noopener" href="https://qiita.com/atsushi0521/items/b335f375550f84fcd1f0">https://qiita.com/atsushi0521/items/b335f375550f84fcd1f0</a></p>
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 <ins class="adsbygoogle" style="display:block;text-align:center" data-ad-layout="in-article" data-ad-format="fluid" data-ad-client="ca-pub-9552058847412056" data-ad-slot="7810355979"></ins>
 <script>(adsbygoogle=window.adsbygoogle||[]).push({})</script>
 </div>
 <footer class="article-footer">
-<a data-url="https://ki4070ma.com/20181216_how-to-learn-coding/" data-id="cklz8e3am0008k4d1g02habn4" data-title="プログラミングの勉強法" class="article-share-link">共有</a>
-<ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Programming/" rel="tag">Programming</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Study/" rel="tag">Study</a></li></ul>
+<a data-url="https://ki4070ma.com/20181217_circleci/" data-id="cklzf7m7n0007vcd12oibfgxk" data-title="circleci memo" class="article-share-link">共有</a>
+<ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/CircleCI/" rel="tag">CircleCI</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Technology/" rel="tag">Technology</a></li></ul>
 </footer>
 </div>
 </article>
@@ -900,23 +877,42 @@
 </section>
 <aside id="sidebar">
 <div class="widget-wrap">
+<h3 class="widget-title">profile</h3>
+<div class="widget profile">
+<img src="/images/profile.jpg" alt="author" class="author_image">
+<div>
+<span class="b" style="color:#17c400">Mori Atsushi</span><br>
+<ul>
+<li><i class="fab fa-github"></i> <a href="https://github.com/ki4070ma" target="_blank" rel="noopener">Github</a></li>
+<li><i class="fab fa-twitter"></i> <a href="https://twitter.com/atsushi0521" target="_blank" rel="noopener">Twitter</a></li>
+<li><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/atsushi-mori-7351124b/" target="_blank" rel="noopener">LinkedIn</a></li>
+<li><i class="fab fa-qiita"></i> <a href="https://qiita.com/atsushi0521" target="_blank" rel="noopener">Qiita</a></li>
+<li><i class="fab fa-facebook"></i> <a href="https://qiita.com/atsushi0521" target="_blank" rel="noopener">Facebook</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="widget-wrap">
 <h3 class="widget-title">タグ</h3>
 <div class="widget">
-<ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Amazon/" rel="tag">Amazon</a><span class="tag-list-count">4</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Amazon-associate/" rel="tag">Amazon associate</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Appium/" rel="tag">Appium</a><span class="tag-list-count">4</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/BDD/" rel="tag">BDD</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/CircleCI/" rel="tag">CircleCI</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ELK/" rel="tag">ELK</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ExploratoryTest/" rel="tag">ExploratoryTest</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Github/" rel="tag">Github</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Hexo/" rel="tag">Hexo</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Mac/" rel="tag">Mac</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Presentation/" rel="tag">Presentation</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Programming/" rel="tag">Programming</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Python/" rel="tag">Python</a><span class="tag-list-count">6</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/SoftwareTest/" rel="tag">SoftwareTest</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Study/" rel="tag">Study</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Technology/" rel="tag">Technology</a><span class="tag-list-count">12</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/WFH/" rel="tag">WFH</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/WeMo/" rel="tag">WeMo</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Windows/" rel="tag">Windows</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ffmpeg/" rel="tag">ffmpeg</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/macOS/" rel="tag">macOS</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/python/" rel="tag">python</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/selenium/" rel="tag">selenium</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ssh/" rel="tag">ssh</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E3%83%AA%E3%83%A2%E3%83%BC%E3%83%88%E3%83%AF%E3%83%BC%E3%82%AF/" rel="tag">リモートワーク</a><span class="tag-list-count">3</span></li></ul>
+<ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Amazon/" rel="tag">Amazon</a><span class="tag-list-count">5</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Amazon-associate/" rel="tag">Amazon associate</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Appium/" rel="tag">Appium</a><span class="tag-list-count">4</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/BDD/" rel="tag">BDD</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/CircleCI/" rel="tag">CircleCI</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ELK/" rel="tag">ELK</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ExploratoryTest/" rel="tag">ExploratoryTest</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Github/" rel="tag">Github</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Hexo/" rel="tag">Hexo</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Mac/" rel="tag">Mac</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Presentation/" rel="tag">Presentation</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Programming/" rel="tag">Programming</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Python/" rel="tag">Python</a><span class="tag-list-count">6</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/SoftwareTest/" rel="tag">SoftwareTest</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Study/" rel="tag">Study</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Technology/" rel="tag">Technology</a><span class="tag-list-count">12</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/WFH/" rel="tag">WFH</a><span class="tag-list-count">4</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/WeMo/" rel="tag">WeMo</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Windows/" rel="tag">Windows</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ffmpeg/" rel="tag">ffmpeg</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/macOS/" rel="tag">macOS</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/python/" rel="tag">python</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/selenium/" rel="tag">selenium</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ssh/" rel="tag">ssh</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E3%83%AA%E3%83%A2%E3%83%BC%E3%83%88%E3%83%AF%E3%83%BC%E3%82%AF/" rel="tag">リモートワーク</a><span class="tag-list-count">4</span></li></ul>
 </div>
 </div>
 <div class="widget-wrap">
 <h3 class="widget-title">タグクラウド</h3>
 <div class="widget tagcloud">
-<a href="/tags/Amazon/" style="font-size:15px">Amazon</a> <a href="/tags/Amazon-associate/" style="font-size:10px">Amazon associate</a> <a href="/tags/Appium/" style="font-size:15px">Appium</a> <a href="/tags/BDD/" style="font-size:10px">BDD</a> <a href="/tags/CircleCI/" style="font-size:10px">CircleCI</a> <a href="/tags/ELK/" style="font-size:10px">ELK</a> <a href="/tags/ExploratoryTest/" style="font-size:10px">ExploratoryTest</a> <a href="/tags/Github/" style="font-size:10px">Github</a> <a href="/tags/Hexo/" style="font-size:12.5px">Hexo</a> <a href="/tags/Mac/" style="font-size:12.5px">Mac</a> <a href="/tags/Presentation/" style="font-size:10px">Presentation</a> <a href="/tags/Programming/" style="font-size:10px">Programming</a> <a href="/tags/Python/" style="font-size:17.5px">Python</a> <a href="/tags/SoftwareTest/" style="font-size:10px">SoftwareTest</a> <a href="/tags/Study/" style="font-size:10px">Study</a> <a href="/tags/Technology/" style="font-size:20px">Technology</a> <a href="/tags/WFH/" style="font-size:12.5px">WFH</a> <a href="/tags/WeMo/" style="font-size:10px">WeMo</a> <a href="/tags/Windows/" style="font-size:10px">Windows</a> <a href="/tags/ffmpeg/" style="font-size:10px">ffmpeg</a> <a href="/tags/macOS/" style="font-size:10px">macOS</a> <a href="/tags/python/" style="font-size:10px">python</a> <a href="/tags/selenium/" style="font-size:10px">selenium</a> <a href="/tags/ssh/" style="font-size:10px">ssh</a> <a href="/tags/%E3%83%AA%E3%83%A2%E3%83%BC%E3%83%88%E3%83%AF%E3%83%BC%E3%82%AF/" style="font-size:12.5px">リモートワーク</a>
+<a href="/tags/Amazon/" style="font-size:16px">Amazon</a> <a href="/tags/Amazon-associate/" style="font-size:10px">Amazon associate</a> <a href="/tags/Appium/" style="font-size:14px">Appium</a> <a href="/tags/BDD/" style="font-size:10px">BDD</a> <a href="/tags/CircleCI/" style="font-size:10px">CircleCI</a> <a href="/tags/ELK/" style="font-size:10px">ELK</a> <a href="/tags/ExploratoryTest/" style="font-size:10px">ExploratoryTest</a> <a href="/tags/Github/" style="font-size:10px">Github</a> <a href="/tags/Hexo/" style="font-size:12px">Hexo</a> <a href="/tags/Mac/" style="font-size:12px">Mac</a> <a href="/tags/Presentation/" style="font-size:10px">Presentation</a> <a href="/tags/Programming/" style="font-size:10px">Programming</a> <a href="/tags/Python/" style="font-size:18px">Python</a> <a href="/tags/SoftwareTest/" style="font-size:10px">SoftwareTest</a> <a href="/tags/Study/" style="font-size:10px">Study</a> <a href="/tags/Technology/" style="font-size:20px">Technology</a> <a href="/tags/WFH/" style="font-size:14px">WFH</a> <a href="/tags/WeMo/" style="font-size:10px">WeMo</a> <a href="/tags/Windows/" style="font-size:10px">Windows</a> <a href="/tags/ffmpeg/" style="font-size:10px">ffmpeg</a> <a href="/tags/macOS/" style="font-size:10px">macOS</a> <a href="/tags/python/" style="font-size:10px">python</a> <a href="/tags/selenium/" style="font-size:10px">selenium</a> <a href="/tags/ssh/" style="font-size:10px">ssh</a> <a href="/tags/%E3%83%AA%E3%83%A2%E3%83%BC%E3%83%88%E3%83%AF%E3%83%BC%E3%82%AF/" style="font-size:14px">リモートワーク</a>
 </div>
 </div>
 <div class="widget-wrap">
 <h3 class="widget-title">アーカイブ</h3>
 <div class="widget">
-<ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/03/">3月 2021</a><span class="archive-list-count">7</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/02/">2月 2021</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/12/">12月 2020</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/11/">11月 2019</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/04/">4月 2019</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/01/">1月 2019</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/12/">12月 2018</a><span class="archive-list-count">6</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/01/">1月 2018</a><span class="archive-list-count">2</span></li></ul>
+<ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/03/">3月 2021</a><span class="archive-list-count">7</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/02/">2月 2021</a><span class="archive-list-count">5</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/12/">12月 2020</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/11/">11月 2019</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/04/">4月 2019</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/01/">1月 2019</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/12/">12月 2018</a><span class="archive-list-count">6</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/01/">1月 2018</a><span class="archive-list-count">2</span></li></ul>
 </div>
 </div>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle" style="display:block;text-align:center" data-ad-layout="in-article" data-ad-format="fluid" data-ad-client="ca-pub-9552058847412056" data-ad-slot="7810355979"></ins>
+<script>(adsbygoogle=window.adsbygoogle||[]).push({})</script>
 <div class="widget-wrap">
 <h3 class="widget-title">最近の投稿</h3>
 <div class="widget">
@@ -939,9 +935,6 @@
 </ul>
 </div>
 </div>
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<ins class="adsbygoogle" style="display:block;text-align:center" data-ad-layout="in-article" data-ad-format="fluid" data-ad-client="ca-pub-9552058847412056" data-ad-slot="7810355979"></ins>
-<script>(adsbygoogle=window.adsbygoogle||[]).push({})</script>
 </aside>
 </div>
 <footer id="footer">
