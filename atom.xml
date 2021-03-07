@@ -6,7 +6,7 @@
   <link href="https://ki4070ma.com/atom.xml" rel="self"/>
   
   <link href="https://ki4070ma.com/"/>
-  <updated>2021-03-06T14:59:08.140Z</updated>
+  <updated>2021-03-07T05:11:33.872Z</updated>
   <id>https://ki4070ma.com/</id>
   
   <author>
@@ -17,11 +17,42 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>Hexoについていろいろ</title>
-    <link href="https://ki4070ma.com/20210307_Hexo/"/>
-    <id>https://ki4070ma.com/20210307_Hexo/</id>
+    <title>リモートワークのために購入したもの2</title>
+    <link href="https://ki4070ma.com/20210308-WFH2/"/>
+    <id>https://ki4070ma.com/20210308-WFH2/</id>
+    <published>2021-03-07T15:00:00.000Z</published>
+    <updated>2021-03-07T05:11:33.872Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;div class=&quot;google-photos-album-area&quot; id=&quot;google-photos-album-area2&quot;&gt;&lt;div class=&quot;metadatas&quot;&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    
+    <category term="Mac" scheme="https://ki4070ma.com/tags/Mac/"/>
+    
+    <category term="Amazon" scheme="https://ki4070ma.com/tags/Amazon/"/>
+    
+    <category term="WFH" scheme="https://ki4070ma.com/tags/WFH/"/>
+    
+    <category term="リモートワーク" scheme="https://ki4070ma.com/tags/%E3%83%AA%E3%83%A2%E3%83%BC%E3%83%88%E3%83%AF%E3%83%BC%E3%82%AF/"/>
+    
+    <category term="Windows" scheme="https://ki4070ma.com/tags/Windows/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Hexoのことはじめ (Hexo1)</title>
+    <link href="https://ki4070ma.com/20210307_Hexo1/"/>
+    <id>https://ki4070ma.com/20210307_Hexo1/</id>
     <published>2021-03-06T15:00:00.000Z</published>
-    <updated>2021-03-06T14:59:08.140Z</updated>
+    <updated>2021-03-07T04:12:59.906Z</updated>
     
     
       
@@ -51,7 +82,7 @@
     <link href="https://ki4070ma.com/20210306_WFH1/"/>
     <id>https://ki4070ma.com/20210306_WFH1/</id>
     <published>2021-03-05T15:00:00.000Z</published>
-    <updated>2021-03-06T15:04:36.872Z</updated>
+    <updated>2021-03-07T04:58:51.703Z</updated>
     
     
       
@@ -82,7 +113,7 @@
     <link href="https://ki4070ma.com/20210305_appium-wait-for-el/"/>
     <id>https://ki4070ma.com/20210305_appium-wait-for-el/</id>
     <published>2021-03-04T15:00:00.000Z</published>
-    <updated>2021-03-06T14:59:40.532Z</updated>
+    <updated>2021-03-07T07:37:03.592Z</updated>
     
     
       
@@ -100,6 +131,8 @@
     
     
     
+    <category term="Python" scheme="https://ki4070ma.com/tags/Python/"/>
+    
     <category term="Technology" scheme="https://ki4070ma.com/tags/Technology/"/>
     
     <category term="Appium" scheme="https://ki4070ma.com/tags/Appium/"/>
@@ -111,7 +144,7 @@
     <link href="https://ki4070ma.com/20210304_tuwejia/"/>
     <id>https://ki4070ma.com/20210304_tuwejia/</id>
     <published>2021-03-03T15:00:00.000Z</published>
-    <updated>2021-03-06T14:59:45.434Z</updated>
+    <updated>2021-03-07T05:10:11.054Z</updated>
     
     
       
@@ -141,7 +174,7 @@
     <link href="https://ki4070ma.com/20210303_appium-screen-record/"/>
     <id>https://ki4070ma.com/20210303_appium-screen-record/</id>
     <published>2021-03-02T15:00:00.000Z</published>
-    <updated>2021-03-06T14:59:49.080Z</updated>
+    <updated>2021-03-07T04:08:04.592Z</updated>
     
     
       
@@ -152,12 +185,14 @@
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;#%E4%BD%BF%E7%94%A8%E7%94%A8%E9%80%94&quot;&gt;使用用途&lt;/a&gt;&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;#azure-pipeline-%E3%81%AB%E3%81%A6&quot;&gt;Azure</summary>
+&lt;li&gt;&lt;a</summary>
         
       
     
     
     
+    
+    <category term="Python" scheme="https://ki4070ma.com/tags/Python/"/>
     
     <category term="Technology" scheme="https://ki4070ma.com/tags/Technology/"/>
     
@@ -166,11 +201,71 @@
   </entry>
   
   <entry>
+    <title>Hexo で Amazon associate</title>
+    <link href="https://ki4070ma.com/20210302-Hexo2/"/>
+    <id>https://ki4070ma.com/20210302-Hexo2/</id>
+    <published>2021-03-01T15:00:00.000Z</published>
+    <updated>2021-03-07T04:25:42.412Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;Amazon アソシエイトに関しては, Amazon でアソシエイト登録を行った後に各商品のリンクを生成できるようになります&lt;br&gt;そのリンクが以下のような形になっています&lt;/p&gt;
+&lt;figure class=&quot;highlight html&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td</summary>
+        
+      
+    
+    
+    
+    
+    <category term="Hexo" scheme="https://ki4070ma.com/tags/Hexo/"/>
+    
+    <category term="Amazon associate" scheme="https://ki4070ma.com/tags/Amazon-associate/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Selenium で BDD</title>
+    <link href="https://ki4070ma.com/20210228-selenium-bdd/"/>
+    <id>https://ki4070ma.com/20210228-selenium-bdd/</id>
+    <published>2021-02-27T15:00:00.000Z</published>
+    <updated>2021-03-07T07:33:33.816Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;!-- toc --&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;#bdd-%E3%81%A8%E3%81%AF&quot;&gt;BDD とは&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#gherkin&quot;&gt;Gherkin&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    
+    <category term="Technology" scheme="https://ki4070ma.com/tags/Technology/"/>
+    
+    <category term="selenium" scheme="https://ki4070ma.com/tags/selenium/"/>
+    
+    <category term="BDD" scheme="https://ki4070ma.com/tags/BDD/"/>
+    
+    <category term="python" scheme="https://ki4070ma.com/tags/python/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Elasticsearch, Kibanaの勉強用メモ</title>
     <link href="https://ki4070ma.com/20201230_elk-sample/"/>
     <id>https://ki4070ma.com/20201230_elk-sample/</id>
     <published>2020-12-29T15:00:00.000Z</published>
-    <updated>2021-03-06T14:59:52.711Z</updated>
+    <updated>2021-03-06T15:29:49.769Z</updated>
     
     
       
@@ -199,7 +294,7 @@
     <link href="https://ki4070ma.com/20191101_slide-presentation/"/>
     <id>https://ki4070ma.com/20191101_slide-presentation/</id>
     <published>2019-10-31T15:00:00.000Z</published>
-    <updated>2021-03-06T14:59:55.931Z</updated>
+    <updated>2021-03-06T15:29:49.769Z</updated>
     
     
       
@@ -227,7 +322,7 @@
     <link href="https://ki4070ma.com/20190418_mac-hdd-free/"/>
     <id>https://ki4070ma.com/20190418_mac-hdd-free/</id>
     <published>2019-04-17T15:00:00.000Z</published>
-    <updated>2021-03-06T14:59:59.359Z</updated>
+    <updated>2021-03-06T15:29:49.769Z</updated>
     
     
       
@@ -257,10 +352,10 @@
   
   <entry>
     <title>Appiumのセットアップ, 使い方</title>
-    <link href="https://ki4070ma.com/20190101_setup-appium/"/>
-    <id>https://ki4070ma.com/20190101_setup-appium/</id>
+    <link href="https://ki4070ma.com/20190101_appium-setup/"/>
+    <id>https://ki4070ma.com/20190101_appium-setup/</id>
     <published>2018-12-31T15:00:00.000Z</published>
-    <updated>2021-03-06T15:00:02.775Z</updated>
+    <updated>2021-03-07T04:00:44.441Z</updated>
     
     
       
@@ -278,6 +373,8 @@
     
     
     
+    <category term="Python" scheme="https://ki4070ma.com/tags/Python/"/>
+    
     <category term="Technology" scheme="https://ki4070ma.com/tags/Technology/"/>
     
     <category term="Appium" scheme="https://ki4070ma.com/tags/Appium/"/>
@@ -289,7 +386,7 @@
     <link href="https://ki4070ma.com/20181226_ffmpeg/"/>
     <id>https://ki4070ma.com/20181226_ffmpeg/</id>
     <published>2018-12-25T15:00:00.000Z</published>
-    <updated>2021-03-06T15:00:08.510Z</updated>
+    <updated>2021-03-06T15:29:49.769Z</updated>
     
     
       
@@ -318,7 +415,7 @@
     <link href="https://ki4070ma.com/20181226_python/"/>
     <id>https://ki4070ma.com/20181226_python/</id>
     <published>2018-12-25T15:00:00.000Z</published>
-    <updated>2021-03-06T15:00:05.675Z</updated>
+    <updated>2021-03-06T15:29:49.769Z</updated>
     
     
       
@@ -335,9 +432,9 @@
     
     
     
-    <category term="Technology" scheme="https://ki4070ma.com/tags/Technology/"/>
-    
     <category term="Python" scheme="https://ki4070ma.com/tags/Python/"/>
+    
+    <category term="Technology" scheme="https://ki4070ma.com/tags/Technology/"/>
     
   </entry>
   
@@ -346,7 +443,7 @@
     <link href="https://ki4070ma.com/20181217_circleci/"/>
     <id>https://ki4070ma.com/20181217_circleci/</id>
     <published>2018-12-16T15:00:00.000Z</published>
-    <updated>2021-03-06T15:00:14.671Z</updated>
+    <updated>2021-03-06T15:29:49.768Z</updated>
     
     
       
@@ -375,7 +472,7 @@
     <link href="https://ki4070ma.com/20181217_setup-mac/"/>
     <id>https://ki4070ma.com/20181217_setup-mac/</id>
     <published>2018-12-16T15:00:00.000Z</published>
-    <updated>2021-03-06T15:00:12.078Z</updated>
+    <updated>2021-03-06T15:29:49.768Z</updated>
     
     
       
@@ -403,7 +500,7 @@
     <link href="https://ki4070ma.com/20181216_how-to-learn-coding/"/>
     <id>https://ki4070ma.com/20181216_how-to-learn-coding/</id>
     <published>2018-12-15T15:00:00.000Z</published>
-    <updated>2021-03-06T15:00:17.797Z</updated>
+    <updated>2021-03-06T15:29:49.768Z</updated>
     
     
       
@@ -432,7 +529,7 @@
     <link href="https://ki4070ma.com/20181215_ssh-local-network/"/>
     <id>https://ki4070ma.com/20181215_ssh-local-network/</id>
     <published>2018-12-14T15:00:00.000Z</published>
-    <updated>2021-03-06T15:00:22.059Z</updated>
+    <updated>2021-03-06T15:29:49.768Z</updated>
     
     
       
@@ -461,7 +558,7 @@
     <link href="https://ki4070ma.com/20180113_wemo-insight/"/>
     <id>https://ki4070ma.com/20180113_wemo-insight/</id>
     <published>2018-01-12T15:00:00.000Z</published>
-    <updated>2021-03-06T15:00:26.156Z</updated>
+    <updated>2021-03-07T05:42:06.684Z</updated>
     
     
       
@@ -482,6 +579,8 @@
     
     <category term="WeMo" scheme="https://ki4070ma.com/tags/WeMo/"/>
     
+    <category term="Python" scheme="https://ki4070ma.com/tags/Python/"/>
+    
     <category term="Technology" scheme="https://ki4070ma.com/tags/Technology/"/>
     
   </entry>
@@ -491,7 +590,7 @@
     <link href="https://ki4070ma.com/20180104_How-to-use-et/"/>
     <id>https://ki4070ma.com/20180104_How-to-use-et/</id>
     <published>2018-01-03T15:00:00.000Z</published>
-    <updated>2021-03-06T15:00:29.415Z</updated>
+    <updated>2021-03-06T15:29:49.768Z</updated>
     
     
       
@@ -512,28 +611,6 @@
     <category term="SoftwareTest" scheme="https://ki4070ma.com/tags/SoftwareTest/"/>
     
     <category term="ExploratoryTest" scheme="https://ki4070ma.com/tags/ExploratoryTest/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>sandbox</title>
-    <link href="https://ki4070ma.com/20170101_sandbox/"/>
-    <id>https://ki4070ma.com/20170101_sandbox/</id>
-    <published>2016-12-31T15:00:00.000Z</published>
-    <updated>2021-03-06T13:48:52.555Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/ucHPX7L.gif&quot; alt=&quot;An Imgur Image&quot; title=&quot;An Imgur Image&quot;&gt;&lt;/p&gt;
-&lt;div class=&quot;twitter-wrapper&quot;&gt;&lt;blockquote</summary>
-        
-      
-    
-    
-    
     
   </entry>
   

@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-JWTW1CHBL8"></script>
+<script>function gtag(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],gtag("js",new Date),gtag("config","G-JWTW1CHBL8")</script>
+<title>Selenium で BDD | ki4070maのメモ帳</title>
+<meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
+<meta name="description" content="BDD とは Gherkin 各言語での BDD フレームワーク Python での BDD フレームワーク [Python] Selenium + BDD フレームワークのサンプルコード    BDD とはビヘイビア駆動開発(Behavior Driven Development; BDD) より ビヘイビア駆動開発とは、プログラム開発手法の一種で、テスト駆動開発から派生した物である Gh">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Selenium で BDD">
+<meta property="og:url" content="https://ki4070ma.com/20210228-selenium-bdd/index.html">
+<meta property="og:site_name" content="ki4070maのメモ帳">
+<meta property="og:description" content="BDD とは Gherkin 各言語での BDD フレームワーク Python での BDD フレームワーク [Python] Selenium + BDD フレームワークのサンプルコード    BDD とはビヘイビア駆動開発(Behavior Driven Development; BDD) より ビヘイビア駆動開発とは、プログラム開発手法の一種で、テスト駆動開発から派生した物である Gh">
+<meta property="og:locale" content="ja_JP">
+<meta property="article:published_time" content="2021-02-27T15:00:00.000Z">
+<meta property="article:modified_time" content="2021-03-07T07:33:33.816Z">
+<meta property="article:author" content="Atsushi Mori">
+<meta property="article:tag" content="Technology">
+<meta property="article:tag" content="selenium">
+<meta property="article:tag" content="BDD">
+<meta property="article:tag" content="python">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:creator" content="@https:&#x2F;&#x2F;twitter.com&#x2F;atsushi0521">
+<link rel="alternate" href="/atom.xml" title="ki4070maのメモ帳" type="application/atom+xml">
+<link rel="shortcut icon" href="/favicon.png">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/typeface-source-code-pro@0.0.71/index.min.css">
+<link rel="stylesheet" href="/css/style.css">
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
+.<meta name="generator" content="Hexo 5.4.0"></head>
+<body>
+<div id="container">
+<div id="wrap">
+<header id="header">
+<div id="banner"></div>
+<div id="header-outer" class="outer">
+<div id="header-title" class="inner">
+<h1 id="logo-wrap">
+<a href="/" id="logo">ki4070maのメモ帳</a>
+</h1>
+<h2 id="subtitle-wrap">
+<a href="/" id="subtitle">Python, SoftwareTest</a>
+</h2>
+</div>
+<div id="header-inner" class="inner">
+<nav id="main-nav">
+<a id="main-nav-toggle" class="nav-icon"></a>
+<a class="main-nav-link" href="/">Home</a>
+<a class="main-nav-link" href="/archives">Archives</a>
+</nav>
+<nav id="sub-nav">
+<a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSSフィード"></a>
+<a id="nav-search-btn" class="nav-icon" title="検索"></a>
+</nav>
+<div id="search-form-wrap">
+<form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="検索"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://ki4070ma.com"></form>
+</div>
+</div>
+</div>
+</header>
+<script data-ad-client="ca-pub-9552058847412056" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<div class="outer">
+<section id="main"><article id="post-20210228-selenium-bdd" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+<div class="article-meta">
+<a href="/20210228-selenium-bdd/" class="article-date">
+<time class="dt-published" datetime="2021-02-27T15:00:00.000Z" itemprop="datePublished">2021-02-28</time>
+</a>
+</div>
+<div class="article-inner">
+<header class="article-header">
+<h1 class="p-name article-title" itemprop="headline name">
+Selenium で BDD
+</h1>
+</header>
+<div class="e-content article-entry" itemprop="articleBody">
+<ul>
+<li><a href="#bdd-%E3%81%A8%E3%81%AF">BDD とは</a></li>
+<li><a href="#gherkin">Gherkin</a></li>
+<li><a href="#%E5%90%84%E8%A8%80%E8%AA%9E%E3%81%A7%E3%81%AE-bdd-%E3%83%95%E3%83%AC%E3%83%BC%E3%83%A0%E3%83%AF%E3%83%BC%E3%82%AF">各言語での BDD フレームワーク</a></li>
+<li><a href="#python-%E3%81%A7%E3%81%AE-bdd-%E3%83%95%E3%83%AC%E3%83%BC%E3%83%A0%E3%83%AF%E3%83%BC%E3%82%AF">Python での BDD フレームワーク</a></li>
+<li><a href="#python-selenium-bdd-%E3%83%95%E3%83%AC%E3%83%BC%E3%83%A0%E3%83%AF%E3%83%BC%E3%82%AF%E3%81%AE%E3%82%B5%E3%83%B3%E3%83%97%E3%83%AB%E3%82%B3%E3%83%BC%E3%83%89">[Python] Selenium + BDD フレームワークのサンプルコード</a></li>
+</ul>
+<h2><span id="bdd-とは">BDD とは</span></h2><p><a target="_blank" rel="noopener" href="https://ja.wikipedia.org/wiki/%E3%83%93%E3%83%98%E3%82%A4%E3%83%93%E3%82%A2%E9%A7%86%E5%8B%95%E9%96%8B%E7%99%BA">ビヘイビア駆動開発(Behavior Driven Development; BDD)</a> より</p>
+<p><code>ビヘイビア駆動開発とは、プログラム開発手法の一種で、テスト駆動開発から派生した物である</code></p>
+<h2><span id="gherkin">Gherkin</span></h2><p>BDD記法としては, Gherkin (ガーキン) というものに沿っており, 以下の3つから成っています</p>
+<ul>
+<li>Given (前提 -&gt; 状態を記述)</li>
+<li>When (もし -&gt; 振舞いを記述)</li>
+<li>Then (ならば -&gt; 振舞いの結果を記述)</li>
+</ul>
+<p>参考<br><a target="_blank" rel="noopener" href="https://cucumber.io/docs/gherkin/languages/">https://cucumber.io/docs/gherkin/languages/</a><br><a target="_blank" rel="noopener" href="https://cucumber.io/docs/gherkin/reference/">https://cucumber.io/docs/gherkin/reference/</a></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Describe an initial context (Given steps)</span><br><span class="line">Describe an event (When steps)</span><br><span class="line">Describe an expected outcome (Then steps)</span><br></pre></td></tr></table></figure>
+<h2><span id="各言語での-bdd-フレームワーク">各言語での BDD フレームワーク</span></h2><p>実際に各プログラミング言語で BDD フレームワークが存在します<br>(上記 wikipedia より一部抜粋)</p>
+<p>各フレームワークと selenium, appium などを組み合わせて使用することが一般的かと思います</p>
+<ul>
+<li>Ruby<ul>
+<li>RSpec</li>
+</ul>
+</li>
+<li>Java<ul>
+<li>JBehave</li>
+<li>Instinct</li>
+<li>JDave</li>
+<li>beanSpec</li>
+<li>Tumbler</li>
+</ul>
+</li>
+<li>.Net<ul>
+<li>NSpec</li>
+<li>Specter</li>
+</ul>
+</li>
+<li>Groovy<ul>
+<li>GSpec</li>
+<li>easyb</li>
+</ul>
+</li>
+<li>Python<ul>
+<li>PySpec</li>
+<li>behave</li>
+</ul>
+</li>
+</ul>
+<h2><span id="python-での-bdd-フレームワーク">Python での BDD フレームワーク</span></h2><p>2年前の記事ですが, Python の BDD のフレームワークの比較です<br><a target="_blank" rel="noopener" href="https://automationpanda.com/2019/04/02/python-bdd-framework-comparison/">https://automationpanda.com/2019/04/02/python-bdd-framework-comparison/</a></p>
+<p>以下の 5 つが紹介されていました<br>(star は 2021/03 時点)</p>
+<ul>
+<li>behave (2275 stars, <a target="_blank" rel="noopener" href="https://github.com/behave/behave">https://github.com/behave/behave</a> )</li>
+<li>pytest-bdd (780 stars, <a target="_blank" rel="noopener" href="https://github.com/pytest-dev/pytest-bdd">https://github.com/pytest-dev/pytest-bdd</a> )</li>
+<li>radish ( 153 stars, <a target="_blank" rel="noopener" href="https://github.com/radish-bdd/radish">https://github.com/radish-bdd/radish</a> )</li>
+<li>lettuce ( 1228 stars, <a target="_blank" rel="noopener" href="https://github.com/gabrielfalcao/lettuce">https://github.com/gabrielfalcao/lettuce</a>)</li>
+<li>freshen ( 365 starts, <a target="_blank" rel="noopener" href="https://github.com/rlisagor/freshen">https://github.com/rlisagor/freshen</a> )<ul>
+<li>メンテされていない</li>
+</ul>
+</li>
+</ul>
+<p>star の数とメンテされているかどうかからも <code>behave</code> がよさそうです<br>上記サイトでは <code>pytest-bdd</code> が推奨されていました, こちらもメンテナされているようです</p>
+<p>詳細確認できていませんが, gauge もよさそうです<br>Thoughtworks が作成しており, 開発も活発のようです<br>Python以外の言語でも使用できます</p>
+<p><a target="_blank" rel="noopener" href="https://gauge.org/">https://gauge.org/</a><br><a target="_blank" rel="noopener" href="https://github.com/getgauge/gauge">https://github.com/getgauge/gauge</a></p>
+<h2><span id="python-selenium-bdd-フレームワークのサンプルコード">[Python] Selenium + BDD フレームワークのサンプルコード</span></h2><p>こちらに slenium + BDD(behave) のサンプルコードを置いています</p>
+<p><a target="_blank" rel="noopener" href="https://github.com/ki4070ma/selenium-bdd-sample">https://github.com/ki4070ma/selenium-bdd-sample</a></p>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle" style="display:block;text-align:center" data-ad-layout="in-article" data-ad-format="fluid" data-ad-client="ca-pub-9552058847412056" data-ad-slot="7810355979"></ins>
+<script>(adsbygoogle=window.adsbygoogle||[]).push({})</script>
+</div>
+<footer class="article-footer">
+<a data-url="https://ki4070ma.com/20210228-selenium-bdd/" data-id="cklyuho9c000kqwd1d8ot3nbb" data-title="Selenium で BDD" class="article-share-link">共有</a>
+<ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/BDD/" rel="tag">BDD</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Technology/" rel="tag">Technology</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/python/" rel="tag">python</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/selenium/" rel="tag">selenium</a></li></ul>
+</footer>
+</div>
+<nav id="article-nav">
+<a href="/20210302-Hexo2/" id="article-nav-newer" class="article-nav-link-wrap">
+<strong class="article-nav-caption">次の記事</strong>
+<div class="article-nav-title">
+Hexo で Amazon associate
+</div>
+</a>
+<a href="/20201230_elk-sample/" id="article-nav-older" class="article-nav-link-wrap">
+<strong class="article-nav-caption">前の記事</strong>
+<div class="article-nav-title">Elasticsearch, Kibanaの勉強用メモ</div>
+</a>
+</nav>
+</article>
+</section>
+<aside id="sidebar">
+<div class="widget-wrap">
+<h3 class="widget-title">タグ</h3>
+<div class="widget">
+<ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Amazon/" rel="tag">Amazon</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Amazon-associate/" rel="tag">Amazon associate</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Appium/" rel="tag">Appium</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/BDD/" rel="tag">BDD</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/CircleCI/" rel="tag">CircleCI</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ELK/" rel="tag">ELK</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ExploratoryTest/" rel="tag">ExploratoryTest</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Github/" rel="tag">Github</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Hexo/" rel="tag">Hexo</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Mac/" rel="tag">Mac</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Presentation/" rel="tag">Presentation</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Programming/" rel="tag">Programming</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Python/" rel="tag">Python</a><span class="tag-list-count">5</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/SoftwareTest/" rel="tag">SoftwareTest</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Study/" rel="tag">Study</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Technology/" rel="tag">Technology</a><span class="tag-list-count">11</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/WFH/" rel="tag">WFH</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/WeMo/" rel="tag">WeMo</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Windows/" rel="tag">Windows</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ffmpeg/" rel="tag">ffmpeg</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/python/" rel="tag">python</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/selenium/" rel="tag">selenium</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ssh/" rel="tag">ssh</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E3%83%AA%E3%83%A2%E3%83%BC%E3%83%88%E3%83%AF%E3%83%BC%E3%82%AF/" rel="tag">リモートワーク</a><span class="tag-list-count">2</span></li></ul>
+</div>
+</div>
+<div class="widget-wrap">
+<h3 class="widget-title">タグクラウド</h3>
+<div class="widget tagcloud">
+<a href="/tags/Amazon/" style="font-size:15px">Amazon</a> <a href="/tags/Amazon-associate/" style="font-size:10px">Amazon associate</a> <a href="/tags/Appium/" style="font-size:15px">Appium</a> <a href="/tags/BDD/" style="font-size:10px">BDD</a> <a href="/tags/CircleCI/" style="font-size:10px">CircleCI</a> <a href="/tags/ELK/" style="font-size:10px">ELK</a> <a href="/tags/ExploratoryTest/" style="font-size:10px">ExploratoryTest</a> <a href="/tags/Github/" style="font-size:10px">Github</a> <a href="/tags/Hexo/" style="font-size:12.5px">Hexo</a> <a href="/tags/Mac/" style="font-size:15px">Mac</a> <a href="/tags/Presentation/" style="font-size:10px">Presentation</a> <a href="/tags/Programming/" style="font-size:10px">Programming</a> <a href="/tags/Python/" style="font-size:17.5px">Python</a> <a href="/tags/SoftwareTest/" style="font-size:10px">SoftwareTest</a> <a href="/tags/Study/" style="font-size:10px">Study</a> <a href="/tags/Technology/" style="font-size:20px">Technology</a> <a href="/tags/WFH/" style="font-size:12.5px">WFH</a> <a href="/tags/WeMo/" style="font-size:10px">WeMo</a> <a href="/tags/Windows/" style="font-size:10px">Windows</a> <a href="/tags/ffmpeg/" style="font-size:10px">ffmpeg</a> <a href="/tags/python/" style="font-size:10px">python</a> <a href="/tags/selenium/" style="font-size:10px">selenium</a> <a href="/tags/ssh/" style="font-size:10px">ssh</a> <a href="/tags/%E3%83%AA%E3%83%A2%E3%83%BC%E3%83%88%E3%83%AF%E3%83%BC%E3%82%AF/" style="font-size:12.5px">リモートワーク</a>
+</div>
+</div>
+<div class="widget-wrap">
+<h3 class="widget-title">アーカイブ</h3>
+<div class="widget">
+<ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/03/">3月 2021</a><span class="archive-list-count">7</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/02/">2月 2021</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/12/">12月 2020</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/11/">11月 2019</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/04/">4月 2019</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/01/">1月 2019</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/12/">12月 2018</a><span class="archive-list-count">6</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/01/">1月 2018</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/01/">1月 2017</a><span class="archive-list-count">1</span></li></ul>
+</div>
+</div>
+<div class="widget-wrap">
+<h3 class="widget-title">最近の投稿</h3>
+<div class="widget">
+<ul>
+<li>
+<a href="/20210308-WFH2/">リモートワークのために購入したもの2</a>
+</li>
+<li>
+<a href="/20210307_Hexo1/">Hexoのことはじめ (Hexo1)</a>
+</li>
+<li>
+<a href="/20210306_WFH1/">リモートワークのために購入したもの1</a>
+</li>
+<li>
+<a href="/20210305_appium-wait-for-el/">Appiumで特定のelementが表示されるまで待つ</a>
+</li>
+<li>
+<a href="/20210304_tuwejia/">Mac用USB Type C Hub (4in1)</a>
+</li>
+</ul>
+</div>
+</div>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle" style="display:block;text-align:center" data-ad-layout="in-article" data-ad-format="fluid" data-ad-client="ca-pub-9552058847412056" data-ad-slot="7810355979"></ins>
+<script>(adsbygoogle=window.adsbygoogle||[]).push({})</script>
+</aside>
+</div>
+<footer id="footer">
+<div class="outer">
+<div id="footer-info" class="inner">
+&copy; 2021 Atsushi Mori<br>
+Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
+</div>
+</div>
+</footer>
+</div>
+<nav id="mobile-nav">
+<a href="/" class="mobile-nav-link">Home</a>
+<a href="/archives" class="mobile-nav-link">Archives</a>
+</nav>
+<script src="/js/jquery-3.4.1.min.js"></script>
+<script src="/fancybox/jquery.fancybox.min.js"></script>
+<script src="/js/script.js"></script>
+</div>
+<script>function addLoadEvent(o){const n=window.onload;"function"!=typeof window.onload?window.onload=o:window.onload=()=>{n(),o()}}addLoadEvent(()=>{try{if(window.innerWidth<Number("768"))return;const o=Array.from(document.body.querySelectorAll(".google-photos-album-images a"));o.push(...Array.from(document.body.querySelectorAll("a.google-photos-album-image")));for(const n of o)n.href=n.href.replace(/=s720\-no/i,"=s1920-no")}catch(o){console.log(o)}})</script>
+</body>
+</html>
