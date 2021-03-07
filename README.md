@@ -1,1 +1,1 @@
-https://ki4070ma.github.io/weblog/
+https://ki4070ma.com/
