@@ -128,3 +128,5 @@ html_minifier:
   minifyJS: true
   minifyCSS: true
   minifyURLs: false
+archive_generator:
+  per_page: 100
