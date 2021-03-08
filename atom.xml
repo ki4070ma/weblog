@@ -6,7 +6,7 @@
   <link href="https://ki4070ma.com/atom.xml" rel="self"/>
   
   <link href="https://ki4070ma.com/"/>
-  <updated>2021-03-07T14:08:35.957Z</updated>
+  <updated>2021-03-08T17:24:46.619Z</updated>
   <id>https://ki4070ma.com/</id>
   
   <author>
@@ -15,6 +15,38 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Azure pipeline で Appium を走らせて, Android, iOS のテストを走らせる</title>
+    <link href="https://ki4070ma.com/20210309_appium-azure/"/>
+    <id>https://ki4070ma.com/20210309_appium-azure/</id>
+    <published>2021-03-08T15:00:00.000Z</published>
+    <updated>2021-03-08T17:24:46.619Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;Azure pipeline で Appium を走らせて, Android, iOS のテストを走らせることができます&lt;/p&gt;
+&lt;h2&gt;&lt;span id=&quot;azure-pipelines&quot;&gt;Azure</summary>
+        
+      
+    
+    
+    
+    
+    <category term="Python" scheme="https://ki4070ma.com/tags/Python/"/>
+    
+    <category term="Appium" scheme="https://ki4070ma.com/tags/Appium/"/>
+    
+    <category term="Azure" scheme="https://ki4070ma.com/tags/Azure/"/>
+    
+    <category term="Android" scheme="https://ki4070ma.com/tags/Android/"/>
+    
+    <category term="iOS" scheme="https://ki4070ma.com/tags/iOS/"/>
+    
+  </entry>
   
   <entry>
     <title>リモートワークのために購入したもの2</title>
@@ -28,7 +60,7 @@
       
         
         
-    <summary type="html">&lt;div class=&quot;google-photos-album-area&quot; id=&quot;google-photos-album-area2&quot;&gt;&lt;div class=&quot;metadatas&quot;&gt;&lt;a</summary>
+    <summary type="html">&lt;div class=&quot;google-photos-album-area&quot; id=&quot;google-photos-album-area3&quot;&gt;&lt;div class=&quot;metadatas&quot;&gt;&lt;a</summary>
         
       
     
@@ -37,11 +69,11 @@
     
     <category term="Mac" scheme="https://ki4070ma.com/tags/Mac/"/>
     
+    <category term="Amazon" scheme="https://ki4070ma.com/tags/Amazon/"/>
+    
     <category term="WFH" scheme="https://ki4070ma.com/tags/WFH/"/>
     
     <category term="リモートワーク" scheme="https://ki4070ma.com/tags/%E3%83%AA%E3%83%A2%E3%83%BC%E3%83%88%E3%83%AF%E3%83%BC%E3%82%AF/"/>
-    
-    <category term="Amazon" scheme="https://ki4070ma.com/tags/Amazon/"/>
     
     <category term="Windows" scheme="https://ki4070ma.com/tags/Windows/"/>
     
@@ -100,11 +132,11 @@
     
     
     
+    <category term="Amazon" scheme="https://ki4070ma.com/tags/Amazon/"/>
+    
     <category term="WFH" scheme="https://ki4070ma.com/tags/WFH/"/>
     
     <category term="リモートワーク" scheme="https://ki4070ma.com/tags/%E3%83%AA%E3%83%A2%E3%83%BC%E3%83%88%E3%83%AF%E3%83%BC%E3%82%AF/"/>
-    
-    <category term="Amazon" scheme="https://ki4070ma.com/tags/Amazon/"/>
     
   </entry>
   
@@ -113,7 +145,7 @@
     <link href="https://ki4070ma.com/20210305_appium-wait-for-el/"/>
     <id>https://ki4070ma.com/20210305_appium-wait-for-el/</id>
     <published>2021-03-04T15:00:00.000Z</published>
-    <updated>2021-03-07T14:08:35.957Z</updated>
+    <updated>2021-03-08T17:03:05.343Z</updated>
     
     
       
@@ -131,9 +163,9 @@
     
     
     
-    <category term="Technology" scheme="https://ki4070ma.com/tags/Technology/"/>
-    
     <category term="Python" scheme="https://ki4070ma.com/tags/Python/"/>
+    
+    <category term="Technology" scheme="https://ki4070ma.com/tags/Technology/"/>
     
     <category term="Appium" scheme="https://ki4070ma.com/tags/Appium/"/>
     
@@ -158,7 +190,7 @@
 &lt;!-- tocstop --&gt;
 
 &lt;p&gt;Macを購入したので以下のUSB Hubを購入&lt;/p&gt;
-&lt;div class=&quot;google-photos-album-area&quot; id=&quot;google-photos-album-area3&quot;&gt;&lt;div</summary>
+&lt;div class=&quot;google-photos-album-area&quot; id=&quot;google-photos-album-area2&quot;&gt;&lt;div</summary>
         
       
     
@@ -192,9 +224,9 @@
     
     
     
-    <category term="Technology" scheme="https://ki4070ma.com/tags/Technology/"/>
-    
     <category term="Python" scheme="https://ki4070ma.com/tags/Python/"/>
+    
+    <category term="Technology" scheme="https://ki4070ma.com/tags/Technology/"/>
     
     <category term="Appium" scheme="https://ki4070ma.com/tags/Appium/"/>
     
@@ -294,7 +326,7 @@
     <link href="https://ki4070ma.com/20210226_WFH3/"/>
     <id>https://ki4070ma.com/20210226_WFH3/</id>
     <published>2021-02-25T15:00:00.000Z</published>
-    <updated>2021-03-07T14:18:33.368Z</updated>
+    <updated>2021-03-07T17:22:52.014Z</updated>
     
     
       
@@ -308,11 +340,11 @@
     
     
     
+    <category term="Amazon" scheme="https://ki4070ma.com/tags/Amazon/"/>
+    
     <category term="WFH" scheme="https://ki4070ma.com/tags/WFH/"/>
     
     <category term="リモートワーク" scheme="https://ki4070ma.com/tags/%E3%83%AA%E3%83%A2%E3%83%BC%E3%83%88%E3%83%AF%E3%83%BC%E3%82%AF/"/>
-    
-    <category term="Amazon" scheme="https://ki4070ma.com/tags/Amazon/"/>
     
   </entry>
   
@@ -321,7 +353,7 @@
     <link href="https://ki4070ma.com/20210225_appium-macos/"/>
     <id>https://ki4070ma.com/20210225_appium-macos/</id>
     <published>2021-02-24T15:00:00.000Z</published>
-    <updated>2021-03-07T14:16:37.956Z</updated>
+    <updated>2021-03-07T17:22:52.014Z</updated>
     
     
       
@@ -349,10 +381,10 @@
   
   <entry>
     <title>リモートワークのために購入したもの4</title>
-    <link href="https://ki4070ma.com/20210224-WFH4/"/>
-    <id>https://ki4070ma.com/20210224-WFH4/</id>
+    <link href="https://ki4070ma.com/20210224_WFH4/"/>
+    <id>https://ki4070ma.com/20210224_WFH4/</id>
     <published>2021-02-23T15:00:00.000Z</published>
-    <updated>2021-03-07T16:39:25.899Z</updated>
+    <updated>2021-03-08T17:24:55.732Z</updated>
     
     
       
@@ -366,11 +398,41 @@
     
     
     
+    <category term="Amazon" scheme="https://ki4070ma.com/tags/Amazon/"/>
+    
     <category term="WFH" scheme="https://ki4070ma.com/tags/WFH/"/>
     
     <category term="リモートワーク" scheme="https://ki4070ma.com/tags/%E3%83%AA%E3%83%A2%E3%83%BC%E3%83%88%E3%83%AF%E3%83%BC%E3%82%AF/"/>
     
-    <category term="Amazon" scheme="https://ki4070ma.com/tags/Amazon/"/>
+  </entry>
+  
+  <entry>
+    <title>Software test に関する Slideshare</title>
+    <link href="https://ki4070ma.com/20210223_study-sw-test/"/>
+    <id>https://ki4070ma.com/20210223_study-sw-test/</id>
+    <published>2021-02-22T15:00:00.000Z</published>
+    <updated>2021-03-08T17:30:05.746Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Black box testing&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    
+    <category term="SoftwareTest" scheme="https://ki4070ma.com/tags/SoftwareTest/"/>
+    
+    <category term="Study" scheme="https://ki4070ma.com/tags/Study/"/>
+    
+    <category term="Slideshare" scheme="https://ki4070ma.com/tags/Slideshare/"/>
     
   </entry>
   
@@ -487,39 +549,11 @@
     
     
     
-    <category term="Technology" scheme="https://ki4070ma.com/tags/Technology/"/>
-    
     <category term="Python" scheme="https://ki4070ma.com/tags/Python/"/>
+    
+    <category term="Technology" scheme="https://ki4070ma.com/tags/Technology/"/>
     
     <category term="Appium" scheme="https://ki4070ma.com/tags/Appium/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>PythonのLibraryで使用したことがあるもの</title>
-    <link href="https://ki4070ma.com/20181226_python-lib/"/>
-    <id>https://ki4070ma.com/20181226_python-lib/</id>
-    <published>2018-12-25T15:00:00.000Z</published>
-    <updated>2021-03-07T14:08:35.955Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;!-- toc --&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a</summary>
-        
-      
-    
-    
-    
-    
-    <category term="Technology" scheme="https://ki4070ma.com/tags/Technology/"/>
-    
-    <category term="Python" scheme="https://ki4070ma.com/tags/Python/"/>
     
   </entry>
   
@@ -553,11 +587,11 @@
   </entry>
   
   <entry>
-    <title>(自分用メモ) Macを買ってからセットアップするまで</title>
-    <link href="https://ki4070ma.com/20181217_setup-mac/"/>
-    <id>https://ki4070ma.com/20181217_setup-mac/</id>
-    <published>2018-12-16T15:00:00.000Z</published>
-    <updated>2021-03-06T15:29:49.768Z</updated>
+    <title>PythonのLibraryで使用したことがあるもの</title>
+    <link href="https://ki4070ma.com/20181226_python-lib/"/>
+    <id>https://ki4070ma.com/20181226_python-lib/</id>
+    <published>2018-12-25T15:00:00.000Z</published>
+    <updated>2021-03-07T14:08:35.955Z</updated>
     
     
       
@@ -567,8 +601,6 @@
     <summary type="html">&lt;!-- toc --&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;#mac%E8%B3%BC%E5%85%A5&quot;&gt;Mac購入&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;#mac%E8%B5%B7%E5%8B%95&quot;&gt;Mac起動&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a</summary>
         
       
@@ -576,36 +608,9 @@
     
     
     
-    <category term="Mac" scheme="https://ki4070ma.com/tags/Mac/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>circleci memo</title>
-    <link href="https://ki4070ma.com/20181217_circleci/"/>
-    <id>https://ki4070ma.com/20181217_circleci/</id>
-    <published>2018-12-16T15:00:00.000Z</published>
-    <updated>2021-03-06T15:29:49.768Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;!-- toc --&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;#%E3%82%BB%E3%83%83%E3%83%88%E3%82%A2%E3%83%83%E3%83%97&quot;&gt;セットアップ&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a</summary>
-        
-      
-    
-    
-    
+    <category term="Python" scheme="https://ki4070ma.com/tags/Python/"/>
     
     <category term="Technology" scheme="https://ki4070ma.com/tags/Technology/"/>
-    
-    <category term="CircleCI" scheme="https://ki4070ma.com/tags/CircleCI/"/>
     
   </entry>
   

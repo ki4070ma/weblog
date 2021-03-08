@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-JWTW1CHBL8"></script>
+<script>function gtag(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],gtag("js",new Date),gtag("config","G-JWTW1CHBL8")</script>
+<title>Azure pipeline で Appium を走らせて, Android, iOS のテストを走らせる | ki4070maのメモ帳</title>
+<meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
+<meta name="description" content="Azure pipeline で Appium を走らせて, Android, iOS のテストを走らせることができます Azure pipelinesオープンソースプロジェクトであれば時間制限なしで無料で使用できます https:&#x2F;&#x2F;azure.microsoft.com&#x2F;ja-jp&#x2F;services&#x2F;devops&#x2F;pipelines&#x2F; 以下は以前contributeしたものですまずは azur">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Azure pipeline で Appium を走らせて, Android, iOS のテストを走らせる">
+<meta property="og:url" content="https://ki4070ma.com/20210309_appium-azure/index.html">
+<meta property="og:site_name" content="ki4070maのメモ帳">
+<meta property="og:description" content="Azure pipeline で Appium を走らせて, Android, iOS のテストを走らせることができます Azure pipelinesオープンソースプロジェクトであれば時間制限なしで無料で使用できます https:&#x2F;&#x2F;azure.microsoft.com&#x2F;ja-jp&#x2F;services&#x2F;devops&#x2F;pipelines&#x2F; 以下は以前contributeしたものですまずは azur">
+<meta property="og:locale" content="ja_JP">
+<meta property="article:published_time" content="2021-03-08T15:00:00.000Z">
+<meta property="article:modified_time" content="2021-03-08T17:24:46.619Z">
+<meta property="article:author" content="Atsushi Mori">
+<meta property="article:tag" content="Python">
+<meta property="article:tag" content="Appium">
+<meta property="article:tag" content="Azure">
+<meta property="article:tag" content="Android">
+<meta property="article:tag" content="iOS">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:creator" content="@https:&#x2F;&#x2F;twitter.com&#x2F;atsushi0521">
+<link rel="alternate" href="/atom.xml" title="ki4070maのメモ帳" type="application/atom+xml">
+<link rel="shortcut icon" href="/favicon.png">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/typeface-source-code-pro@0.0.71/index.min.css">
+<link rel="stylesheet" href="/css/style.css">
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
+.<meta name="generator" content="Hexo 5.4.0"></head>
+<body>
+<div id="container">
+<div id="wrap">
+<header id="header">
+<div id="banner"></div>
+<div id="header-outer" class="outer">
+<div id="header-title" class="inner">
+<h1 id="logo-wrap">
+<a href="/" id="logo">ki4070maのメモ帳</a>
+</h1>
+<h2 id="subtitle-wrap">
+<a href="/" id="subtitle">Python, SoftwareTest</a>
+</h2>
+</div>
+<div id="header-inner" class="inner">
+<nav id="main-nav">
+<a id="main-nav-toggle" class="nav-icon"></a>
+<a class="main-nav-link" href="/">Home</a>
+<a class="main-nav-link" href="/archives">Archives</a>
+</nav>
+<nav id="sub-nav">
+<a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSSフィード"></a>
+<a id="nav-search-btn" class="nav-icon" title="検索"></a>
+</nav>
+<div id="search-form-wrap">
+<form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="検索"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://ki4070ma.com"></form>
+</div>
+</div>
+</div>
+</header>
+<script data-ad-client="ca-pub-9552058847412056" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<div class="outer">
+<section id="main"><article id="post-20210309_appium-azure" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+<div class="article-meta">
+<a href="/20210309_appium-azure/" class="article-date">
+<time class="dt-published" datetime="2021-03-08T15:00:00.000Z" itemprop="datePublished">2021-03-09</time>
+</a>
+</div>
+<div class="article-inner">
+<header class="article-header">
+<h1 class="p-name article-title" itemprop="headline name">
+Azure pipeline で Appium を走らせて, Android, iOS のテストを走らせる
+</h1>
+</header>
+<div class="e-content article-entry" itemprop="articleBody">
+<p>Azure pipeline で Appium を走らせて, Android, iOS のテストを走らせることができます</p>
+<h2><span id="azure-pipelines">Azure pipelines</span></h2><p>オープンソースプロジェクトであれば時間制限なしで無料で使用できます</p>
+<p><a target="_blank" rel="noopener" href="https://azure.microsoft.com/ja-jp/services/devops/pipelines/">https://azure.microsoft.com/ja-jp/services/devops/pipelines/</a></p>
+<p>以下は以前contributeしたものです<br>まずは <code>azure-pipelines.yml</code> を以下のように書いて, 実体は <code>./ci-jobs/functional_test.yml</code> にあります</p>
+<figure class="highlight yml"><figcaption><span>azure-pipelines.yml</span><a target="_blank" rel="noopener" href="https://github.com/appium/python-client/blob/e49dc784d376145f12afe2f61a8ee7348c2ee08e/azure-pipelines.yml">link</a></figcaption><table><tr><td class="gutter"><pre><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">jobs:</span></span><br><span class="line">  <span class="bullet">-</span> <span class="attr">template:</span> <span class="string">./ci-jobs/functional_test.yml</span></span><br></pre></td></tr></table></figure>
+<p>このあたりで必要なパラメータを設定しています</p>
+<figure class="highlight yml"><figcaption><span>functional_test.yml</span><a target="_blank" rel="noopener" href="https://github.com/appium/python-client/blob/e49dc784d376145f12afe2f61a8ee7348c2ee08e/ci-jobs/functional_test.yml">link</a></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">parameters:</span></span><br><span class="line">  <span class="attr">vmImage:</span> <span class="string">&#x27;macOS-10.15&#x27;</span></span><br><span class="line">  <span class="attr">pytestOpt:</span> <span class="string">&#x27;--doctest-modules --junitxml=junit/test-results.xml --cov=com --cov-report=xml --cov-report=html&#x27;</span></span><br><span class="line">  <span class="attr">androidSdkVer:</span> <span class="number">27</span></span><br><span class="line">  <span class="attr">xcodeForIOS:</span> <span class="number">12.3</span></span><br><span class="line">  <span class="attr">CI:</span> <span class="literal">true</span></span><br></pre></td></tr></table></figure>
+<ul>
+<li>vmImage: コマンドを実行していくマシンのOSです</li>
+<li>pytestOpt: pytest の option</li>
+<li>androidSdkVer: 使用するAndroid SDK ver. 作成する Emulator の OS に影響します</li>
+<li>xcodeForIOS: 使用する xcode ver. 作成する Simulator の iOS に影響します</li>
+</ul>
+<h3><span id="appium-を走らせる">Appium を走らせる</span></h3><p>実体は <code>functional/run_appium.yml</code> に</p>
+<figure class="highlight yml"><figcaption><span>run_appium.yml</span><a target="_blank" rel="noopener" href="https://github.com/appium/python-client/blob/e49dc784d376145f12afe2f61a8ee7348c2ee08e/ci-jobs/functional/run_appium.yml">link</a></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">steps:</span></span><br><span class="line"><span class="bullet">-</span> <span class="attr">task:</span> <span class="string">NodeTool@0</span></span><br><span class="line">  <span class="attr">inputs:</span></span><br><span class="line">    <span class="attr">versionSpec:</span> <span class="string">&#x27;12.x&#x27;</span></span><br><span class="line">  <span class="attr">displayName:</span> <span class="string">Install</span> <span class="string">Node</span> <span class="number">12.</span><span class="string">x</span></span><br><span class="line"><span class="bullet">-</span> <span class="attr">script:</span> <span class="string">npm</span> <span class="string">install</span> <span class="string">-g</span> <span class="string">appium@beta</span> <span class="string">--chromedriver_version=&#x27;2.44&#x27;</span></span><br><span class="line">  <span class="attr">displayName:</span> <span class="string">Install</span> <span class="string">appium</span></span><br><span class="line"><span class="bullet">-</span> <span class="attr">script:</span> <span class="string">npm</span> <span class="string">install</span> <span class="string">-g</span> <span class="string">opencv4nodejs</span></span><br><span class="line">  <span class="attr">condition:</span> <span class="string">eq(&#x27;$&#123;&#123;</span> <span class="string">parameters.opencv</span> <span class="string">&#125;&#125;&#x27;,</span> <span class="literal">true</span><span class="string">)</span></span><br><span class="line">  <span class="attr">displayName:</span> <span class="string">Install</span> <span class="string">opencv4nodejs</span></span><br><span class="line"><span class="bullet">-</span> <span class="attr">task:</span> <span class="string">UsePythonVersion@0</span></span><br><span class="line">  <span class="attr">inputs:</span></span><br><span class="line">    <span class="attr">versionSpec:</span> <span class="string">&#x27;3.x&#x27;</span></span><br><span class="line"><span class="bullet">-</span> <span class="attr">script:</span> <span class="string">brew</span> <span class="string">install</span> <span class="string">ffmpeg</span></span><br><span class="line">  <span class="attr">displayName:</span> <span class="string">Resolve</span> <span class="string">dependencies</span> <span class="string">(Appium</span> <span class="string">server)</span></span><br><span class="line"><span class="bullet">-</span> <span class="attr">script:</span> <span class="string">python</span> <span class="string">setup.py</span> <span class="string">install</span></span><br><span class="line">  <span class="attr">displayName:</span> <span class="string">Install</span> <span class="string">python</span> <span class="string">language</span> <span class="string">bindings</span> <span class="string">for</span> <span class="string">Appium</span></span><br><span class="line"><span class="bullet">-</span> <span class="attr">script:</span> <span class="string">|</span></span><br><span class="line">    <span class="string">pip</span> <span class="string">install</span> <span class="string">pipenv</span></span><br><span class="line">    <span class="string">pipenv</span> <span class="string">lock</span> <span class="string">--clear</span></span><br><span class="line">    <span class="string">pipenv</span> <span class="string">install</span> <span class="string">--system</span></span><br><span class="line">  <span class="attr">displayName:</span> <span class="string">Resolve</span> <span class="string">dependencies</span> <span class="string">(Python)</span></span><br><span class="line"><span class="bullet">-</span> <span class="attr">script:</span> <span class="string">|</span></span><br><span class="line">    <span class="string">git</span> <span class="string">--no-pager</span> <span class="string">log</span> <span class="string">-n1</span></span><br><span class="line">    <span class="string">python</span> <span class="string">--version</span></span><br><span class="line">    <span class="string">ffmpeg</span> <span class="string">-version</span></span><br><span class="line">    <span class="string">appium</span> <span class="string">--version</span></span><br><span class="line">    <span class="string">node</span> <span class="string">--version</span></span><br><span class="line">  <span class="attr">displayName:</span> <span class="string">Check</span> <span class="string">versions</span></span><br><span class="line"><span class="bullet">-</span> <span class="attr">script:</span> <span class="string">nohup</span> <span class="string">appium</span> <span class="string">--relaxed-security</span> <span class="string">&gt;</span> <span class="string">appium_log.txt</span> <span class="string">&amp;</span></span><br><span class="line">  <span class="attr">condition:</span> <span class="string">ne(&#x27;$&#123;&#123;</span> <span class="string">parameters.dont_run_appium</span> <span class="string">&#125;&#125;&#x27;,</span> <span class="literal">true</span><span class="string">)</span></span><br><span class="line">  <span class="attr">displayName:</span> <span class="string">Run</span> <span class="string">Appium</span> <span class="string">in</span> <span class="string">background</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<p>ざっくり</p>
+<ul>
+<li>node インストール</li>
+<li>npm で appium をインストール</li>
+<li>(必要に応じて opencv4nodejs をインストール)</li>
+<li>ffmpeg インストール (screen recordするために必要)</li>
+<li>appium-python-client をインストール</li>
+<li>pip で dependency の解消</li>
+<li>インストールしたものの ver 一覧列挙</li>
+<li>appium を走らせる</li>
+</ul>
+<h3><span id="ios">iOS</span></h3><p>実体は <code>./functional/run_ios_test.yml</code> に</p>
+<figure class="highlight yml"><figcaption><span>ios_setup.yml</span><a target="_blank" rel="noopener" href="https://github.com/appium/python-client/blob/e49dc784d376145f12afe2f61a8ee7348c2ee08e/ci-jobs/functional/ios_setup.yml">link</a></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">steps:</span></span><br><span class="line"><span class="bullet">-</span> <span class="attr">script:</span> <span class="string">sudo</span> <span class="string">xcode-select</span> <span class="string">-s</span> <span class="string">/Applications/Xcode_$&#123;&#123;</span> <span class="string">parameters.xcodeVersion</span> <span class="string">&#125;&#125;.app/Contents/Developer</span></span><br><span class="line">  <span class="attr">displayName:</span> <span class="string">Xcode</span> <span class="string">Select</span> <span class="string">$&#123;&#123;</span> <span class="string">parameters.xcodeVersion</span> <span class="string">&#125;&#125;</span></span><br><span class="line"><span class="bullet">-</span> <span class="attr">script:</span> <span class="string">xcrun</span> <span class="string">simctl</span> <span class="string">list</span></span><br><span class="line">  <span class="attr">displayName:</span> <span class="string">List</span> <span class="string">Installed</span> <span class="string">Simulators</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<p>こちらでは Simulator を起動するために xcode の ver を指定<br>iOS についてはテストを走らせる中で Simulator が起動するようになっているので, あとは pytest でテストを走らせるだけで ok </p>
+<h3><span id="android">Android</span></h3><p>実体は <code>./functional/run_android_test.yml</code> に</p>
+<figure class="highlight sh"><figcaption><span>start-emulator.sh</span><a target="_blank" rel="noopener" href="https://github.com/appium/python-client/blob/e49dc784d376145f12afe2f61a8ee7348c2ee08e/ci-jobs/functional/start-emulator.sh">link</a></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#!/usr/bin/env bash</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># This file comes from https://github.com/appium/ruby_lib_core</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># This script was copy-pasted from https://docs.microsoft.com/en-us/azure/devops/pipelines/languages/android?view=azure-devops#test-on-the-android-emulator</span></span><br><span class="line"><span class="comment"># with some changes</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Install AVD files</span></span><br><span class="line"><span class="built_in">declare</span> -r emulator=<span class="string">&quot;system-images;android-<span class="variable">$&#123;ANDROID_SDK_VERSION&#125;</span>;google_apis;x86&quot;</span></span><br><span class="line"><span class="built_in">echo</span> <span class="string">&quot;y&quot;</span> | <span class="variable">$&#123;ANDROID_HOME&#125;</span>/tools/bin/sdkmanager --install <span class="string">&quot;<span class="variable">$emulator</span>&quot;</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Show a list of emulators</span></span><br><span class="line"><span class="variable">$&#123;ANDROID_HOME&#125;</span>/tools/bin/avdmanager list</span><br><span class="line"></span><br><span class="line"><span class="comment"># Create emulator</span></span><br><span class="line"><span class="built_in">echo</span> <span class="string">&quot;no&quot;</span> | <span class="variable">$&#123;ANDROID_HOME&#125;</span>/tools/bin/avdmanager create avd -d <span class="string">&quot;Nexus 6&quot;</span> -n testemulator -k <span class="string">&quot;<span class="variable">$&#123;emulator&#125;</span>&quot;</span> --force</span><br><span class="line"></span><br><span class="line"><span class="built_in">echo</span> <span class="variable">$&#123;ANDROID_HOME&#125;</span>/emulator/emulator -list-avds</span><br><span class="line"></span><br><span class="line"><span class="built_in">echo</span> <span class="string">&quot;Starting emulator&quot;</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Start emulator in background</span></span><br><span class="line">nohup <span class="variable">$&#123;ANDROID_HOME&#125;</span>/emulator/emulator -avd testemulator -no-boot-anim -no-snapshot &gt; /dev/null 2&gt;&amp;1 &amp;</span><br><span class="line"><span class="variable">$&#123;ANDROID_HOME&#125;</span>/platform-tools/adb wait-for-device shell <span class="string">&#x27;while [[ -z $(getprop sys.boot_completed | tr -d &#x27;</span>\r<span class="string">&#x27;) ]]; do sleep 1; done; input keyevent 82&#x27;</span></span><br><span class="line"></span><br><span class="line"><span class="variable">$&#123;ANDROID_HOME&#125;</span>/platform-tools/adb devices</span><br><span class="line"></span><br><span class="line"><span class="built_in">echo</span> <span class="string">&quot;Emulator started&quot;</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<p>こちらでは Android Emulator を起動しています<br>元となっているファイルは azure pipelines 公式からもってきています</p>
+<p>この後に pytest でテスト走らせることができます</p>
+<h3><span id="tips">Tips</span></h3><p>Azure pipeline でテストを実行して, 失敗したとき, なぜ失敗しているか追いにくいので, screen record (画面録画)を取得するようになっているのでそちらも参考に</p>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle" style="display:block;text-align:center" data-ad-layout="in-article" data-ad-format="fluid" data-ad-client="ca-pub-9552058847412056" data-ad-slot="7810355979"></ins>
+<script>(adsbygoogle=window.adsbygoogle||[]).push({})</script>
+</div>
+<footer class="article-footer">
+<a data-url="https://ki4070ma.com/20210309_appium-azure/" data-id="ckm0v56ll002k1ld1czmi62cp" data-title="Azure pipeline で Appium を走らせて, Android, iOS のテストを走らせる" class="article-share-link">共有</a>
+<ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Android/" rel="tag">Android</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Appium/" rel="tag">Appium</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Azure/" rel="tag">Azure</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Python/" rel="tag">Python</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/iOS/" rel="tag">iOS</a></li></ul>
+</footer>
+</div>
+<nav id="article-nav">
+<a href="/20210308_WFH2/" id="article-nav-older" class="article-nav-link-wrap">
+<strong class="article-nav-caption">前の記事</strong>
+<div class="article-nav-title">リモートワークのために購入したもの2</div>
+</a>
+</nav>
+</article>
+</section>
+<aside id="sidebar">
+<div class="widget-wrap">
+<h3 class="widget-title">profile</h3>
+<div class="widget profile">
+<img src="/images/profile.jpg" alt="author" class="author_image">
+<div>
+<span class="b" style="color:#17c400">Mori Atsushi</span><br>
+<ul>
+<li><i class="fab fa-github"></i> <a href="https://github.com/ki4070ma" target="_blank" rel="noopener">Github</a></li>
+<li><i class="fab fa-twitter"></i> <a href="https://twitter.com/atsushi0521" target="_blank" rel="noopener">Twitter</a></li>
+<li><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/atsushi-mori-7351124b/" target="_blank" rel="noopener">LinkedIn</a></li>
+<li><i class="fab fa-qiita"></i> <a href="https://qiita.com/atsushi0521" target="_blank" rel="noopener">Qiita</a></li>
+<li><i class="fab fa-facebook"></i> <a href="https://qiita.com/atsushi0521" target="_blank" rel="noopener">Facebook</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="widget-wrap">
+<h3 class="widget-title">タグ</h3>
+<div class="widget">
+<ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Amazon/" rel="tag">Amazon</a><span class="tag-list-count">5</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Amazon-associate/" rel="tag">Amazon associate</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Android/" rel="tag">Android</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Appium/" rel="tag">Appium</a><span class="tag-list-count">5</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Azure/" rel="tag">Azure</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/BDD/" rel="tag">BDD</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/CircleCI/" rel="tag">CircleCI</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ELK/" rel="tag">ELK</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ExploratoryTest/" rel="tag">ExploratoryTest</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Github/" rel="tag">Github</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Hexo/" rel="tag">Hexo</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Mac/" rel="tag">Mac</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Presentation/" rel="tag">Presentation</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Programming/" rel="tag">Programming</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Python/" rel="tag">Python</a><span class="tag-list-count">7</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Slideshare/" rel="tag">Slideshare</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/SoftwareTest/" rel="tag">SoftwareTest</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Study/" rel="tag">Study</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Technology/" rel="tag">Technology</a><span class="tag-list-count">12</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/WFH/" rel="tag">WFH</a><span class="tag-list-count">4</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/WeMo/" rel="tag">WeMo</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Windows/" rel="tag">Windows</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ffmpeg/" rel="tag">ffmpeg</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/iOS/" rel="tag">iOS</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/macOS/" rel="tag">macOS</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/python/" rel="tag">python</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/selenium/" rel="tag">selenium</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ssh/" rel="tag">ssh</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E3%83%AA%E3%83%A2%E3%83%BC%E3%83%88%E3%83%AF%E3%83%BC%E3%82%AF/" rel="tag">リモートワーク</a><span class="tag-list-count">4</span></li></ul>
+</div>
+</div>
+<div class="widget-wrap">
+<h3 class="widget-title">タグクラウド</h3>
+<div class="widget tagcloud">
+<a href="/tags/Amazon/" style="font-size:16.67px">Amazon</a> <a href="/tags/Amazon-associate/" style="font-size:10px">Amazon associate</a> <a href="/tags/Android/" style="font-size:10px">Android</a> <a href="/tags/Appium/" style="font-size:16.67px">Appium</a> <a href="/tags/Azure/" style="font-size:10px">Azure</a> <a href="/tags/BDD/" style="font-size:10px">BDD</a> <a href="/tags/CircleCI/" style="font-size:10px">CircleCI</a> <a href="/tags/ELK/" style="font-size:10px">ELK</a> <a href="/tags/ExploratoryTest/" style="font-size:10px">ExploratoryTest</a> <a href="/tags/Github/" style="font-size:10px">Github</a> <a href="/tags/Hexo/" style="font-size:13.33px">Hexo</a> <a href="/tags/Mac/" style="font-size:13.33px">Mac</a> <a href="/tags/Presentation/" style="font-size:10px">Presentation</a> <a href="/tags/Programming/" style="font-size:10px">Programming</a> <a href="/tags/Python/" style="font-size:18.33px">Python</a> <a href="/tags/Slideshare/" style="font-size:10px">Slideshare</a> <a href="/tags/SoftwareTest/" style="font-size:11.67px">SoftwareTest</a> <a href="/tags/Study/" style="font-size:11.67px">Study</a> <a href="/tags/Technology/" style="font-size:20px">Technology</a> <a href="/tags/WFH/" style="font-size:15px">WFH</a> <a href="/tags/WeMo/" style="font-size:10px">WeMo</a> <a href="/tags/Windows/" style="font-size:10px">Windows</a> <a href="/tags/ffmpeg/" style="font-size:10px">ffmpeg</a> <a href="/tags/iOS/" style="font-size:10px">iOS</a> <a href="/tags/macOS/" style="font-size:10px">macOS</a> <a href="/tags/python/" style="font-size:10px">python</a> <a href="/tags/selenium/" style="font-size:10px">selenium</a> <a href="/tags/ssh/" style="font-size:10px">ssh</a> <a href="/tags/%E3%83%AA%E3%83%A2%E3%83%BC%E3%83%88%E3%83%AF%E3%83%BC%E3%82%AF/" style="font-size:15px">リモートワーク</a>
+</div>
+</div>
+<div class="widget-wrap">
+<h3 class="widget-title">アーカイブ</h3>
+<div class="widget">
+<ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/03/">3月 2021</a><span class="archive-list-count">8</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/02/">2月 2021</a><span class="archive-list-count">6</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/12/">12月 2020</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/11/">11月 2019</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/04/">4月 2019</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/01/">1月 2019</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/12/">12月 2018</a><span class="archive-list-count">6</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/01/">1月 2018</a><span class="archive-list-count">2</span></li></ul>
+</div>
+</div>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle" style="display:block;text-align:center" data-ad-layout="in-article" data-ad-format="fluid" data-ad-client="ca-pub-9552058847412056" data-ad-slot="7810355979"></ins>
+<script>(adsbygoogle=window.adsbygoogle||[]).push({})</script>
+<div class="widget-wrap">
+<h3 class="widget-title">最近の投稿</h3>
+<div class="widget">
+<ul>
+<li>
+<a href="/20210309_appium-azure/">Azure pipeline で Appium を走らせて, Android, iOS のテストを走らせる</a>
+</li>
+<li>
+<a href="/20210308_WFH2/">リモートワークのために購入したもの2</a>
+</li>
+<li>
+<a href="/20210307_Hexo1/">Hexoのことはじめ (Hexo1)</a>
+</li>
+<li>
+<a href="/20210306_WFH1/">リモートワークのために購入したもの1</a>
+</li>
+<li>
+<a href="/20210305_appium-wait-for-el/">Appiumで特定のelementが表示されるまで待つ</a>
+</li>
+</ul>
+</div>
+</div>
+</aside>
+</div>
+<footer id="footer">
+<div class="outer">
+<div id="footer-info" class="inner">
+&copy; 2021 Atsushi Mori<br>
+Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
+</div>
+</div>
+</footer>
+</div>
+<nav id="mobile-nav">
+<a href="/" class="mobile-nav-link">Home</a>
+<a href="/archives" class="mobile-nav-link">Archives</a>
+</nav>
+<script src="/js/jquery-3.4.1.min.js"></script>
+<script src="/fancybox/jquery.fancybox.min.js"></script>
+<script src="/js/script.js"></script>
+</div>
+<script>function addLoadEvent(o){const n=window.onload;"function"!=typeof window.onload?window.onload=o:window.onload=()=>{n(),o()}}addLoadEvent(()=>{try{if(window.innerWidth<Number("768"))return;const o=Array.from(document.body.querySelectorAll(".google-photos-album-images a"));o.push(...Array.from(document.body.querySelectorAll("a.google-photos-album-image")));for(const n of o)n.href=n.href.replace(/=s720\-no/i,"=s1920-no")}catch(o){console.log(o)}})</script>
+</body>
+</html>
