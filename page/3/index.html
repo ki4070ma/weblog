@@ -54,6 +54,65 @@
 <script data-ad-client="ca-pub-9552058847412056" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 <div class="outer">
 <section id="main">
+<article id="post-20181217_circleci" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+<div class="article-meta">
+<a href="/20181217_circleci/" class="article-date">
+<time class="dt-published" datetime="2018-12-16T15:00:00.000Z" itemprop="datePublished">2018-12-17</time>
+</a>
+</div>
+<div class="article-inner">
+<header class="article-header">
+<h1 itemprop="name">
+<a class="p-name article-title" href="/20181217_circleci/">circleci memo</a>
+</h1>
+</header>
+<div class="e-content article-entry" itemprop="articleBody">
+<ul>
+<li><a href="#%E3%82%BB%E3%83%83%E3%83%88%E3%82%A2%E3%83%83%E3%83%97">セットアップ</a></li>
+<li><a href="#%E3%83%AD%E3%83%BC%E3%82%AB%E3%83%AB%E3%81%A7circleci%E3%81%AE%E3%83%93%E3%83%AB%E3%83%89%E3%82%92%E5%AE%9F%E8%A1%8C%E3%81%A7%E3%81%8D%E3%82%8B%E3%82%88%E3%81%86%E3%81%AB%E3%81%99%E3%82%8B">ローカルでcircleciのビルドを実行できるようにする</a></li>
+<li><a href="#circleciconfigyml%E3%82%92%E4%BD%9C%E6%88%90%E3%81%99%E3%82%8B">circleci/config.ymlを作成する</a></li>
+<li><a href="#github%E3%81%ABcircle-ci-status%E3%83%90%E3%83%83%E3%82%B8%E3%82%92%E8%B2%BC%E3%82%8A%E4%BB%98%E3%81%91%E3%82%8B">GithubにCircle CI statusバッジを貼り付ける</a></li>
+<li><a href="#%E5%8F%82%E8%80%83">参考</a></li>
+</ul>
+<h1><span id="セットアップ">セットアップ</span></h1><ul>
+<li><a target="_blank" rel="noopener" href="https://github.com/">Github</a>でプロジェクトを作成する</li>
+<li><a target="_blank" rel="noopener" href="https://circleci.com/">CircleCI</a>で対象のプロジェクトに対してCIを有効化する</li>
+</ul>
+<h1><span id="ローカルでcircleciのビルドを実行できるようにする">ローカルでcircleciのビルドを実行できるようにする</span></h1><ul>
+<li>[目的] ymlを作成してすぐ試すというサイクルを短くするため</li>
+<li>[手順]<ol>
+<li>Dockerをインストール (<a target="_blank" rel="noopener" href="https://docs.docker.com/docker-for-mac/">公式 Docker for mac</a>)</li>
+<li>Circleci-cliをインストール<ul>
+<li>$brew install circleci</li>
+</ul>
+</li>
+</ol>
+</li>
+</ul>
+<h1><span id="circleciconfigymlを作成する">circleci/config.ymlを作成する</span></h1><ul>
+<li>自分が使用する言語でHello worldするconfig.ymlを書くと吉</li>
+<li>例<ul>
+<li><a target="_blank" rel="noopener" href="https://github.com/ki4070ma/unittest/blob/master/.circleci/config.yml">https://github.com/ki4070ma/unittest/blob/master/.circleci/config.yml</a></li>
+</ul>
+</li>
+</ul>
+<h1><span id="githubにcircle-ci-statusバッジを貼り付ける">GithubにCircle CI statusバッジを貼り付ける</span></h1><ul>
+<li><a target="_blank" rel="noopener" href="https://qiita.com/Hanocha/items/8ad74258eb43d0959590">githubでREADME.mdにCircleCIのバッジを表示する</a></li>
+</ul>
+<h1><span id="参考">参考</span></h1><ul>
+<li><a target="_blank" rel="noopener" href="https://qiita.com/selmertsx/items/45bd672c2c8ddab1981b">CircleCI 2.0 をlocalで動かす</a></li>
+</ul>
+<p>ref: <a target="_blank" rel="noopener" href="https://qiita.com/atsushi0521/items/b335f375550f84fcd1f0">https://qiita.com/atsushi0521/items/b335f375550f84fcd1f0</a></p>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle" style="display:block;text-align:center" data-ad-layout="in-article" data-ad-format="fluid" data-ad-client="ca-pub-9552058847412056" data-ad-slot="7810355979"></ins>
+<script>(adsbygoogle=window.adsbygoogle||[]).push({})</script>
+</div>
+<footer class="article-footer">
+<a data-url="https://ki4070ma.com/20181217_circleci/" data-id="ckmj4z8oz00056fd18qkoe2nh" data-title="circleci memo" class="article-share-link">共有</a>
+<ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/CircleCI/" rel="tag">CircleCI</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Technology/" rel="tag">Technology</a></li></ul>
+</footer>
+</div>
+</article>
 <article id="post-20181217_setup-mac" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
 <div class="article-meta">
 <a href="/20181217_setup-mac/" class="article-date">
@@ -200,67 +259,8 @@
 <script>(adsbygoogle=window.adsbygoogle||[]).push({})</script>
 </div>
 <footer class="article-footer">
-<a data-url="https://ki4070ma.com/20181217_setup-mac/" data-id="ckm0v56l400051ld1dirj6ff2" data-title="(自分用メモ) Macを買ってからセットアップするまで" class="article-share-link">共有</a>
+<a data-url="https://ki4070ma.com/20181217_setup-mac/" data-id="ckmj4z8p000076fd15vgv9lmv" data-title="(自分用メモ) Macを買ってからセットアップするまで" class="article-share-link">共有</a>
 <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Mac/" rel="tag">Mac</a></li></ul>
-</footer>
-</div>
-</article>
-<article id="post-20181217_circleci" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-<div class="article-meta">
-<a href="/20181217_circleci/" class="article-date">
-<time class="dt-published" datetime="2018-12-16T15:00:00.000Z" itemprop="datePublished">2018-12-17</time>
-</a>
-</div>
-<div class="article-inner">
-<header class="article-header">
-<h1 itemprop="name">
-<a class="p-name article-title" href="/20181217_circleci/">circleci memo</a>
-</h1>
-</header>
-<div class="e-content article-entry" itemprop="articleBody">
-<ul>
-<li><a href="#%E3%82%BB%E3%83%83%E3%83%88%E3%82%A2%E3%83%83%E3%83%97">セットアップ</a></li>
-<li><a href="#%E3%83%AD%E3%83%BC%E3%82%AB%E3%83%AB%E3%81%A7circleci%E3%81%AE%E3%83%93%E3%83%AB%E3%83%89%E3%82%92%E5%AE%9F%E8%A1%8C%E3%81%A7%E3%81%8D%E3%82%8B%E3%82%88%E3%81%86%E3%81%AB%E3%81%99%E3%82%8B">ローカルでcircleciのビルドを実行できるようにする</a></li>
-<li><a href="#circleciconfigyml%E3%82%92%E4%BD%9C%E6%88%90%E3%81%99%E3%82%8B">circleci/config.ymlを作成する</a></li>
-<li><a href="#github%E3%81%ABcircle-ci-status%E3%83%90%E3%83%83%E3%82%B8%E3%82%92%E8%B2%BC%E3%82%8A%E4%BB%98%E3%81%91%E3%82%8B">GithubにCircle CI statusバッジを貼り付ける</a></li>
-<li><a href="#%E5%8F%82%E8%80%83">参考</a></li>
-</ul>
-<h1><span id="セットアップ">セットアップ</span></h1><ul>
-<li><a target="_blank" rel="noopener" href="https://github.com/">Github</a>でプロジェクトを作成する</li>
-<li><a target="_blank" rel="noopener" href="https://circleci.com/">CircleCI</a>で対象のプロジェクトに対してCIを有効化する</li>
-</ul>
-<h1><span id="ローカルでcircleciのビルドを実行できるようにする">ローカルでcircleciのビルドを実行できるようにする</span></h1><ul>
-<li>[目的] ymlを作成してすぐ試すというサイクルを短くするため</li>
-<li>[手順]<ol>
-<li>Dockerをインストール (<a target="_blank" rel="noopener" href="https://docs.docker.com/docker-for-mac/">公式 Docker for mac</a>)</li>
-<li>Circleci-cliをインストール<ul>
-<li>$brew install circleci</li>
-</ul>
-</li>
-</ol>
-</li>
-</ul>
-<h1><span id="circleciconfigymlを作成する">circleci/config.ymlを作成する</span></h1><ul>
-<li>自分が使用する言語でHello worldするconfig.ymlを書くと吉</li>
-<li>例<ul>
-<li><a target="_blank" rel="noopener" href="https://github.com/ki4070ma/unittest/blob/master/.circleci/config.yml">https://github.com/ki4070ma/unittest/blob/master/.circleci/config.yml</a></li>
-</ul>
-</li>
-</ul>
-<h1><span id="githubにcircle-ci-statusバッジを貼り付ける">GithubにCircle CI statusバッジを貼り付ける</span></h1><ul>
-<li><a target="_blank" rel="noopener" href="https://qiita.com/Hanocha/items/8ad74258eb43d0959590">githubでREADME.mdにCircleCIのバッジを表示する</a></li>
-</ul>
-<h1><span id="参考">参考</span></h1><ul>
-<li><a target="_blank" rel="noopener" href="https://qiita.com/selmertsx/items/45bd672c2c8ddab1981b">CircleCI 2.0 をlocalで動かす</a></li>
-</ul>
-<p>ref: <a target="_blank" rel="noopener" href="https://qiita.com/atsushi0521/items/b335f375550f84fcd1f0">https://qiita.com/atsushi0521/items/b335f375550f84fcd1f0</a></p>
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<ins class="adsbygoogle" style="display:block;text-align:center" data-ad-layout="in-article" data-ad-format="fluid" data-ad-client="ca-pub-9552058847412056" data-ad-slot="7810355979"></ins>
-<script>(adsbygoogle=window.adsbygoogle||[]).push({})</script>
-</div>
-<footer class="article-footer">
-<a data-url="https://ki4070ma.com/20181217_circleci/" data-id="ckm0v56l500071ld1gk8658x2" data-title="circleci memo" class="article-share-link">共有</a>
-<ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/CircleCI/" rel="tag">CircleCI</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Technology/" rel="tag">Technology</a></li></ul>
 </footer>
 </div>
 </article>
@@ -310,7 +310,7 @@
 <script>(adsbygoogle=window.adsbygoogle||[]).push({})</script>
 </div>
 <footer class="article-footer">
-<a data-url="https://ki4070ma.com/20181216_how-to-learn-coding/" data-id="ckm0v56l300041ld1hkx08cf1" data-title="プログラミングの勉強法" class="article-share-link">共有</a>
+<a data-url="https://ki4070ma.com/20181216_how-to-learn-coding/" data-id="ckmj4z8oz00046fd16i2fbp9g" data-title="プログラミングの勉強法" class="article-share-link">共有</a>
 <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Programming/" rel="tag">Programming</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Study/" rel="tag">Study</a></li></ul>
 </footer>
 </div>
@@ -374,7 +374,7 @@
 <script>(adsbygoogle=window.adsbygoogle||[]).push({})</script>
 </div>
 <footer class="article-footer">
-<a data-url="https://ki4070ma.com/20181215_ssh-local-network/" data-id="ckm0v56l100031ld11d0d64vv" data-title="ローカルネットワーク内でsshするための設定" class="article-share-link">共有</a>
+<a data-url="https://ki4070ma.com/20181215_ssh-local-network/" data-id="ckmj4z8oy00036fd110jih2i9" data-title="ローカルネットワーク内でsshするための設定" class="article-share-link">共有</a>
 <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Technology/" rel="tag">Technology</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/ssh/" rel="tag">ssh</a></li></ul>
 </footer>
 </div>
@@ -434,7 +434,7 @@
 <script>(adsbygoogle=window.adsbygoogle||[]).push({})</script>
 </div>
 <footer class="article-footer">
-<a data-url="https://ki4070ma.com/20180113_wemo-insight/" data-id="ckm0v56ky00011ld178my4y55" data-title="WeMo Insightで現在の消費電力を取得する" class="article-share-link">共有</a>
+<a data-url="https://ki4070ma.com/20180113_wemo-insight/" data-id="ckmj4z8ow00016fd1cad895mx" data-title="WeMo Insightで現在の消費電力を取得する" class="article-share-link">共有</a>
 <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Python/" rel="tag">Python</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Technology/" rel="tag">Technology</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/WeMo/" rel="tag">WeMo</a></li></ul>
 </footer>
 </div>
@@ -502,7 +502,7 @@
 <script>(adsbygoogle=window.adsbygoogle||[]).push({})</script>
 </div>
 <footer class="article-footer">
-<a data-url="https://ki4070ma.com/20180104_How-to-use-et/" data-id="ckm0v56kv00001ld1algs5yph" data-title="探索的テストの使い方" class="article-share-link">共有</a>
+<a data-url="https://ki4070ma.com/20180104_How-to-use-et/" data-id="ckmj4z8ou00006fd1fmc5fr8n" data-title="探索的テストの使い方" class="article-share-link">共有</a>
 <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/ExploratoryTest/" rel="tag">ExploratoryTest</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/SoftwareTest/" rel="tag">SoftwareTest</a></li></ul>
 </footer>
 </div>

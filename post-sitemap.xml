@@ -10,7 +10,7 @@
 
     <url>
         <loc>https://ki4070ma.com/20210223_study-sw-test/</loc>
-        <lastmod>2021-03-08T17:30:05.746Z</lastmod>
+        <lastmod>2021-03-21T12:21:01.342Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -18,7 +18,7 @@
 
     <url>
         <loc>https://ki4070ma.com/20210224_WFH4/</loc>
-        <lastmod>2021-03-08T17:24:55.732Z</lastmod>
+        <lastmod>2021-03-21T12:21:01.342Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -26,7 +26,7 @@
 
     <url>
         <loc>https://ki4070ma.com/20210309_appium-azure/</loc>
-        <lastmod>2021-03-08T17:24:46.619Z</lastmod>
+        <lastmod>2021-03-21T12:21:01.342Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -41,7 +41,7 @@
     </url>
 
     <url>
-        <loc>https://ki4070ma.com/20210226_WFH3/</loc>
+        <loc>https://ki4070ma.com/20210225_appium-macos/</loc>
         <lastmod>2021-03-07T17:22:52.014Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -49,7 +49,7 @@
     </url>
 
     <url>
-        <loc>https://ki4070ma.com/20210225_appium-macos/</loc>
+        <loc>https://ki4070ma.com/20210226_WFH3/</loc>
         <lastmod>2021-03-07T17:22:52.014Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -113,7 +113,7 @@
     </url>
 
     <url>
-        <loc>https://ki4070ma.com/20181226_python-lib/</loc>
+        <loc>https://ki4070ma.com/20190101_appium-setup/</loc>
         <lastmod>2021-03-07T14:08:35.955Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -121,7 +121,7 @@
     </url>
 
     <url>
-        <loc>https://ki4070ma.com/20190101_appium-setup/</loc>
+        <loc>https://ki4070ma.com/20181226_python-lib/</loc>
         <lastmod>2021-03-07T14:08:35.955Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -161,7 +161,7 @@
     </url>
 
     <url>
-        <loc>https://ki4070ma.com/20201230_elk-sample/</loc>
+        <loc>https://ki4070ma.com/20191101_slide-presentation/</loc>
         <lastmod>2021-03-06T15:29:49.769Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -169,7 +169,7 @@
     </url>
 
     <url>
-        <loc>https://ki4070ma.com/20191101_slide-presentation/</loc>
+        <loc>https://ki4070ma.com/20201230_elk-sample/</loc>
         <lastmod>2021-03-06T15:29:49.769Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -201,7 +201,7 @@
     </url>
 
     <url>
-        <loc>https://ki4070ma.com/20181217_setup-mac/</loc>
+        <loc>https://ki4070ma.com/20181217_circleci/</loc>
         <lastmod>2021-03-06T15:29:49.768Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -209,7 +209,7 @@
     </url>
 
     <url>
-        <loc>https://ki4070ma.com/20181217_circleci/</loc>
+        <loc>https://ki4070ma.com/20181217_setup-mac/</loc>
         <lastmod>2021-03-06T15:29:49.768Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
