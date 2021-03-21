@@ -130,6 +130,3 @@ html_minifier:
   minifyURLs: false
 archive_generator:
   per_page: 100
-hexo_google_adsense:
-  enable: true
-  file_path: 'source/ads/ads.txt'
