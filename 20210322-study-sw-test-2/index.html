@@ -4,15 +4,20 @@
 <meta charset="utf-8">
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-JWTW1CHBL8"></script>
 <script>function gtag(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],gtag("js",new Date),gtag("config","G-JWTW1CHBL8")</script>
-<title>アーカイブ: 2021/3 | ki4070maのメモ帳</title>
+<title>Software testing own notes | ki4070maのメモ帳</title>
 <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
-<meta property="og:type" content="website">
-<meta property="og:title" content="ki4070maのメモ帳">
-<meta property="og:url" content="https://ki4070ma.com/archives/2021/03/index.html">
+<meta name="description" content="Software testing approach Keep in mind [Phase] Test process (In short) Plannig -&gt; Analysis -&gt; Design -&gt; Implementation -&gt; Execution   [Type] Test type Functional &#x2F; Non-functional &#x2F; White-b">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Software testing own notes">
+<meta property="og:url" content="https://ki4070ma.com/20210322-study-sw-test-2/index.html">
 <meta property="og:site_name" content="ki4070maのメモ帳">
+<meta property="og:description" content="Software testing approach Keep in mind [Phase] Test process (In short) Plannig -&gt; Analysis -&gt; Design -&gt; Implementation -&gt; Execution   [Type] Test type Functional &#x2F; Non-functional &#x2F; White-b">
 <meta property="og:locale" content="ja_JP">
+<meta property="article:published_time" content="2021-03-21T15:00:00.000Z">
+<meta property="article:modified_time" content="2021-03-22T12:18:16.372Z">
 <meta property="article:author" content="Atsushi Mori">
-<meta property="article:tag" content="Python, SoftwareTest">
+<meta property="article:tag" content="SoftwareTest">
+<meta property="article:tag" content="Study">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:creator" content="@https:&#x2F;&#x2F;twitter.com&#x2F;atsushi0521">
 <link rel="alternate" href="/atom.xml" title="ki4070maのメモ帳" type="application/atom+xml">
@@ -53,121 +58,206 @@
 </header>
 <script data-ad-client="ca-pub-9552058847412056" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 <div class="outer">
-<section id="main">
-<section class="archives-wrap">
-<div class="archive-year-wrap">
-<a href="/archives/2021" class="archive-year">2021</a>
-</div>
-<div class="archives">
-<article class="archive-article archive-type-post">
-<div class="archive-article-inner">
-<header class="archive-article-header">
-<a href="/20210322-study-sw-test-2/" class="archive-article-date">
-<time class="dt-published" datetime="2021-03-21T15:00:00.000Z" itemprop="datePublished">3月 22</time>
+<section id="main"><article id="post-20210322-study-sw-test-2" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+<div class="article-meta">
+<a href="/20210322-study-sw-test-2/" class="article-date">
+<time class="dt-published" datetime="2021-03-21T15:00:00.000Z" itemprop="datePublished">2021-03-22</time>
 </a>
-<h1 itemprop="name">
-<a class="archive-article-title" href="/20210322-study-sw-test-2/">Software testing own notes</a>
+</div>
+<div class="article-inner">
+<header class="article-header">
+<h1 class="p-name article-title" itemprop="headline name">
+Software testing own notes
 </h1>
 </header>
+<div class="e-content article-entry" itemprop="articleBody">
+<h1><span id="software-testing-approach">Software testing approach</span></h1><ul>
+<li>Keep in mind<ul>
+<li>[Phase] Test process<ul>
+<li>(In short) Plannig -&gt; Analysis -&gt; Design -&gt; Implementation -&gt; Execution</li>
+</ul>
+</li>
+<li>[Type] Test type<ul>
+<li>Functional / Non-functional / White-box / Change-related</li>
+</ul>
+</li>
+<li>[Level] Test level<ul>
+<li>Component(Unit) / Integration / System / Acceptance</li>
+</ul>
+</li>
+<li>[Evaluation]<ul>
+<li>See <a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/ISO/IEC_9126">https://en.wikipedia.org/wiki/ISO/IEC_9126</a></li>
+<li>More likely to use Functionality, Reliability, Usability, Efficiency as QA point of view<ul>
+<li>Of course, Maintainability, Portability are also important as development point of view</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h1><span id="test-strategy-in-agile">Test strategy in agile</span></h1><ul>
+<li>Think customer first</li>
+<li>(Mindset) Keep “Risk-base” in our mind</li>
+<li>Follow ISO29119 basically, and adapt it into our context<ul>
+<li><a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/ISO/IEC_29119">https://en.wikipedia.org/wiki/ISO/IEC_29119</a></li>
+</ul>
+</li>
+</ul>
+<h1><span id="test-plan-in-agile">Test plan in agile</span></h1><ul>
+<li>Based on test planning at ISTQB<ul>
+<li>[Scope, Objectives, and risks of testing]<ul>
+<li>Scope: (e.g.) Developed new features and affected existing features</li>
+<li>Objectives: (e.g.) To achieve product quality which can be released to user at the end of sprint</li>
+<li>Risks of testing: (e.g.) Feature A is full-scratch so<del>, feature B has complicated logic so</del> </li>
+</ul>
+</li>
+<li>[Defining the overall approach of testing(Test strategy)]<ul>
+<li>See above</li>
+</ul>
+</li>
+<li>[Integrating and coordinating the test activities into the software lifecycle activities]<ul>
+<li>See “Process in agile”</li>
+</ul>
+</li>
+<li>[Scheduling of test activity, process]<ul>
+<li>Who / What / When / Why</li>
+</ul>
+</li>
+<li>[Selecting metrics for test monitoring and control]<ul>
+<li>TBD</li>
+</ul>
+</li>
+<li>[Budgeting for the test activities]<ul>
+<li>TBD</li>
+</ul>
+</li>
+<li>[Determining the level of detail and structure for test documentation]<ul>
+<li>TBD</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>ACC planning<ul>
+<li>I’d prefer this style.</li>
+<li><a target="_blank" rel="noopener" href="https://testing.googleblog.com/2011/09/10-minute-test-plan.html">https://testing.googleblog.com/2011/09/10-minute-test-plan.html</a></li>
+</ul>
+</li>
+</ul>
+<h1><span id="process-in-agile">Process in agile</span></h1><ul>
+<li>More automation, less manual (From common sense as agile)<ul>
+<li>It depends on context. If automation is difficult, consider to take exploratory testing(e.g. Session-based testing)<ul>
+<li><a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Session-based_testing">https://en.wikipedia.org/wiki/Session-based_testing</a></li>
+</ul>
+</li>
+<li>Keep Automation pyramid<ul>
+<li><a target="_blank" rel="noopener" href="https://martinfowler.com/bliki/TestPyramid.html">https://martinfowler.com/bliki/TestPyramid.html</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Practice example<ol>
+<li>2wk = 1 sprint</li>
+<li>w1.1-5<ul>
+<li>Big developments</li>
+<li>Analysis/Design/Implementation test</li>
+</ul>
+</li>
+<li>w2.1: testing on new features</li>
+<li>w2.1-3: Bug fix, Small developments</li>
+<li>w2.4: testing for release</li>
+<li>w2.5 release</li>
+</ol>
+</li>
+</ul>
+<h1><span id="test-report">Test report</span></h1><ul>
+<li>Should be defined in test plan</li>
+<li>[Important]<ul>
+<li>To gather materials to judge if we can release product to customer or not</li>
+<li>[Point]<ul>
+<li>Developed features in sprint / Existing features</li>
+<li>Evaluation of software quality(e.g. Functionality, Reliability)</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h1><span id="testqa-engineer-in-agile-team">Test/QA engineer in agile team</span></h1><ul>
+<li>Always think customer first (Of course, all team members :D)</li>
+<li>Coaching software testing/software quality in team</li>
+<li>Responsible for testing approach in team (e.g. test strategy, test plan)</li>
+<li>Responsible for team productivity (Productivity engineering)</li>
+<li>Maintain tools like scripts, CI</li>
+</ul>
+<h1><span id="test-in-agile">Test in agile</span></h1><ul>
+<li>[7 Software Testing Principles] Testing is context dependent<ul>
+<li>Need to defind context like target quality, deveopment process in test plan</li>
+</ul>
+</li>
+</ul>
+<h1><span id="exploratory-testing-in-agile">Exploratory testing in agile</span></h1><ul>
+<li>Exploratory testing is convenient in agile context since it’s not heavy and effective to find bug.<ul>
+<li>[How to use]</li>
+</ul>
+<ol>
+<li>To find bug on new features</li>
+<li>To check if prodcut can be released<ul>
+<li>By Session based test: <a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Session-based_testing">https://en.wikipedia.org/wiki/Session-based_testing</a></li>
+<li>Prepare suitable charter and skilled testers. Need to brush up charter always</li>
+</ul>
+</li>
+</ol>
+</li>
+<li>Exploratory testing is just style, not method. Need to define how to use exploratory testing in team</li>
+</ul>
+<h1><span id="scripted-test-in-agile">Scripted test in agile</span></h1><ul>
+<li>(Example) Scripted test covers main user scenario</li>
+<li>Think automation always</li>
+</ul>
+<h1><span id="automation-in-agile">Automation in agile</span></h1><ul>
+<li>Test pyramid -&gt; UT : IT : UI = 7 : 2 : 1<ul>
+<li><a target="_blank" rel="noopener" href="https://testing.googleblog.com/2015/04/just-say-no-to-more-end-to-end-tests.html">https://testing.googleblog.com/2015/04/just-say-no-to-more-end-to-end-tests.html</a></li>
+</ul>
+</li>
+<li>Layer<ol>
+<li>[Low level] Component(Unit) Test<ul>
+<li>Covered logic (File name generator, etc)</li>
+<li>By JUnit in Android</li>
+</ul>
+</li>
+<li>[Mid level] Integration test<ul>
+<li>Internal sequence between classes</li>
+<li>By Instrumented test in Android, etc</li>
+</ul>
+</li>
+<li>[High level] UI layer<ul>
+<li>User action/Non functional requirement</li>
+<li>(Android) By Appium, Uiautomator, Espresso, etc</li>
+</ul>
+</li>
+</ol>
+</li>
+<li>Others<ul>
+<li>[Reliability] Monkey(Android)</li>
+</ul>
+</li>
+</ul>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle" style="display:block;text-align:center" data-ad-layout="in-article" data-ad-format="fluid" data-ad-client="ca-pub-9552058847412056" data-ad-slot="7810355979"></ins>
+<script>(adsbygoogle=window.adsbygoogle||[]).push({})</script>
 </div>
-</article>
-<article class="archive-article archive-type-post">
-<div class="archive-article-inner">
-<header class="archive-article-header">
-<a href="/20210309_appium-azure/" class="archive-article-date">
-<time class="dt-published" datetime="2021-03-08T15:00:00.000Z" itemprop="datePublished">3月 9</time>
+<footer class="article-footer">
+<a data-url="https://ki4070ma.com/20210322-study-sw-test-2/" data-id="ckmkk1ywb0019vtd1awmv3k9b" data-title="Software testing own notes" class="article-share-link">共有</a>
+<ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/SoftwareTest/" rel="tag">SoftwareTest</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Study/" rel="tag">Study</a></li></ul>
+</footer>
+</div>
+<nav id="article-nav">
+<a href="/20210309_appium-azure/" id="article-nav-older" class="article-nav-link-wrap">
+<strong class="article-nav-caption">前の記事</strong>
+<div class="article-nav-title">Azure pipeline で Appium を走らせて, Android, iOS のテストを走らせる</div>
 </a>
-<h1 itemprop="name">
-<a class="archive-article-title" href="/20210309_appium-azure/">Azure pipeline で Appium を走らせて, Android, iOS のテストを走らせる</a>
-</h1>
-</header>
-</div>
+</nav>
 </article>
-<article class="archive-article archive-type-post">
-<div class="archive-article-inner">
-<header class="archive-article-header">
-<a href="/20210308_WFH2/" class="archive-article-date">
-<time class="dt-published" datetime="2021-03-07T15:00:00.000Z" itemprop="datePublished">3月 8</time>
-</a>
-<h1 itemprop="name">
-<a class="archive-article-title" href="/20210308_WFH2/">リモートワークのために購入したもの2</a>
-</h1>
-</header>
-</div>
-</article>
-<article class="archive-article archive-type-post">
-<div class="archive-article-inner">
-<header class="archive-article-header">
-<a href="/20210307_Hexo1/" class="archive-article-date">
-<time class="dt-published" datetime="2021-03-06T15:00:00.000Z" itemprop="datePublished">3月 7</time>
-</a>
-<h1 itemprop="name">
-<a class="archive-article-title" href="/20210307_Hexo1/">Hexoのことはじめ (Hexo1)</a>
-</h1>
-</header>
-</div>
-</article>
-<article class="archive-article archive-type-post">
-<div class="archive-article-inner">
-<header class="archive-article-header">
-<a href="/20210306_WFH1/" class="archive-article-date">
-<time class="dt-published" datetime="2021-03-05T15:00:00.000Z" itemprop="datePublished">3月 6</time>
-</a>
-<h1 itemprop="name">
-<a class="archive-article-title" href="/20210306_WFH1/">リモートワークのために購入したもの1</a>
-</h1>
-</header>
-</div>
-</article>
-<article class="archive-article archive-type-post">
-<div class="archive-article-inner">
-<header class="archive-article-header">
-<a href="/20210305_appium-wait-for-el/" class="archive-article-date">
-<time class="dt-published" datetime="2021-03-04T15:00:00.000Z" itemprop="datePublished">3月 5</time>
-</a>
-<h1 itemprop="name">
-<a class="archive-article-title" href="/20210305_appium-wait-for-el/">Appiumで特定のelementが表示されるまで待つ</a>
-</h1>
-</header>
-</div>
-</article>
-<article class="archive-article archive-type-post">
-<div class="archive-article-inner">
-<header class="archive-article-header">
-<a href="/20210304_tuwejia/" class="archive-article-date">
-<time class="dt-published" datetime="2021-03-03T15:00:00.000Z" itemprop="datePublished">3月 4</time>
-</a>
-<h1 itemprop="name">
-<a class="archive-article-title" href="/20210304_tuwejia/">Mac用USB Type C Hub (4in1)</a>
-</h1>
-</header>
-</div>
-</article>
-<article class="archive-article archive-type-post">
-<div class="archive-article-inner">
-<header class="archive-article-header">
-<a href="/20210303_appium-screen-record/" class="archive-article-date">
-<time class="dt-published" datetime="2021-03-02T15:00:00.000Z" itemprop="datePublished">3月 3</time>
-</a>
-<h1 itemprop="name">
-<a class="archive-article-title" href="/20210303_appium-screen-record/">Appium で screen recordを使用する</a>
-</h1>
-</header>
-</div>
-</article>
-<article class="archive-article archive-type-post">
-<div class="archive-article-inner">
-<header class="archive-article-header">
-<a href="/20210302_Hexo2/" class="archive-article-date">
-<time class="dt-published" datetime="2021-03-01T15:00:00.000Z" itemprop="datePublished">3月 2</time>
-</a>
-<h1 itemprop="name">
-<a class="archive-article-title" href="/20210302_Hexo2/">Hexo で Amazon associate (Hexo2)</a>
-</h1>
-</header>
-</div>
-</article>
-</div></section>
 </section>
 <aside id="sidebar">
 <div class="widget-wrap">
