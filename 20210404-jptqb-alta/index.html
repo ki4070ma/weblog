@@ -4,21 +4,20 @@
 <meta charset="utf-8">
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-JWTW1CHBL8"></script>
 <script>function gtag(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],gtag("js",new Date),gtag("config","G-JWTW1CHBL8")</script>
-<title>Appiumで特定のelementが表示されるまで待つ | ki4070maのメモ帳</title>
+<title>JSTQB ALTA 学習方法 | ki4070maのメモ帳</title>
 <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
-<meta name="description" content="必要な背景 Sample code    必要な背景以下のようなケースで役に立ちます  (特にAndroid) 端末の動作が遅い時などに画面遷移で時間がかかるとき ネットワークの状態によって待ちが発生するとき  Azure pipeline上のAndroid emulatorでAppiumを動作させるときに活躍しました Sample code以前自身で作成したコードです (contribut">
+<meta name="description" content="2021&#x2F;02&#x2F;13 に受検した JSTQB ALTA に受かっていました.去年も受けて落ちたので 2 回目の受検でした. 勉強方法をメモとして残します. 2020&#x2F;02 に受けたとき (メイン) JSTQB Advanced Level テストアナリスト問題集 https:&#x2F;&#x2F;learner-jstqb-al.booth.pm&#x2F;items&#x2F;1328072   (少々) Advanced Leve">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Appiumで特定のelementが表示されるまで待つ">
-<meta property="og:url" content="https://ki4070ma.com/20210305_appium-wait-for-el/index.html">
+<meta property="og:title" content="JSTQB ALTA 学習方法">
+<meta property="og:url" content="https://ki4070ma.com/20210404-jptqb-alta/index.html">
 <meta property="og:site_name" content="ki4070maのメモ帳">
-<meta property="og:description" content="必要な背景 Sample code    必要な背景以下のようなケースで役に立ちます  (特にAndroid) 端末の動作が遅い時などに画面遷移で時間がかかるとき ネットワークの状態によって待ちが発生するとき  Azure pipeline上のAndroid emulatorでAppiumを動作させるときに活躍しました Sample code以前自身で作成したコードです (contribut">
+<meta property="og:description" content="2021&#x2F;02&#x2F;13 に受検した JSTQB ALTA に受かっていました.去年も受けて落ちたので 2 回目の受検でした. 勉強方法をメモとして残します. 2020&#x2F;02 に受けたとき (メイン) JSTQB Advanced Level テストアナリスト問題集 https:&#x2F;&#x2F;learner-jstqb-al.booth.pm&#x2F;items&#x2F;1328072   (少々) Advanced Leve">
 <meta property="og:locale" content="ja_JP">
-<meta property="article:published_time" content="2021-03-04T15:00:00.000Z">
-<meta property="article:modified_time" content="2021-03-08T17:03:05.343Z">
+<meta property="article:published_time" content="2021-04-03T15:00:00.000Z">
+<meta property="article:modified_time" content="2021-04-04T07:55:47.876Z">
 <meta property="article:author" content="Atsushi Mori">
-<meta property="article:tag" content="Python">
-<meta property="article:tag" content="Technology">
-<meta property="article:tag" content="Appium">
+<meta property="article:tag" content="SoftwareTest">
+<meta property="article:tag" content="JSTQB">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:creator" content="@https:&#x2F;&#x2F;twitter.com&#x2F;atsushi0521">
 <link rel="alternate" href="/atom.xml" title="ki4070maのメモ帳" type="application/atom+xml">
@@ -59,52 +58,57 @@
 </header>
 <script data-ad-client="ca-pub-9552058847412056" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 <div class="outer">
-<section id="main"><article id="post-20210305_appium-wait-for-el" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+<section id="main"><article id="post-20210404-jptqb-alta" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
 <div class="article-meta">
-<a href="/20210305_appium-wait-for-el/" class="article-date">
-<time class="dt-published" datetime="2021-03-04T15:00:00.000Z" itemprop="datePublished">2021-03-05</time>
+<a href="/20210404-jptqb-alta/" class="article-date">
+<time class="dt-published" datetime="2021-04-03T15:00:00.000Z" itemprop="datePublished">2021-04-04</time>
 </a>
 </div>
 <div class="article-inner">
 <header class="article-header">
 <h1 class="p-name article-title" itemprop="headline name">
-Appiumで特定のelementが表示されるまで待つ
+JSTQB ALTA 学習方法
 </h1>
 </header>
 <div class="e-content article-entry" itemprop="articleBody">
-<ul>
-<li><a href="#%E5%BF%85%E8%A6%81%E3%81%AA%E8%83%8C%E6%99%AF">必要な背景</a></li>
-<li><a href="#sample-code">Sample code</a></li>
+<p>2021/02/13 に受検した JSTQB ALTA に受かっていました.<br>去年も受けて落ちたので 2 回目の受検でした.</p>
+<p>勉強方法をメモとして残します.</p>
+<h2><span id="202002-に受けたとき">2020/02 に受けたとき</span></h2><ol>
+<li>(メイン) JSTQB Advanced Level テストアナリスト問題集<ul>
+<li><a target="_blank" rel="noopener" href="https://learner-jstqb-al.booth.pm/items/1328072">https://learner-jstqb-al.booth.pm/items/1328072</a></li>
 </ul>
-<h1><span id="必要な背景">必要な背景</span></h1><p>以下のようなケースで役に立ちます</p>
-<ul>
-<li>(特にAndroid) 端末の動作が遅い時などに画面遷移で時間がかかるとき</li>
-<li>ネットワークの状態によって待ちが発生するとき</li>
+</li>
+<li>(少々) Advanced Level シラバス日本語版 テストアナリスト<ul>
+<li><a target="_blank" rel="noopener" href="http://jstqb.jp/dl/JSTQB-Syllabus.Advanced_TA_Version2012.J01.pdf">http://jstqb.jp/dl/JSTQB-Syllabus.Advanced_TA_Version2012.J01.pdf</a></li>
 </ul>
-<p>Azure pipeline上のAndroid emulatorでAppiumを動作させるときに活躍しました</p>
-<h1><span id="sample-code">Sample code</span></h1><p>以前自身で作成したコードです (contribution)<br><a target="_blank" rel="noopener" href="https://github.com/appium/python-client/blob/master/test/functional/test_helper.py">https://github.com/appium/python-client/blob/master/test/functional/test_helper.py</a></p>
-<figure class="highlight py"><figcaption><span>test_helper.py</span><a target="_blank" rel="noopener" href="https://github.com/appium/python-client/blob/66208fdbbc8f0a8b0e90376b404135b57e797fa5/test/functional/test_helper.py">link</a></figcaption><table><tr><td class="gutter"><pre><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">wait_for_element</span>(<span class="params">driver: <span class="string">&#x27;WebDriver&#x27;</span>, locator: <span class="built_in">str</span>, value: <span class="built_in">str</span>, timeout_sec: <span class="built_in">float</span> = <span class="number">10</span></span>) -&gt; &#x27;WebElement&#x27;:</span></span><br><span class="line">    <span class="string">&quot;&quot;&quot;Wait until the element located</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">    Args:</span></span><br><span class="line"><span class="string">        driver: WebDriver instance</span></span><br><span class="line"><span class="string">        locator: Locator like WebDriver, Mobile JSON Wire Protocol</span></span><br><span class="line"><span class="string">            (e.g. `appium.webdriver.common.mobileby.MobileBy.ACCESSIBILITY_ID`)</span></span><br><span class="line"><span class="string">        value: Query value to locator</span></span><br><span class="line"><span class="string">        timeout_sec: Maximum time to wait the element. If time is over, `TimeoutException` is thrown</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">    Raises:</span></span><br><span class="line"><span class="string">        `selenium.common.exceptions.TimeoutException`</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">    Returns:</span></span><br><span class="line"><span class="string">        The found WebElement</span></span><br><span class="line"><span class="string">    &quot;&quot;&quot;</span></span><br><span class="line">    <span class="keyword">return</span> WebDriverWait(driver, timeout_sec).until(EC.presence_of_element_located((locator, value)))</span><br></pre></td></tr></table></figure>
-<p>上記の <code>wait_for_element</code> が定義されている状態で, 以下のコードで動作します</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># &#x27;Bouncing Balls&#x27; というテキストを持つelementを 10 秒のタイムアウトで待つ処理. 返り値は検出したelement.</span></span><br><span class="line">el = wait_for_element(self.driver, MobileBy.ACCESSIBILITY_ID, <span class="string">&#x27;Bouncing Balls&#x27;</span>)</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<p>問題集を一通り解いて, 解説を見て理解する, 時折シラバスを確認, していました.<br>このときはシラバスの読み込みが不足していたと思います<br>テストを受けた感触としては全く分からないのはなかったけど迷ったものがちらほらあったな, という感じです</p>
+<h2><span id="202102-に受けたとき">2021/02 に受けたとき</span></h2><ol>
+<li>(メイン) JSTQB Advanced Level テストアナリスト問題集<ul>
+<li><a target="_blank" rel="noopener" href="https://learner-jstqb-al.booth.pm/items/1328072">https://learner-jstqb-al.booth.pm/items/1328072</a></li>
+</ul>
+</li>
+<li>(一通り目を通す) Advanced Level シラバス日本語版 テストアナリスト<ul>
+<li><a target="_blank" rel="noopener" href="http://jstqb.jp/dl/JSTQB-Syllabus.Advanced_TA_Version2012.J01.pdf">http://jstqb.jp/dl/JSTQB-Syllabus.Advanced_TA_Version2012.J01.pdf</a></li>
+</ul>
+</li>
+</ol>
+<p>2020の受検のときと同じように, 問題集を解きました<br>解答の解説と一緒にシラバスを確認しました (問題集以外の問題が出されたときを想定しつつ確認)</p>
+<p>2020, 2021を通して見ても, 問題に慣れるために問題集はとても役立ちました<br>twitter を見ていると他の参考書が役に立ったという方もいらっしゃいました</p>
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 <ins class="adsbygoogle" style="display:block;text-align:center" data-ad-layout="in-article" data-ad-format="fluid" data-ad-client="ca-pub-9552058847412056" data-ad-slot="7810355979"></ins>
 <script>(adsbygoogle=window.adsbygoogle||[]).push({})</script>
 </div>
 <footer class="article-footer">
-<a data-url="https://ki4070ma.com/20210305_appium-wait-for-el/" data-id="ckn2vg7na0010cvd1a2akajoj" data-title="Appiumで特定のelementが表示されるまで待つ" class="article-share-link">共有</a>
-<ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Appium/" rel="tag">Appium</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Python/" rel="tag">Python</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Technology/" rel="tag">Technology</a></li></ul>
+<a data-url="https://ki4070ma.com/20210404-jptqb-alta/" data-id="ckn2vg7nc001acvd1gwpzfz2o" data-title="JSTQB ALTA 学習方法" class="article-share-link">共有</a>
+<ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/JSTQB/" rel="tag">JSTQB</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/SoftwareTest/" rel="tag">SoftwareTest</a></li></ul>
 </footer>
 </div>
 <nav id="article-nav">
-<a href="/20210306_WFH1/" id="article-nav-newer" class="article-nav-link-wrap">
-<strong class="article-nav-caption">次の記事</strong>
-<div class="article-nav-title">
-リモートワークのために購入したもの1
-</div>
-</a>
-<a href="/20210304_tuwejia/" id="article-nav-older" class="article-nav-link-wrap">
+<a href="/20210322-study-sw-test-2/" id="article-nav-older" class="article-nav-link-wrap">
 <strong class="article-nav-caption">前の記事</strong>
-<div class="article-nav-title">Mac用USB Type C Hub (4in1)</div>
+<div class="article-nav-title">Software testing own notes</div>
 </a>
 </nav>
 </article>

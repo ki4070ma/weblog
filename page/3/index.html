@@ -112,8 +112,268 @@
 <script>(adsbygoogle=window.adsbygoogle||[]).push({})</script>
 </div>
 <footer class="article-footer">
-<a data-url="https://ki4070ma.com/20181226_ffmpeg/" data-id="ckmkk1yw3000fvtd1e9oh4cym" data-title="ffmpeg memo" class="article-share-link">共有</a>
+<a data-url="https://ki4070ma.com/20181226_ffmpeg/" data-id="ckn2vg7n30008cvd171d37kxt" data-title="ffmpeg memo" class="article-share-link">共有</a>
 <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Technology/" rel="tag">Technology</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/ffmpeg/" rel="tag">ffmpeg</a></li></ul>
+</footer>
+</div>
+</article>
+<article id="post-20181226_python-lib" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+<div class="article-meta">
+<a href="/20181226_python-lib/" class="article-date">
+<time class="dt-published" datetime="2018-12-25T15:00:00.000Z" itemprop="datePublished">2018-12-26</time>
+</a>
+</div>
+<div class="article-inner">
+<header class="article-header">
+<h1 itemprop="name">
+<a class="p-name article-title" href="/20181226_python-lib/">PythonのLibraryで使用したことがあるもの</a>
+</h1>
+</header>
+<div class="e-content article-entry" itemprop="articleBody">
+<ul>
+<li><a href="#%E3%81%A9%E3%82%93%E3%81%AA%E3%83%A9%E3%82%A4%E3%83%96%E3%83%A9%E3%83%AA%E3%81%9F%E3%81%A1%E3%81%8C%E3%81%82%E3%82%8B%E3%81%8B">どんなライブラリたちがあるか</a></li>
+<li><a href="#oss%E3%83%A9%E3%82%A4%E3%83%96%E3%83%A9%E3%83%AA%E4%B8%80%E8%A6%A7">OSSライブラリ一覧</a><ul>
+<li><a href="#test-framework">Test framework</a></li>
+<li><a href="#coding-guideline%E3%81%AA%E3%81%A9%E3%81%AE%E9%9D%99%E7%9A%84%E8%A7%A3%E6%9E%90">Coding guidelineなどの静的解析</a></li>
+<li><a href="#%E3%83%84%E3%83%BC%E3%83%AB">ツール</a></li>
+</ul>
+</li>
+<li><a href="#%E7%B5%84%E3%81%BF%E8%BE%BC%E3%81%BF">組み込み</a></li>
+</ul>
+<p>使用したことがあるlibraryに加えて一言</p>
+<h1><span id="どんなライブラリたちがあるか">どんなライブラリたちがあるか</span></h1><ul>
+<li><a target="_blank" rel="noopener" href="https://github.com/vinta/awesome-python">https://github.com/vinta/awesome-python</a><ul>
+<li>awesome系はよくまとまっています</li>
+</ul>
+</li>
+</ul>
+<h1><span id="ossライブラリ一覧">OSSライブラリ一覧</span></h1><ul>
+<li>ansible<ul>
+<li><a target="_blank" rel="noopener" href="https://github.com/ansible/ansible">https://github.com/ansible/ansible</a></li>
+<li>構成管理ツール</li>
+<li>[メモ] fabricよりも自由度がないイメージ. ただ自由度がないということがメンテナンス的にメリット, とコメントしている方がいた. あまりきちんと使っていない. github上のstarはfabricより多い</li>
+</ul>
+</li>
+<li>Fabric<ul>
+<li><a target="_blank" rel="noopener" href="https://github.com/fabric/fabric">https://github.com/fabric/fabric</a></li>
+<li>構成管理ツール</li>
+<li>[メモ] ansibleよりも何でもできる(イメージ). ただ, 何でもできるが故にスクリプトのメンテナンスはやりづらくなる印象. 出来る限りansibleで対応するほうがいいのか…</li>
+</ul>
+</li>
+<li>Appium-Python-Client<ul>
+<li><a target="_blank" rel="noopener" href="https://github.com/appium/python-client">https://github.com/appium/python-client</a></li>
+<li>[メモ] appiumのテストスクリプトをpythonで書くためのclient. appiumはいろんな言語で書けるから素敵.</li>
+</ul>
+</li>
+<li>beautifulsoup4<ul>
+<li><a target="_blank" rel="noopener" href="https://pypi.org/project/beautifulsoup4/">https://pypi.org/project/beautifulsoup4/</a></li>
+<li>[メモ] “Beautiful Soup is a library that makes it easy to scrape information from web pages.”です. htmlのファイルから取り出したい要素を特定して抜き出します.</li>
+</ul>
+</li>
+<li>chainer<ul>
+<li><a target="_blank" rel="noopener" href="https://github.com/chainer/chainer">https://github.com/chainer/chainer</a></li>
+<li>[メモ] Deep learningですね. まだ使ってないです…使います</li>
+</ul>
+</li>
+<li>Jinja2<ul>
+<li><a target="_blank" rel="noopener" href="https://github.com/pallets/jinja">https://github.com/pallets/jinja</a></li>
+<li>[メモ] Python用のテンプレートエンジン. Fabricでテンプレをagentにアップロードするときに使用した. こんな便利なものもあるものなんだ</li>
+</ul>
+</li>
+<li>matplotlib<ul>
+<li><a target="_blank" rel="noopener" href="https://github.com/matplotlib/matplotlib">https://github.com/matplotlib/matplotlib</a></li>
+<li>[メモ] グラフが書けます. (あまり凝ったグラフは書いてませんが)</li>
+</ul>
+</li>
+<li>mysql-connector-python<ul>
+<li><a target="_blank" rel="noopener" href="https://pypi.org/project/mysql-connector-python/">https://pypi.org/project/mysql-connector-python/</a></li>
+<li>[メモ] PythonからMySQLのDBを操作する</li>
+</ul>
+</li>
+<li>netifaces<ul>
+<li><a target="_blank" rel="noopener" href="https://github.com/al45tair/netifaces">https://github.com/al45tair/netifaces</a></li>
+<li>[メモ] pythonのコードからNICやIP addrが取得したいときに使う</li>
+</ul>
+</li>
+<li>numpy<ul>
+<li><a target="_blank" rel="noopener" href="https://github.com/numpy/numpy">https://github.com/numpy/numpy</a></li>
+<li>[メモ] 行列やらなんやら. RGBの配列をOpenCVを使って画像生成など</li>
+</ul>
+</li>
+<li>opencv<ul>
+<li><a target="_blank" rel="noopener" href="https://github.com/skvark/opencv-python">https://github.com/skvark/opencv-python</a></li>
+<li><a target="_blank" rel="noopener" href="https://pypi.org/project/opencv-python/">https://pypi.org/project/opencv-python/</a></li>
+<li>[メモ] 説明不要な画像処理ライブラリのOpenCV. 画像処理をやっている人はみな知っているのでは. webcamから入ってくる画像に対して処理をしたり, オプティカルフローで遊んだり, etc そんなにすごい使い方はしてません.(きっぱり)</li>
+</ul>
+</li>
+<li>ouimeaux<ul>
+<li><a target="_blank" rel="noopener" href="https://github.com/iancmcc/ouimeaux">https://github.com/iancmcc/ouimeaux</a></li>
+<li>[メモ] “Python API to Belkin WeMo devices”です. これがあればコマンドラインやpythonのプログラムから機器を操作できます.</li>
+</ul>
+</li>
+<li>pandas<ul>
+<li><a target="_blank" rel="noopener" href="https://github.com/pandas-dev/pandas">https://github.com/pandas-dev/pandas</a></li>
+<li>[メモ] “Flexible and powerful data analysis”です. あまりたくさん使ったわけではないが, Excel上で出来ることを変わりにやってた.</li>
+</ul>
+</li>
+<li>pit<ul>
+<li><a target="_blank" rel="noopener" href="https://github.com/yoshiori/pit">https://github.com/yoshiori/pit</a></li>
+<li>[メモ] ID / Passwordを直接コードに書かなくていいように</li>
+</ul>
+</li>
+<li>pyalsaaudio<ul>
+<li><a target="_blank" rel="noopener" href="https://github.com/larsimmisch/pyalsaaudio/">https://github.com/larsimmisch/pyalsaaudio/</a></li>
+<li>[メモ] “ALSA wrappers for Python”, that’s it</li>
+</ul>
+</li>
+<li>pyserial<ul>
+<li><a target="_blank" rel="noopener" href="https://pythonhosted.org/pyserial/">https://pythonhosted.org/pyserial/</a></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/pyserial/">https://github.com/pyserial/</a></li>
+<li>[メモ] Serial port経由のデータのread/writeを行うときに使用した<ul>
+<li><a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Serial_port">https://en.wikipedia.org/wiki/Serial_port</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>TestLink-API-Python-client<ul>
+<li><a target="_blank" rel="noopener" href="https://github.com/lczub/TestLink-API-Python-client">https://github.com/lczub/TestLink-API-Python-client</a></li>
+<li>[メモ] 自分で立てたTestLinkサーバからデータを取得するために使用した</li>
+</ul>
+</li>
+</ul>
+<h2><span id="test-framework">Test framework</span></h2><ul>
+<li>nose<ul>
+<li><a target="_blank" rel="noopener" href="https://github.com/nose-devs/nose">https://github.com/nose-devs/nose</a></li>
+<li>[メモ] pytestより人気らしい. githubのstartは1/3くらい. pytestって名前が強いよね<ul>
+<li><a target="_blank" rel="noopener" href="https://sekailab.com/wp/2016/07/18/python-test/#pytest_vs_nose_vs_unittest">https://sekailab.com/wp/2016/07/18/python-test/#pytest_vs_nose_vs_unittest</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>pytest<ul>
+<li><a target="_blank" rel="noopener" href="https://github.com/pytest-dev/pytest">https://github.com/pytest-dev/pytest</a></li>
+<li>[メモ] テストを走らせる場合はこれ, らしい. 少しのメリットしか享受できていないので, より把握してメリットを享受する</li>
+</ul>
+</li>
+</ul>
+<h2><span id="coding-guidelineなどの静的解析">Coding guidelineなどの静的解析</span></h2><ul>
+<li>pyflakes<ul>
+<li><a target="_blank" rel="noopener" href="https://github.com/PyCQA/pyflakes">https://github.com/PyCQA/pyflakes</a></li>
+<li>[メモ] </li>
+</ul>
+</li>
+<li>autopep8<ul>
+<li><a target="_blank" rel="noopener" href="https://github.com/hhatto/autopep8">https://github.com/hhatto/autopep8</a></li>
+<li>[メモ] “A tool that automatically formats Python code to conform to the PEP 8 style guide.”, これに尽きます. 改行が想定していないところでも入るのがなんとも.</li>
+</ul>
+</li>
+<li>pylint<ul>
+<li><a target="_blank" rel="noopener" href="https://github.com/PyCQA/pylint">https://github.com/PyCQA/pylint</a></li>
+<li>[メモ] 言わずと知れたlinter</li>
+</ul>
+</li>
+</ul>
+<h2><span id="ツール">ツール</span></h2><ul>
+<li>gprof2dot<ul>
+<li><a target="_blank" rel="noopener" href="https://github.com/jrfonseca/gprof2dot">https://github.com/jrfonseca/gprof2dot</a></li>
+<li>[メモ] 自身が作成したプログラムのパフォーマンスを計測したときに使用した, profileのファイルを可視化してくれるツール</li>
+</ul>
+</li>
+</ul>
+<h1><span id="組み込み">組み込み</span></h1><ul>
+<li>argparse<ul>
+<li><a target="_blank" rel="noopener" href="https://docs.python.jp/3/library/argparse.html">https://docs.python.jp/3/library/argparse.html</a></li>
+<li>[メモ] 引数をいろいろ設定したいときに使う. これは便利</li>
+</ul>
+</li>
+<li>pprint<ul>
+<li><a target="_blank" rel="noopener" href="https://docs.python.jp/3/library/pprint.html">https://docs.python.jp/3/library/pprint.html</a></li>
+<li>[メモ] 込み入った辞書型を綺麗に出力するにはこれ</li>
+</ul>
+</li>
+<li>subprocess<ul>
+<li><a target="_blank" rel="noopener" href="https://docs.python.org/ja/3/library/subprocess.html">https://docs.python.org/ja/3/library/subprocess.html</a></li>
+<li>[メモ] 困ったらなんでもこれ使っていた. が, まず組み込みAPIに無いかを探しましょう(lsじゃなくてglobとか)</li>
+</ul>
+</li>
+<li>glob<ul>
+<li><a target="_blank" rel="noopener" href="https://docs.python.jp/3/library/glob.html">https://docs.python.jp/3/library/glob.html</a></li>
+<li>[メモ] subprocessでls, ではなくこれを使いましょう</li>
+</ul>
+</li>
+<li>pickle<ul>
+<li><a target="_blank" rel="noopener" href="https://docs.python.jp/3/library/pickle.html">https://docs.python.jp/3/library/pickle.html</a></li>
+<li>[メモ] python objectをファイルへ出力. 永続化したいものとか.</li>
+</ul>
+</li>
+</ul>
+<p>ref: <a target="_blank" rel="noopener" href="https://qiita.com/atsushi0521/items/13972fa54039854027e1">https://qiita.com/atsushi0521/items/13972fa54039854027e1</a></p>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle" style="display:block;text-align:center" data-ad-layout="in-article" data-ad-format="fluid" data-ad-client="ca-pub-9552058847412056" data-ad-slot="7810355979"></ins>
+<script>(adsbygoogle=window.adsbygoogle||[]).push({})</script>
+</div>
+<footer class="article-footer">
+<a data-url="https://ki4070ma.com/20181226_python-lib/" data-id="ckn2vg7n4000acvd18pzffpfw" data-title="PythonのLibraryで使用したことがあるもの" class="article-share-link">共有</a>
+<ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Python/" rel="tag">Python</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Technology/" rel="tag">Technology</a></li></ul>
+</footer>
+</div>
+</article>
+<article id="post-20181217_circleci" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+<div class="article-meta">
+<a href="/20181217_circleci/" class="article-date">
+<time class="dt-published" datetime="2018-12-16T15:00:00.000Z" itemprop="datePublished">2018-12-17</time>
+</a>
+</div>
+<div class="article-inner">
+<header class="article-header">
+<h1 itemprop="name">
+<a class="p-name article-title" href="/20181217_circleci/">circleci memo</a>
+</h1>
+</header>
+<div class="e-content article-entry" itemprop="articleBody">
+<ul>
+<li><a href="#%E3%82%BB%E3%83%83%E3%83%88%E3%82%A2%E3%83%83%E3%83%97">セットアップ</a></li>
+<li><a href="#%E3%83%AD%E3%83%BC%E3%82%AB%E3%83%AB%E3%81%A7circleci%E3%81%AE%E3%83%93%E3%83%AB%E3%83%89%E3%82%92%E5%AE%9F%E8%A1%8C%E3%81%A7%E3%81%8D%E3%82%8B%E3%82%88%E3%81%86%E3%81%AB%E3%81%99%E3%82%8B">ローカルでcircleciのビルドを実行できるようにする</a></li>
+<li><a href="#circleciconfigyml%E3%82%92%E4%BD%9C%E6%88%90%E3%81%99%E3%82%8B">circleci/config.ymlを作成する</a></li>
+<li><a href="#github%E3%81%ABcircle-ci-status%E3%83%90%E3%83%83%E3%82%B8%E3%82%92%E8%B2%BC%E3%82%8A%E4%BB%98%E3%81%91%E3%82%8B">GithubにCircle CI statusバッジを貼り付ける</a></li>
+<li><a href="#%E5%8F%82%E8%80%83">参考</a></li>
+</ul>
+<h1><span id="セットアップ">セットアップ</span></h1><ul>
+<li><a target="_blank" rel="noopener" href="https://github.com/">Github</a>でプロジェクトを作成する</li>
+<li><a target="_blank" rel="noopener" href="https://circleci.com/">CircleCI</a>で対象のプロジェクトに対してCIを有効化する</li>
+</ul>
+<h1><span id="ローカルでcircleciのビルドを実行できるようにする">ローカルでcircleciのビルドを実行できるようにする</span></h1><ul>
+<li>[目的] ymlを作成してすぐ試すというサイクルを短くするため</li>
+<li>[手順]<ol>
+<li>Dockerをインストール (<a target="_blank" rel="noopener" href="https://docs.docker.com/docker-for-mac/">公式 Docker for mac</a>)</li>
+<li>Circleci-cliをインストール<ul>
+<li>$brew install circleci</li>
+</ul>
+</li>
+</ol>
+</li>
+</ul>
+<h1><span id="circleciconfigymlを作成する">circleci/config.ymlを作成する</span></h1><ul>
+<li>自分が使用する言語でHello worldするconfig.ymlを書くと吉</li>
+<li>例<ul>
+<li><a target="_blank" rel="noopener" href="https://github.com/ki4070ma/unittest/blob/master/.circleci/config.yml">https://github.com/ki4070ma/unittest/blob/master/.circleci/config.yml</a></li>
+</ul>
+</li>
+</ul>
+<h1><span id="githubにcircle-ci-statusバッジを貼り付ける">GithubにCircle CI statusバッジを貼り付ける</span></h1><ul>
+<li><a target="_blank" rel="noopener" href="https://qiita.com/Hanocha/items/8ad74258eb43d0959590">githubでREADME.mdにCircleCIのバッジを表示する</a></li>
+</ul>
+<h1><span id="参考">参考</span></h1><ul>
+<li><a target="_blank" rel="noopener" href="https://qiita.com/selmertsx/items/45bd672c2c8ddab1981b">CircleCI 2.0 をlocalで動かす</a></li>
+</ul>
+<p>ref: <a target="_blank" rel="noopener" href="https://qiita.com/atsushi0521/items/b335f375550f84fcd1f0">https://qiita.com/atsushi0521/items/b335f375550f84fcd1f0</a></p>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle" style="display:block;text-align:center" data-ad-layout="in-article" data-ad-format="fluid" data-ad-client="ca-pub-9552058847412056" data-ad-slot="7810355979"></ins>
+<script>(adsbygoogle=window.adsbygoogle||[]).push({})</script>
+</div>
+<footer class="article-footer">
+<a data-url="https://ki4070ma.com/20181217_circleci/" data-id="ckn2vg7n20005cvd18wg2ec9k" data-title="circleci memo" class="article-share-link">共有</a>
+<ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/CircleCI/" rel="tag">CircleCI</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Technology/" rel="tag">Technology</a></li></ul>
 </footer>
 </div>
 </article>
@@ -263,67 +523,8 @@
 <script>(adsbygoogle=window.adsbygoogle||[]).push({})</script>
 </div>
 <footer class="article-footer">
-<a data-url="https://ki4070ma.com/20181217_setup-mac/" data-id="ckmkk1yw00004vtd1gfmj4kan" data-title="(自分用メモ) Macを買ってからセットアップするまで" class="article-share-link">共有</a>
+<a data-url="https://ki4070ma.com/20181217_setup-mac/" data-id="ckn2vg7n30007cvd1dy93ej09" data-title="(自分用メモ) Macを買ってからセットアップするまで" class="article-share-link">共有</a>
 <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Mac/" rel="tag">Mac</a></li></ul>
-</footer>
-</div>
-</article>
-<article id="post-20181217_circleci" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-<div class="article-meta">
-<a href="/20181217_circleci/" class="article-date">
-<time class="dt-published" datetime="2018-12-16T15:00:00.000Z" itemprop="datePublished">2018-12-17</time>
-</a>
-</div>
-<div class="article-inner">
-<header class="article-header">
-<h1 itemprop="name">
-<a class="p-name article-title" href="/20181217_circleci/">circleci memo</a>
-</h1>
-</header>
-<div class="e-content article-entry" itemprop="articleBody">
-<ul>
-<li><a href="#%E3%82%BB%E3%83%83%E3%83%88%E3%82%A2%E3%83%83%E3%83%97">セットアップ</a></li>
-<li><a href="#%E3%83%AD%E3%83%BC%E3%82%AB%E3%83%AB%E3%81%A7circleci%E3%81%AE%E3%83%93%E3%83%AB%E3%83%89%E3%82%92%E5%AE%9F%E8%A1%8C%E3%81%A7%E3%81%8D%E3%82%8B%E3%82%88%E3%81%86%E3%81%AB%E3%81%99%E3%82%8B">ローカルでcircleciのビルドを実行できるようにする</a></li>
-<li><a href="#circleciconfigyml%E3%82%92%E4%BD%9C%E6%88%90%E3%81%99%E3%82%8B">circleci/config.ymlを作成する</a></li>
-<li><a href="#github%E3%81%ABcircle-ci-status%E3%83%90%E3%83%83%E3%82%B8%E3%82%92%E8%B2%BC%E3%82%8A%E4%BB%98%E3%81%91%E3%82%8B">GithubにCircle CI statusバッジを貼り付ける</a></li>
-<li><a href="#%E5%8F%82%E8%80%83">参考</a></li>
-</ul>
-<h1><span id="セットアップ">セットアップ</span></h1><ul>
-<li><a target="_blank" rel="noopener" href="https://github.com/">Github</a>でプロジェクトを作成する</li>
-<li><a target="_blank" rel="noopener" href="https://circleci.com/">CircleCI</a>で対象のプロジェクトに対してCIを有効化する</li>
-</ul>
-<h1><span id="ローカルでcircleciのビルドを実行できるようにする">ローカルでcircleciのビルドを実行できるようにする</span></h1><ul>
-<li>[目的] ymlを作成してすぐ試すというサイクルを短くするため</li>
-<li>[手順]<ol>
-<li>Dockerをインストール (<a target="_blank" rel="noopener" href="https://docs.docker.com/docker-for-mac/">公式 Docker for mac</a>)</li>
-<li>Circleci-cliをインストール<ul>
-<li>$brew install circleci</li>
-</ul>
-</li>
-</ol>
-</li>
-</ul>
-<h1><span id="circleciconfigymlを作成する">circleci/config.ymlを作成する</span></h1><ul>
-<li>自分が使用する言語でHello worldするconfig.ymlを書くと吉</li>
-<li>例<ul>
-<li><a target="_blank" rel="noopener" href="https://github.com/ki4070ma/unittest/blob/master/.circleci/config.yml">https://github.com/ki4070ma/unittest/blob/master/.circleci/config.yml</a></li>
-</ul>
-</li>
-</ul>
-<h1><span id="githubにcircle-ci-statusバッジを貼り付ける">GithubにCircle CI statusバッジを貼り付ける</span></h1><ul>
-<li><a target="_blank" rel="noopener" href="https://qiita.com/Hanocha/items/8ad74258eb43d0959590">githubでREADME.mdにCircleCIのバッジを表示する</a></li>
-</ul>
-<h1><span id="参考">参考</span></h1><ul>
-<li><a target="_blank" rel="noopener" href="https://qiita.com/selmertsx/items/45bd672c2c8ddab1981b">CircleCI 2.0 をlocalで動かす</a></li>
-</ul>
-<p>ref: <a target="_blank" rel="noopener" href="https://qiita.com/atsushi0521/items/b335f375550f84fcd1f0">https://qiita.com/atsushi0521/items/b335f375550f84fcd1f0</a></p>
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<ins class="adsbygoogle" style="display:block;text-align:center" data-ad-layout="in-article" data-ad-format="fluid" data-ad-client="ca-pub-9552058847412056" data-ad-slot="7810355979"></ins>
-<script>(adsbygoogle=window.adsbygoogle||[]).push({})</script>
-</div>
-<footer class="article-footer">
-<a data-url="https://ki4070ma.com/20181217_circleci/" data-id="ckmkk1yw10007vtd11xuj0c3o" data-title="circleci memo" class="article-share-link">共有</a>
-<ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/CircleCI/" rel="tag">CircleCI</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Technology/" rel="tag">Technology</a></li></ul>
 </footer>
 </div>
 </article>
@@ -373,7 +574,7 @@
 <script>(adsbygoogle=window.adsbygoogle||[]).push({})</script>
 </div>
 <footer class="article-footer">
-<a data-url="https://ki4070ma.com/20181216_how-to-learn-coding/" data-id="ckmkk1yw00005vtd1asex975l" data-title="プログラミングの勉強法" class="article-share-link">共有</a>
+<a data-url="https://ki4070ma.com/20181216_how-to-learn-coding/" data-id="ckn2vg7n20004cvd14eflbbz7" data-title="プログラミングの勉強法" class="article-share-link">共有</a>
 <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Programming/" rel="tag">Programming</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Study/" rel="tag">Study</a></li></ul>
 </footer>
 </div>
@@ -437,7 +638,7 @@
 <script>(adsbygoogle=window.adsbygoogle||[]).push({})</script>
 </div>
 <footer class="article-footer">
-<a data-url="https://ki4070ma.com/20181215_ssh-local-network/" data-id="ckmkk1yvz0003vtd15otwdgo3" data-title="ローカルネットワーク内でsshするための設定" class="article-share-link">共有</a>
+<a data-url="https://ki4070ma.com/20181215_ssh-local-network/" data-id="ckn2vg7n20003cvd10pvhhdrv" data-title="ローカルネットワーク内でsshするための設定" class="article-share-link">共有</a>
 <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Technology/" rel="tag">Technology</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/ssh/" rel="tag">ssh</a></li></ul>
 </footer>
 </div>
@@ -497,7 +698,7 @@
 <script>(adsbygoogle=window.adsbygoogle||[]).push({})</script>
 </div>
 <footer class="article-footer">
-<a data-url="https://ki4070ma.com/20180113_wemo-insight/" data-id="ckmkk1yvy0001vtd18grvaklh" data-title="WeMo Insightで現在の消費電力を取得する" class="article-share-link">共有</a>
+<a data-url="https://ki4070ma.com/20180113_wemo-insight/" data-id="ckn2vg7n00001cvd1btdl5j0c" data-title="WeMo Insightで現在の消費電力を取得する" class="article-share-link">共有</a>
 <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Python/" rel="tag">Python</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Technology/" rel="tag">Technology</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/WeMo/" rel="tag">WeMo</a></li></ul>
 </footer>
 </div>
@@ -565,7 +766,7 @@
 <script>(adsbygoogle=window.adsbygoogle||[]).push({})</script>
 </div>
 <footer class="article-footer">
-<a data-url="https://ki4070ma.com/20180104_How-to-use-et/" data-id="ckmkk1yvv0000vtd1dnq3hdyb" data-title="探索的テストの使い方" class="article-share-link">共有</a>
+<a data-url="https://ki4070ma.com/20180104_How-to-use-et/" data-id="ckn2vg7mx0000cvd13lbucegj" data-title="探索的テストの使い方" class="article-share-link">共有</a>
 <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/ExploratoryTest/" rel="tag">ExploratoryTest</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/SoftwareTest/" rel="tag">SoftwareTest</a></li></ul>
 </footer>
 </div>
@@ -594,19 +795,19 @@
 <div class="widget-wrap">
 <h3 class="widget-title">タグ</h3>
 <div class="widget">
-<ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Amazon/" rel="tag">Amazon</a><span class="tag-list-count">5</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Amazon-associate/" rel="tag">Amazon associate</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Android/" rel="tag">Android</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Appium/" rel="tag">Appium</a><span class="tag-list-count">5</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Azure/" rel="tag">Azure</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/BDD/" rel="tag">BDD</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/CircleCI/" rel="tag">CircleCI</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ELK/" rel="tag">ELK</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ExploratoryTest/" rel="tag">ExploratoryTest</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Github/" rel="tag">Github</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Hexo/" rel="tag">Hexo</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Mac/" rel="tag">Mac</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Presentation/" rel="tag">Presentation</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Programming/" rel="tag">Programming</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Python/" rel="tag">Python</a><span class="tag-list-count">7</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Slideshare/" rel="tag">Slideshare</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/SoftwareTest/" rel="tag">SoftwareTest</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Study/" rel="tag">Study</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Technology/" rel="tag">Technology</a><span class="tag-list-count">12</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/WFH/" rel="tag">WFH</a><span class="tag-list-count">4</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/WeMo/" rel="tag">WeMo</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Windows/" rel="tag">Windows</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ffmpeg/" rel="tag">ffmpeg</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/iOS/" rel="tag">iOS</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/macOS/" rel="tag">macOS</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/python/" rel="tag">python</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/selenium/" rel="tag">selenium</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ssh/" rel="tag">ssh</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E3%83%AA%E3%83%A2%E3%83%BC%E3%83%88%E3%83%AF%E3%83%BC%E3%82%AF/" rel="tag">リモートワーク</a><span class="tag-list-count">4</span></li></ul>
+<ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Amazon/" rel="tag">Amazon</a><span class="tag-list-count">5</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Amazon-associate/" rel="tag">Amazon associate</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Android/" rel="tag">Android</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Appium/" rel="tag">Appium</a><span class="tag-list-count">5</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Azure/" rel="tag">Azure</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/BDD/" rel="tag">BDD</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/CircleCI/" rel="tag">CircleCI</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ELK/" rel="tag">ELK</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ExploratoryTest/" rel="tag">ExploratoryTest</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Github/" rel="tag">Github</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Hexo/" rel="tag">Hexo</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/JSTQB/" rel="tag">JSTQB</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Mac/" rel="tag">Mac</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Presentation/" rel="tag">Presentation</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Programming/" rel="tag">Programming</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Python/" rel="tag">Python</a><span class="tag-list-count">7</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Slideshare/" rel="tag">Slideshare</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/SoftwareTest/" rel="tag">SoftwareTest</a><span class="tag-list-count">4</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Study/" rel="tag">Study</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Technology/" rel="tag">Technology</a><span class="tag-list-count">12</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/WFH/" rel="tag">WFH</a><span class="tag-list-count">4</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/WeMo/" rel="tag">WeMo</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Windows/" rel="tag">Windows</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ffmpeg/" rel="tag">ffmpeg</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/iOS/" rel="tag">iOS</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/macOS/" rel="tag">macOS</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/python/" rel="tag">python</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/selenium/" rel="tag">selenium</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ssh/" rel="tag">ssh</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E3%83%AA%E3%83%A2%E3%83%BC%E3%83%88%E3%83%AF%E3%83%BC%E3%82%AF/" rel="tag">リモートワーク</a><span class="tag-list-count">4</span></li></ul>
 </div>
 </div>
 <div class="widget-wrap">
 <h3 class="widget-title">タグクラウド</h3>
 <div class="widget tagcloud">
-<a href="/tags/Amazon/" style="font-size:16px">Amazon</a> <a href="/tags/Amazon-associate/" style="font-size:10px">Amazon associate</a> <a href="/tags/Android/" style="font-size:10px">Android</a> <a href="/tags/Appium/" style="font-size:16px">Appium</a> <a href="/tags/Azure/" style="font-size:10px">Azure</a> <a href="/tags/BDD/" style="font-size:10px">BDD</a> <a href="/tags/CircleCI/" style="font-size:10px">CircleCI</a> <a href="/tags/ELK/" style="font-size:10px">ELK</a> <a href="/tags/ExploratoryTest/" style="font-size:10px">ExploratoryTest</a> <a href="/tags/Github/" style="font-size:10px">Github</a> <a href="/tags/Hexo/" style="font-size:12px">Hexo</a> <a href="/tags/Mac/" style="font-size:12px">Mac</a> <a href="/tags/Presentation/" style="font-size:10px">Presentation</a> <a href="/tags/Programming/" style="font-size:10px">Programming</a> <a href="/tags/Python/" style="font-size:18px">Python</a> <a href="/tags/Slideshare/" style="font-size:10px">Slideshare</a> <a href="/tags/SoftwareTest/" style="font-size:12px">SoftwareTest</a> <a href="/tags/Study/" style="font-size:12px">Study</a> <a href="/tags/Technology/" style="font-size:20px">Technology</a> <a href="/tags/WFH/" style="font-size:14px">WFH</a> <a href="/tags/WeMo/" style="font-size:10px">WeMo</a> <a href="/tags/Windows/" style="font-size:10px">Windows</a> <a href="/tags/ffmpeg/" style="font-size:10px">ffmpeg</a> <a href="/tags/iOS/" style="font-size:10px">iOS</a> <a href="/tags/macOS/" style="font-size:10px">macOS</a> <a href="/tags/python/" style="font-size:10px">python</a> <a href="/tags/selenium/" style="font-size:10px">selenium</a> <a href="/tags/ssh/" style="font-size:10px">ssh</a> <a href="/tags/%E3%83%AA%E3%83%A2%E3%83%BC%E3%83%88%E3%83%AF%E3%83%BC%E3%82%AF/" style="font-size:14px">リモートワーク</a>
+<a href="/tags/Amazon/" style="font-size:16px">Amazon</a> <a href="/tags/Amazon-associate/" style="font-size:10px">Amazon associate</a> <a href="/tags/Android/" style="font-size:10px">Android</a> <a href="/tags/Appium/" style="font-size:16px">Appium</a> <a href="/tags/Azure/" style="font-size:10px">Azure</a> <a href="/tags/BDD/" style="font-size:10px">BDD</a> <a href="/tags/CircleCI/" style="font-size:10px">CircleCI</a> <a href="/tags/ELK/" style="font-size:10px">ELK</a> <a href="/tags/ExploratoryTest/" style="font-size:10px">ExploratoryTest</a> <a href="/tags/Github/" style="font-size:10px">Github</a> <a href="/tags/Hexo/" style="font-size:12px">Hexo</a> <a href="/tags/JSTQB/" style="font-size:10px">JSTQB</a> <a href="/tags/Mac/" style="font-size:12px">Mac</a> <a href="/tags/Presentation/" style="font-size:10px">Presentation</a> <a href="/tags/Programming/" style="font-size:10px">Programming</a> <a href="/tags/Python/" style="font-size:18px">Python</a> <a href="/tags/Slideshare/" style="font-size:10px">Slideshare</a> <a href="/tags/SoftwareTest/" style="font-size:14px">SoftwareTest</a> <a href="/tags/Study/" style="font-size:12px">Study</a> <a href="/tags/Technology/" style="font-size:20px">Technology</a> <a href="/tags/WFH/" style="font-size:14px">WFH</a> <a href="/tags/WeMo/" style="font-size:10px">WeMo</a> <a href="/tags/Windows/" style="font-size:10px">Windows</a> <a href="/tags/ffmpeg/" style="font-size:10px">ffmpeg</a> <a href="/tags/iOS/" style="font-size:10px">iOS</a> <a href="/tags/macOS/" style="font-size:10px">macOS</a> <a href="/tags/python/" style="font-size:10px">python</a> <a href="/tags/selenium/" style="font-size:10px">selenium</a> <a href="/tags/ssh/" style="font-size:10px">ssh</a> <a href="/tags/%E3%83%AA%E3%83%A2%E3%83%BC%E3%83%88%E3%83%AF%E3%83%BC%E3%82%AF/" style="font-size:14px">リモートワーク</a>
 </div>
 </div>
 <div class="widget-wrap">
 <h3 class="widget-title">アーカイブ</h3>
 <div class="widget">
-<ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/03/">3月 2021</a><span class="archive-list-count">9</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/02/">2月 2021</a><span class="archive-list-count">6</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/12/">12月 2020</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/11/">11月 2019</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/04/">4月 2019</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/01/">1月 2019</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/12/">12月 2018</a><span class="archive-list-count">6</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/01/">1月 2018</a><span class="archive-list-count">2</span></li></ul>
+<ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/04/">4月 2021</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/03/">3月 2021</a><span class="archive-list-count">9</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/02/">2月 2021</a><span class="archive-list-count">6</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/12/">12月 2020</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/11/">11月 2019</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/04/">4月 2019</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/01/">1月 2019</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/12/">12月 2018</a><span class="archive-list-count">6</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/01/">1月 2018</a><span class="archive-list-count">2</span></li></ul>
 </div>
 </div>
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
@@ -616,6 +817,9 @@
 <h3 class="widget-title">最近の投稿</h3>
 <div class="widget">
 <ul>
+<li>
+<a href="/20210404-jptqb-alta/">JSTQB ALTA 学習方法</a>
+</li>
 <li>
 <a href="/20210322-study-sw-test-2/">Software testing own notes</a>
 </li>
@@ -627,9 +831,6 @@
 </li>
 <li>
 <a href="/20210307_Hexo1/">Hexoのことはじめ (Hexo1)</a>
-</li>
-<li>
-<a href="/20210306_WFH1/">リモートワークのために購入したもの1</a>
 </li>
 </ul>
 </div>

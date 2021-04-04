@@ -6,7 +6,7 @@
   <link href="https://ki4070ma.com/atom.xml" rel="self"/>
   
   <link href="https://ki4070ma.com/"/>
-  <updated>2021-03-22T12:18:16.372Z</updated>
+  <updated>2021-04-04T07:55:47.876Z</updated>
   <id>https://ki4070ma.com/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>JSTQB ALTA 学習方法</title>
+    <link href="https://ki4070ma.com/20210404-jptqb-alta/"/>
+    <id>https://ki4070ma.com/20210404-jptqb-alta/</id>
+    <published>2021-04-03T15:00:00.000Z</published>
+    <updated>2021-04-04T07:55:47.876Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;2021/02/13 に受検した JSTQB ALTA に受かっていました.&lt;br&gt;去年も受けて落ちたので 2 回目の受検でした.&lt;/p&gt;
+&lt;p&gt;勉強方法をメモとして残します.&lt;/p&gt;
+&lt;h2&gt;&lt;span id=&quot;202002-に受けたとき&quot;&gt;2020/02</summary>
+        
+      
+    
+    
+    
+    
+    <category term="SoftwareTest" scheme="https://ki4070ma.com/tags/SoftwareTest/"/>
+    
+    <category term="JSTQB" scheme="https://ki4070ma.com/tags/JSTQB/"/>
+    
+  </entry>
   
   <entry>
     <title>Software testing own notes</title>
@@ -96,11 +123,11 @@
     
     <category term="Mac" scheme="https://ki4070ma.com/tags/Mac/"/>
     
+    <category term="Amazon" scheme="https://ki4070ma.com/tags/Amazon/"/>
+    
     <category term="WFH" scheme="https://ki4070ma.com/tags/WFH/"/>
     
     <category term="リモートワーク" scheme="https://ki4070ma.com/tags/%E3%83%AA%E3%83%A2%E3%83%BC%E3%83%88%E3%83%AF%E3%83%BC%E3%82%AF/"/>
-    
-    <category term="Amazon" scheme="https://ki4070ma.com/tags/Amazon/"/>
     
     <category term="Windows" scheme="https://ki4070ma.com/tags/Windows/"/>
     
@@ -159,11 +186,11 @@
     
     
     
+    <category term="Amazon" scheme="https://ki4070ma.com/tags/Amazon/"/>
+    
     <category term="WFH" scheme="https://ki4070ma.com/tags/WFH/"/>
     
     <category term="リモートワーク" scheme="https://ki4070ma.com/tags/%E3%83%AA%E3%83%A2%E3%83%BC%E3%83%88%E3%83%AF%E3%83%BC%E3%82%AF/"/>
-    
-    <category term="Amazon" scheme="https://ki4070ma.com/tags/Amazon/"/>
     
   </entry>
   
@@ -367,11 +394,11 @@
     
     
     
+    <category term="Amazon" scheme="https://ki4070ma.com/tags/Amazon/"/>
+    
     <category term="WFH" scheme="https://ki4070ma.com/tags/WFH/"/>
     
     <category term="リモートワーク" scheme="https://ki4070ma.com/tags/%E3%83%AA%E3%83%A2%E3%83%BC%E3%83%88%E3%83%AF%E3%83%BC%E3%82%AF/"/>
-    
-    <category term="Amazon" scheme="https://ki4070ma.com/tags/Amazon/"/>
     
   </entry>
   
@@ -425,11 +452,11 @@
     
     
     
+    <category term="Amazon" scheme="https://ki4070ma.com/tags/Amazon/"/>
+    
     <category term="WFH" scheme="https://ki4070ma.com/tags/WFH/"/>
     
     <category term="リモートワーク" scheme="https://ki4070ma.com/tags/%E3%83%AA%E3%83%A2%E3%83%BC%E3%83%88%E3%83%AF%E3%83%BC%E3%82%AF/"/>
-    
-    <category term="Amazon" scheme="https://ki4070ma.com/tags/Amazon/"/>
     
   </entry>
   
@@ -581,34 +608,6 @@
     <category term="Technology" scheme="https://ki4070ma.com/tags/Technology/"/>
     
     <category term="Appium" scheme="https://ki4070ma.com/tags/Appium/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>PythonのLibraryで使用したことがあるもの</title>
-    <link href="https://ki4070ma.com/20181226_python-lib/"/>
-    <id>https://ki4070ma.com/20181226_python-lib/</id>
-    <published>2018-12-25T15:00:00.000Z</published>
-    <updated>2021-03-07T14:08:35.955Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;!-- toc --&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a</summary>
-        
-      
-    
-    
-    
-    
-    <category term="Python" scheme="https://ki4070ma.com/tags/Python/"/>
-    
-    <category term="Technology" scheme="https://ki4070ma.com/tags/Technology/"/>
     
   </entry>
   

@@ -3,14 +3,21 @@
 
 
     <url>
-        <loc>https://ki4070ma.com/tags/Study/</loc>
-        <lastmod>2021-03-22T12:18:16.372Z</lastmod>
+        <loc>https://ki4070ma.com/tags/JSTQB/</loc>
+        <lastmod>2021-04-04T07:55:47.876Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
         <loc>https://ki4070ma.com/tags/SoftwareTest/</loc>
+        <lastmod>2021-04-04T07:55:47.876Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://ki4070ma.com/tags/Study/</loc>
         <lastmod>2021-03-22T12:18:16.372Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
@@ -45,13 +52,6 @@
     </url>
 
     <url>
-        <loc>https://ki4070ma.com/tags/Amazon/</loc>
-        <lastmod>2021-03-21T12:21:01.342Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
         <loc>https://ki4070ma.com/tags/%E3%83%AA%E3%83%A2%E3%83%BC%E3%83%88%E3%83%AF%E3%83%BC%E3%82%AF/</loc>
         <lastmod>2021-03-21T12:21:01.342Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -60,6 +60,13 @@
 
     <url>
         <loc>https://ki4070ma.com/tags/WFH/</loc>
+        <lastmod>2021-03-21T12:21:01.342Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://ki4070ma.com/tags/Amazon/</loc>
         <lastmod>2021-03-21T12:21:01.342Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
@@ -108,14 +115,14 @@
     </url>
 
     <url>
-        <loc>https://ki4070ma.com/tags/Github/</loc>
+        <loc>https://ki4070ma.com/tags/Windows/</loc>
         <lastmod>2021-03-07T14:08:35.957Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
-        <loc>https://ki4070ma.com/tags/Windows/</loc>
+        <loc>https://ki4070ma.com/tags/Github/</loc>
         <lastmod>2021-03-07T14:08:35.957Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
@@ -164,14 +171,14 @@
     </url>
 
     <url>
-        <loc>https://ki4070ma.com/tags/ffmpeg/</loc>
+        <loc>https://ki4070ma.com/tags/Presentation/</loc>
         <lastmod>2021-03-06T15:29:49.769Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
-        <loc>https://ki4070ma.com/tags/Presentation/</loc>
+        <loc>https://ki4070ma.com/tags/ffmpeg/</loc>
         <lastmod>2021-03-06T15:29:49.769Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
